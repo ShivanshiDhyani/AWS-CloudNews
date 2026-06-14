@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AWS Cloud News dashboard with real-time updates from official AWS sources." />
+    <title>AWS Cloud News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-orange"></div>
+    <div class="bg-glow bg-glow-blue"></div>
+    <main class="container">
+      <header class="header">
+        <div class="brand">
+          <div class="aws-icon" aria-hidden="true">☁</div>
+          <div>
+            <h1>AWS Cloud News</h1>
+            <p>Real-time Updates from Official Sources</p>
+          </div>
+        </div>
+      </header>
+
+      <section id="tabs" class="tabs" aria-label="News source filters"></section>
+
+      <section id="news-grid" class="news-grid" aria-live="polite"></section>
+
+      <footer class="footer">
+        <span id="last-updated">Last updated: --</span>
+      </footer>
+    </main>
+
+    <template id="skeleton-template">
+      <article class="card skeleton-card">
+        <div class="skeleton skeleton-badge"></div>
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-title short"></div>
+        <div class="skeleton skeleton-line"></div>
+        <div class="skeleton skeleton-line short"></div>
+      </article>
+    </template>
+
+    <script>
+      const SOURCE_ORDER = [
+        "All",
+        "AWS What's New",
+        "AWS News Blog",
+        "AWS Architecture Blog",
+        "AWS Security Blog"
+      ];
+
+      const SOURCE_STYLES = {
+        "AWS What's New": "badge-whats-new",
+        "AWS News Blog": "badge-news-blog",
+        "AWS Architecture Blog": "badge-architecture",
+        "AWS Security Blog": "badge-security"
+      };
+
+      const state = {
+        selectedSource: "All",
+        items: []
+      };
+
+      const tabsEl = document.getElementById("tabs");
+      const gridEl = document.getElementById("news-grid");
+      const updatedEl = document.getElementById("last-updated");
+      const skeletonTemplate = document.getElementById("skeleton-template");
+
+      const showSkeletons = (count = 9) => {
+        gridEl.innerHTML = "";
+        for (let i = 0; i < count; i += 1) {
+          gridEl.appendChild(skeletonTemplate.content.cloneNode(true));
+        }
+      };
+
+      const safeDate = (value) => {
+        const date = new Date(value);
+        return Number.isNaN(date.getTime()) ? null : date;
+      };
+
+      const relativeTime = (dateValue) => {
+        const date = safeDate(dateValue);
+        if (!date) return "Unknown";
+        const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
+        if (seconds < 60) return "Just now";
+
+        const intervals = [
+          { label: "y", seconds: 31536000 },
+          { label: "mo", seconds: 2592000 },
+          { label: "w", seconds: 604800 },
+          { label: "d", seconds: 86400 },
+          { label: "h", seconds: 3600 },
+          { label: "m", seconds: 60 }
+        ];
+
+        for (const interval of intervals) {
+          const value = Math.floor(seconds / interval.seconds);
+          if (value >= 1) return `${value}${interval.label} ago`;
+        }
+        return "Just now";
+      };
+
+      const snippet = (text, maxLength = 150) => {
+        const cleaned = (text || "").replace(/\s+/g, " ").trim();
+        if (!cleaned) return "Read the full update from the official AWS source.";
+        return cleaned.length > maxLength ? `${cleaned.slice(0, maxLength - 1)}…` : cleaned;
+      };
+
+      const formatUpdated = (isoString) => {
+        const date = safeDate(isoString);
+        if (!date) return "Last updated: Unknown";
+        return `Last updated: ${date.toLocaleString([], {
+          dateStyle: "medium",
+          timeStyle: "short"
+        })}`;
+      };
+
+      const getCounts = () => {
+        const counts = { All: state.items.length };
+        for (const source of SOURCE_ORDER.slice(1)) {
+          counts[source] = state.items.filter((item) => item.source === source).length;
+        }
+        return counts;
+      };
+
+      const renderTabs = () => {
+        const counts = getCounts();
+        tabsEl.innerHTML = "";
+        for (const source of SOURCE_ORDER) {
+          const button = document.createElement("button");
+          button.className = `tab ${state.selectedSource === source ? "active" : ""}`;
+          button.type = "button";
+          button.dataset.source = source;
+          button.innerHTML = `<span>${source}</span><span class="count">${counts[source] || 0}</span>`;
+          button.addEventListener("click", () => {
+            state.selectedSource = source;
+            renderTabs();
+            renderCards();
+          });
+          tabsEl.appendChild(button);
+        }
+      };
+
+      const buildCard = (item, index) => {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.style.animationDelay = `${Math.min(index * 35, 360)}ms`;
+        card.tabIndex = 0;
+
+        const sourceStyle = SOURCE_STYLES[item.source] || "badge-default";
+        const dateText = relativeTime(item.pubDate);
+
+        card.innerHTML = `
+          <div class="card-top">
+            <span class="badge ${sourceStyle}">${item.source}</span>
+            <span class="external-icon" aria-hidden="true">↗</span>
+          </div>
+          <h2>${item.title}</h2>
+          <p>${snippet(item.summary || item.title)}</p>
+          <div class="meta">${dateText}</div>
+        `;
+
+        const openLink = () => window.open(item.link, "_blank", "noopener,noreferrer");
+        card.addEventListener("click", openLink);
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openLink();
+          }
+        });
+        return card;
+      };
+
+      const renderCards = () => {
+        const selected = state.selectedSource;
+        const filteredItems =
+          selected === "All" ? state.items : state.items.filter((item) => item.source === selected);
+
+        gridEl.innerHTML = "";
+        if (filteredItems.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "empty-state";
+          empty.textContent = "No items available for this source yet.";
+          gridEl.appendChild(empty);
+          return;
+        }
+
+        const fragment = document.createDocumentFragment();
+        filteredItems.forEach((item, index) => fragment.appendChild(buildCard(item, index)));
+        gridEl.appendChild(fragment);
+      };
+
+      const initialize = async () => {
+        showSkeletons();
+        try {
+          const response = await fetch("./news.json", { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const data = await response.json();
+          state.items = Array.isArray(data.items) ? data.items : [];
+          updatedEl.textContent = formatUpdated(data.lastUpdated);
+          renderTabs();
+          renderCards();
+          requestAnimationFrame(() => document.body.classList.add("ready"));
+        } catch (error) {
+          console.error("Failed to load news.json", error);
+          tabsEl.innerHTML = "";
+          gridEl.innerHTML = `<div class="empty-state">Unable to load news. Run the update script and refresh.</div>`;
+          updatedEl.textContent = "Last updated: Unavailable";
+        }
+      };
+
+      initialize();
+    </script>
+  </body>
+</html>
