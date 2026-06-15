@@ -1,6 +1,55 @@
 {
-  "lastUpdated": "2026-06-14T11:27:28.797Z",
+  "lastUpdated": "2026-06-15T18:08:54.504Z",
   "items": [
+    {
+      "title": "Amazon ECS Express Mode is now available in AWS GovCloud (US) Regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ecs-express-mode-govcloud/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-15T17:00:00.000Z",
+      "summary": "Amazon Elastic Container Service (Amazon ECS) Express Mode is now available in the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. ECS Express Mode empowers developers to rapidly launch containerized applications, including web applications and APIs, making it easy to orchestrate and manage cloud architecture while maintaining full control over infrastructure resources.\n \nEvery Express Mode service automatically receives an AWS-provided domain name, making your application immediately accessible without additional configuration. Applications using ECS Express Mode incorporate AWS operational best practices, serve either public or private HTTPS requests, and scale in response to traffic patterns. ECS Express Mode automatically consolidates up to 25 services behind a single Application Load Balancer, using intelligent rule-based routing to maintain isolation between services. All resources provisioned by ECS Express Mode remain fully accessible in your account, ensuring you never sacrifice control or flexibility. As your application requirements evolve, you can directly access and modify any infrastructure resource, leveraging the complete feature set of Amazon ECS and related services without disruption to your running applications.\n \nTo get started, provide your container image and ECS Express Mode deploys your application and auto-generates a URL. ECS Express Mode is available at no additional charge, you pay only for the AWS resources created to run your application. To deploy, use the Amazon ECS Console, SDK, CLI, CloudFormation, CDK, and Terraform. For more information, see the AWS News blog, or the documentation."
+    },
+    {
+      "title": "AWS Lambda Managed Instances now supports Tag Propagation for Managed Resources",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-lambda-managed-instances-tag-propagation/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-15T15:55:00.000Z",
+      "summary": "AWS Lambda Managed Instances (LMI) now supports tag propagation, enabling you to automatically apply tags to managed resources such as Amazon EC2 instances, Amazon EBS volumes, and Amazon ENIs. This helps you enforce cost allocation, service control policies (SCPs), and compliance requirements across all resources provisioned by your capacity providers.\n \nLMI lets you run Lambda functions on managed EC2 instances with built-in routing, load balancing, and auto scaling, giving you access to specialized compute configurations including the latest-generation processors and high-bandwidth networking, with no operational overhead. Organizations that use resource tagging for cost tracking, governance, or security previously had no way to propagate tags to the underlying managed resources that LMI provisions on their behalf. This made it difficult to track costs accurately, enforce SCPs, or meet compliance standards that require approved tags on all resources. Now, with tag propagation, you can specify a set of tags on your capacity provider configuration, and LMI automatically applies those tags to all managed resources it creates. This ensures consistent tagging across your EC2 instances, EBS volumes, and ENIs without requiring manual intervention or custom automation.\n \nThis feature is available in all AWS commercial Regions where LMI is generally available. To get started, configure the PropagateTags setting on your capacity provider using the CreateCapacityProvider or UpdateCapacityProvider APIs. Set the mode to Explicit and provide your desired tags as key-value pairs. Tag propagation applies to all new managed resources provisioned after the configuration is applied. You can configure these settings using the AWS Management Console, AWS CLI, AWS CloudFormation, AWS CDK, or AWS SAM. To learn more, visit the AWS Lambda Managed Instances product page and documentation."
+    },
+    {
+      "title": "AWS DevOps Agent expands with custom SRE agents and MCP/A2A protocols",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-devops-agent-custom-agents/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-15T15:47:00.000Z",
+      "summary": "AWS DevOps Agent now supports custom SRE agents, bring-your-own sub-agents, and headless access via MCP and A2A protocols. These capabilities enable teams to automate recurring SRE workflows, extend DevOps Agent by connecting it to other agents, and access its capabilities from the tools they already use, including Kiro, Claude, and other coding assistants.\n  With custom SRE agents, teams can create and schedule agents within Agent Spaces that run on a cadence. For example, create a daily database health report that checks for slow queries and parameters that need tuning, or build an agent that reviews logs from the past 24 hours and flags anomalies. In headless mode, developers can invoke DevOps Agent from the tools and agents they already use via A2A or MCP protocols. For example, the Kiro power for AWS DevOps Agent lets developers check production health and investigate issues without leaving their IDE. Teams can also connect their own sub-agents built with Amazon Bedrock or third-party frameworks via A2A to extend DevOps Agent capabilities.\n  AWS DevOps Agent also introduces chat enhancements, incident-skip support based on customer-defined rules, enhanced knowledge with memories and Git-managed skills, human labeling and customer-created dashboards for tracking task quality, and is available in five new Regions. See all the latest AWS DevOps Agent features on the recent improvements page.\n  For the list of AWS Regions where AWS DevOps Agent is available, see the supported Regions table."
+    },
+    {
+      "title": "How Samsung achieved real-time pricing with AWS Lambda Response Streaming",
+      "link": "https://aws.amazon.com/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-06-15T14:13:36.000Z",
+      "summary": "In this post, we walk through the legacy architecture challenges, the stateless streaming solution, key implementation patterns, and performance results—a pattern you can apply if you’re building high-traffic APIs that aggregate data from multiple backend sources."
+    },
+    {
+      "title": "AWS Weekly Roundup: AWS FinOps Agent in preview, Gemma 4 on Bedrock, Kiro Pro Max, and more (June 15, 2026)",
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-finops-agent-in-preview-gemma-4-on-bedrock-kiro-pro-max-and-more-june-15-2026/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-06-15T11:41:48.000Z",
+      "summary": "This week, New York City is hosting AWS Summit, bringing together builders, customers, and AWS teams for a full day of announcements, demos, and technical sessions at the Javits Center. I wrote blog posts for some of the Summit launches, so I am excited to see them go live this week. I just won’t be […]"
+    },
+    {
+      "title": "Amazon CloudWatch now supports cross-account metrics centralization",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-cross-account-metrics-centralization",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-15T10:00:00.000Z",
+      "summary": "Today, Amazon Web Services announces the general availability of Amazon CloudWatch Metrics Centralization, which enables you to replicate CloudWatch metrics cross-account and cross-region into a single destination account.\n  Enterprise teams with complex multi-account, multi-region deployments often need a unified view of their operational health across their entire infrastructure. CloudWatch metrics centralization solves this by letting you define centralization rules through AWS Organizations that automatically replicate metrics from source accounts and regions into a centralized destination account. Central teams gain full ownership of the data for querying, alarming, compliance, and governance. Centralized metrics work with both CloudWatch and OpenTelemetry metrics, and are fully compatible with Metrics Insights, dashboards, alarms, Metric Math, anomaly detection, Metric Streams, and PromQL.\n  CloudWatch Metrics Centralization is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), and South America (São Paulo).\n  To learn more, see CloudWatch Metrics Centralization in the Amazon CloudWatch User Guide."
+    },
+    {
+      "title": "Amazon CloudWatch Query Studio is now generally available",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-cloudwatch-query-studio-generally-available",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-15T10:00:00.000Z",
+      "summary": "Today, Amazon Web Services announces the general availability of Amazon CloudWatch Query Studio, a unified querying and visualization experience that enables you to explore metrics from a single interface within the CloudWatch console.\n  With Query Studio, a team operating services across multiple AWS accounts and regions can use PromQL or Metrics Insights to query OpenTelemetry and AWS vended metrics from a single workspace. Per-query cross-account and cross-region selectors make it easy to correlate latency and error rates across their entire fleet. They can build queries visually with guided builders for PromQL and Metrics Insights (SQL), then choose from visualization types including line, bar, scatter plot, heatmap, histogram, pie, gauge, and number widgets with dual y-axis configuration and series overrides. Query Studio also integrates with CloudWatch dashboards, supports Grafana imports, and provides keyboard shortcuts for running queries.\n  Query Studio is available in all commercial AWS regions, except Middle East (UAE), Middle East (Bahrain) and Israel (Tel Aviv). For more information about regional availability, see the AWS Region table. To learn more, see Query Studio in the Amazon Cloudwatch User Guide."
+    },
     {
       "title": "Amazon Lightsail is now available in three additional AWS Regions",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-lightsail-aws-regions/",
@@ -161,55 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-10T15:00:00.000Z",
       "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9g and M9gd instances, powered by AWS Graviton5 processors, are generally available. AWS Graviton5 processors are the fifth generation of custom-designed AWS processors, delivering the best price performance for general purpose workloads running on Amazon EC2.\n \n​​M9g instances serve a broad range of general-purpose workloads including application servers, microservices, gaming, caching, and containers, while also delivering the performance needed for agentic AI use cases like real-time reasoning, code generation, and multi-step orchestration.  \n \n​​M9gd instances offer local NVMe-based SSD block-level storage for customers that require high-speed, low-latency local storage, such as media processing, batch and log processing, and applications that need access to temporary storage including caches and scratch files.​\n \n​​​M9g and M9gd instances deliver up to 25% better compute performance compared to AWS Graviton4-based M8g and M8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation AWS Nitro System and are the first to feature the Nitro Isolation Engine, harnessing formal verification to provide mathematical assurance that customer workloads are isolated from each other and AWS operators, pioneering a new standard for mathematically proven cloud security​​.\n \nM9g and M9gd instances are available in US East (N. Virginia, Ohio), US West (Oregon), and EU (Frankfurt) regions. M9g and M9gd instances are available for purchase via Savings Plans, On-Demand, Spot instances, Dedicated instances, or Dedicated hosts.\n \nLevel up your compute with AWS Graviton and get started today."
-    },
-    {
-      "title": "Amazon EC2 P6-B200 instances are now available in the AWS GovCloud (US-East) Region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-p6-b200-aws-govcloud/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-10T14:32:00.000Z",
-      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) P6-B200 instances accelerated by NVIDIA Blackwell GPUs are available in AWS GovCloud (US-East) Region. These instances offer up to 2x performance compared to P5en instances for AI training and inference.\n  P6-B200 instances feature 8 Blackwell GPUs with 1440 GB of high-bandwidth GPU memory and a 60% increase in GPU memory bandwidth compared to P5en, 5th Generation Intel Xeon processors (Emerald Rapids), and up to 3.2 terabits per second of Elastic Fabric Adapter (EFAv4) networking. P6-B200 instances are powered by the AWS Nitro System, so you can reliably and securely scale AI workloads within Amazon EC2 UltraClusters to tens of thousands of GPUs.\n  P6-B200 instances are now available in p6-b200.48xlarge size in the following AWS Regions: US West (Oregon), US East (N. Virginia, Ohio), AWS GovCloud (US-West) and AWS GovCloud (US-East) Region. To learn more about P6-B200 instances, visit Amazon EC2 P6 instances."
-    },
-    {
-      "title": "AWS Cost and Usage Report 2.0 now supports table configurations update",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-cost-usage-report/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-10T13:33:00.000Z",
-      "summary": "AWS today announces that AWS Cost and Usage Report 2.0 (CUR 2.0) now supports updates to data table configurations via the AWS Management Console and SDK/CLI. This capability allows customers to modify their existing exports to take advantage of new CUR 2.0 features without having to delete and recreate their exports.\n  Previously, customers configured CUR 2.0 exports with specific table settings — including export content, time granularity, column selection, export format, and destination settings. When AWS introduces new features, such as additional columns and finer row-level granularity, existing export settings intentionally remained unchanged to protect ETL jobs that depended on a stable schema. However, customers who wanted to adopt these new capabilities and were ready for the new schema couldn't simply update their preference in existing export. They had to delete their existing export and create a new one with the new preference. With this launch, customers can update their table configuration directly through the AWS Management Console or SDK/CLI and begin receiving exports with their updated preferences starting from the next scheduled export delivery.\n  To learn more about this feature, see AWS Data Exports and AWS Billing and Cost Management in the AWS Cost Management User Guide."
-    },
-    {
-      "title": "Amazon FSx for OpenZFS Intelligent-Tiering storage class is now available in 8 additional AWS Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-fsx-openzfs/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-09T20:52:00.000Z",
-      "summary": "You can now create Amazon FSx for OpenZFS file systems with the Intelligent-Tiering storage class in 8 additional AWS Regions across the US, Europe, Asia Pacific, and South America.\n \nFSx Intelligent-Tiering is built for general-purpose file workloads such as file shares, archives, media libraries, and migrations from on-premises HDD storage. It automatically moves your data across three storage tiers (Frequent Access, Infrequent Access, and Archive) based on access patterns, and an optional SSD read cache keeps your active data fast. You get high performance for active workloads and low-cost storage for everything else, paying only for what you store with no capacity to manage. With FSx Intelligent-Tiering, you can save up to 85% compared to the FSx SSD storage class and up to 20% compared to on-premises HDD-based NAS.\n \nWith this expansion, the FSx Intelligent-Tiering storage class is now available for FSx for OpenZFS file systems in the following additional AWS Regions: US West (N. California), Europe (London, Stockholm, Spain, Zurich), Asia Pacific (Hyderabad, Seoul), and South America (São Paulo). To learn more, visit the FSx Intelligent-Tiering page and the Amazon FSx for OpenZFS product page, and see the FSx for OpenZFS Region Table for complete regional availability information."
-    },
-    {
-      "title": "Amazon SageMaker Unified Studio Notebooks now support EMR Serverless",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-sagemaker-unified-studio-emr/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-09T18:46:00.000Z",
-      "summary": "Amazon SageMaker Unified Studio Notebooks now support Amazon EMR Serverless with Apache Spark Connect, giving data engineers and analysts more flexibility in choosing their Spark runtime for interactive analytics and data engineering workloads. In addition to Amazon Athena Spark, users can now leverage Amazon EMR Serverless as their Spark runtime, selecting the optimal engine based on their requirements.\n \nWith this launch, you can run PySpark and Spark SQL on an EMR Serverless Spark Application in Notebook cells. Users can select their Spark runtime from the Notebook side panel, and the selected runtime applies to both Python and SQL cells. Additionally, users can leverage SageMaker Data Agent, the built-in AI assistant, to generate code and execution plans from natural language prompts, accelerating Spark development workflows with EMR Serverless. Organizations can leverage pre-initialized capacity to improve session start times, while benefiting from unified Spark UI monitoring across all supported engines for consistent visibility into job execution and performance. Additionally, EMR Serverless provides VPC connectivity support for workloads requiring network isolation.\n \nThis feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available, supporting both SageMaker Unified Studio notebooks and JupyterLab IDE environments. To get started, see Amazon SageMaker Unified Studio User Guide."
-    },
-    {
-      "title": "Anthropic Claude Fable 5 on AWS: Mythos-class capabilities with built-in safeguards now available",
-      "link": "https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-06-09T17:40:31.000Z",
-      "summary": "AWS announces the availability of Claude Fable 5 on Amazon Bedrock and Claude Platform on AWS. Claude Fable 5 delivers Mythos-level capabilities available to all customers, with strong safeguards designed to make it safe for broader use."
-    },
-    {
-      "title": "Amazon S3 Access Grants are now available in the AWS European Sovereign Cloud (Germany) Region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-s3-access-grants-european-sovereign-cloud-germany-region",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-09T17:14:00.000Z",
-      "summary": "You can now create Amazon S3 Access Grants in the AWS European Sovereign Cloud (Germany) Region.\n \nAmazon S3 Access Grants map identities in directories such as Microsoft Entra ID, or AWS Identity and Access Management (IAM) principals, to datasets in S3. This helps you manage data permissions at scale by automatically granting S3 access to end users based on their corporate identity.\n \nVisit the AWS Region Table for complete regional availability information. To learn more about Amazon S3 Access Grants, visit our product page."
-    },
-    {
-      "title": "Automate medical record digitization with Amazon Bedrock Data Automation and AWS HealthLake",
-      "link": "https://aws.amazon.com/blogs/architecture/automate-medical-record-digitization-with-amazon-bedrock-data-automation-and-aws-healthlake/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-06-09T16:51:55.000Z",
-      "summary": "In this post, you learn how to build an automated, serverless pipeline that converts scanned PDF medical records into FHIR R4-compliant data using Amazon Bedrock Data Automation and AWS HealthLake. We walk through the architecture, explain how each AWS service connects to the next, show you what the pipeline looks like when it runs, and get you deployed in under 20 minutes."
     }
   ]
 }
