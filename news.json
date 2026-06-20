@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T13:00:59.616Z",
+  "lastUpdated": "2026-06-20T10:19:53.694Z",
   "items": [
     {
       "title": "Announcing the general availability of a new AWS Local Zone in Hanoi, Vietnam",
@@ -7,6 +7,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-19T01:00:00.000Z",
       "summary": "Today, AWS announces the general availability of a new Local Zone in Hanoi, Vietnam, bringing AWS infrastructure closer to end users. This new Local Zone is one of the first AWS Local Zones in the Asia Pacific with support for Amazon Simple Storage Service (Amazon S3) and Amazon Elastic Block Store (Amazon EBS) Local Snapshots, enabling customers to meet data residency requirements by storing and backing up data locally.\n \nAWS Local Zones are AWS infrastructure deployments that extend core services, such as compute, storage, networking, and other select services, closer to metropolitan areas worldwide. AWS Local Zones help you achieve single-digit millisecond latency for end-user workloads, meet data residency requirements, support AI/ML inference workloads, and accelerate migration and modernization of legacy applications to the cloud, all while maintaining consistent AWS APIs, tools, and services as AWS Regions. AWS Local Zones are available in more than 30 metropolitan areas worldwide. \n \nThe Hanoi Local Zone supports Amazon Elastic Compute Cloud (Amazon EC2) with C7i, M7i, and R7i instances, Amazon S3 with the One Zone-Infrequent Access storage class, Amazon EBS with Local Snapshots and volume types gp3, gp2, io1, sc1, and st1, Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Virtual Private Cloud (Amazon VPC), AWS Direct Connect, and Application Load Balancer. \n \nTo get started, enable the Hanoi Local Zone (ap-southeast-1-han-1a) from the Regions and Zones tab in the AWS Global View or by using the ModifyAvailabilityZoneGroup API. For pricing information, visit the AWS Local Zones pricing page. To learn more, visit the AWS Local Zones overview page."
+    },
+    {
+      "title": "Amazon CloudWatch Synthetics now supports multilocation canaries",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-cloudwatch-synthetics-multilocation/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-18T22:41:00.000Z",
+      "summary": "Today, Amazon CloudWatch Synthetics announces support for multilocation canaries, allowing developers and site reliability engineers to run the same canary across multiple AWS Regions simultaneously from a single point of management. Previously, monitoring application availability from multiple geographic locations required creating and managing separate canaries in each Region, adding operational overhead and increasing the risk of configuration drift. With multilocation canaries, you create and manage a canary in one primary Region, and CloudWatch Synthetics automatically replicates it to the additional Regions you choose, consolidating all run data, metrics, and artifacts in the primary Region.\n \nMultilocation canaries help you ensure consistent user experience worldwide, identify region-specific performance bottlenecks, and validate that third-party dependencies like CDNs and payment processors work across all locations. Replica canaries run independently, giving you resilient monitoring coverage across geographic locations. You can also configure alarms that activate only when issues are detected from multiple locations, increasing alert confidence and helping your team focus on real customer-impacting problems. Amazon CloudWatch Synthetics multilocation canaries are available in all AWS commercial Regions that support CloudWatch Synthetics. You can upgrade existing single-region canaries to multilocation by adding replica Regions without recreating them. For more information about regional availability, see the AWS Region table.\n \nTo learn more about CloudWatch Synthetics, see Using synthetic monitoring in the Amazon CloudWatch User Guide. To get started, visit the Amazon CloudWatch product page."
     },
     {
       "title": "Amazon MSK Express brokers now support Intelligent Rebalancing on existing clusters",
@@ -62,7 +69,7 @@
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/nested-virtualization-intel-us-gov-cloud/",
       "source": "AWS What's New",
       "pubDate": "2026-06-18T18:47:00.000Z",
-      "summary": "Starting today, Nested virtualization is now available on additional Intel platforms and additional Regions. Nested virtualization is now available on C7i,R7i, M7i, C7id,R7id, M7id, C7i-flex,R7i-flex, M7i-flex, I7i, C8i-flex,R8i-flex, M8i-flex,and X8i, in addition to already available support on C8i, M8i and R8i instances. This capability is also now available in US GovCloud (US-East) and US GovCloud (US-West), in addition to existing support in all commercial regions.\n With nested virtualization capabilities, customers can create nested environments by running KVM or Hyper-V on virtual EC2 instances. Customers can leverage this capability for use cases such as running emulators for mobile applications, simulating in-vehicle hardware for automobiles, and running Windows Subsystem for Linux on Windows workstations. To learn more see documentation ."
+      "summary": "Starting today, Nested virtualization is now available on additional Intel platforms and additional Regions. Nested virtualization is now available on C7i,R7i, M7i, C8id,R8id, M8id, C7i-flex, M7i-flex, I7i, C8i-flex,R8i-flex, M8i-flex,and X8i, in addition to already available support on C8i, M8i and R8i instances. This capability is also now available in US GovCloud (US-East) and US GovCloud (US-West), in addition to existing support in all commercial regions.\n With nested virtualization capabilities, customers can create nested environments by running KVM or Hyper-V on virtual EC2 instances. Customers can leverage this capability for use cases such as running emulators for mobile applications, simulating in-vehicle hardware for automobiles, and running Windows Subsystem for Linux on Windows workstations. To learn more see documentation ."
     },
     {
       "title": "Amazon Connect Customer launches the ability to interrupt an agent with an urgent contact",
@@ -126,6 +133,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-18T08:00:00.000Z",
       "summary": "Amazon GameLift Servers now supports two significant container fleet improvements that enhance flexibility and inter-container communication for game server deployments. These new capabilities address common challenges faced by game developers using containerized architectures, providing greater control over container permissions and enabling seamless discovery of co-located containers on the same instance.\n \nYou can now customize Linux capabilities for containers in your container group definitions, giving you finer control beyond Docker's default capability set. This is particularly valuable for game servers requiring specialized capabilities such as NET_RAW for custom networking protocols or SYS_PTRACE for attaching debuggers and profiling tools. Additionally, game servers can now call the new ListContainersNetworkInfo() server SDK action to retrieve comprehensive network information, including container name, ID, local IP address, and container group type for all containers running on the same instance. This enables automatic service discovery and simplified communication between game servers and auxiliary services like metrics collectors, logging agents, or caching systems.\n \nThese improvements are available through the Amazon GameLift Servers console, AWS CLI, AWS SDK, and AWS CloudFormation. The ListContainersNetworkInfo() action is supported in server SDK 5.x for Go, C++, and C#, as well as in plugins for Unreal Engine and Unity. Both features are available in all AWS regions where Amazon GameLift Servers is supported, except China. To learn more, visit the Amazon GameLift Servers documentation."
+    },
+    {
+      "title": "Amazon WorkSpaces Personal Supports Ubuntu 24.04",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/ubuntu-china-zhy/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-18T07:00:00.000Z",
+      "summary": "AWS announces availability of Ubuntu 24.04 LTS bundles for Amazon WorkSpaces Personal in the AWS China (Ningxia) Region, operated by NWCD. With this bundle, customers in China can launch Ubuntu WorkSpaces and take advantage of updated Linux packages, toolchains, and security improvements only available in Ubuntu 24.04.\n  The new Ubuntu 24.04 option brings access to the latest software ecosystem, an improved security posture, and an extended support lifecycle. This new bundle also provides a migration path for customers running older Amazon Linux 2 WorkSpaces who want to stay current with upstream packages and receive the longest available maintenance window from Canonical.\n  You can get started using the managed Ubuntu 24.04 WorkSpaces bundle by selecting it when creating a new Linux WorkSpace. This new bundle is available in the AWS China (Ningxia) Region. For pricing information, visit the Amazon WorkSpaces pricing page."
     },
     {
       "title": "Amazon RDS for SQL Server increases the maximum size and provisioned performance of General Purpose (gp3) volumes",
@@ -196,20 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-17T15:00:00.000Z",
       "summary": "Amazon Aurora MySQL-Compatible Edition and Amazon Relational Database Service (RDS) for MySQL now offer Amazon RDS Extended Support for MySQL 5.7 through June 30, 2029, from the previous end date of February 28, 2027. This applies to Aurora MySQL version 2 (with MySQL 5.7 compatibility) and RDS for MySQL version 5.7, giving customers additional time to plan and complete their upgrades to a supported major version while continuing to receive critical security patches and bug fixes.\n  RDS Extended Support delivers security patches for critical and high CVEs, bug fixes for critical operational issues, and access to AWS Support within the standard Aurora and RDS SLAs. There is no price increase with this extension, and customers using RDS Extended Support for MySQL 5.7 will continue to pay Year 3 pricing through June 30, 2029. For pricing details, see Aurora pricing and RDS for MySQL pricing.\n  We recommend upgrading to MySQL 8.0 or MySQL 8.4 compatible versions to benefit from the latest database features, performance improvements, and security enhancements. You can upgrade using Amazon RDS Blue/Green Deployments, in-place upgrade, or snapshot restore. To learn more, see the Aurora MySQL and RDS for MySQL user guides. This extension is available in all AWS Regions where Aurora MySQL and RDS for MySQL are available.\n  Amazon Aurora is designed for high performance and availability at global scale with full MySQL and PostgreSQL compatibility. Amazon RDS for MySQL, PostgreSQL, and MariaDB make it simple to set up, operate, and scale open source deployments in the cloud. Visit the getting started pages for Aurora and RDS to begin."
-    },
-    {
-      "title": "Proactively reduce tech debt autonomously with AWS Transform – continuous modernization (preview)",
-      "link": "https://aws.amazon.com/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-06-17T14:58:00.000Z",
-      "summary": "AWS Transform – continuous modernization (preview) automatically scans code repositories to detect, prioritize, and remediate technical debt at scale."
-    },
-    {
-      "title": "AWS DevOps Agent adds release management capabilities to assess code changes before production (preview)",
-      "link": "https://aws.amazon.com/blogs/aws/aws-devops-agent-adds-release-management-capabilities-to-assess-code-changes-before-production-preview/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-06-17T14:57:34.000Z",
-      "summary": "AWS DevOps Agent now offers release management capability in preview, reviewing code changes for release readiness and running autonomous release testing to help you ship code to production safely and with confidence."
     }
   ]
 }
