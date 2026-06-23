@@ -1,6 +1,41 @@
 {
-  "lastUpdated": "2026-06-22T17:56:43.043Z",
+  "lastUpdated": "2026-06-23T11:43:04.347Z",
   "items": [
+    {
+      "title": "Run isolated sandboxes with full lifecycle control: AWS Lambda introduces MicroVMs",
+      "link": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-06-22T22:40:07.000Z",
+      "summary": "AWS launches a new serverless compute primitive, AWS Lambda MicroVMs. VM-level, isolated sandboxes with no shared kernel or resources between sessions. Rapid launch and resume, full lifecycle control, state preservation up to 8 hours, no infrastructure to manage."
+    },
+    {
+      "title": "AWS HealthOmics now supports Nextflow profiles",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-healthomics-nextflow-profiles/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T22:00:00.000Z",
+      "summary": "AWS HealthOmics now supports Nextflow profiles, enabling customers to activate predefined execution settings at run time. Nextflow profiles allow customers to define reusable settings and select them at the point of execution, making it easy to switch between execution settings without modifying workflow source code. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.\n \nWith Nextflow profiles, you can cleanly separate platform-specific settings such as resource limits or execution options from core workflow logic. You can switch between development and production settings without creating separate workflow definitions. This reduces errors from manual edits, accelerates workflow portability, and saves time when scaling from development to production. If you use nf-core workflows, you can now activate the built-in and institutional profiles those pipelines already ship with.\n \nYou can now specify one or more Nextflow profiles in your workflow runs in all AWS HealthOmics Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul). To learn more, visit the Nextflow Profiles section on HealthOmics Nextflow engine settings documentation."
+    },
+    {
+      "title": "AWS introduces Lambda MicroVMs for isolated execution of user and AI-generated code",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-lambda-microvms/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T20:37:00.000Z",
+      "summary": "AWS introduces Lambda MicroVMs, a new serverless compute primitive that provides VM-level isolation, near-instant launch and resume speeds, and state preservation for executing user or AI-generated code. You can now give each user or job their own compute environment to securely run code without managing virtualization infrastructure or choosing between isolation, speed, and state retention.\n \nDevelopers are increasingly building multi-tenant applications that execute code supplied by end users or AI for use cases such as interactive coding environments, data analytics platforms, coding assistants, and vulnerability scanning platforms. For these applications, developers need to allocate a separate, isolated execution environment per user or session to limit the impact of incorrect or malicious code on other concurrently running users or jobs. Previously, developers needed to choose between strong isolation, fast launch times, and state retention when building these applications. Starting today, Lambda MicroVMs provides you these capabilities without any trade-offs. You get VM-level isolation, near-instant launch speeds, and the ability to suspend and resume execution for up to 8 hours. Lambda MicroVMs is built on Firecracker virtualization, the technology powering more than 15 trillion monthly Lambda Function invocations. \n \nTo get started, create a MicroVM image from your Dockerfile, then launch MicroVMs from that image. Give each user or job their own MicroVM with a dedicated HTTPS URL that supports popular connectivity protocols such as HTTP/2, gRPC, and WebSockets. \n \nLambda MicroVMs is available today in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland). To learn more, visit the AWS Lambda MicroVMs developer guide and the launch blog post. Get started with MicroVMs through the AWS Lambda console, AWS CloudFormation, AWS Cloud Development Kit, or use the Agent Toolkit for AWS with your preferred Agentic development tools. You pay for baseline compute resources while your MicroVM is running, and only for the active duration of additional resources consumed when your workload exceeds the baseline. To learn more about pricing, see Lambda MicroVMs pricing."
+    },
+    {
+      "title": "AWS Transform for migrations now supports all AWS commercial regions as migration targets",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-transform-migrations-region-expansion/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T17:30:40.000Z",
+      "summary": "AWS Transform for migrations now supports all AWS commercial regions as migration targets. A migration target region is the AWS region where migrated resources are deployed, including landing zones, network infrastructure, and server rehosting. Customers can now deploy workloads in any commercial region, making it easier to meet data residency requirements.\n  The new migration target regions are: US East (N. California), Africa (Cape Town), Asia Pacific (Bangkok), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Kuala Lumpur), Asia Pacific (Melbourne), Asia Pacific (New Zealand), Asia Pacific (Taipei), Canada (Calgary), Europe (Milan), Europe (Spain), Europe (Zurich), Mexico (Querétaro) and Middle East (Tel Aviv).\n  Target region selection is available in the AWS Transform for migrations workflow. For the most up-to-date availability information, see the supported migration target region list."
+    },
+    {
+      "title": "AWS Network Firewall updates default drop action for improved connection reliability",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-network-firewall-updates-default-drop-action",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T17:00:00.000Z",
+      "summary": "AWS Network Firewall now uses \"Application drop established (server-directed only)\" as the default stateful action for all newly created firewall policies, replacing the previous default of \"Application drop established (bidirectional)\" (formerly named \"Application layer drop established\"). No action is required to benefit from this change when creating new policies.\n  AWS Network Firewall is a managed service that lets you deploy network protections across your Amazon VPCs. Previously, the “Application drop established (bidirectional)” default could silently drop legitimate server-to-client TCP packets, such as window updates, keep-alives, and resets — causing intermittent connection failures that were difficult to diagnose. With the safer default now in place, new policies avoid this issue.\n  If your existing environment requires “Application drop established (bidirectional)” to support post-quantum cryptography (PQC) fragmented TLS handshakes, refer to our documentation for guidance on on switching to \"Application drop established (server-directed only)\" or adding the “to_server” flag to your TCP drop rules so legitimate flow control packets are not blocked.\n  This update is available in all AWS Regions where AWS Network Firewall is offered. To get started, see Managing evaluation order for Suricata compatible rules in the AWS Network Firewall service documentation."
+    },
     {
       "title": "Secure multi-tenant RAG with Amazon Bedrock and Verified Permissions",
       "link": "https://aws.amazon.com/blogs/architecture/secure-multi-tenant-rag-with-amazon-bedrock-and-verified-permissions/",
@@ -23,6 +58,20 @@
       "summary": "In this post, you’ll learn how to architect and implement a five-layer AI-powered resilience framework that automatically discovers dependencies, generates targeted experiments, and integrates with your existing Continuous Integration/Continuous Deployment (CI/CD) pipelines. First, we’ll explore the key challenges in resilience testing. Then, we’ll walk through the five-layer architecture that solves these challenges. Finally, we’ll show you how to implement this, with phased rollout guidance for pilot, expansion, and organization-wide deployment."
     },
     {
+      "title": "AWS Batch now supports customer-ordered instance allocation strategies",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/batch-ordered-allocation-strategies/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T16:30:00.000Z",
+      "summary": "AWS Batch now offers the Best Fit Progressive Ordered (BFPO) and Spot Capacity Optimized Prioritized (SCOP) allocation strategies, giving you more control over instance type prioritization in your compute environments. BFPO and SCOP enable you to manually define instance type ordering based on your workload-specific performance characteristics.\n  To use these features in AWS Batch, specify BEST_FIT_PROGRESSIVE_ORDERED allocation strategy for your on-demand compute environments or SPOT_CAPACITY_OPTIMIZED_PRIORITIZED for your Amazon EC2 Spot compute environments and provide an ordered list of instance types or families. These features are available via the AWS Batch API (CreateComputeEnvironment or UpdateComputeEnvironment) or the AWS Batch Management Console.\n  BFPO and SCOP allocation strategies are supported today in all AWS Regions where AWS Batch is available. For more information, see the AWS Batch User Guide."
+    },
+    {
+      "title": "AWS IAM Identity Center now supports separate quotas for AWS accounts and applications",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-identity-center-separate-quotas/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T16:07:00.000Z",
+      "summary": "AWS IAM Identity Center now supports separate quotas for the number of AWS accounts and applications that can be configured in an IAM Identity Center instance. By default, you can configure up to 7,000 AWS accounts and up to 7,000 applications independently, so that using more of one does not consume capacity from the other. Quotas can be further increased by submitting a quota increase request through AWS Service Quotas console.\n \nCustomers with existing higher limits are automatically granted the same limit for both accounts and applications, with no action required. Organizations managing thousands of AWS accounts can now onboard applications without consuming account quota capacity.\n \nThis update is available in all AWS Regions where IAM Identity Center is available.\n \nTo learn more, see Quotas for IAM Identity Center. Visit the IAM Identity Center product page to get started."
+    },
+    {
       "title": "Prevent data exfiltration: AWS egress controls for cloud workloads",
       "link": "https://aws.amazon.com/blogs/security/prevent-data-exfiltration-aws-egress-controls-for-cloud-workloads/",
       "source": "AWS Security Blog",
@@ -30,11 +79,25 @@
       "summary": "When securing an Amazon Web Services (AWS) environment, teams naturally prioritize inbound controls, firewalls, WAFs, and access policies, because that’s where the most visible threats originate. Outbound traffic, on the other hand, tends to get less attention. It’s often left open by default to avoid breaking application dependencies and because the risk feels less immediate. […]"
     },
     {
+      "title": "Amazon MSK now offers AI Agent Skills to help developers operate MSK efficiently and accelerate migrations to MSK",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-msk-ai-agent-skills",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T15:00:00.000Z",
+      "summary": "Amazon MSK now offers AI Agent Skills that give AI coding assistants expert, up-to-date guidance for operating Amazon MSK. The skills provide expert guidance for common operational tasks such as troubleshooting, sizing, configuring, monitoring, and migration from external Kafka clusters.\n  Teams can leverage these skills to keep their clusters healthy and performant, and to migrate their external Kafka workloads to MSK Express to take advantage of up to 3 times more throughput per broker, scale up to 20 times faster, and reduced recovery time by 90 percent as compared to Standard brokers running Apache Kafka. The skills turn tasks that once required specialized knowledge into a guided experience developers can complete quickly, on their own.\n  You can use the MSK skills with your existing AI coding agent - Kiro, Claude Code, or Cursor. To get started, configure the Agent Toolkit for AWS using the AWS CLI, then ask your coding agent a question, such as \"What broker type and size should I use for my MSK cluster?\" or \"Is my Kafka cluster compatible with MSK Express?\""
+    },
+    {
       "title": "AWS Weekly Roundup: NY Summit recap, Local Zone in Hanoi, Grok 4.3 in Bedrock, price reductions, and more (June 22, 2026)",
       "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-ny-summit-recap-local-zone-in-hanoi-grok-4-3-in-bedrock-price-reductions-and-more-june-22-2026/",
       "source": "AWS News Blog",
       "pubDate": "2026-06-22T14:46:17.000Z",
       "summary": "Last week AWS Summit New York City brought together thousands of customers, partners, and builders for a free, one-day event showcasing the latest in cloud and AI innovation. Dr. Swami Sivasubramanian, VP of Agentic AI at AWS unveiled a stack of AI launches in his keynote, all built around one thesis: agents that compound value […]"
+    },
+    {
+      "title": "Introducing self-service lifecycle management capabilities for AWS Outposts",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-outposts-self-service-lifecycle-management",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-22T10:00:00.000Z",
+      "summary": "AWS Outposts now provides self-service capabilities for configuration, quoting, ordering, subscription management, renewal, and decommissioning directly from the AWS Management Console, CLI, and API. Previously, customers relied on AWS teams for managing their Outposts lifecycle, from evaluation through end of term.\n  A new configuration and quoting tool generates real-time cost estimates across payment options and term lengths, and proactively surfaces account and regional constraints before order submission. Quotes are generated in seconds and can be converted to orders directly in the console, for both new deployments and capacity additions. Subscription details, including term dates and billing, are now available in the console and programmatically, eliminating the need to contact AWS for contract information. When your term approaches its end date, self-service workflows let you renew with a new term and payment option, or decommission your Outpost through a guided workflow that handles resource cleanup.\n  These features are available in all commercial AWS Regions that support AWS Outposts. To learn more, refer to the Launch Blog."
     },
     {
       "title": "Announcing the general availability of a new AWS Local Zone in Hanoi, Vietnam",
@@ -147,69 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-18T17:00:00.000Z",
       "summary": "Today, Amazon Elastic Kubernetes Service (Amazon EKS) introduces customer-routed control plane egress, a capability that lets you route outbound Kubernetes API server traffic through your own Amazon VPC. This includes admission webhook callbacks, OpenID Connect (OIDC) provider lookups, and aggregate API server requests. With customer-routed control plane egress, this traffic flows through your VPC, where you control the routing, security groups, and egress path.\n  Organizations with data perimeter requirements, compliance mandates, or private network infrastructure can use customer-routed control plane egress to reach private OIDC providers and webhook servers that are accessible only within their VPC, and control how that traffic routes through their network. To get started, set controlPlaneEgressMode to CUSTOMER_ROUTED when creating a new cluster or updating an existing cluster. To enforce this configuration organization-wide, use the eks:controlPlaneEgressMode IAM condition key with AWS Organizations Service Control Policies.\n  Customer-routed control plane egress is available at no additional cost in all AWS Regions where Amazon EKS is available. To learn more, see Configure control plane egress routing in the Amazon EKS User Guide."
-    },
-    {
-      "title": "Spring 2026 SOC 1 and 2 reports are now available in OSCAL format",
-      "link": "https://aws.amazon.com/blogs/security/spring-2026-soc-1-and-2-reports-are-now-available-in-oscal-format/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-06-18T16:50:34.000Z",
-      "summary": "Amazon Web Services (AWS) is excited to release the Spring 2026 System and Organization Controls (SOC) 1 and 2 reports in machine-readable OSCAL format alongside the PDF version of the reports. The reports cover 188 services over the 12-month period from April 1, 2025 to March 31, 2026, giving customers a full year of assurance. […]"
-    },
-    {
-      "title": "Amazon SageMaker AI Announces New observability capability For Inference Endpoints",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-sagemaker-ai-inference/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-18T15:13:00.000Z",
-      "summary": "Amazon SageMaker AI's new observability capability allows customers to operate production generative AI inference workloads with confidence by providing comprehensive visibility into token performance, GPU health, inference component placement, and autoscaling behavior. It takes away the manual work of searching CloudWatch for per-endpoint metrics, correlating latency spikes with GPU saturation or KV cache exhaustion and diagnosing why scaling operations are slow. This capability tracks inference performance metrics in real-time, including Time to First Token, inter-token latency, queue depth, and tokens per second, and surfaces them alongside infrastructure health so customers can identify and resolve issues in minutes rather than hours.\n \nSageMaker AI detailed observability transforms how customers monitor and optimize their inference fleet. The new pre-built SageMaker AI Insights dashboard in Amazon CloudWatch gives customers token latency, GPU utilization, inference component copy counts, scaling events, and cold start breakdowns in a single view with OpenTelemetry native metrics published automatically, no instrumentation required. This allows teams to quickly diagnose TTFT degradation, verify availability zone compliance, and tune autoscaling policies. Customers who have standardized on observability tools like Grafana can connect directly using the regional PromQL endpoint and import a pre-configured dashboard template. This capability helps customers self-serve operational issues and maximize the performance of their AI investments.\n \nSageMaker AI Inference observability is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), US West (N. California), Canada (Central), South America (São Paulo), Europe (Ireland), Europe (Frankfurt), Europe (London), Europe (Stockholm), Europe (Zurich), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Seoul), and Asia Pacific (Jakarta). To learn more, visit the Documentation and Amazon SageMaker AI webpage."
-    },
-    {
-      "title": "Amazon SNS now supports sending SMS in the Asia Pacific (Seoul) Region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-sns-supports-sending-sms-seoul-region/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-18T15:00:00.000Z",
-      "summary": "Customers that use Amazon Simple Notification Service (Amazon SNS) in the Asia Pacific (Seoul) Region can now send text messages (SMS) to subscribers in more than 200 countries and territories.\n \nAmazon SNS is a fully managed pub/sub messaging service that enables message delivery to multiple endpoints including AWS Lambda, Amazon SQS, Amazon Data Firehose, mobile devices, and email. With this launch, customers using SNS in the Asia Pacific (Seoul) Region can subscribe phone numbers to SNS topics and broadcast SMS messages via AWS End User Messaging. \n \nTo learn more about sending SMS messages with SNS, visit Mobile text messaging with Amazon SNS. For the list of supported countries and regions, visit Supported countries and regions."
-    },
-    {
-      "title": "Amazon GameLift Servers adds new container fleet improvements",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-gamelift-servers-container-fleet-improvements",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-18T08:00:00.000Z",
-      "summary": "Amazon GameLift Servers now supports two significant container fleet improvements that enhance flexibility and inter-container communication for game server deployments. These new capabilities address common challenges faced by game developers using containerized architectures, providing greater control over container permissions and enabling seamless discovery of co-located containers on the same instance.\n \nYou can now customize Linux capabilities for containers in your container group definitions, giving you finer control beyond Docker's default capability set. This is particularly valuable for game servers requiring specialized capabilities such as NET_RAW for custom networking protocols or SYS_PTRACE for attaching debuggers and profiling tools. Additionally, game servers can now call the new ListContainersNetworkInfo() server SDK action to retrieve comprehensive network information, including container name, ID, local IP address, and container group type for all containers running on the same instance. This enables automatic service discovery and simplified communication between game servers and auxiliary services like metrics collectors, logging agents, or caching systems.\n \nThese improvements are available through the Amazon GameLift Servers console, AWS CLI, AWS SDK, and AWS CloudFormation. The ListContainersNetworkInfo() action is supported in server SDK 5.x for Go, C++, and C#, as well as in plugins for Unreal Engine and Unity. Both features are available in all AWS regions where Amazon GameLift Servers is supported, except China. To learn more, visit the Amazon GameLift Servers documentation."
-    },
-    {
-      "title": "Amazon WorkSpaces Personal Supports Ubuntu 24.04",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/ubuntu-china-zhy/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-18T07:00:00.000Z",
-      "summary": "AWS announces availability of Ubuntu 24.04 LTS bundles for Amazon WorkSpaces Personal in the AWS China (Ningxia) Region, operated by NWCD. With this bundle, customers in China can launch Ubuntu WorkSpaces and take advantage of updated Linux packages, toolchains, and security improvements only available in Ubuntu 24.04.\n  The new Ubuntu 24.04 option brings access to the latest software ecosystem, an improved security posture, and an extended support lifecycle. This new bundle also provides a migration path for customers running older Amazon Linux 2 WorkSpaces who want to stay current with upstream packages and receive the longest available maintenance window from Canonical.\n  You can get started using the managed Ubuntu 24.04 WorkSpaces bundle by selecting it when creating a new Linux WorkSpace. This new bundle is available in the AWS China (Ningxia) Region. For pricing information, visit the Amazon WorkSpaces pricing page."
-    },
-    {
-      "title": "Amazon RDS for SQL Server increases the maximum size and provisioned performance of General Purpose (gp3) volumes",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/rds-sqlserver-increases-gp3-limits/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-18T07:00:00.000Z",
-      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports higher volume-level limits for General Purpose (gp3) storage. With this update, each gp3 volume can scale up to 64 TiB in size (4X the previous 16 TiB limit), up to 80,000 IOPS (5X the previous 16,000 IOPS limit), and up to 2,000 MiB/s throughput (2X the previous 1,000 MiB/s limit).\n  With these improvements, customers can now run larger Microsoft SQL Server databases on Amazon RDS. Workloads with demanding I/O requirements such as high-throughput OLTP systems and large-scale analytical workloads can take advantage of higher IOPS and throughput on a single volume with simplified storage management, and get better performance for mission-critical SQL Server workloads. Additionally, you can configure additional storage volumes to add up to three gp3 or io2 volumes per DB instance, increasing total capacity up to 256 TiB per instance. There is no change to pricing - customers pay for storage and any additional IOPS and throughput they provision beyond the baseline default.\n  For more information, refer to the Amazon RDS for SQL Server User Guide. See Amazon RDS for SQL Server Pricing for pricing details and regional availability."
-    },
-    {
-      "title": "AWS Glue Interactive Sessions now support Spark Connect for interactive workloads",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-glue-interactive-sessions-spark-connect-smus-notebooks",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-17T19:15:00.000Z",
-      "summary": "AWS Glue Interactive Sessions now support Apache Spark Connect, using which you can now develop and run Apache Spark applications from your preferred environment, including managed notebooks in Amazon SageMaker Unified Studio, or your preferred notebook environments and IDEs like Jupyter, Visual Studio Code, while running them on AWS Glue's serverless infrastructure without managing clusters.\n  With Spark Connect, you submit Spark jobs to AWS Glue Interactive Sessions using a thin client architecture that decouples your client application from the Spark execution environment. This unlocks workflows like ad hoc data exploration, iterative step-by-step debugging, and incremental PySpark job development before deploying to production, all from the tools you already use. Spark Connect also simplifies upgrades and improves stability by isolating client dependencies from the server-side Spark runtime. For observability, you get real-time session monitoring via the Spark UI, history tracking through the Spark History Server, and session management using the AWS Glue API, CLI, or SDK.\n  AWS Glue Interactive Sessions with Spark Connect is available in Asia Pacific (Mumbai, Seoul, Singapore, Sydney, Tokyo), Canada (Central), Europe (Frankfurt, Ireland, London, Paris, Stockholm), South America (São Paulo), US East (Ohio, N. Virginia), and US West (Oregon).\n  To get started, connect to Glue Interactive Sessions using Spark Connect from notebooks in Amazon SageMaker Unified Studio, your favorite IDE with a Python interpreter, or the AWS API, SDK, and CLI. To learn more, visit the AWS Glue Interactive Sessions documentation."
-    },
-    {
-      "title": "Top announcements of the AWS Summit in New York, 2026",
-      "link": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-06-17T16:36:08.000Z",
-      "summary": "A recap of the top announcements from AWS's New York Summit 2026"
-    },
-    {
-      "title": "AWS HealthOmics now streams workflow engine logs to Amazon CloudWatch in real time",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-healthomics-real-time-engine-log-streaming/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-17T16:00:00.000Z",
-      "summary": "AWS HealthOmics now streams workflow engine logs to Amazon CloudWatch in real time, enabling customers to monitor workflow execution progress as it happens. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.\n \nReal-time engine log streaming accelerates iterative workflow development and debugging by giving researchers, bioinformaticians, and workflow developers immediate access to execution details during a run. The streamed engine logs provide visibility into workflow orchestration events, task scheduling details, import/export activity, and full stack traces on errors — all routed into the engine log stream in real time. Customers can set up CloudWatch alarms on log patterns to detect anomalies early, build dashboards for ongoing monitoring, and integrate with existing observability tooling.\n \nReal-time engine log streaming is now available for Nextflow, WDL, and CWL workflow runs in all AWS HealthOmics regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul). To learn more, visit the Monitoring HealthOmics with CloudWatch Logs documentation."
     }
   ]
 }
