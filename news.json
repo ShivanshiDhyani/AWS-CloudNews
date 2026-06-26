@@ -1,6 +1,83 @@
 {
-  "lastUpdated": "2026-06-25T10:29:25.812Z",
+  "lastUpdated": "2026-06-26T10:40:07.945Z",
   "items": [
+    {
+      "title": "Amazon EC2 C7a instances are now available in the Asia Pacific (Singapore) Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-c7a-instances-asia-pacific-singapore-region/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T22:24:00.000Z",
+      "summary": "Starting today, the compute optimized Amazon EC2 C7a instances are now available in AWS Asia Pacific (Singapore) Region. C7a instances, powered by 4th Gen AMD EPYC processors (code-named Genoa) with a maximum frequency of 3.7 GHz, deliver up to 50% higher performance compared to C6a instances.\n  C7a instances offer new processor capabilities such as AVX-512, VNNI, and bfloat16. They feature Double Data Rate 5 (DDR5) memory to enable high-speed access to data in memory and 2.25x more memory bandwidth compared to C6a instances, making these instances ideal for even latency sensitive workloads. C7a instances offer 12 sizes from medium to 48xlarge, including a bare-metal size. And with the launch of C7a instances, customers can attach up to 128 EBS volumes to an EC2 instance — by comparison, C6a instances allow up to 28 EBS volume attachments to an EC2 instance. These instances are built on the AWS Nitro System and ideal for high performance, compute-intensive workloads such as batch processing, distributed analytics, high performance computing (HPC), ad serving, highly-scalable multiplayer gaming, and video encoding.\n  C7a instances are available through On-Demand, Spot Instances, and Savings Plans. To get started, visit the AWS Management Console, AWS Command Line Interface (CLI), and AWS SDKs. To learn more, see C7a instances."
+    },
+    {
+      "title": "Amazon EC2 M8a instances now available in the Asia Pacific (Mumbai) region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-m8a-instances-asia-pacific-mumbai-region/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T22:15:00.000Z",
+      "summary": "Starting today, the general-purpose Amazon EC2 M8a instances are available in AWS Asia Pacific (Mumbai) region. M8a instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver up to 30% higher performance, and up to 19% better price-performance compared to M7a instances.\n  M8a instances deliver 45% more memory bandwidth compared to M7a instances, making these instances ideal for even latency sensitive workloads. M8a instances deliver even higher performance gains for specific workloads. M8a instances are up to 60% faster for GroovyJVM benchmark, and up to 39% faster for Cassandra benchmark compared to Amazon EC2 M7a instances. M8a instances are SAP-certified and offer 12 sizes including 2 bare metal sizes. This range of instance sizes allows customers to precisely match their workload requirements.\n  M8a instances are built using the latest sixth generation AWS Nitro Cards and ideal for applications that benefit from high performance and high throughput such as financial applications, gaming, rendering, application servers, simulation modeling, mid-size data stores, application development environments, and caching fleets.\n  To get started, sign in to the AWS Management Console. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information visit the Amazon EC2 M8a instance page."
+    },
+    {
+      "title": "OpenAI GPT, OpenAI GPT OSS, and NVIDIA Nemotron models on Amazon Bedrock receive FedRAMP High and DoD IL-4/5 approval in AWS GovCloud (US)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/addl-bedrock-model-fedramp-il-5-govcloud",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T21:00:00.000Z",
+      "summary": "OpenAI GPT, OpenAI GPT OSS, and NVIDIA Nemotron models are now FedRAMP High and Department of Defense Cloud Computing Security Requirements Guide (DoD CC SRG) Impact Level (IL) 4 and 5 approved within Amazon Bedrock in the AWS GovCloud (US) Regions.\n \nFederal agencies, public sector organizations, and other enterprises with FedRAMP High and DoD CC SRG IL-4/5 compliance requirements can now use these models on Amazon Bedrock to build and scale generative AI applications with confidence that they meet the security and compliance standards required for government workloads. These models are powered by Mantle, a next-generation distributed inference engine on Amazon Bedrock, which provides high-performance serverless inference with zero operator access, automated capacity management, and out-of-the-box compatibility with OpenAI API specifications.\n \nTo learn more, visit the Amazon Bedrock product page, Amazon Bedrock documentation, and the AWS GovCloud (US) compliance page. To get started, visit the Amazon Bedrock console."
+    },
+    {
+      "title": "AWS Network Firewall now supports managed threat intelligence rules from VisionHeight",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/network-firewall-visionheight-managed-rules",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T20:18:00.000Z",
+      "summary": "AWS Network Firewall now supports two new managed rule groups from VisionHeight, available through AWS Marketplace: Zero-Day Threat Protection, and Noisy Scanners and Tor Protection. These rule groups expand the managed rules offerings for AWS Network Firewall, giving customers access to proprietary threat intelligence built on VisionHeight's Pulse telemetry.\n  Zero-Day Threat Protection proactively blocks malicious IP infrastructure before it appears on public blocklists. This rule group helps organizations get ahead of emerging threats by weeks, strengthening defense for workloads facing targeted attacks. Tor Protection reduces firewall log noise by blocking communication with active Tor exit nodes and filtering traffic from known high-volume scanning sources. With daily refresh cycles, this rule group suppresses noise at first packet —before events are generated—lowering SOC alert volume, reducing SIEM ingestion costs, and removing Tor as a path into or out of your environment.\n  Managed rules for AWS Network Firewall are available from AWS Marketplace sellers including Check Point, Fortinet, Infoblox, Lumen, Rapid7, ThreatSTOP, Trend Micro, and VisionHeight. For a full list of supported regions, visit the AWS Regional Services page.\n  To get started, visit the AWS Network Firewall console or browse available managed rules in AWS Marketplace. For more information, see the AWS Network Firewall product page and the service documentation."
+    },
+    {
+      "title": "Kiro achieves FedRAMP High and DoD IL-4/5 authorization in AWS GovCloud (US)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/kiro-fedramp-high-dod-il-4-5-govcloud-us/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T17:00:00.000Z",
+      "summary": "Kiro is now FedRAMP High and Department of Defense Cloud Computing Security Requirements Guide (DoD CC SRG) Impact Level (IL) 4 and 5 authorized in the AWS GovCloud (US) Regions.\n  Federal agencies, public sector organizations, and other enterprises with FedRAMP High and DoD CC SRG IL-4/5 compliance requirements can now use Kiro as their agentic engineering partner with confidence that it meets the security and compliance standards required for sensitive workloads.\n  Kiro is an agentic AI with an integrated development environment (IDE) and command-line interface (CLI) that helps you build applications from prototype to production with spec-driven development. From simple to complex tasks, Kiro works alongside you to turn prompts into detailed specs, then into working code, docs, and tests — so what you build is exactly what you want and ready to share with your team. With native Model Context Protocol (MCP) support, Kiro connects to documentation, databases, APIs, and other enterprise resources, providing capability for mission-critical development workflows.\n  For more details about Kiro in AWS GovCloud (US), visit the GovCloud documentation or contact your AWS account team for more information. To learn more about Kiro, visit the Kiro product page."
+    },
+    {
+      "title": "Amazon Redshift adds Reserved Instance upfront pricing options for RG instances",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-redshift-ri-upfront-pricing-rg-instances",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T16:39:00.000Z",
+      "summary": "Amazon Redshift announces the availability of All Upfront and Partial Upfront payment options for 1-year and 3-year reserved instances for RG instances. Reserved instances allow customers to benefit from significant savings over on-demand rates. The new payment options join the previously available No Upfront option, giving customers greater flexibility to optimize compute costs based on their financial preferences. All Upfront delivers the maximum discount by paying for the full reservation term at the start, while Partial Upfront splits the cost between an initial payment and lower monthly installments.\n \nAmazon Redshift RG reserved instances with All Upfront and Partial Upfront payment options are now available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), US West (N. California), Canada (Central), South America (São Paulo), Europe (Ireland), Europe (Frankfurt), Europe (London), Europe (Paris), Europe (Stockholm), Europe (Milan), Europe (Spain), Africa (Cape Town), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Mumbai), Asia Pacific (Jakarta), Asia Pacific (Hong Kong), Asia Pacific (Osaka), Asia Pacific (Malaysia), Asia Pacific (Hyderabad), Asia Pacific (Taiwan), Asia Pacific (Melbourne), Asia Pacific (Bangkok), and Mexico (Central).\n \nFor pricing details, visit the Amazon Redshift pricing page."
+    },
+    {
+      "title": "AWS GovCloud (US) now offers US-based, US citizen 24/7 technical support for all customers by default",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/default-govcloud-us-based-support/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T12:00:00.000Z",
+      "summary": "AWS GovCloud (US) customers now have their technical support cases routed to US-based, US-citizen cloud support engineers by default with no opt-in or special request required. This enhancement ensures that 24/7 technical support across both AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions is handled exclusively by full-time AWS employees who are US citizens on US soil, trained to maintain ITAR compliance and meet other applicable AWS GovCloud (US) requirements.\n  With this update, AWS GovCloud (US) customers benefit from cloud support engineers with the permissions and tools to work directly within their regulated environments, enabling faster diagnosis and resolution of technical issues. Support is available around the clock through the AWS GovCloud (US) Console, API access for automated workflows, click-to-call for urgent issues, and live chat for quick questions.\n  To learn more about AWS GovCloud (US), visit the product page and user guide; to learn more about the AWS GovCloud (US). For a deeper dive into this launch, read the full blog post."
+    },
+    {
+      "title": "AWS Backup enhances Amazon S3 backup copy performance",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-backup-amazon-s3-copy-enhancement/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T10:00:00.000Z",
+      "summary": "AWS Backup now executes S3 backup copy operations up to 8x faster for buckets with millions of objects and low change rates between backup copies through enhanced change tracking. This improvement reduces the time required to copy S3 backups across accounts and AWS Regions by eliminating the need to scan all objects in the destination account or Region.\n \nWith this improvement, AWS Backup records object events as they occur, resulting in faster copy operations and reduced processing time. The enhancement automatically applies to all new S3 backup cross account and cross-Region copy jobs.\n \nThis improvement is enabled at no additional cost in all AWS Regions where AWS Backup support Amazon S3 backup cross-account and cross-Region copying.\n \nTo learn more about AWS Backup for Amazon S3, visit the product page and technical documentation. To get started, visit the AWS Backup console."
+    },
+    {
+      "title": "Amazon RDS Custom now supports the latest CU and GDR updates for Microsoft SQL Server",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-rds-custom-supports-latest-cu-gdr-updates-microsoft-sql-server",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T07:44:00.000Z",
+      "summary": "Amazon Relational Database Service (Amazon RDS) Custom for SQL Server now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for SQL Server 2019 CU32+GDR KB5090407 (RDS version 15.00.4470.1.v1) and SQL Server 2022 CU25 KB5081477 (RDS version 15.00.4255.1.v1).\n  The GDR updates address vulnerabilities described in CVE-2026-40370. For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5090407, KB5081477. You can upgrade your Amazon RDS Custom for SQL Server instances to apply these recommended updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. To learn more about upgrading your database instances, see Amazon RDS Custom User Guide."
+    },
+    {
+      "title": "Amazon RDS now supports the latest GDR updates for Microsoft SQL Server",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-rds-supports-latest-gdr-updates-microsoft-sql-server",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T07:03:00.000Z",
+      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports the latest General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2016 SP3+GDR KB5084821 (RDS version 13.00.6485.1.v1), SQL Server 2017 CU31+GDR KB5084818 (RDS version 14.00.3525.1.v1), SQL Server 2019 CU32+GDR KB5084816 (RDS version 15.00.4465.1.v1) and SQL Server 2022 CU24+GDR KB5083252 (RDS version 16.00.4250.1.v1).\n  The GDR updates address vulnerabilities described in CVE-2026-32167 and CVE-2026-32176. For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5084821, KB5084818, KB5084816, KB5083252. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine."
+    },
+    {
+      "title": "Amazon OpenSearch Ingestion now available in AWS Europe (Paris) Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/opensearch-ingestion-europe-paris-region-availability",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-25T01:32:00.000Z",
+      "summary": "Starting today, customers can use Amazon OpenSearch Ingestion in the Europe (Paris) Region (eu-west-3) for ingesting data into their Amazon OpenSearch Service managed clusters or serverless collections.\n  Amazon OpenSearch Ingestion is a fully managed data ingestion tier that allows you to ingest and process data before indexing it in Amazon OpenSearch managed clusters or serverless collections. Amazon OpenSearch Ingestion provides a no-code experience to filter, transform, redact, and route data into Amazon OpenSearch Service. Amazon OpenSearch Ingestion automatically provisions and scales the underlying resources to meet the fluctuating demands of your workloads.\n  With this launch, Amazon OpenSearch Ingestion is now generally available in 17 AWS regions: US East (Ohio), US East (N. Virginia), US West (Oregon), US West (N. California), Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Spain), Europe (Paris), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Mumbai), Asia Pacific (Seoul), Canada (Central), South America (Sao Paulo), and Europe (Stockholm).\n  To learn more, see the Amazon OpenSearch Ingestion webpage and the Amazon OpenSearch Ingestion Developer Guide."
+    },
     {
       "title": "Restrict AWS Management Console access to expected networks with sign-in resource-based policies and RCPs",
       "link": "https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/",
@@ -28,6 +105,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-24T18:48:00.000Z",
       "summary": "The AWS IoT Device SDK for Swift is now generally available, enabling Swift developers to build secure, scalable IoT applications natively on Apple platforms including macOS, iOS, and tvOS, as well as Linux. This SDK addresses the previous lack of native Swift support for AWS IoT services, providing stable, production-ready APIs specifically designed for teams managing IoT device fleets and building cross-platform IoT solutions across the Apple ecosystem.\n \nThe SDK delivers comprehensive capabilities for real-time device management and secure communication. With integrated service clients for AWS IoT Device Shadow, Jobs, and Fleet Provisioning, developers can synchronize device states between applications and AWS IoT Core, manage remote operations on connected devices at scale, and automate certificate and policy creation for secure device onboarding. The SDK also provides built-in TLS 1.3 support on Apple iOS and tvOS platforms, ensuring IoT applications use the latest industry-standard security practices for protecting data in transit.\n \nTo learn more, visit the  AWS IoT Device SDK documentation  and explore  code samples on GitHub . Get started by installing the SDK via Swift Package Manager."
+    },
+    {
+      "title": "Amazon Route 53 Global Resolver now supports sharing DNS Views between AWS Accounts",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-route-53-global-resolver/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-24T16:09:00.000Z",
+      "summary": "Amazon Route 53 Global Resolver now enables you to share DNS views with other AWS accounts using AWS Resource Access Manager (AWS RAM). Consumer accounts can associate their own Route 53 private hosted zones with a shared DNS view, making their records resolvable through the owner's global resolver in every AWS Region where it runs—without transferring ownership of the hosted zone or the DNS view.\n  With DNS view sharing, teams can continue to own and manage their private hosted zones while making them resolvable through a centralized global resolver. You can control access using predefined AWS RAM managed permissions — default association-only, lifecycle management, or full access—or create custom permissions to grant specific actions to the consumer. Private hosted zone associations created by the consumer belong to the consumer's account, while remaining visible to and removable by the owner.\n  This capability is available at no additional cost in all AWS Regions where Route 53 Global Resolver is supported. To get started, see the Route 53 Global Resolver documentation. For regional availability, see the Route 53 Global Resolver Region list. For pricing, see Amazon Route 53 pricing."
     },
     {
       "title": "Amazon Neptune now supports AWS CloudFormation for global databases",
@@ -126,90 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-23T01:02:00.000Z",
       "summary": "Amazon G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, with 96 GB of memory per GPU, and 5th Generation Intel Xeon processors. They support up to 192 virtual CPUs (vCPUs) and up to 1600 Gbps of Elastic Fabric Adapter networking bandwidth. G7e instances support NVIDIA GPUDirect Peer to Peer (P2P) that boosts performance for multi-GPU workloads. Multi-GPU G7e instances also support NVIDIA GPUDirect Remote Direct Memory Access (RDMA) with EFAv4 in EC2 UltraClusters, reducing latency for small-scale multi-node workloads. Customers can use G7e instances to deploy large language models (LLMs), agentic AI models, multimodal generative AI models, and physical AI models. G7e instances offer the highest performance for spatial computing workloads as well as workloads that require both graphics and AI processing capabilities.\n \nAmazon EC2 G7e instances are available for SageMaker Studio notebooks in the AWS US East (N. Virginia and Ohio) and US West (Oregon) regions.\n \nVisit developer guides for instructions on setting up and using JupyterLab and CodeEditor applications on SageMaker Studio. For pricing information on these instances, please visit our pricing page."
-    },
-    {
-      "title": "Run isolated sandboxes with full lifecycle control: AWS Lambda introduces MicroVMs",
-      "link": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-06-22T22:40:07.000Z",
-      "summary": "AWS launches a new serverless compute primitive, AWS Lambda MicroVMs. VM-level, isolated sandboxes with no shared kernel or resources between sessions. Rapid launch and resume, full lifecycle control, state preservation up to 8 hours, no infrastructure to manage."
-    },
-    {
-      "title": "AWS HealthOmics now supports Nextflow profiles",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-healthomics-nextflow-profiles/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-22T22:00:00.000Z",
-      "summary": "AWS HealthOmics now supports Nextflow profiles, enabling customers to activate predefined execution settings at run time. Nextflow profiles allow customers to define reusable settings and select them at the point of execution, making it easy to switch between execution settings without modifying workflow source code. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.\n \nWith Nextflow profiles, you can cleanly separate platform-specific settings such as resource limits or execution options from core workflow logic. You can switch between development and production settings without creating separate workflow definitions. This reduces errors from manual edits, accelerates workflow portability, and saves time when scaling from development to production. If you use nf-core workflows, you can now activate the built-in and institutional profiles those pipelines already ship with.\n \nYou can now specify one or more Nextflow profiles in your workflow runs in all AWS HealthOmics Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul). To learn more, visit the Nextflow Profiles section on HealthOmics Nextflow engine settings documentation."
-    },
-    {
-      "title": "AWS introduces Lambda MicroVMs for isolated execution of user and AI-generated code",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-lambda-microvms/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-22T20:37:00.000Z",
-      "summary": "AWS introduces Lambda MicroVMs, a new serverless compute primitive that provides VM-level isolation, near-instant launch and resume speeds, and state preservation for executing user or AI-generated code. You can now give each user or job their own compute environment to securely run code without managing virtualization infrastructure or choosing between isolation, speed, and state retention.\n \nDevelopers are increasingly building multi-tenant applications that execute code supplied by end users or AI for use cases such as interactive coding environments, data analytics platforms, coding assistants, and vulnerability scanning platforms. For these applications, developers need to allocate a separate, isolated execution environment per user or session to limit the impact of incorrect or malicious code on other concurrently running users or jobs. Previously, developers needed to choose between strong isolation, fast launch times, and state retention when building these applications. Starting today, Lambda MicroVMs provides you these capabilities without any trade-offs. You get VM-level isolation, near-instant launch speeds, and the ability to suspend and resume execution for up to 8 hours. Lambda MicroVMs is built on Firecracker virtualization, the technology powering more than 15 trillion monthly Lambda Function invocations. \n \nTo get started, create a MicroVM image from your Dockerfile, then launch MicroVMs from that image. Give each user or job their own MicroVM with a dedicated HTTPS URL that supports popular connectivity protocols such as HTTP/2, gRPC, and WebSockets. \n \nLambda MicroVMs is available today in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland). To learn more, visit the AWS Lambda MicroVMs developer guide and the launch blog post. Get started with MicroVMs through the AWS Lambda console, AWS CloudFormation, AWS Cloud Development Kit, or use the Agent Toolkit for AWS with your preferred Agentic development tools. You pay for baseline compute resources while your MicroVM is running, and only for the active duration of additional resources consumed when your workload exceeds the baseline. To learn more about pricing, see Lambda MicroVMs pricing."
-    },
-    {
-      "title": "AWS Transform for migrations now supports all AWS commercial regions as migration targets",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-transform-migrations-region-expansion/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-22T17:30:40.000Z",
-      "summary": "AWS Transform for migrations now supports all AWS commercial regions as migration targets. A migration target region is the AWS region where migrated resources are deployed, including landing zones, network infrastructure, and server rehosting. Customers can now deploy workloads in any commercial region, making it easier to meet data residency requirements.\n  The new migration target regions are: US East (N. California), Africa (Cape Town), Asia Pacific (Bangkok), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Kuala Lumpur), Asia Pacific (Melbourne), Asia Pacific (New Zealand), Asia Pacific (Taipei), Canada (Calgary), Europe (Milan), Europe (Spain), Europe (Zurich), Mexico (Querétaro) and Middle East (Tel Aviv).\n  Target region selection is available in the AWS Transform for migrations workflow. For the most up-to-date availability information, see the supported migration target region list."
-    },
-    {
-      "title": "AWS Network Firewall updates default drop action for improved connection reliability",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-network-firewall-updates-default-drop-action",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-22T17:00:00.000Z",
-      "summary": "AWS Network Firewall now uses \"Application drop established (server-directed only)\" as the default stateful action for all newly created firewall policies, replacing the previous default of \"Application drop established (bidirectional)\" (formerly named \"Application layer drop established\"). No action is required to benefit from this change when creating new policies.\n  AWS Network Firewall is a managed service that lets you deploy network protections across your Amazon VPCs. Previously, the “Application drop established (bidirectional)” default could silently drop legitimate server-to-client TCP packets, such as window updates, keep-alives, and resets — causing intermittent connection failures that were difficult to diagnose. With the safer default now in place, new policies avoid this issue.\n  If your existing environment requires “Application drop established (bidirectional)” to support post-quantum cryptography (PQC) fragmented TLS handshakes, refer to our documentation for guidance on on switching to \"Application drop established (server-directed only)\" or adding the “to_server” flag to your TCP drop rules so legitimate flow control packets are not blocked.\n  This update is available in all AWS Regions where AWS Network Firewall is offered. To get started, see Managing evaluation order for Suricata compatible rules in the AWS Network Firewall service documentation."
-    },
-    {
-      "title": "Secure multi-tenant RAG with Amazon Bedrock and Verified Permissions",
-      "link": "https://aws.amazon.com/blogs/architecture/secure-multi-tenant-rag-with-amazon-bedrock-and-verified-permissions/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-06-22T16:49:13.000Z",
-      "summary": "This post walks you through a two-layer, defense-in-depth authorization pattern for granular, intra-tenant access control in RAG applications. Defense in depth is a security strategy that uses multiple independent layers of protection. Each layer operates independently. If one layer is misconfigured, the other layer still enforces access control. The pattern runs on Amazon Bedrock, a fully managed service that offers a choice of high-performing foundation models (FMs) from Amazon and AI companies through a single API, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI."
-    },
-    {
-      "title": "Modernizing financial analytics with Amazon SageMaker Unified Studio",
-      "link": "https://aws.amazon.com/blogs/architecture/modernizing-financial-analytics-with-amazon-sagemaker-unified-studio/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-06-22T16:42:55.000Z",
-      "summary": "Avanse Financial Services, India’s leading education loan providers, migrated to a cloud-native lakehouse architecture using Amazon SageMaker Unified Studio, which unified their data engineering, analytics, and artificial intelligence (AI) workflows in a single governed environment on AWS. In this post, we walk through their migration journey so you can adapt their approach to your own environment."
-    },
-    {
-      "title": "Architecting AI-powered resilience framework on AWS",
-      "link": "https://aws.amazon.com/blogs/architecture/architecting-ai-powered-resilience-framework-on-aws/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-06-22T16:35:07.000Z",
-      "summary": "In this post, you’ll learn how to architect and implement a five-layer AI-powered resilience framework that automatically discovers dependencies, generates targeted experiments, and integrates with your existing Continuous Integration/Continuous Deployment (CI/CD) pipelines. First, we’ll explore the key challenges in resilience testing. Then, we’ll walk through the five-layer architecture that solves these challenges. Finally, we’ll show you how to implement this, with phased rollout guidance for pilot, expansion, and organization-wide deployment."
-    },
-    {
-      "title": "AWS Batch now supports customer-ordered instance allocation strategies",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/batch-ordered-allocation-strategies/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-22T16:30:00.000Z",
-      "summary": "AWS Batch now offers the Best Fit Progressive Ordered (BFPO) and Spot Capacity Optimized Prioritized (SCOP) allocation strategies, giving you more control over instance type prioritization in your compute environments. BFPO and SCOP enable you to manually define instance type ordering based on your workload-specific performance characteristics.\n  To use these features in AWS Batch, specify BEST_FIT_PROGRESSIVE_ORDERED allocation strategy for your on-demand compute environments or SPOT_CAPACITY_OPTIMIZED_PRIORITIZED for your Amazon EC2 Spot compute environments and provide an ordered list of instance types or families. These features are available via the AWS Batch API (CreateComputeEnvironment or UpdateComputeEnvironment) or the AWS Batch Management Console.\n  BFPO and SCOP allocation strategies are supported today in all AWS Regions where AWS Batch is available. For more information, see the AWS Batch User Guide."
-    },
-    {
-      "title": "AWS IAM Identity Center now supports separate quotas for AWS accounts and applications",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-identity-center-separate-quotas/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-22T16:07:00.000Z",
-      "summary": "AWS IAM Identity Center now supports separate quotas for the number of AWS accounts and applications that can be configured in an IAM Identity Center instance. By default, you can configure up to 7,000 AWS accounts and up to 7,000 applications independently, so that using more of one does not consume capacity from the other. Quotas can be further increased by submitting a quota increase request through AWS Service Quotas console.\n \nCustomers with existing higher limits are automatically granted the same limit for both accounts and applications, with no action required. Organizations managing thousands of AWS accounts can now onboard applications without consuming account quota capacity.\n \nThis update is available in all AWS Regions where IAM Identity Center is available.\n \nTo learn more, see Quotas for IAM Identity Center. Visit the IAM Identity Center product page to get started."
-    },
-    {
-      "title": "Prevent data exfiltration: AWS egress controls for cloud workloads",
-      "link": "https://aws.amazon.com/blogs/security/prevent-data-exfiltration-aws-egress-controls-for-cloud-workloads/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-06-22T15:53:05.000Z",
-      "summary": "When securing an Amazon Web Services (AWS) environment, teams naturally prioritize inbound controls, firewalls, WAFs, and access policies, because that’s where the most visible threats originate. Outbound traffic, on the other hand, tends to get less attention. It’s often left open by default to avoid breaking application dependencies and because the risk feels less immediate. […]"
-    },
-    {
-      "title": "Amazon MSK now offers AI Agent Skills to help developers operate MSK efficiently and accelerate migrations to MSK",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-msk-ai-agent-skills",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-22T15:00:00.000Z",
-      "summary": "Amazon MSK now offers AI Agent Skills that give AI coding assistants expert, up-to-date guidance for operating Amazon MSK. The skills provide expert guidance for common operational tasks such as troubleshooting, sizing, configuring, monitoring, and migration from external Kafka clusters.\n  Teams can leverage these skills to keep their clusters healthy and performant, and to migrate their external Kafka workloads to MSK Express to take advantage of up to 3 times more throughput per broker, scale up to 20 times faster, and reduced recovery time by 90 percent as compared to Standard brokers running Apache Kafka. The skills turn tasks that once required specialized knowledge into a guided experience developers can complete quickly, on their own.\n  You can use the MSK skills with your existing AI coding agent - Kiro, Claude Code, or Cursor. To get started, configure the Agent Toolkit for AWS using the AWS CLI, then ask your coding agent a question, such as \"What broker type and size should I use for my MSK cluster?\" or \"Is my Kafka cluster compatible with MSK Express?\""
     }
   ]
 }
