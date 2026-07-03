@@ -1,6 +1,41 @@
 {
-  "lastUpdated": "2026-07-02T10:19:05.572Z",
+  "lastUpdated": "2026-07-03T10:14:55.699Z",
   "items": [
+    {
+      "title": "Amazon SageMaker Unified Studio now supports Terraform for provisioning",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-studio-terraform/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-02T21:49:00.000Z",
+      "summary": "Amazon SageMaker Unified Studio now supports Terraform for provisioning. Customers can use the open-source terraform-aws-sagemaker-unified-studio module to deploy a SageMaker Unified Studio domain through version-controlled templates. With this launch, platform teams can bring SageMaker Unified Studio into their existing infrastructure-as-code pipelines, maintaining consistency across development, staging, and production accounts.\n \nAmazon SageMaker Unified Studio is a unified development environment where data teams can build end-to-end data and AI workflows using familiar tools—from data integration and analytics to machine learning and generative AI—all governed by a shared catalog. Administrators provision domains to give their organization a single, managed workspace with built-in access control, data governance, and cross-service connectivity. With this launch, the Terraform module handles the infrastructure of SageMaker Unified Studio domain with provisioned IAM roles. Sub-modules let teams enable blueprints, compose blueprints into project profiles, and create projects independently. Customers can also create projects with existing IAM roles. This integration is enabled through the Terraform AWS Cloud Control Provider.\n \nThis feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. To get started, see examples provided in terraform-aws-sagemaker-unified-studio module on GitHub and the Amazon SageMaker Unified Studio documentation."
+    },
+    {
+      "title": "Amazon EC2 X8i instances are now available in additional regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-x8i-instances-ICN-KUL-NRT-region/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-02T20:48:00.000Z",
+      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (Seoul), Asia Pacific (Malaysia) and Asia Pacific (Tokyo) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances.\n  X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options.\n  To get started, visit the AWS Management Console. X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit X8i instances page."
+    },
+    {
+      "title": "Amazon EC2 Dedicated Hosts now support AMD SEV-SNP",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/ec2-amd-sev-snp-dedicated-hosts",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-02T17:00:00.000Z",
+      "summary": "Amazon EC2 is announcing support for AMD Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) on Dedicated Hosts, enabling customers to run their confidential computing workloads on physical servers fully dedicated to their use.\n  Customers can allocate a Dedicated Host with SEV-SNP enabled and launch SEV-SNP instances on it. This gives customers the benefits of Dedicated Hosts for confidential computing workloads, including control over instance placement, and host affinity that allows customers to deploy instances to the same physical server over time. The physical host is provisioned with AMD security firmware during allocation, ensuring a customer’s confidential computing environment is up to date.\n  Dedicated Host SEV-SNP is available in all AWS commercial Regions with AMD instances. To learn more, visit our documentation."
+    },
+    {
+      "title": "Amazon SageMaker HyperPod now supports AMI versioning and auto-patching",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-hyperpod-ami-version-auto-patch",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-02T16:00:00.000Z",
+      "summary": "Amazon SageMaker HyperPod now gives you visibility into the Amazon Machine Image (AMI) versions running across your clusters and automatically applies security patches without disrupting your workloads. SageMaker HyperPod is purpose-built infrastructure for training and deploying foundation models at scale. Cluster administrators previously had limited insight into which AMI versions were running, making drift hard to detect and security patching a manual, reactive process that was difficult to run on long multi-day training jobs and that risked changing bundled software in the AMI such as NVIDIA drivers or CUDA. These new capabilities on HyperPod help you keep clusters secure and consistent while removing the operational burden of manual patching.\n \nWith AMI versioning, you can see the exact AMI version on every instance group and node in the semantic versioning (major.minor.patch) format, quickly detect version drift, and roll back to a previous version—including the prior NVIDIA driver, CUDA, and other software stack—using the UpdateClusterSoftware API. Auto-patching is an opt-in, per-instance-group capability that applies only backward-compatible security patches as nodes become idle, so your running workloads stay undisrupted and critical AI/ML packages such as NVIDIA driver, CUDA version, and operating system kernels are never upgraded to a different major or minor version; you can enable it through the CreateCluster or UpdateCluster API. A new AMI support policy also publishes support timelines for different AMI versions after which HyperPod stops publishing security patches.\n \nBoth AMI versioning and auto-patching are available for HyperPod clusters orchestrated by Amazon EKS, in all AWS Regions where SageMaker HyperPod is supported. To learn more, see the HyperPod AMI management documentation and the new HyperPod AMI support policy."
+    },
+    {
+      "title": "AWS Config now supports 8 new resource types",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-config-new-resource-types",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-02T15:00:00.000Z",
+      "summary": "AWS Config now supports 8 additional AWS resource types across key services including Amazon API Gateway, Amazon EC2, and Amazon S3 Vectors. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources.\n \nWith this launch, if you have enabled recording for all resource types, then AWS Config will automatically track these new additions. The newly supported resource types are also available in Config rules and Config aggregators.\n \nYou can now use AWS Config to monitor the following newly supported resource types in all AWS Regions where the resources are available:\n \nResource Types:\n \n \n \nAWS::ApiGateway::DomainNameV2\n \n \nAWS::ApiGatewayV2::VpcLink\n \n \nAWS::EC2::VPCEncryptionControl\n \n \nAWS::NetworkFirewall::ContainerAssociation\n \n \nAWS::OpenSearchServerless::SecurityPolicy\n \n \nAWS::OSIS::Pipeline\n \n \nAWS::S3Vectors::VectorBucket\n \n \nAWS::S3Vectors::VectorBucketPolicy"
+    },
     {
       "title": "Amazon Bedrock AgentCore increases default runtime quota limits",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-bedrock-agentcore-increases-default-runtime-quota-limits/",
@@ -14,13 +49,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-07-01T21:30:00.000Z",
       "summary": "Amazon CloudWatch allows you to create alarms on log data using log queries, and get alerted on anomalies without leaving your log analysis workflow.\n \nWith today's launch, you can configure an alarm on log query and specify the alarm threshold directly, thereby eliminating the need to first create metric filters or custom metrics as intermediate steps. This streamlines the path to actively monitoring the data in your logs, and monitoring and alerting on it. For example, you can write a query to count error rates by service, set a threshold, and receive an alarm notification with log context when errors spike - all in a single workflow. Alarms created from log queries support all standard CloudWatch Alarm actions, including Amazon SNS notifications, and Amazon EventBridge integrations.\n \nThis feature is available in all commercial AWS Regions except Middle East (UAE), and Middle East (Bahrain). You can create log query-based alarms using the Amazon CloudWatch console, AWS Command Line Interface (AWS CLI), AWS CloudFormation, and AWS SDKs. For pricing details and documentation, see the Amazon CloudWatch pricing and visit the Amazon CloudWatch documentation."
-    },
-    {
-      "title": "ECS Service Connect now supports Zone-Aware routing",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/ecs-service-connect-zone-aware/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-01T21:28:00.000Z",
-      "summary": "Amazon Elastic Container Service (Amazon ECS) introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ.\n  With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-service traffic led to significant cross-zone data transfer, requiring trade-offs between cost and resilience. Zone-aware routing eliminates this trade-off, and when local endpoints become unhealthy or fall below capacity thresholds, traffic automatically redistributes across healthy AZs to maintain availability without overloading any single zones.\n  Zone-aware routing is enabled by default for all new and existing services and requires no additional infrastructure or application code changes. Existing services require a one-time redeployment to enable the new routing behavior. You can use Amazon VPC Flow Logs with AZ metadata to monitor cross-AZ traffic patterns and validate routing effectiveness. This feature is available in all AWS commercial and AWS GovCloud (US) Regions, where ECS Service Connect is supported at no additional cost. For more details, refer to our documentation and launch blog post."
     },
     {
       "title": "Amazon ECS now provides real-time deployment observability in the AWS Management Console",
@@ -58,6 +86,13 @@
       "summary": "Learn how Kubernetes version rollbacks for Amazon EKS let you reverse cluster upgrades within seven days. This new feature provides a safety net for upgrade failures—no cluster rebuilds required—turning Kubernetes version upgrades into a reversible, low-risk operation."
     },
     {
+      "title": "Amazon ECS now supports configurable deployment circuit breaker settings",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-circuit-breaker-settings/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-01T17:00:00.000Z",
+      "summary": "Amazon Elastic Container Service (Amazon ECS) now gives you more control over when a service deployment is considered failed and automatically rolled back. You can now customize deployment circuit breaker settings to match your application's startup behavior, deployment needs, and tolerance for task failures, so rollback works the way you need across different applications and environments.\n  The ECS deployment circuit breaker automatically detects failed deployments and rolls them back to the last successful deployment once a failure threshold is reached. With this launch, you can set the deployment circuit breaker threshold using either a fixed task failure count or a percentage of your service's desired task count, and choose how failures are counted using either a consecutive model, where the counter resets when a healthy task starts, or a cumulative model, where failures keep adding up throughout the deployment. For example, you can set lower thresholds for faster rollbacks in development and test environments, or allow more tolerance for applications that experience expected startup failures before stabilizing.\n  This feature is available in all AWS Regions where Amazon ECS is available. You can configure deployment circuit breaker settings for new and existing ECS services using the AWS Management Console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, and Terraform. To learn more, see the ECS deployment circuit breaker documentation."
+    },
+    {
       "title": "Amazon RDS announces Cross-Region Automated Backups in four additional AWS Regions",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-cross-region-automated-backups-additional-aws-regions/",
       "source": "AWS What's New",
@@ -70,13 +105,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-07-01T17:00:00.000Z",
       "summary": "Amazon Bedrock AgentCore is now available in four additional AWS Regions: Asia Pacific (Bangkok), Asia Pacific (Malaysia), Europe (Milan), and Europe (Spain). Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents. It helps engineers ship agents fast with any framework and any model, connect them to enterprise systems and tools, and optimize them continuously, with security enforced at the infrastructure layer that agents can't bypass.\n \nWith this expansion, customers in these regions can build and run agents closer to their end users with lower latency. AgentCore capabilities including agent runtime, identity and access control, policy management, session persistence, tool connectivity, and observability are available in these regions at launch.\n \nFor more information on AgentCore, visit the AgentCore product page or the AgentCore Developer Guide. To learn about pricing, visit AgentCore pricing. For region availability, visit Supported AWS Regions."
-    },
-    {
-      "title": "Amazon ECS now supports configurable deployment circuit breaker settings",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-circuit-breaker-settings/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-01T17:00:00.000Z",
-      "summary": "Amazon Elastic Container Service (Amazon ECS) now gives you more control over when a service deployment is considered failed and automatically rolled back. You can now customize deployment circuit breaker settings to match your application's startup behavior, deployment needs, and tolerance for task failures, so rollback works the way you need across different applications and environments.\n  The ECS deployment circuit breaker automatically detects failed deployments and rolls them back to the last successful deployment once a failure threshold is reached. With this launch, you can set the deployment circuit breaker threshold using either a fixed task failure count or a percentage of your service's desired task count, and choose how failures are counted using either a consecutive model, where the counter resets when a healthy task starts, or a cumulative model, where failures keep adding up throughout the deployment. For example, you can set lower thresholds for faster rollbacks in development and test environments, or allow more tolerance for applications that experience expected startup failures before stabilizing.\n  This feature is available in all AWS Regions where Amazon ECS is available. You can configure deployment circuit breaker settings for new and existing ECS services using the AWS Management Console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, and Terraform. To learn more, see the ECS deployment circuit breaker documentation."
     },
     {
       "title": "Amazon GuardDuty adds sensitive file modification threat detections",
@@ -142,6 +170,13 @@
       "summary": "Today, Amazon OpenSearch Service introduces a new engine purpose-built for log analytics workloads, delivering up to 4x better price-performance on internal benchmarks. It combines this efficiency with the full-text search capabilities that OpenSearch is known for, so users can still run the ad hoc queries that incident investigation depends on.\n \nAs log volumes grow with cloud-native architectures, AI workloads, and expanding compliance needs, teams spend more of their time on aggregations and trend analysis to uncover broader patterns — while incident investigations still call for precise text search. Amazon OpenSearch Service, with new optimized capability for log analytics, delivers both fast analytical queries and full-text search in one seamless service. Amazon OpenSearch Service’s new engine optimized for log analytics delivers up to 70% lower storage with a new columnar storage for aggregation workloads. Retain up to 3x more data at the same cost. The new engine also delivers up to 2x higher ingestion throughput on the same hardware and 2x faster analytical queries.\n \nTo get started, create a new domain on OpenSearch 3.5 or above using AWS console,  select the observability use case, and set the engine mode to optimized. You can build visualizations and explore data through PPL in OpenSearch UI, or query via SQL using the API, JDBC/ODBC drivers, and Query Workbench. The engine also supports combining full-text search predicates with analytical SQL in the same query. For more information, refer to the documentation.\n \nAmazon OpenSearch Service optimized for log analytics is available across 12 regions globally: US East (N. Virginia, Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai, Singapore, Sydney, Tokyo), and Europe (Frankfurt, Ireland, London, Spain). There are no additional charges for the new engine."
     },
     {
+      "title": "Amazon Connect Customer now supports rule based redaction for agent screen recording",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/screen-recording-rule-based/",
+      "source": "AWS What's New",
+      "pubDate": "2026-06-30T22:53:00.000Z",
+      "summary": "Amazon Connect Customer now lets you protect sensitive information in agent screen recordings by defining rules to redact specific applications or URLs. Agent screen recording helps supervisors identify coaching opportunities, such as non-compliance with business processes by allowing them to record agents' on-screen actions during voice calls, chats, and tasks.\n  With this feature, you can create rules specifying which URLs or applications should be redacted from recorded content. When any rule condition is met, the system automatically redacts the matching content in the post-contact screen recording.\n  Rule-based redaction is available in all AWS Regions where Amazon Connect is currently offered and is supported on Windows operating systems. To learn more about, please visit the documentation and webpage. For information about pricing, visit the Amazon Connect pricing page."
+    },
+    {
       "title": "Accelerate your infrastructure deployments by up to 4x with AWS CloudFormation Express mode",
       "link": "https://aws.amazon.com/blogs/aws/accelerate-your-infrastructure-deployments-by-up-to-4x-with-aws-cloudformation-express-mode/",
       "source": "AWS News Blog",
@@ -175,41 +210,6 @@
       "source": "AWS News Blog",
       "pubDate": "2026-06-30T20:56:44.000Z",
       "summary": "Amazon EC2 C9g and C9gd instances, powered by AWS Graviton5, are now generally available. They deliver up to 25% better compute performance than Graviton4-based instances, 5x larger cache, fastest memory of any processor instances in the cloud, and local NVMe storage options (C9gd)."
-    },
-    {
-      "title": "Automate public TLS certificate issuance with ACME support in AWS Certificate Manager",
-      "link": "https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-06-30T20:15:11.000Z",
-      "summary": "AWS Certificate Manager now supports the ACME protocol for public TLS certificates, enabling automated issuance and renewal through any ACMEv2-compatible client on any workload. Administrators get centralized governance, IAM-based access controls, and domain scoping, reducing operational risk as certificate lifetimes continue to reduce."
-    },
-    {
-      "title": "Amazon RDS Enhances IAM Database Authentication with Connection Rate Scaling",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-rds-iam/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-30T20:00:00.000Z",
-      "summary": "Amazon Relational Database Service (Amazon RDS) now offers dynamic connection scaling for IAM database authentication, allowing connection rates to scale with instance resources.\n  IAM database authentication performance now scales with available instance resources, enabling enterprise workloads to leverage IAM authentication for high-volume connection patterns. The number of new IAM authentication requests your instance can handle depends on available resources and workload characteristics. For optimal performance, we recommend reusing IAM user or IAM assumed role principals to generate authentication tokens, or reusing the authentication tokens themselves, when possible.\n  This update is available in all AWS Regions, including the AWS GovCloud (US) Regions, where IAM database authentication is supported for Amazon Aurora and Amazon RDS database engines including PostgreSQL, MySQL, and MariaDB. To learn more, visit the IAM database authentication documentation."
-    },
-    {
-      "title": "AWS Parallel Computing Service supports in-place Slurm major version upgrades",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-parallel-computing-service-upgrade/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-30T19:12:00.000Z",
-      "summary": "AWS Parallel Computing Service (PCS) now supports managed in-place Slurm version upgrades for existing clusters. You can move your clusters up to three Slurm major versions ahead with no disruption to running jobs.\n  To upgrade, update your Cluster configuration with your target Slurm version using the AWS Management Console, AWS CLI, or UpdateCluster API. PCS handles the upgrade of all managed Slurm components — the controller, accounting database, and REST API. Running jobs continue uninterrupted during the upgrade, queued jobs resume once the operation completes, and any accounting data is preserved in the database. You can then update your compute nodes to the new Slurm version at your convenience. Refer to the PCS User Guide for more information on the steps to follow and considerations to review based on your cluster configuration.\n  AWS PCS is a managed service that simplifies running and scaling HPC workloads on AWS using Slurm. You can build complete, elastic environments that integrate compute, storage, networking, and visualization tools, while the service handles cluster operations with managed updates and built-in observability features.\n  This feature is available in all AWS Regions where PCS is available. To get started, see the PCS User Guide."
-    },
-    {
-      "title": "Amazon ElastiCache T4g nodes now available in additional AWS Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-elasticache-t4g-additional-aws-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-30T19:00:00.000Z",
-      "summary": "Amazon ElastiCache now supports T4g node types in the following AWS Regions: Africa (Cape Town), Asia Pacific (Jakarta), Asia Pacific (Osaka), AWS GovCloud (US-East), and AWS GovCloud (US-West). T4g nodes are powered by AWS Graviton2 processors and provide a baseline level of CPU performance with the ability to burst CPU usage at any time, making them ideal for applications that experience temporary spikes in usage.\n \nFor complete information on pricing and regional availability, please refer to the Amazon ElastiCache pricing page. To get started, create a new cluster or modify an existing cluster using the AWS Management Console, AWS CLI, or API. To learn more, see Supported node types in the Amazon ElastiCache User Guide."
-    },
-    {
-      "title": "Amazon Neptune announces dual stack support with IPv6",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-neptune-ipv6/",
-      "source": "AWS What's New",
-      "pubDate": "2026-06-30T19:00:00.000Z",
-      "summary": "Amazon Neptune now supports dual-stack mode, enabling database clusters to accept connections over IPv4, IPv6, or both protocols simultaneously. This allows organizations to adopt IPv6 while maintaining backward compatibility with existing IPv4 deployments.\n  Neptune dual-stack mode supports two configurations. Private dual-stack mode provides IPv6 endpoints that remain isolated from the internet, suitable for internal applications and private graph databases. Public dual-stack mode enables IPv6 endpoints accessible from the internet, supporting internet-facing applications and hybrid network environments. Clients connect seamlessly using their preferred protocol with no application changes required.\n  Dual-stack mode is available in all AWS Regions where Amazon Neptune is supported. To get started, see the Neptune setup documentation."
     }
   ]
 }
