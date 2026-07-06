@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-07-05T09:46:19.934Z",
+  "lastUpdated": "2026-07-06T14:04:40.654Z",
   "items": [
+    {
+      "title": "AWS CodePipeline now available in Asia Pacific (New Zealand) region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-codepipeline-new-zealand/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-06T09:00:00.000Z",
+      "summary": "Starting today, AWS CodePipeline is now available in Asia Pacific (New Zealand) Region (ap-southeast-6). AWS CodePipeline is a continuous delivery service that enables you to model, visualize, and automate the steps required to release your software. With CodePipeline, you model the full release process for building your code, deploying to pre-production environments, testing your application and releasing it to production. CodePipeline then builds, tests, and deploys your application according to the defined workflow every time there is a code change. You can integrate partner tools and your own custom tools into any stage of the release process to form an end-to-end continuous delivery solution.\n \nCodePipeline integrates natively with other AWS services (such as CodeBuild, CodeDeploy, and CloudFormation) and supports third-party integrations, such as GitHub or with your own custom plugin, offering a comprehensive solution for orchestrating end-to-end CI/CD pipelines. By integrating manual approval gates, IAM-based access controls, and encryption of artifacts at rest and in transit, CodePipeline helps teams enforce governance policies and maintain a robust security posture throughout the software delivery lifecycle. CodePipeline enables organizations to automate security scans and compliance checks directly within their CI/CD workflows, ensuring consistent and reliable validation against industry frameworks.\n \nTo get started, you can sign in to the AWS Management Console and create a pipeline to start using the service. If you want an introduction to CodePipeline, see Getting Started, which includes step-by-step tutorials.  With CodePipeline, you only pay for what you use. There are no upfront fees or long-term commitments. See the pricing page for additional details on CodePipeline."
+    },
     {
       "title": "Amazon SageMaker Unified Studio now supports Terraform for provisioning",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-studio-terraform/",
@@ -86,13 +93,6 @@
       "summary": "Learn how Kubernetes version rollbacks for Amazon EKS let you reverse cluster upgrades within seven days. This new feature provides a safety net for upgrade failures—no cluster rebuilds required—turning Kubernetes version upgrades into a reversible, low-risk operation."
     },
     {
-      "title": "Amazon ECS now supports configurable deployment circuit breaker settings",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-circuit-breaker-settings/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-01T17:00:00.000Z",
-      "summary": "Amazon Elastic Container Service (Amazon ECS) now gives you more control over when a service deployment is considered failed and automatically rolled back. You can now customize deployment circuit breaker settings to match your application's startup behavior, deployment needs, and tolerance for task failures, so rollback works the way you need across different applications and environments.\n  The ECS deployment circuit breaker automatically detects failed deployments and rolls them back to the last successful deployment once a failure threshold is reached. With this launch, you can set the deployment circuit breaker threshold using either a fixed task failure count or a percentage of your service's desired task count, and choose how failures are counted using either a consecutive model, where the counter resets when a healthy task starts, or a cumulative model, where failures keep adding up throughout the deployment. For example, you can set lower thresholds for faster rollbacks in development and test environments, or allow more tolerance for applications that experience expected startup failures before stabilizing.\n  This feature is available in all AWS Regions where Amazon ECS is available. You can configure deployment circuit breaker settings for new and existing ECS services using the AWS Management Console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, and Terraform. To learn more, see the ECS deployment circuit breaker documentation."
-    },
-    {
       "title": "Amazon RDS announces Cross-Region Automated Backups in four additional AWS Regions",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-cross-region-automated-backups-additional-aws-regions/",
       "source": "AWS What's New",
@@ -105,6 +105,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-07-01T17:00:00.000Z",
       "summary": "Amazon Bedrock AgentCore is now available in four additional AWS Regions: Asia Pacific (Bangkok), Asia Pacific (Malaysia), Europe (Milan), and Europe (Spain). Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents. It helps engineers ship agents fast with any framework and any model, connect them to enterprise systems and tools, and optimize them continuously, with security enforced at the infrastructure layer that agents can't bypass.\n \nWith this expansion, customers in these regions can build and run agents closer to their end users with lower latency. AgentCore capabilities including agent runtime, identity and access control, policy management, session persistence, tool connectivity, and observability are available in these regions at launch.\n \nFor more information on AgentCore, visit the AgentCore product page or the AgentCore Developer Guide. To learn about pricing, visit AgentCore pricing. For region availability, visit Supported AWS Regions."
+    },
+    {
+      "title": "Amazon ECS now supports configurable deployment circuit breaker settings",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-circuit-breaker-settings/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-01T17:00:00.000Z",
+      "summary": "Amazon Elastic Container Service (Amazon ECS) now gives you more control over when a service deployment is considered failed and automatically rolled back. You can now customize deployment circuit breaker settings to match your application's startup behavior, deployment needs, and tolerance for task failures, so rollback works the way you need across different applications and environments.\n  The ECS deployment circuit breaker automatically detects failed deployments and rolls them back to the last successful deployment once a failure threshold is reached. With this launch, you can set the deployment circuit breaker threshold using either a fixed task failure count or a percentage of your service's desired task count, and choose how failures are counted using either a consecutive model, where the counter resets when a healthy task starts, or a cumulative model, where failures keep adding up throughout the deployment. For example, you can set lower thresholds for faster rollbacks in development and test environments, or allow more tolerance for applications that experience expected startup failures before stabilizing.\n  This feature is available in all AWS Regions where Amazon ECS is available. You can configure deployment circuit breaker settings for new and existing ECS services using the AWS Management Console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, and Terraform. To learn more, see the ECS deployment circuit breaker documentation."
     },
     {
       "title": "Amazon GuardDuty adds sensitive file modification threat detections",
@@ -203,13 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-06-30T21:00:00.000Z",
       "summary": "AWS CloudFormation and CDK express mode reduces deployment time by up to 4x for developers and AI agents building infrastructure, based on internal benchmarks. Express mode completes stack operations when CloudFormation confirms resource configuration is applied, rather than waiting for extended stabilization checks such as traffic readiness, region propagation, and resource cleanup. This enables faster iteration cycles for developers and AI agents building infrastructure.\n  When iterating on infrastructure in development environments, developers and AI agents need faster iteration cycles to build infrastructure incrementally. Previously, every deployment waited for full resource stabilization regardless of whether the workflow required it. For example, creating a CloudFront distribution required waiting 5-10 minutes for propagation to all edge locations before the deployment completed, even when the developer only needed the distribution domain name to continue. With express mode, deployments complete in seconds once configuration is applied, and propagation continues in the background. CloudFormation still processes resources in dependency order and handles dependent resource failures within the same stack. Express mode disables rollback by default, enabling immediate fix-and-retry without waiting for rollback operations.\n  To get started, set --deployment-config '{\"mode\": \"EXPRESS\"}' when creating, updating, and deleting stacks or creating a change set through the AWS CLI, AWS SDKs, or the AWS Management Console. For AWS CDK users, activate express mode with cdk deploy --express. No template changes are required. Express mode works with all existing CloudFormation templates, and nested stacks. Visit the CloudFormation Express mode documentation to learn more.\n  This feature is available in all AWS Regions where CloudFormation is supported. Refer to the AWS Region table for service availability details."
-    },
-    {
-      "title": "Amazon EC2 C9g and C9gd instances powered by AWS Graviton5 processors are now available",
-      "link": "https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-06-30T20:56:44.000Z",
-      "summary": "Amazon EC2 C9g and C9gd instances, powered by AWS Graviton5, are now generally available. They deliver up to 25% better compute performance than Graviton4-based instances, 5x larger cache, fastest memory of any processor instances in the cloud, and local NVMe storage options (C9gd)."
     }
   ]
 }
