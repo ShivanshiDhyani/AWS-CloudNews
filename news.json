@@ -1,6 +1,62 @@
 {
-  "lastUpdated": "2026-07-08T09:15:16.572Z",
+  "lastUpdated": "2026-07-09T02:07:27.641Z",
   "items": [
+    {
+      "title": "AWS Builder Center Now Offers Free Sandbox Environments",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-builder-center-sandbox/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-08T22:45:00.000Z",
+      "summary": "AWS Builder Center now lets builders request free, time-limited sandbox environments directly from eligible workshops, eliminating the need for a personal AWS account, credit card, or concerns about unexpected charges. Previously, workshops could only be completed using a builder's own AWS account. With sandbox environments, builders of all skill levels can safely deploy resources, write code, and experiment in a pre-provisioned AWS account.\n \nFree sandbox environments are ideal for builders who want to gain practical AWS experience without setting up an account. Each sandbox provides 8 hours of access from activation, with automatic cleanup afterward. Builders can request one sandbox per week (resetting every Sunday), and most environments are ready within 15 minutes. Sandboxes are available for select workshops at launch, with more being enabled over time.\n \nTo get started, visit Workshops on AWS Builder Center."
+    },
+    {
+      "title": "AWS Security Hub now offers Network Scanning to identify publicly reachable resources",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-security-hub-network-scanning/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-08T21:00:00.000Z",
+      "summary": "Today, AWS Security Hub introduces Network Scanning, a capability that identifies resources in your environment that are reachable from the public internet.  Network Scanning probes your resources from the internet to detect actual reachability, not just what could be reachable based on security group rules and route tables. It discovers public IP addresses, virtual machines, and load balancers across your AWS and Azure environments, identifies reachable ports, and determines what services are running behind them. This complements Security Hub’s existing network reachability findings, which identify configurations that could make a resource reachable from the internet.  Network Scanning confirms actual reachability from the internet. Each reachable port generates a Security Hub finding with evidence of the port and service discovered. Security Hub Exposures then automatically correlates these findings with other findings and resource configurations to determine broader risk."
+    },
+    {
+      "title": "Designing for the inevitable: System prompt leakage and mitigations in generative AI applications",
+      "link": "https://aws.amazon.com/blogs/security/designing-for-the-inevitable-system-prompt-leakage-and-mitigations-in-generative-ai-applications/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-07-08T18:58:42.000Z",
+      "summary": "System prompts form the foundation of generative AI applications. A system prompt is a collection of instructions and operational context provided to a large language model (LLM) that shapes how the model behaves and interacts with users and tools. System prompts often contain proprietary information, including role definitions, behavioral guidelines, tool descriptions and usage instructions, […]"
+    },
+    {
+      "title": "Amazon Redshift RG instances now available on the trailing track",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-redshift-graviton-rg-instances-trailing-track",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-08T18:12:00.000Z",
+      "summary": "Amazon Redshift now supports Graviton-based RG instances on the trailing track. Starting July 7, 2026, rg.4xlarge and rg.xlarge instance types are available for customers running workloads on the trailing track (P201).\n \nThe trailing track is designed for customers who prioritize stability for production workloads, running on a version already validated through the leading track. With RG instances now available on both tracks, customers can take advantage of AWS Graviton-powered performance - delivering up to 2.4x faster query performance than RA3 instances at 30% lower price per vCPU.\n  To get started, customers can provision a new cluster or resize an existing cluster to an rg.4xlarge or rg.xlarge instance type on the trailing track (P201) in the AWS Management Console, AWS CLI, or AWS SDKs.\n  For more information, see Amazon Redshift cluster versions."
+    },
+    {
+      "title": "Amazon Aurora DSQL change data capture (CDC) Is now generally available",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-aurora-dsql-cdc-ga/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-08T18:00:00.000Z",
+      "summary": "Amazon Aurora DSQL change data capture (CDC) is now generally available, enabling you to stream real-time database changes to Amazon Kinesis Data Streams for event-driven architectures and data integration workflows.\n  Aurora DSQL CDC automatically captures the results of insert, update, and delete operations as change events and delivers them to Kinesis Data Streams with no infrastructure to manage. You can use CDC to synchronize data across microservices, trigger AWS Lambda functions, or deliver changes to Amazon S3, Amazon Redshift, and Amazon OpenSearch Service via Amazon Data Firehose. CDC streaming is designed to have zero impact on your database workload performance.\n  CDC streaming is available in all AWS Regions where Aurora DSQL is available. Get started with Aurora DSQL for free with the AWS Free Tier. To learn more about CDC in Aurora DSQL, visit the documentation page."
+    },
+    {
+      "title": "Amazon Connect Customer now supports forecasting, planning, and scheduling for Tasks and Emails",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect-customer-agent-scheduling-tasks/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-08T17:00:00.000Z",
+      "summary": "Amazon Connect Customer now supports forecasting, capacity planning, and scheduling for Tasks and Emails, enabling you to plan and optimize your workforce across all workloads (Voice, Chat, Tasks, Emails). Connect Customer accounts for the unique characteristics of each channel, including concurrent work handling, duration of work from minutes to months, and distinct service level requirements, so your forecasts and schedules reflect how your operation actually runs. For example, if your agents handle email inquiries or tasks such as case processing alongside voice calls, you can now generate a unified forecast that accounts for all of these workloads and create schedules that efficiently allocate agents across channels. Thus enabling end-to-end workforce optimization within a single solution and ensuring consistent service levels across all customer interaction channels.\n  This feature is available in all AWS Regions where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click here."
+    },
+    {
+      "title": "The CISO’s guide to post-quantum mandates and migrations",
+      "link": "https://aws.amazon.com/blogs/security/the-cisos-guide-to-post-quantum-mandates-and-migrations/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-07-08T15:00:05.000Z",
+      "summary": "Over a dozen major economies have now published post-quantum cryptography (PQC) adoption guidance. As a CISO, you’re probably well into your migration plan and know the most difficult part has little to do with changing algorithms. The real leadership challenge is driving coordinated change across a large, complex organization where asymmetric cryptography is embedded in […]"
+    },
+    {
+      "title": "Amazon EC2 High Memory U7i instances now available in AWS Europe (Zurich) region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-u7i-aws-europe-zurich/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-07T23:30:00.000Z",
+      "summary": "Amazon EC2 High Memory U7i instances with 12TB of memory (u7i-12tb.224xlarge) are now available in the AWS Europe (Zurich) region. U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-12tb instances offer 12TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.\n \nU7i-12tb instances offer 896 vCPUs, support up to 100Gbps Elastic Block Storage (EBS) for faster data loading and backups, deliver up to 100Gbps of network bandwidth, and support ENA Express. U7i instances are ideal for customers using mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.\n  To learn more about U7i instances, visit the High Memory instances page."
+    },
     {
       "title": "Amazon GameLift Streams introduces secure terminal access for stream sessions",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-gamelift-streams-terminal-access/",
@@ -93,6 +149,13 @@
       "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) Auto Mode now offers significantly reduced management fees for GPU and accelerated instance types. Beginning July 1, 2026, G-series Auto Mode management fees are reduced by 35%, and P-series and AWS Trainium fees are reduced by 60%. These reductions apply automatically to all EKS Auto Mode clusters and no action is required from customers already using GPU instances with Auto Mode.\n \nEKS Auto Mode simplifies Kubernetes operations by automatically provisioning and managing infrastructure for machine learning inference, fine-tuning, rendering, and batch processing workloads. It includes capabilities built for accelerated workloads: automatic parallel image pulling and unpacking on GPU instances with local NVMe storage, so large container and model images start faster, and accelerator-aware node repair that detects GPU hardware failures and automatically replaces unhealthy nodes. With today's price reduction, customers can run GPU workloads on Auto Mode at lower management fees, making its fully managed infrastructure more cost-effective.\n \nThis pricing update is available in all AWS Regions where EKS Auto Mode is available. Amazon ECS is implementing identical management fee reductions for GPU instances on ECS Managed Instances. See the ECS What's New post for details.\n \nTo get started with GPU workloads on EKS Auto Mode, see the EKS for AI/ML documentation. For the complete updated rate table, see Amazon EKS pricing."
     },
     {
+      "title": "AWS Systems Manager simplifies Azure VM management and hybrid node pricing",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-systems-manager-multicloud-vm/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-07T08:00:00.000Z",
+      "summary": "You can now connect and manage Azure Virtual Machines in AWS Systems Manager without manual agent installation or per-instance tier fees. Create a Cloud Connector and automatically deploy the SSM Agent to your Azure VMs at scale. Once connected, Azure VMs appear alongside EC2 instances in a unified view, and you can connect to them using Session Manager, run Automation runbooks, Run Command, State Manager, Patch Manager, and Inventory across both AWS and Azure from a single workflow.\n  This release also eliminates the Advanced Instances Tier entirely. This means that you can now connect any number of hybrid and multicloud nodes to Systems Manager with no upfront per-node fees. Beginning September 30, 2026, pay-as-you-go pricing takes effect for Session Manager sessions and Run Command invocations on non-EC2 nodes. This pricing model removes cost barriers for organizations managing multicloud environments at scale.\n  AWS Systems Manager multicloud management is available starting today. To learn more and get started, visit AWS Systems Manager."
+    },
+    {
       "title": "Amazon SageMaker Unified Studio now supports importing existing MWAA environments",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-studio-import-existing-mwaa-environments/",
       "source": "AWS What's New",
@@ -147,69 +210,6 @@
       "source": "AWS Security Blog",
       "pubDate": "2026-07-06T16:52:23.000Z",
       "summary": "If you’re building multi-agent AI systems, you need to prevent authorization scope from silently expanding as agents delegate tasks through multi-hop chains. Without proper controls, an agent can potentially act beyond what the originating user authorized, even when role-based access control (RBAC) policies are in place. The OWASP Top 10 for Agentic Applications classifies this […]"
-    },
-    {
-      "title": "AWS Weekly Roundup: Claude Sonnet 5 on AWS, Amazon WorkSpaces for AI agents, AWS service availability updates, and more (July 6, 2026)",
-      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-07-06T15:46:43.000Z",
-      "summary": "A couple of editions ago I wrote about what I find so energizing about working with startups. Last week I got a fresh dose of it: I spent a few days with the AWS Startups team, listening to stories of founders talking about the problems they’re actually solving. One story that stayed with me came […]"
-    },
-    {
-      "title": "AWS Certificate Manager now supports the ACME protocol for public certificates",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-certificate-manager-acme/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-06T15:00:00.000Z",
-      "summary": "AWS Certificate Manager (ACM) now allows you to provision a fully managed ACME server endpoint that issues public TLS certificates with a 45 day validity from Amazon Trust Services using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal.\n  PKI administrators can create managed ACME endpoints with centralized governance controls: define domain scopes to restrict which certificates each client can issue, enforce policies on wildcard usage, and delegate certificate requests to application teams without distributing DNS credentials. Domain validation is performed once at the endpoint level, while application owners use standard ACME clients to request certificates. All activity is visible in the ACM console with AWS CloudTrail logging and Amazon CloudWatch metrics for auditability.\n  ACME support in ACM is available in all commercial AWS Regions. For pricing details, see the ACM pricing page. To get started, visit the AWS News blog post or read the documentation."
-    },
-    {
-      "title": "CloudWatch Application Signals now automatically captures errors, performance anomalies, and deployment events",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/cloudwatch-service-events/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-06T15:00:00.000Z",
-      "summary": "Today, AWS announces Service Events for Amazon CloudWatch Application Signals, which automatically captures exception and latency event snapshots, function-level performance data, and deployment events from instrumented services without additional code changes. Customers can now quickly identify whether a deployment has introduced new exceptions by navigating to CloudWatch > Application Signals > [Service] > Errors in the CloudWatch console.\n \nService Events is available to any application with CloudWatch Application Signals enabled. Customers instrument their applications with the ADOT SDKs or the Amazon CloudWatch Observability EKS add-on. Once Application Signals is active, Service Events begins capturing exception and latency event snapshots and deployment events automatically. Optionally, customers can gain deeper performance visibility by turning on function-call metrics.\n \nService Events is available in all commercial AWS Regions. Supported languages are Java, Python, and JavaScript.\n \nTo get started, see Monitor service events in the Amazon CloudWatch User Guide. Service Events data is captured as logs. Function call metrics are captured as OpenTelemetry metrics. Standard CloudWatch pricing applies. For details, see CloudWatch pricing."
-    },
-    {
-      "title": "AWS CodePipeline now available in Asia Pacific (New Zealand) region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-codepipeline-new-zealand/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-06T09:00:00.000Z",
-      "summary": "Starting today, AWS CodePipeline is now available in Asia Pacific (New Zealand) Region (ap-southeast-6). AWS CodePipeline is a continuous delivery service that enables you to model, visualize, and automate the steps required to release your software. With CodePipeline, you model the full release process for building your code, deploying to pre-production environments, testing your application and releasing it to production. CodePipeline then builds, tests, and deploys your application according to the defined workflow every time there is a code change. You can integrate partner tools and your own custom tools into any stage of the release process to form an end-to-end continuous delivery solution.\n \nCodePipeline integrates natively with other AWS services (such as CodeBuild, CodeDeploy, and CloudFormation) and supports third-party integrations, such as GitHub or with your own custom plugin, offering a comprehensive solution for orchestrating end-to-end CI/CD pipelines. By integrating manual approval gates, IAM-based access controls, and encryption of artifacts at rest and in transit, CodePipeline helps teams enforce governance policies and maintain a robust security posture throughout the software delivery lifecycle. CodePipeline enables organizations to automate security scans and compliance checks directly within their CI/CD workflows, ensuring consistent and reliable validation against industry frameworks.\n \nTo get started, you can sign in to the AWS Management Console and create a pipeline to start using the service. If you want an introduction to CodePipeline, see Getting Started, which includes step-by-step tutorials.  With CodePipeline, you only pay for what you use. There are no upfront fees or long-term commitments. See the pricing page for additional details on CodePipeline."
-    },
-    {
-      "title": "AWS Secrets Manager adds managed external secrets support for Paddle and GitLab",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/secrets-manager-managed-external-secrets-paddle-gitlab/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-06T07:00:00.000Z",
-      "summary": "AWS Secrets Manager now extends its managed external secrets capability to include Paddle API Keys and GitLab Access Tokens. Managed external secrets enable customers to automatically rotate third-party credentials directly from AWS Secrets Manager by offering first-class integration with supported third-party services.\n  With this launch, you can manage rotation for Paddle API keys using Paddle's native rotation API, which provides a configurable grace period that allows applications to seamlessly transition to new keys without interruption. For GitLab, you can now rotate three types of access tokens — Personal Access Tokens, Group Access Tokens, and Project Access Tokens — using GitLab's atomic rotation mechanism.\n  These new integrations join existing managed external secrets integrations with BigID, Confluent Cloud, Datadog, MongoDB Atlas, Salesforce, and Snowflake, enabling customers to manage third-party software vended secrets.\n Paddle and GitLab managed external secrets are available in all AWS Regions where AWS Secrets Manager managed external secrets is supported. To learn more, visit the AWS Secrets Manager managed external secrets documentation."
-    },
-    {
-      "title": "Amazon SageMaker Unified Studio now supports Terraform for provisioning",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-studio-terraform/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-02T21:49:00.000Z",
-      "summary": "Amazon SageMaker Unified Studio now supports Terraform for provisioning. Customers can use the open-source terraform-aws-sagemaker-unified-studio module to deploy a SageMaker Unified Studio domain through version-controlled templates. With this launch, platform teams can bring SageMaker Unified Studio into their existing infrastructure-as-code pipelines, maintaining consistency across development, staging, and production accounts.\n \nAmazon SageMaker Unified Studio is a unified development environment where data teams can build end-to-end data and AI workflows using familiar tools—from data integration and analytics to machine learning and generative AI—all governed by a shared catalog. Administrators provision domains to give their organization a single, managed workspace with built-in access control, data governance, and cross-service connectivity. With this launch, the Terraform module handles the infrastructure of SageMaker Unified Studio domain with provisioned IAM roles. Sub-modules let teams enable blueprints, compose blueprints into project profiles, and create projects independently. Customers can also create projects with existing IAM roles. This integration is enabled through the Terraform AWS Cloud Control Provider.\n \nThis feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. To get started, see examples provided in terraform-aws-sagemaker-unified-studio module on GitHub and the Amazon SageMaker Unified Studio documentation."
-    },
-    {
-      "title": "Amazon EC2 X8i instances are now available in additional regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-x8i-instances-ICN-KUL-NRT-region/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-02T20:48:00.000Z",
-      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (Seoul), Asia Pacific (Malaysia) and Asia Pacific (Tokyo) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances.\n  X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options.\n  To get started, visit the AWS Management Console. X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit X8i instances page."
-    },
-    {
-      "title": "Amazon EC2 Dedicated Hosts now support AMD SEV-SNP",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/ec2-amd-sev-snp-dedicated-hosts",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-02T17:00:00.000Z",
-      "summary": "Amazon EC2 is announcing support for AMD Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) on Dedicated Hosts, enabling customers to run their confidential computing workloads on physical servers fully dedicated to their use.\n  Customers can allocate a Dedicated Host with SEV-SNP enabled and launch SEV-SNP instances on it. This gives customers the benefits of Dedicated Hosts for confidential computing workloads, including control over instance placement, and host affinity that allows customers to deploy instances to the same physical server over time. The physical host is provisioned with AMD security firmware during allocation, ensuring a customer’s confidential computing environment is up to date.\n  Dedicated Host SEV-SNP is available in all AWS commercial Regions with AMD instances. To learn more, visit our documentation."
-    },
-    {
-      "title": "Amazon SageMaker HyperPod now supports AMI versioning and auto-patching",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-hyperpod-ami-version-auto-patch",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-02T16:00:00.000Z",
-      "summary": "Amazon SageMaker HyperPod now gives you visibility into the Amazon Machine Image (AMI) versions running across your clusters and automatically applies security patches without disrupting your workloads. SageMaker HyperPod is purpose-built infrastructure for training and deploying foundation models at scale. Cluster administrators previously had limited insight into which AMI versions were running, making drift hard to detect and security patching a manual, reactive process that was difficult to run on long multi-day training jobs and that risked changing bundled software in the AMI such as NVIDIA drivers or CUDA. These new capabilities on HyperPod help you keep clusters secure and consistent while removing the operational burden of manual patching.\n \nWith AMI versioning, you can see the exact AMI version on every instance group and node in the semantic versioning (major.minor.patch) format, quickly detect version drift, and roll back to a previous version—including the prior NVIDIA driver, CUDA, and other software stack—using the UpdateClusterSoftware API. Auto-patching is an opt-in, per-instance-group capability that applies only backward-compatible security patches as nodes become idle, so your running workloads stay undisrupted and critical AI/ML packages such as NVIDIA driver, CUDA version, and operating system kernels are never upgraded to a different major or minor version; you can enable it through the CreateCluster or UpdateCluster API. A new AMI support policy also publishes support timelines for different AMI versions after which HyperPod stops publishing security patches.\n \nBoth AMI versioning and auto-patching are available for HyperPod clusters orchestrated by Amazon EKS, in all AWS Regions where SageMaker HyperPod is supported. To learn more, see the HyperPod AMI management documentation and the new HyperPod AMI support policy."
     }
   ]
 }
