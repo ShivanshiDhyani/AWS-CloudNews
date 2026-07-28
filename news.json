@@ -1,6 +1,76 @@
 {
-  "lastUpdated": "2026-07-27T02:06:25.694Z",
+  "lastUpdated": "2026-07-28T01:47:55.817Z",
   "items": [
+    {
+      "title": "Amazon Neptune now supports tag-based access control for IAM",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-neptune-tbac/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T22:00:00.000Z",
+      "summary": "Amazon Neptune Database now supports tag-based access control (TBAC) for IAM, enabling customers to use AWS resource tags and IAM principal tags as conditions in IAM policies and Service Control Policies (SCPs) to control access to Neptune data-plane operations. Neptune already provides robust security through VPC isolation, TLS encryption, and IAM authentication, but customers managing multiple clusters at scale needed a dynamic, attribute-based mechanism to enforce organizational access boundaries. TBAC addresses this by allowing administrators to govern cluster access without enumerating specific cluster ARNs in every policy.\n  With TBAC, IAM principals can only perform `neptune-db:*` actions against Neptune clusters whose tags match their own — for example, a principal tagged `Project=FraudDetection` is automatically restricted to clusters sharing that same tag. This eliminates lateral access risk within shared VPC environments, enforces team and environment-level isolation across projects, and supports federated identity workflows using SAML or OIDC session tags from external identity providers. Granular permissions like neptune-db:QueryLanguage can be used alongside TBAC for more fine-grained access control.\n  This feature is available in all AWS Regions where Amazon Neptune is available and requires Neptune engine version 1.2.0.0 or later with IAM authentication enabled.\n  To learn more about configuring tag-based access control for Amazon Neptune, including how to tag your DB clusters and IAM principals and deploy organization-wide guardrails using SCPs, visit the Amazon Neptune documentation."
+    },
+    {
+      "title": "AWS Glue Data Quality now supports anomaly detection and writing results to the AWS Glue Data Catalog",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-data-quality-catalog-anomaly-detection-write-results",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T20:45:00.000Z",
+      "summary": "AWS Glue Data Quality now supports anomaly detection for Catalog-based data quality evaluations and the ability to write evaluation results to AWS Glue Data Catalog (GDC) tables. These capabilities work across both ETL jobs and Catalog evaluations, giving you a consistent data quality experience regardless of workflow type.\n  With anomaly detection support for GDC, you can identify unexpected changes in data statistics such as sudden drops in distinct values or row count spikes in your GDC tables using ML-powered time-series forecasting, without writing rules with explicit thresholds. This is especially valuable for data engineers monitoring hundreds of tables in the GDC who need to surface issues automatically.\n  With results storage in GDC, Data Quality rule outcomes, profiling metrics, and anomaly predictions (with confidence bounds) are written back to GDC tables, creating a queryable record of all quality evaluations. Whether the evaluation runs in an ETL job or directly on a Catalog table, results can be queried at any time using standard SQL.\n  AWS Glue Data Quality anomaly detection and Catalog results storage are available in all AWS commercial regions and AWS GovCloud (US) regions.\n  To get started, visit the AWS Glue Data Quality documentation."
+    },
+    {
+      "title": "AWS Glue Data Quality now supports distribution statistics for data profiling",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-data-quality-distribution-profiling",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T20:23:00.000Z",
+      "summary": "AWS Glue Data Quality now supports a new Distribution Analyzer that generates frequency distribution profiles for your data. Using this new Distribution Analyzer in the Data Quality Definition Language (DQDL), you can generate histograms for numeric columns and value distributions for categorical, date, and boolean columns. With support for custom bin counts, you can explore the shape and patterns of your data at the granularity that matters most to your use case.\n  Understanding how data is distributed is foundational to building reliable data pipelines. Distribution statistics help you quickly identify skewness, outliers, and unexpected patterns across your datasets, without writing custom code. The capability integrates directly with your existing DQDL rulesets, so you can add distribution profiling alongside your current data quality checks in a single evaluation run. Distribution statistics are stored in Amazon S3 for future querying through services like Amazon Athena, and are also surfaced through APIs, making it easy to integrate distribution insights into monitoring workflows and visualization tools, including SageMaker Unified Studio.\n  AWS Glue Data Quality distribution statistics are available in all AWS commercial regions and AWS GovCloud (US) regions.\n  To learn more about Glue Data Quality, visit the AWS Glue Data Quality documentation. To get started with using Distribution Analyzer, visit the Analyzers documentation."
+    },
+    {
+      "title": "AWS Shield Advanced is embracing the AWS WAF Anti-DDoS managed rule group: What changes and how to prepare",
+      "link": "https://aws.amazon.com/blogs/security/aws-shield-advanced-is-embracing-the-aws-waf-anti-ddos-managed-rule-group-what-changes-and-how-to-prepare/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-07-27T19:01:23.000Z",
+      "summary": "Application-layer distributed denial of service (DDoS) attacks are difficult to detect because they closely resemble legitimate traffic. HTTP request floods are now among the most common vectors targeting web applications, using valid-looking requests that blend in with normal user activity. In June 2025, AWS launched the AWS WAF Anti-DDoS managed rule group, built specifically for […]"
+    },
+    {
+      "title": "Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-gamelift-streams/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T18:58:00.000Z",
+      "summary": "Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution, giving you greater control over the streaming experience across diverse player devices and network conditions.\n \nWith Custom Aspect Ratio, you can configure a specific resolution per stream session to match your player's device — including portrait, landscape, ultra-wide, and square aspect ratios. This eliminates letterboxing or pillarboxing, delivering native full-screen experiences on mobile phones, tablets, and non-standard displays. Specify any resolution from 320 to 4096 pixels per dimension (up to 1080p total pixel budget) using the DisplayConfiguration parameter in the StartStreamSession API. You can also try custom resolution from the AWS Console.\n \nDynamic Resolution automatically adapts stream quality when a player's network bandwidth fluctuates. When bandwidth drops, the stream gracefully reduces resolution to maintain smooth playback without frame drops or disconnections — and automatically recovers to full quality when conditions improve. Dynamic Resolution is enabled by default for all new stream groups with no configuration required. Customers will need to download the new Web SDK.\n \nBoth features are available in all AWS Regions where Amazon GameLift Streams is offered. To learn more, see Custom stream resolution in the Amazon GameLift Streams Developer Guide. \n  \n https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/custom-stream-resolution.html"
+    },
+    {
+      "title": "AWS Security Hub MCP App brings exposure findings into your AI-assisted workflow (Preview)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-security-hub-mcp-app/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T17:00:00.000Z",
+      "summary": "AWS announces the preview of the AWS Security Hub MCP App, a local Model Context Protocol (MCP) server that brings your Security Hub exposure findings directly into Claude Desktop.  This capability can help accelerates your security investigations by reducing context switching and manual triage, letting you explore and act on your exposures without leaving your AI-assisted workflow.\n \nWith the Security Hub MCP App, you can investigate your security posture in natural language: view your top exposure findings, drill into a finding’s attack path and expanded network path, examine correlated findings and affected resource configurations, and get remediation recommendations. Each tool call returns both a text summary for your AI agent to reason overover and an interactive visualization for you to verify in the same conversation. The MCP server runs locally on your machine using your existing AWS credentials, and every tool is read-only,-- no changes are made to your environment.\n \nThe Security Hub MCP App is available at no additional cost to Security Hub customers. This feature is available in preview in all AWS commercial Regions that support Security Hub. To learn more, see the AWS Security Hub User Guide and the AWS Security Hub product page. For the full list of Regions, see the AWS Regional Services List."
+    },
+    {
+      "title": "Announcing the Cloud Security Alliance on AWS Compliance Guide",
+      "link": "https://aws.amazon.com/blogs/security/announcing-the-cloud-security-alliance-on-aws-compliance-guide/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-07-27T16:15:44.000Z",
+      "summary": "AWS Security Assurance Services is announcing the release of the Cloud Security Alliance (CSA) Compliance Guide on Amazon Web Service (AWS), a new resource that maps the 17 control domains and 207 control objectives of the Cloud Controls Matrix v4.1 (CCM) to AWS services and recommended implementation practices. The guide is intended to help organizations […]"
+    },
+    {
+      "title": "AWS Elemental MediaTailor adds configurable ad timeout and concurrency controls for improved ad fill and faster startup",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/mediatail-configurable-ad-timeout-and-concurrency",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T16:09:00.000Z",
+      "summary": "AWS Elemental MediaTailor now gives you direct control over ad decision server (ADS) timeout. Previously, changing these settings required contacting AWS Support. You can now configure individual HTTP ad request timeouts, total ad personalization time budgets for live, VOD, and live ad prefetch, and enable parallel ADS requests.\n \nThese settings allow you to optimize ad delivery performance for your specific workflows. For example, you can increase the personalization time budget for live events to improve ad fill rates or enable parallel ADS requests in VOD workflows to reduce overall response time for faster video startup. New prefetch-specific timeout settings give you additional granularity for livestream ad retrieval.\n \nYou can configure these settings through the AWS Elemental MediaTailor console, AWS CLI, or AWS SDKs using the new AdsPersonalizationTimeouts and AdsPersonalizationConcurrency parameters on your playback configurations.\n \nThis feature is available in all AWS Regions where AWS Elemental MediaTailor is available. \n \nTo learn more about configuring ADS request timeouts, personalization time budgets, and concurrency, see Advanced settings in the AWS Elemental MediaTailor User Guide."
+    },
+    {
+      "title": "AWS Weekly Roundup: Local Zone in Athens, Claude Opus 5 on AWS, Lambda durable execution for .NET, and more (July 27, 2026)",
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-july-27-2026/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-07-27T14:54:41.000Z",
+      "summary": "Last week I had the privilege of spending three days in São Paulo with technical builders from across Latin America, brought together for a regional tech event full of deep-dive sessions, hands-on workshops, and conversations with customers and partners. What struck me most wasn’t any single session, it was the energy of a technical community […]"
+    },
+    {
+      "title": "Amazon RDS for SQL Server now supports restoring TDE databases on Mult-AZ instances",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sql-server-supports-tde-for-maz/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T07:00:00.000Z",
+      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports restoring Transparent Data Encryption (TDE)-enabled SQL Server databases on Multi-AZ instances and instances configured with a read replica in the same region, using native backup and restore. Previously, TDE-enabled database restore was available only for Single-AZ instances, requiring you to disable TDE or migrate to a Single-AZ configuration before restoring encrypted databases.\n  You can restore TDE-enabled database backups directly to Amazon RDS for SQL Server Multi-AZ instances and instances configured with a read replica in the same region. Back up your existing TDE certificate, store it in Amazon S3, and restore it to your Amazon RDS instance with the TDE option enabled. Then, restore your TDE-enabled database backup from Amazon S3 using Amazon RDS native backup and restore. This simplifies your migration and recovery workflows when you require both encryption at rest with TDE and the high availability of Multi-AZ deployments.\n  This feature is available in all AWS Regions where Amazon RDS for SQL Server is supported. To learn more, see the Amazon RDS for SQL Server User Guide."
+    },
     {
       "title": "Amazon Connect now supports audio optimization for Azure Virtual Desktop and Windows 365 Cloud PC",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-connect/",
@@ -72,6 +142,13 @@
       "summary": "Today, AWS announces a research preview of aws-bench, an open-source benchmark that measures how accurately and efficiently AI agents complete real-world AWS tasks. Model providers and AI researchers building agents that operate on AWS infrastructure need an objective, reproducible way to measure performance and diagnose failures. aws-bench provides a public suite of test cases derived from analysis of real AWS usage, including investigation, troubleshooting, and infrastructure creation tasks.\n  Each test case pairs a natural-language query with a defined cloud resource state and a ground-truth answer, so you can score any agent or model on a consistent, verifiable basis. Researchers and model providers can use aws-bench to improve foundation model performance on AWS tasks, improve agent harnesses, and track improvement progress. The release includes an easy-to-use CLI tool to instantiate testing environments, execute and score evaluation runs, and reset resource state.\n  aws-bench is available now on GitHub. To get started, follow the setup instructions on the README."
     },
     {
+      "title": "AWS Clean Rooms supports larger worker types up to 32 vCPUs for SQL",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-clean-rooms-32-vcpu-worker-types-sql",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-24T12:00:00.000Z",
+      "summary": "AWS Clean Rooms now supports larger worker types of 32 vCPUs with 244 GB of memory for SQL analyses, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker type available was 16 vCPUs with 120 GB of memory. Larger workers can help improve performance for complex queries on large datasets, optimizing costs for customers. For example, an advertiser collaborating with a publisher can use larger workers to run complex feature engineering across billions of records to train their multi-touch attribution model, accelerating time-to-value and optimizing costs.\n \nAWS Clean Rooms helps companies and their partners easily analyze and collaborate on their collective datasets without revealing or copying one another’s underlying data. For more information about the AWS Regions where AWS Clean Rooms is available, see the AWS Regions table. To learn more about collaborating with AWS Clean Rooms, visit AWS Clean Rooms."
+    },
+    {
       "title": "Amazon ECS Service Connect now supports Zone-Aware routing",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/ecs-service-connect-zone-aware/",
       "source": "AWS What's New",
@@ -133,83 +210,6 @@
       "source": "AWS Security Blog",
       "pubDate": "2026-07-23T16:23:30.000Z",
       "summary": "Black Hat 2026 (Aug 1-6, 2026) brings together over 22,000 security practitioners, researchers, and CISOs who build, break, and defend enterprise infrastructure. They’re security professionals who push the limits of offensive and defensive security and demand proof over promises. As frontier security models like Mythos reshape the enterprise landscape, they need security that operates at […]"
-    },
-    {
-      "title": "Claude Sonnet 5 is now available on Amazon Bedrock in AWS GovCloud (US)",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/claude-sonnet-5-govcloud/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T16:02:00.000Z",
-      "summary": "AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns unstructured material into structured analysis. \n \nWith this launch, Claude Opus 4.8 and Claude Sonnet 5 are available on bedrock-runtime endpoints in AWS GovCloud (US-West and US-East) and bedrock-mantle endpoints in AWS GovCloud (US-West) for performing inference. Bedrock Mantle, Amazon Bedorck's next-generation inference engine, supports the Anthropic Messages API. Amazon Bedrock keeps your data within AWS infrastructure and provides access to Claude Sonnet 5 through a unified service with AWS-managed features like Guardrails, Knowledge Bases, and regional data residency. To learn more, see the Amazon Bedrock documentation and regional availability."
-    },
-    {
-      "title": "Announcing region expansion of G7e instances on SageMaker AI inference",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/g7e-sagemaker-ai/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T15:04:00.000Z",
-      "summary": "We are pleased to announce the availability of Amazon EC2 G7e instances in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo) on Amazon SageMaker AI inference. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs with 96 GB of memory per GPU, 5th Generation Intel Xeon processors, and up to 1,600 Gbps of Elastic Fabric Adapter networking bandwidth, delivering up to 2.3x inference performance compared to previous-generation G6e instances.\n  With this region expansion, you can now deploy inference endpoints on G7e instances closer to your end users in Asia and Europe, reducing latency for generative AI workloads. G7e instances provide up to 768 GB of total GPU memory on a single instance, enabling you to serve medium-to-large language models of up to 70B parameters with FP8 precision without multi-node configurations. These instances are well suited for LLM inference, image and video generation, spatial computing, and scientific computing workloads that require high GPU memory capacity and bandwidth.\n  G7e instances for SageMaker AI inference are now available in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo), in addition to previously supported regions. For pricing information on these instances, please visit our pricing page."
-    },
-    {
-      "title": "Announcing region expansion of G6 instances on SageMaker AI Inference",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/g6-sagemaker-ai-inference/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T14:51:00.000Z",
-      "summary": "We are pleased to announce the availability of Amazon EC2 G6 instances in the AWS GovCloud (US-East) region on Amazon SageMaker AI inference. G6 instances are powered by up to 8 NVIDIA L4 Tensor Core GPUs, each with 24 GB of memory, and third-generation AMD EPYC processors, delivering up to 2x the deep learning inference performance compared to G4dn instances.\n  With this region expansion, government agencies and organizations operating in GovCloud can deploy inference endpoints on G6 instances to serve generative AI workloads—including small-to-medium language models, image generation, and computer vision tasks—while meeting strict compliance and data residency requirements. G6 instances offer strong price-performance for production inference workloads that fit within 24 GB of GPU memory.\n  G6 instances for SageMaker AI inference are now available in AWS GovCloud (US-East), in addition to previously supported regions. For pricing information on these instances, please visit our pricing page."
-    },
-    {
-      "title": "AWS Wickr announces Data Retention Service feature",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-wickr-data/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T04:00:00.000Z",
-      "summary": "AWS Wickr now offers a managed Data Retention Service feature for Premium users, enabling organizations to retain conversations across their network for data archiving purposes. AWS Wickr is an enterprise-grade, secure collaboration product that provides end-to-end encrypted messaging, file management, screen sharing, and voice/video conferencing capabilities. The Data Retention Service feature provides a cloud-native alternative to traditional container-based data retention methods.\n \nThe Data Retention Service can retain conversations in your network, including direct messages and conversations in Groups or Rooms between internal members and external federated teams. The serverless architecture offers simplified deployment, managed infrastructure, automatic scaling, and comprehensive monitoring while maintaining Wickr's end-to-end encryption standards. This feature is particularly valuable for organizations that require comprehensive data archiving capabilities and maintaining audit trails.\n \nAWS Wickr Premium customers can opt in to enable data retention for their networks. To learn more, visit the AWS Wickr documentation."
-    },
-    {
-      "title": "Amazon EC2 High Memory U7i instances now available in additional regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-high-memory-u7i/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T00:00:00.000Z",
-      "summary": "Amazon EC2 High Memory U7in-16TB instances (u7in-16tb.224xlarge) are now available in AWS South America (São Paulo) region, and U7in-24TB instances (u7in-24tb.224xlarge) are now available in AWS Europe (Ireland) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7in-16TB instances offer 16 TiB of DDR5 memory, and U7in-24TB instances offer 24 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.\n \nBoth U7in-16TB and U7in-24TB instances deliver 896 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 200 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers running mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.\n \nTo learn more about U7i instances, visit the High Memory instances page."
-    },
-    {
-      "title": "Amazon EC2 C7a instances are now available in the US West (N. California) Region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-c7a-instances-us-west-ncalifornia-region/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-22T21:42:00.000Z",
-      "summary": "Starting today, the compute optimized Amazon EC2 C7a instances are now available in AWS US West (N. California) Region. C7a instances, powered by 4th Gen AMD EPYC processors (code-named Genoa) with a maximum frequency of 3.7 GHz, deliver up to 50% higher performance compared to C6a instances.\n  C7a instances offer new processor capabilities such as AVX-512, VNNI, and bfloat16. They feature Double Data Rate 5 (DDR5) memory to enable high-speed access to data in memory and 2.25x more memory bandwidth compared to C6a instances, making these instances ideal for even latency sensitive workloads. C7a instances offer 12 sizes from medium to 48xlarge, including a bare-metal size. And with the launch of C7a instances, customers can attach up to 128 EBS volumes to an EC2 instance — by comparison, C6a instances allow up to 28 EBS volume attachments to an EC2 instance. These instances are built on the AWS Nitro System and ideal for high performance, compute-intensive workloads such as batch processing, distributed analytics, high performance computing (HPC), ad serving, highly-scalable multiplayer gaming, and video encoding.\n  C7a instances are available through On-Demand, Spot Instances, and Savings Plans. To get started, visit the AWS Management Console, AWS Command Line Interface (CLI), and AWS SDKs. To learn more, see C7a instances."
-    },
-    {
-      "title": "Amazon EC2 M8a instances now available in the Asia Pacific (Hyderabad) region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8a-instances-asia-pacific-hyderabad-region/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-22T20:55:00.000Z",
-      "summary": "Starting today, the general-purpose Amazon EC2 M8a instances are available in AWS Asia Pacific (Hyderabad) region. M8a instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver up to 30% higher performance, and up to 19% better price-performance compared to M7a instances.\n  M8a instances deliver 45% more memory bandwidth compared to M7a instances, making these instances ideal for even latency sensitive workloads. M8a instances deliver even higher performance gains for specific workloads. M8a instances are up to 60% faster for GroovyJVM benchmark, and up to 39% faster for Cassandra benchmark compared to Amazon EC2 M7a instances. M8a instances are SAP-certified and offer 12 sizes including 2 bare metal sizes. This range of instance sizes allows customers to precisely match their workload requirements.\n  M8a instances are built using the latest sixth generation AWS Nitro Cards and ideal for applications that benefit from high performance and high throughput such as financial applications, gaming, rendering, application servers, simulation modeling, mid-size data stores, application development environments, and caching fleets.\n  To get started, sign in to the AWS Management Console. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information visit the Amazon EC2 M8a instance page."
-    },
-    {
-      "title": "Amazon EC2 M8id instances are now available in Europe (Ireland) region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8id-europe-ireland/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-22T19:55:00.000Z",
-      "summary": "Amazon EC2 M8id instances are now available in (Ireland). These instances are powered by custom Intel Xeon 6 processors and deliver up to 43% higher performance and 3.3x more memory bandwidth compared to previous generation M6id instances.\n  M8id instances offer up to 384 vCPUs, 1.5TiB of memory, and 22.8TB of NVMe SSD storage, 3x more than previous generation instances. These instances deliver up to 46% higher performance for I/O intensive database workloads, and up to 30% faster query results for I/O intensive real-time data analytics than previous sixth-generation instances. Additionally, these instances support Instance Bandwidth Configuration, allowing 25% flexible allocation between network and EBS bandwidth, allocating resources optimally for each workload.\n  M8id instances are well-suited for balanced workloads including application servers, microservices, enterprise applications, and small to medium databases.\n  Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information visit the Amazon EC2 instance type page."
-    },
-    {
-      "title": "AWS Network Load Balancer now supports Listener Rules for custom traffic routing",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-network-load-balancer-supports-listener-rules/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-22T19:13:00.000Z",
-      "summary": "Network Load Balancer (NLB) now supports listener rules allowing you to route connections to different target groups based on the source IP address type. With listener rules, a single dual-stack NLB sends IPv6 client traffic to IPv6 targets and IPv4 client traffic to IPv4 targets, preserving the original client IP address end to end for both address families.\n  Previously, serving both IPv4 and IPv6 clients from one NLB meant accepting a tradeoff: either run two separate load balancers (one per IP version) and split clients with DNS, or send all traffic to one target group and lose the original client IP through protocol translation. Listener rules remove that tradeoff by enabling conditional routing at Layer 3, directing each connection to a same-family target group with no translation and no additional infrastructure.\n  You can add listener rules to existing dual-stack NLBs without recreating them. Rules are supported on TCP, UDP, TCP_UDP, and TLS listeners and work alongside existing NLB features including connection draining, target group stickiness, cross-zone load balancing, weighted target groups, and client IP preservation.\n  Listener rules for Network Load Balancer are available in all AWS commercial Regions and the AWS GovCloud (US) Regions at no additional charge. Standard NLB pricing for load balancer hours and LCUs applies. To get started, see this AWS blog, and the Network Load Balancer User Guide."
-    },
-    {
-      "title": "AWS Entity Resolution now supports advanced real-time matching",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-entity-resolution/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-22T19:00:00.000Z",
-      "summary": "AWS Entity Resolution now supports real-time matching with advanced matching workflows, enabling customers to match records in milliseconds using complex rulesets through the GenerateMatchId API. Previously, real-time matching was limited to simple rule-based workflows, while advanced rulesets—which support operators like Exact and ExactManyToMany combined with AND/OR logic—could only be used for batch processing that took minutes to hours. This created a critical gap for customers needing real-time entity resolution with sophisticated matching logic.\n \nWith this launch, customers performing fraud detection, real-time account lookup, or website personalization can define advanced matching rules and get results in real-time without maintaining separate matching infrastructure or re-architecting applications. To enable advanced real-time matching, customers set the enableRealTimeMatching parameter to true on their matching workflow, then call the existing GenerateMatchId API—no new endpoints or migration required.\n \nAdvanced real-time matching is available in all AWS Regions where AWS Entity Resolution is available. \n \nTo get started, see Using GenerateMatchId in the AWS Entity Resolution User Guide.  \n \nFor more information about AWS Entity Resolution, visit the product page."
-    },
-    {
-      "title": "AWS Lambda durable functions now supports customer managed key encryption",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/durablefunctions-cmk/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-22T18:30:00.000Z",
-      "summary": "AWS Lambda durable functions now supports encryption of durable execution data with an AWS Key Management Service (AWS KMS) customer managed key. Lambda durable functions lets you build long-running, reliable workflows directly in your Lambda function code with automatic state management. Lambda encrypts execution state at rest by default with an AWS owned key. Now with support for AWS KMS, you can choose and manage the encryption key yourself.\n \nIf you operate in regulated industries such as financial services or healthcare, your data governance policies may require customer-owned encryption keys. You can now configure a customer managed key for durable execution data, giving you control over key rotation and who can access execution history and state. The durable execution key operates independently of the function-level key that protects environment variables and SnapStart snapshots, so you can manage access to execution data separately from function configuration.\n \nThis feature is available in all AWS Regions where Lambda durable functions is available. Standard AWS KMS charges apply for customer managed keys. There are no additional Lambda charges for this feature.\n \nTo learn more, see Encrypting Lambda durable execution data in the AWS Lambda Developer Guide."
     }
   ]
 }
