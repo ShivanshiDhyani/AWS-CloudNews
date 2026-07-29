@@ -1,6 +1,62 @@
 {
-  "lastUpdated": "2026-07-28T01:47:55.817Z",
+  "lastUpdated": "2026-07-29T01:50:25.363Z",
   "items": [
+    {
+      "title": "AWS KMS or AWS CloudHSM: Choose the right key management solution",
+      "link": "https://aws.amazon.com/blogs/security/aws-kms-or-aws-cloudhsm-choose-the-right-key-management-solution/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-07-28T18:55:43.000Z",
+      "summary": "Choosing the right cryptographic key management service on Amazon Web Services (AWS) starts with understanding the difference between AWS Key Management Service (AWS KMS) and AWS CloudHSM. Both provide key storage backed by a hardware security module (HSM) but serve very different needs. AWS KMS is a fully managed service that integrates with all AWS […]"
+    },
+    {
+      "title": "Amazon EKS Provisioned Control Plane now delivers faster pod autoscaling",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-provisioned-control/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-28T17:18:00.000Z",
+      "summary": "Amazon EKS now delivers faster pod autoscaling across all Provisioned Control Plane clusters by increasing Horizontal Pod Autoscaler (HPA) sync concurrency to up to 40 times the default Kubernetes value. This reduces the time it takes for HPA-driven workloads to scale in response to increased load, enabling faster responsiveness to demand.\n  The Kubernetes Horizontal Pod Autoscaler (HPA) continuously monitors workload metrics and adjusts pod counts to match demand. In clusters running hundreds or thousands of HPA objects, the speed at which the Kubernetes control plane processes these objects determines how quickly workloads scale in response to changing demand. The HPA sync concurrency setting controls how many HPA objects the control plane evaluates in parallel. By increasing this value, Provisioned Control Plane clusters now process more HPA objects simultaneously, reducing the time between detecting increased load and scaling out pods.\n  This enhancement is available to all customers using EKS Provisioned Control Plane and requires no configuration changes. To learn more about this enhancement, see EKS Provisioned Control Plane in the EKS User Guide."
+    },
+    {
+      "title": "2026 Phase 1a IRAP report is now available on AWS Artifact for Australian customers",
+      "link": "https://aws.amazon.com/blogs/security/2026-phase-1a-irap-report-is-now-available-on-aws-artifact-for-australian-customers/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-07-28T17:16:34.000Z",
+      "summary": "Amazon Web Services (AWS) is excited to announce that the latest version of Information Security Registered Assessors Program (IRAP) report (Phase 1a – full assessment) is now available through AWS Artifact. An independent Australian Signals Directorate (ASD) certified IRAP assessor completed the IRAP assessment of AWS in June 2026. The new IRAP report includes four […]"
+    },
+    {
+      "title": "Second-generation AWS Outposts racks now supported in the AWS Asia Pacific (Mumbai) Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-outposts-asia-pacific-mumbai/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-28T16:00:00.000Z",
+      "summary": "Second-generation AWS Outposts racks are now supported in the Asia Pacific (Mumbai) Region. Outposts racks extend AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience.\n  Organizations from startups to enterprises and the public sector in and outside of India can now order their Outposts racks connected to this new supported region, optimizing for their latency and data residency needs. Outposts allows customers to run workloads that need low latency access to on-premises systems locally while connecting back to their home Region for application management. Customers can also use Outposts and AWS services to manage and process data that needs to remain on-premises to meet data residency requirements. This regional expansion provides additional flexibility in the AWS Regions that customers’ Outposts can connect to.\n  To learn more about second-generation Outposts racks, read this blog post and user guide. For the most updated list of countries and territories and the AWS Regions where second-generation Outposts racks are supported, check out the Outposts rack FAQs page."
+    },
+    {
+      "title": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-console-home-cost-and-usage-eu-sovereign-cloud",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-28T16:00:00.000Z",
+      "summary": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region, allowing customers to surface insights from Cost Explorer and Cost Optimization Hub on their Console Home dashboard.\n \nWith the Cost and Usage widget, customers can track month-to-date and forecasted costs, identify savings opportunities, and see how their spend breaks down by service over time.\n \nTo get started, sign in to the AWS Management Console, select Add widgets, and drag the Cost and Usage widget onto your Console Home dashboard. To learn more, see Working with widgets in AWS Console Home documentation."
+    },
+    {
+      "title": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-datasync-amazon-efs-fsx-lustre/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-28T10:00:00.000Z",
+      "summary": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre as source or destination locations.\n \nAWS DataSync is a secure, high-speed data transfer service that simplifies moving data over a network. Enhanced mode processes data in parallel, removes file count limitations, and provides detailed transfer metrics. Previously, customers who wanted to move data to or from EFS or FSx for Lustre were limited to Basic mode. Now customers can use Enhanced mode for these locations, simplifying workflows for large-scale migrations, agentic AI and machine learning training, high-performance computing, genomics processing, and media rendering.\n \nThis capability is available in all AWS Regions where AWS DataSync is offered. To get started, visit the AWS DataSync console. For more information, see the AWS DataSync documentation."
+    },
+    {
+      "title": "AWS DataSync Enhanced mode adds HDFS, Azure Blob, and object storage locations with Hyper-V agent support",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-datasync-hdfs-azure-blob-hyper-v/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-28T10:00:00.000Z",
+      "summary": "AWS DataSync Enhanced mode now supports agent-based data transfers with Hadoop Distributed File Systems (HDFS), Microsoft Azure Blob Storage, and self-managed object storage. Additionally, Enhanced mode agents can now be deployed on Microsoft Hyper-V. Using a DataSync agent, customers can transfer data to and from these locations with the parallelism, unlimited file counts, and detailed metrics that Enhanced mode provides.\n \nEnhanced mode HDFS support includes multiple NameNode configurations for high availability and Transparent Data Encryption (TDE) with Kerberos authentication, enabling organizations in regulated industries to securely migrate petabyte-scale encrypted Hadoop data without sacrificing availability.\n \nThis capability is available in all AWS Regions where AWS DataSync is offered. To get started, visit the AWS DataSync console. For more information, see the AWS DataSync documentation."
+    },
+    {
+      "title": "Amazon S3 Tables now support the Variant data type for Apache Iceberg V3",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-s3-tables-variant-iceberg-v3/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-28T07:00:00.000Z",
+      "summary": "Amazon S3 Tables now support the Variant data type as defined in the Apache Iceberg Version 3 (V3) specification. You can now write semi-structured data like JSON directly to S3 Tables without defining a fixed schema in advance, allowing you to land data faster while still getting efficient analytical query performance.\n  With the Variant data type, Apache Iceberg V3-compatible engines shred your semi-structured data into hidden columns as you write it, generating Parquet column statistics that query engines use for optimizations like file pruning, which reduces the data your analytical queries scan. S3 Tables also provide ongoing table maintenance, including compaction, for Variant columns, so you can consolidate data from small files into large files that Iceberg engines can read.\n  Variant support in S3 Tables is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), and South America (São Paulo).\n  To learn more, see Amazon S3 Tables and the AWS Prescriptive Guidance for working with Iceberg table format specification version 3."
+    },
     {
       "title": "Amazon Neptune now supports tag-based access control for IAM",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-neptune-tbac/",
@@ -35,6 +91,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-07-27T18:58:00.000Z",
       "summary": "Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution, giving you greater control over the streaming experience across diverse player devices and network conditions.\n \nWith Custom Aspect Ratio, you can configure a specific resolution per stream session to match your player's device — including portrait, landscape, ultra-wide, and square aspect ratios. This eliminates letterboxing or pillarboxing, delivering native full-screen experiences on mobile phones, tablets, and non-standard displays. Specify any resolution from 320 to 4096 pixels per dimension (up to 1080p total pixel budget) using the DisplayConfiguration parameter in the StartStreamSession API. You can also try custom resolution from the AWS Console.\n \nDynamic Resolution automatically adapts stream quality when a player's network bandwidth fluctuates. When bandwidth drops, the stream gracefully reduces resolution to maintain smooth playback without frame drops or disconnections — and automatically recovers to full quality when conditions improve. Dynamic Resolution is enabled by default for all new stream groups with no configuration required. Customers will need to download the new Web SDK.\n \nBoth features are available in all AWS Regions where Amazon GameLift Streams is offered. To learn more, see Custom stream resolution in the Amazon GameLift Streams Developer Guide. \n  \n https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/custom-stream-resolution.html"
+    },
+    {
+      "title": "Amazon EKS now supports AWS PrivateLink for the cluster OIDC endpoint",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-oidc-endpoint-privatelink",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-27T18:00:00.000Z",
+      "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports AWS PrivateLink for the cluster OIDC discovery and JWKS endpoint. You can now reach the endpoint used by IAM roles for service accounts (IRSA) privately from your VPC without requiring internet egress.\n  Each EKS cluster publishes public signing keys at its OIDC endpoint for IRSA. With AWS PrivateLink for the cluster OIDC endpoint, tools running inside your VPC, such as eksctl, Terraform, or custom token validators, can now reach the OIDC discovery document and JWKS privately by creating an interface VPC endpoint for the com.amazonaws.<region>.oidc-eks service. This enables IRSA setup and token validation in VPCs without internet egress and ensures correct DNS resolution when the EKS management VPC endpoint is enabled with private DNS.\n  AWS PrivateLink for the cluster OIDC endpoint is available at no additional cost beyond standard AWS PrivateLink pricing in all AWS Regions where Amazon EKS is available. To get started, see Access the cluster OIDC endpoint using AWS PrivateLink in the Amazon EKS User Guide."
     },
     {
       "title": "AWS Security Hub MCP App brings exposure findings into your AI-assisted workflow (Preview)",
@@ -128,6 +191,13 @@
       "summary": "AWS now offers Claude Opus 5 — the most advanced Opus model yet, and compatible with zero data retention (ZDR) — bringing a step-change in coding, long-running agents, and complex professional work to teams building at the highest level. \n \nClaude Opus 5 delivers advances in coding, understanding and navigating codebases like an experienced engineer and writing production-quality code while adapting its strategy as it works. It powers dependable agents that run for hours and even overnight, finding paths around obstacles, recovering from errors, and reaching their objectives. And it brings deeper reasoning to long documents and higher accuracy to complex analysis, with the largest gains on document-heavy enterprise work. \n \nCustomers have two ways to access Claude Opus 5: Amazon Bedrock and Claude Platform on AWS. \n \nAmazon Bedrock offers Claude Opus 5 with zero data retention (ZDR) enabled by default, giving you Opus' top-tier intelligence while meeting your data governance requirements. It keeps your data within AWS infrastructure with regional data residency, and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock documentation and regional availability.\n \nClaude Platform on AWS gives you direct access to Anthropic's native platform experience and capabilities via the AWS Console, with support for zero data retention (ZDR) available on request. Build, test, and deploy with the same APIs, features, and console experience you'd get working with Anthropic directly, unified with AWS billing and authentication. To get started, see the Claude Platform on AWS documentation."
     },
     {
+      "title": "Amazon Redshift Serverless now offers All Upfront pricing for 3-year Serverless Reservations",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/redshift-serverless-three-year-auri/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-24T15:00:00.000Z",
+      "summary": "Amazon Redshift announces the availability of All Upfront payment option for 3-year Serverless Reservations, providing up to 50% savings over on-demand rates. With All Upfront pricing, you pay for the full reservation term at the start and receive the maximum discount on your Amazon Redshift Serverless compute costs. This new payment option joins the existing 1-year No Upfront, 1-year All Upfront, and 3-year No Upfront options, giving you greater flexibility to optimize costs based on your financial preferences\n  Amazon Redshift Serverless allows you to run and scale analytics without having to provision and manage clusters. Serverless Reservations help you further optimize compute costs and improve cost predictability by committing to a specific number of Redshift Processing Units (RPUs). Managed at the AWS payer account level, Serverless Reservations can be shared between multiple AWS accounts, reducing compute costs across all Amazon Redshift Serverless workloads in your organization. Any usage exceeding the reserved RPU level is charged at standard on-demand rates.\n  This pricing option is available in all AWS commercial and AWS GovCloud (US) Regions where Amazon Redshift Serverless is available. You can purchase Serverless Reservations via the Amazon Redshift console or by invoking the Serverless Reservations API. To learn more, see the Amazon Redshift pricing page or the Amazon Redshift Management Guide."
+    },
+    {
       "title": "Opus 4.8, Sonnet 5, and User Activity Monitoring now available on Kiro in AWS GovCloud (US)",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/kiro-opus-sonnet-monitoring-launch-aws-govcloud-us/",
       "source": "AWS What's New",
@@ -140,76 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-07-24T13:00:00.000Z",
       "summary": "Today, AWS announces a research preview of aws-bench, an open-source benchmark that measures how accurately and efficiently AI agents complete real-world AWS tasks. Model providers and AI researchers building agents that operate on AWS infrastructure need an objective, reproducible way to measure performance and diagnose failures. aws-bench provides a public suite of test cases derived from analysis of real AWS usage, including investigation, troubleshooting, and infrastructure creation tasks.\n  Each test case pairs a natural-language query with a defined cloud resource state and a ground-truth answer, so you can score any agent or model on a consistent, verifiable basis. Researchers and model providers can use aws-bench to improve foundation model performance on AWS tasks, improve agent harnesses, and track improvement progress. The release includes an easy-to-use CLI tool to instantiate testing environments, execute and score evaluation runs, and reset resource state.\n  aws-bench is available now on GitHub. To get started, follow the setup instructions on the README."
-    },
-    {
-      "title": "AWS Clean Rooms supports larger worker types up to 32 vCPUs for SQL",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-clean-rooms-32-vcpu-worker-types-sql",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-24T12:00:00.000Z",
-      "summary": "AWS Clean Rooms now supports larger worker types of 32 vCPUs with 244 GB of memory for SQL analyses, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker type available was 16 vCPUs with 120 GB of memory. Larger workers can help improve performance for complex queries on large datasets, optimizing costs for customers. For example, an advertiser collaborating with a publisher can use larger workers to run complex feature engineering across billions of records to train their multi-touch attribution model, accelerating time-to-value and optimizing costs.\n \nAWS Clean Rooms helps companies and their partners easily analyze and collaborate on their collective datasets without revealing or copying one another’s underlying data. For more information about the AWS Regions where AWS Clean Rooms is available, see the AWS Regions table. To learn more about collaborating with AWS Clean Rooms, visit AWS Clean Rooms."
-    },
-    {
-      "title": "Amazon ECS Service Connect now supports Zone-Aware routing",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/ecs-service-connect-zone-aware/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T23:46:00.000Z",
-      "summary": "Amazon Elastic Container Service (Amazon ECS) introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ.\n \nWith this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-service traffic led to significant cross-zone data transfer, requiring trade-offs between cost and resilience. Zone-aware routing eliminates this trade-off, and when local endpoints become unhealthy or fall below capacity thresholds, traffic automatically redistributes across healthy AZs to maintain availability without overloading any single zones.\n \nZone-aware routing is enabled by default for all new and existing services and requires no additional infrastructure or application code changes. Existing services require a one-time redeployment to enable the new routing behavior. You can use Amazon VPC Flow Logs with AZ metadata to monitor cross-AZ traffic patterns and validate routing effectiveness. This feature is available in all AWS commercial and AWS GovCloud (US) Regions, where ECS Service Connect is supported at no additional cost. For more details, refer to our documentation and launch blog post."
-    },
-    {
-      "title": "AWS now supports automatic credit memo application preferences",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/credit-memo-applications/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T18:16:00.000Z",
-      "summary": "AWS now enables customers who pay through electronic funds transfer to configure preferences for how credit memos are automatically applied to outstanding invoices. Customers can choose from different application preferences directly on the Billing and Cost Management console to match their internal payment processes. These options include combinations of applying credit memos to the original invoice, next eligible invoice, and oldest unpaid invoice. By default, credit memos are applied to the original invoice first, then to future invoices, unless a different preference is selected.\n  Automatic credit memo application preferences are available in all commercial AWS Regions. To get started, visit the Payment Preferences page in the AWS Billing and Cost Management console. To learn more, see Managing balance application preferences."
-    },
-    {
-      "title": "Amazon RDS for MySQL supports MySQL 9.7 in Amazon RDS Database Preview Environment",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-mysql-long-term-9-7-rds-database-preview/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T18:05:00.000Z",
-      "summary": "Amazon RDS for MySQL now supports version community MySQL 9.7 in the Amazon RDS Database Preview Environment, allowing you to evaluate the latest Release on Amazon RDS for MySQL. This preview environment provides a sandbox where you can test applications and explore new MySQL 9.7 capabilities before they become generally available.\n  MySQL 9.7 is the latest Long-Term Support release for community MySQL. MySQL Long-Term Support releases include bug fixes, security patches, as well as new features. Please refer to the MySQL 9.7 release notes for more details about this release.\n  Amazon RDS Database Preview Environment database instances are retained for a maximum of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots created in the preview environment can only be used to create or restore database instances within the preview environment. Amazon RDS Database Preview Environment database instances are priced the same as production RDS instances created in the US East (Ohio) Region. For further information, see Working with the Database Preview Environment."
-    },
-    {
-      "title": "AWS Lambda durable execution SDK for .NET is now generally available",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/lambdadf-dotnet/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T18:00:00.000Z",
-      "summary": "Today, AWS announces the general availability of the AWS Lambda Durable Execution SDK for .NET, empowering C# developers to build resilient, long-running workflows using Lambda durable functions. With this SDK, developers can create multi-step applications like payment processing pipelines, AI agent orchestration, and human-in-the-loop approvals directly in their applications without implementing custom progress tracking or integrating external orchestration services. \n \nLambda durable functions extend Lambda's event-driven programming model with operations that checkpoint progress automatically and pause execution for up to a year when waiting on external events. The AWS Lambda Durable Execution SDK for .NET provides an idiomatic C# experience for building with Lambda durable functions. It includes steps for progress tracking, callback integration for human and agent-in-the-loop workflows, durable invocation for reliable function chaining, and waits for efficient suspension. The SDK installs from NuGet into the .NET toolchain you use today. The local testing emulator in the SDK enables developers to build and debug locally before deploying to production.\n \nTo get started, see the Lambda durable functions developer guide and the AWS Lambda Durable Execution SDK for .NET on NuGet. For Regional availability and pricing details, see the AWS Regional Services List and AWS Lambda Pricing."
-    },
-    {
-      "title": "Amazon Bedrock AgentCore now delivers unified observability with traces and logs in a single log group",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-bedrock-agentcore-unified-observability-single-log-group/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T17:00:00.000Z",
-      "summary": "Amazon Bedrock AgentCore now delivers agent traces and prompts to the same log group as your agent's logs, giving you unified observability for AI agents in a single Amazon CloudWatch log group.\n \nPreviously, AgentCore split agent telemetry across multiple destinations trace spans went to the shared `aws/spans` log group while event logs containing prompts, inputs, and outputs went to a separate resource-specific log group. This meant debugging an agent invocation required searching across multiple log groups, and customers could not apply fine-grained access control or customer-managed key (CMK) encryption at the individual agent level. With today's launch, all of an agent's telemetry traces, prompts, structured logs, and standard output is delivered to a single per-agent log group (`/aws/bedrock-agentcore/runtimes/<agent_id>-<endpoint_name>`). You can now correlate traces and logs in one place, scope IAM policies and CMK encryption to individual agents, and export all telemetry by subscribing to a single log group. For multi-agent systems, each agent's complete execution history stays together, making end-to-end debugging straightforward.\n \nAll newly created agents starting July 20, 2026 in supported AWS Regions use unified observability by default starting no configuration needed. For existing agents, set the `UNIFIED_TRACES_DESTINATION_ENABLED=true` environment variable on your agent runtime and upgrade ADOT to version 0.17.1 or later. This feature is available in all AWS commercial regions where AgentCore runtime is supported. Learn more in the AgentCore Developer Guide."
-    },
-    {
-      "title": "Amazon CloudWatch Logs now supports Application Load Balancer logs",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cloudwatch-logs/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T17:00:00.000Z",
-      "summary": "Amazon CloudWatch Logs now supports Application Load Balancer (ALB) logs as vended logs, improving observability and simplifying debugging for network traffic patterns. You can now analyze ALB access, connection and health check logs directly in CloudWatch to gain insights into client connections, traffic distribution, connection status and target health, helping you identify and troubleshoot network issues faster. Additionally, you can set up CloudWatch telemetry enablement rules to automatically configure logging of both existing and newly created ALB resources, for your organization, specific accounts, or specific resources, ensuring consistent monitoring coverage without manual setup.\n  With this CloudWatch Logs integration, you can track detailed access patterns using CloudWatch Logs Insights queries, create metric filters for monitoring and alarming, and review traffic patterns in real time using Live Tail. ALB logs can be configured through the integrations tab of your application load balancer in AWS Management Console, AWS CLI, or SDKs. You can also configure delivery of ALB logs to Amazon Data Firehose or Amazon S3 with support for Apache Parquet format.\n  ALB logs delivery to CloudWatch is available in all AWS Commercial and GovCloud regions where Application Load Balancer and CloudWatch are available. ALB logs are charged as vended logs when delivered to CloudWatch Logs and Data Firehose, while delivery to Amazon S3 is free (Parquet conversion is charged at $0.035/GB - N. Virginia).\n  To learn more about configuring ALB logs in CloudWatch Logs, please visit our documentation. For pricing information, see CloudWatch pricing page."
-    },
-    {
-      "title": "Amazon EC2 I8ge instances are now generally available in additional AWS regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-i8ge-additional-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T17:00:00.000Z",
-      "summary": "Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS Europe (London) and Canada (Central)  regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances . They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O latency variability compared to Im4gn instances. \n  I8ge instances are storage-optimized instances, and offer up to 120TB of local NVMe storage. They are ideal for workloads that demand rapid local storage with high random read/write performance and consistently low latency for accessing large datasets. These versatile instances are offered in eleven different sizes including two metal sizes, providing flexibility to match customers’ computational needs. They deliver up to 180 Gbps of network performance bandwidth and 60 Gbps of dedicated bandwidth for Amazon Elastic Block Store (EBS), ensuring fast and efficient data transfer for the most demanding applications.\n  To begin your Graviton journey, visit the Level up your compute with AWS Graviton page. To get started, see AWS Management Console, AWS Command Line Interface (AWS CLI), and AWS SDKs. To learn more, visit the I8ge instances page."
-    },
-    {
-      "title": "Amazon EVS is now available in additional Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-available-in-additional-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-23T16:24:00.000Z",
-      "summary": "Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) is now available in the Asia Pacific (Seoul), Europe (Zurich), and Europe (Stockholm) Regions. This expansion provides more options to leverage the scale and flexibility of AWS for running your VMware workloads in the cloud.\n  Amazon EVS lets you run VMware Cloud Foundation (VCF) directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances, powered by AWS Nitro. You can set up a complete VCF environment in just a few hours, enabling rapid workload migration to AWS to help you eliminate aging infrastructure, reduce operational risks, and meet critical timelines for exiting your data center. This launch supports all existing Amazon EVS features, including VCF 9.0 and 9.1 support to take advantage of the latest VMware features, such as memory tiering.\n  The added availability in these Regions gives your VMware workloads lower latency through closer proximity to your end users, compliance with data residency or sovereignty requirements, and additional high availability and resiliency options for your enhanced redundancy strategy.\n  To get started, visit the Amazon EVS product detail page and user guide."
-    },
-    {
-      "title": "Enterprise security at machine speed: AWS Black Hat 2026 preview",
-      "link": "https://aws.amazon.com/blogs/security/enterprise-security-at-machine-speed-aws-black-hat-2026-preview/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-07-23T16:23:30.000Z",
-      "summary": "Black Hat 2026 (Aug 1-6, 2026) brings together over 22,000 security practitioners, researchers, and CISOs who build, break, and defend enterprise infrastructure. They’re security professionals who push the limits of offensive and defensive security and demand proof over promises. As frontier security models like Mythos reshape the enterprise landscape, they need security that operates at […]"
     }
   ]
 }
