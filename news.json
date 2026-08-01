@@ -1,6 +1,62 @@
 {
-  "lastUpdated": "2026-07-31T02:00:18.708Z",
+  "lastUpdated": "2026-08-01T02:01:08.234Z",
   "items": [
+    {
+      "title": "HIPAA Security Rule on AWS – Technical Safeguards Implementation and Readiness Guidance",
+      "link": "https://aws.amazon.com/blogs/security/hipaa-security-rule-on-aws-technical-safeguards-implementation-and-readiness-guidance/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-07-31T19:44:25.000Z",
+      "summary": "Today, we’re releasing the HIPAA Security Rule on AWS: Technical Safeguards Implementation and Readiness Guidance. This helps covered entities and business associates configure, implement, and evidence compliance with the HIPAA Security Rule Technical Safeguard requirements (45 CFR §164.312) when building healthcare workloads on AWS. The HIPAA Security Rule’s Technical Safeguards (§164.312) define five standards and […]"
+    },
+    {
+      "title": "Amazon Aurora DSQL adds multi-Region cluster support in four more Regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-aurora-dsql-adds-multi-region-clusters-four-more-regions/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T18:00:00.000Z",
+      "summary": "Starting today, Amazon Aurora DSQL supports multi-Region clusters in four additional AWS Regions: Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore). Aurora DSQL is the fastest serverless, distributed SQL database, with active-active high availability and multi-Region strong consistency. Each multi-Region cluster provides a writable endpoint in both peered Regions, presenting a single logical database that remains available even if one Region becomes unavailable.\n \nWith this launch, Aurora DSQL multi-Region clusters are available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Tokyo), Canada (Central), Canada West (Calgary), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Spain), and Europe (Stockholm). Aurora DSQL single-Region clusters are available in all of these Regions and in Asia Pacific (Hong Kong), Asia Pacific (Melbourne), Asia Pacific (Sydney), and South America (São Paulo).\n  Get started with Aurora DSQL for free with the AWS Free Tier. To learn more, visit the Aurora DSQL webpage and documentation."
+    },
+    {
+      "title": "Amazon RDS for Oracle now offers Reserved Instances for R8i and M8i instances",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-oracle-r8i-m8i/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T15:00:00.000Z",
+      "summary": "Amazon RDS for Oracle now offers 1-year and 3-year Reserved Instances for R8i and M8i instances with up to 53% cost savings compared to On-Demand prices. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. R8i and M8i instances offer up to 15% better price-performance and 2.5x more memory bandwidth compared to previous generation Intel-based instances.\n  Reserved Instance benefits apply to both Multi-AZ and Single-AZ configurations. This means that customers can move freely between configurations within the same database instance class type, making them ideal for varying production workloads. Amazon RDS for Oracle Reserved Instances also provide size flexibility for the Oracle database engine under the Bring Your Own License (BYOL) licensing model. With size flexibility, the discounted rate for Reserved Instances will automatically apply to usage of any size in the same instance family.\n  Customers can now purchase Reserved Instances for Amazon RDS for Oracle in all AWS regions where R8i and M8i instances are available except the South America (São Paulo) Region. For information on specific Oracle database editions and licensing options that support these database instance types, refer to the Amazon RDS user guide.\n  To get started, purchase Reserved Instances through the AWS Management Console, AWS CLI, or AWS SDK. For detailed pricing information and purchase options visit Amazon RDS for Oracle Pricing."
+    },
+    {
+      "title": "AWS Lambda now supports Java 8, 11, and 17 on Amazon Linux 2023",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-lambda-java-amazon-linux/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T14:00:00.000Z",
+      "summary": "AWS Lambda now supports Java 8, Java 11, and Java 17 runtimes on Amazon Linux 2023 (AL2023), available as both managed runtimes and container base images. These new runtimes enable customers running Lambda functions on Java 8, 11, or 17 to migrate from Amazon Linux 2 (AL2) to AL2023 without requiring a simultaneous Java version upgrade.\n  The existing Lambda runtimes for Java 8, 11 and 17 run on AL2, which reached end of life on June 30, 2026. To maintain support coverage and SLA eligibility, customers must migrate their functions to an AL2023-based runtime. AWS recommends that customers upgrade to Java 21 or Java 25 on AL2023 as the preferred migration path. These runtimes offer the latest language features and performance improvements. For customers who are not yet ready to upgrade their Java version, the new Java 8, 11, and 17 runtimes on AL2023 provide an alternative forward path. In addition, the existing AL2-based Lambda runtimes for Java 8, 11, and 17 will remain supported and continue to receive patches for critical and selected important security issues until June 30, 2027, giving customers a full year after AL2's end of life to complete their migration.\n  The Java 8, 11, and 17 runtimes on AL2023 are available in all AWS Regions where Lambda is available, including the AWS GovCloud (US) Regions and the China Regions.\n  To learn more about AL2023 support in Lambda, see our blog post. For customers ready to upgrade to Java 21 or Java 25, you can use AWS Transform custom to assist with the migration. To learn more about Lambda runtimes, visit the Lambda runtimes documentation."
+    },
+    {
+      "title": "Amazon CloudWatch announces managed Prometheus collectors",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-managed-collectors/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T13:06:00.000Z",
+      "summary": "Amazon CloudWatch now supports collecting Prometheus metrics from your AWS infrastructure using fully managed collectors — enabling you to monitor Amazon EKS, Amazon EC2, Amazon ECS, Amazon MSK, and Amazon OpenSearch Service workloads without deploying or managing any agents.\n \nPreviously, getting Prometheus metrics into CloudWatch required deploying, scaling, and maintaining a self-managed OpenTelemetry Collector. Managed Prometheus collectors eliminate that overhead. You provide a scrape configuration and a connection to your resources, and CloudWatch handles provisioning, scaling, and collection automatically. Metrics are delivered in OpenTelemetry format and can be queried alongside your AWS vended metrics using PromQL — providing unified alarming, dashboarding, and cross-service correlation in a single view.\n \nManaged collectors support Kubernetes service discovery (EKS), DNS-based service discovery via AWS Cloud Map (ECS), direct instance scraping (EC2), and open monitoring endpoints (MSK, OpenSearch). Metrics for EKS, MSK and Open Search can be visualized in automatic dashboards, queried with PromQL and used in CloudWatch alarms.\n \nThis feature is available in all AWS Regions where the CloudWatch OTLP endpoint is available, except Asia Pacific (New Zealand). Managed Prometheus collectors are charged by the hour and standard CloudWatch OpenTelemetry metric ingestion pricing applies. To get started, see the documentation."
+    },
+    {
+      "title": "AWS CodeDeploy now available in five additional AWS regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-codedeploy-five-additional-regions",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T10:54:00.000Z",
+      "summary": "AWS CodeDeploy is now available in five additional AWS Regions: Asia Pacific (New Zealand), Asia Pacific (Thailand), Asia Pacific (Taipei), Asia Pacific (Malaysia), and Mexico (Central). AWS CodeDeploy is a fully managed deployment service that automates application deployments to Amazon EC2 instances, on-premises servers, AWS Lambda functions, and Amazon ECS services. Customers in these newly added regions can now access CodeDeploy locally, enabling lower latency and supporting data residency requirements.\n \nWith AWS CodeDeploy, developers and DevOps engineers can rapidly release new features while avoiding downtime during application deployments. The service eliminates error-prone manual deployment operations and scales seamlessly from a single instance to thousands, making it ideal for teams managing complex deployment pipelines across EC2 fleets, serverless Lambda functions, or containerized ECS workloads.\n \nAWS CodeDeploy is now available across 34 AWS commercial regions, as well as AWS GovCloud (US) and the AWS China Regions.\n \nTo learn more, visit the AWS CodeDeploy product page."
+    },
+    {
+      "title": "Amazon EC2 C7i-flex instances now available in Europe (Milan) region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-c7i-flex-instances-MXP-region/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T00:21:00.000Z",
+      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C7i-flex instances powered by custom 4th Gen Intel Xeon Scalable processors (code-named Sapphire Rapids) are available in Europe (Milan) region. These custom processors, available only on AWS, offer up to 15% better performance over comparable x86-based Intel processors utilized by other cloud providers.\n  C7i-flex instances are the easiest way for you to get price performance benefits for a majority of compute intensive workloads, and deliver up to 19% better price-performance compared to C6i. C7i-flex instances offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources. With C7i-flex instances, you can seamlessly run web and application servers, databases, caches, Apache Kafka, and Elasticsearch, and more.\n  To learn more, visit the EC2 C7i-flex instances page."
+    },
+    {
+      "title": "Amazon EC2 C7i instances now available in additional regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-c7i-instances-mxp-yyc-region/",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T00:17:00.000Z",
+      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C7i instances powered by custom 4th Gen Intel Xeon Scalable processors (code-named Sapphire Rapids) are available in Europe (Milan) and Canada West (Calgary) regions. These custom processors, available only on AWS, offer up to 15% better performance over comparable x86-based Intel processors utilized by other cloud providers.\n  C7i instances deliver up to 15% better price-performance versus C6i instances and are a great choice for all compute-intensive workloads, such as batch processing, distributed analytics, ad-serving, and video encoding. C7i instances offer larger instance sizes, up to 48xlarge, and two bare metal sizes (metal-24xl, metal-48xl). These bare-metal sizes support built-in Intel accelerators: Data Streaming Accelerator, In-Memory Analytics Accelerator, and QuickAssist Technology that are used to facilitate efficient offload and acceleration of data operations and optimize performance for workloads. To learn more, visit the EC2 C7i instances Page."
+    },
     {
       "title": "Amazon SageMaker Unified Studio brings richer Git version control to all project tools",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-studio-git/",
@@ -154,62 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-07-29T14:00:00.000Z",
       "summary": "Amazon Connect Customer now automatically surfaces relevant examples of an agent's evaluations when managers are preparing coaching feedback, so they can deliver actionable, evidence-backed coaching to agents. When a manager prepares agent coaching feedback in Amazon Connect Customer, they automatically receive examples of recent evaluations where the agent scored high or low on the chosen coaching topic, along with human or AI evaluator notes explaining the agent behaviors that drove the result. For example, while preparing feedback for an agent on \"de-escalation,\" a manager receives example calls where the agent successfully calmed a frustrated customer, alongside calls that were escalated, with insights into the agent behaviors that led to each outcome. This enables managers to deliver tailored coaching that accelerates agent performance improvement, while saving the time spent manually searching for examples.\n \nThis feature is available in all regions where Amazon Connect Customer is offered. To learn more, please visit our documentation and our webpage."
-    },
-    {
-      "title": "Amazon EFS now supports cross-account Replication in AWS GovCloud (US)",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-efs-cross-account-replication-aws-gov-cloud-us",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-29T12:00:00.000Z",
-      "summary": "Amazon EFS now supports cross-account Replication in AWS GovCloud (US), allowing customers to replicate file systems between AWS accounts. EFS Replication enables you to easily maintain an up-to-date replica of your file system in the AWS GovCloud (US) Region of your choice. With this launch, EFS Replication customers can meet business continuity, multi-account disaster recovery, and compliance requirements by automatically keeping replicas of their file data in separate accounts. \n \nCustomers often use multiple AWS accounts to help isolate and manage business applications and data for operational excellence, security, and reliability. Starting today, you can use EFS Replication to replicate your file system to another account in any AWS GovCloud (US) region. This eliminates the need to set up custom processes to synchronize EFS data across accounts, enhancing resilience and reliability in distributed environments. \n \nTo learn more, visit the Amazon EFS documentation and get started by configuring EFS Replication in just a few clicks using the Amazon EFS Console, AWS CLI, AWS CloudFormation, and APIs."
-    },
-    {
-      "title": "AWS IAM Identity Center extends multi-Region support to Identity Center directory",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-iam-identity-center-extends-multi-region-support-to-identity-center-directory",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-29T07:00:00.000Z",
-      "summary": "IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now replicate IAM Identity Center from the primary AWS Region where you first enabled it to additional Regions of your choice when using Identity Center directory as your identity source. This extends the multi-Region support capability, previously available for Identity Center organization instances connected to external identity providers, to instances that use the Identity Center directory to manage and authenticate their workforce. This feature enhances resilience of user access to AWS accounts and helps you deploy AWS applications in the AWS Regions that best align with your business needs such as application data residency and proximity to users.\n \nWhen you enable this feature, IAM Identity Center automatically replicates your identities, entitlements, and other information from the primary Region to additional Regions. If IAM Identity Center is affected by a disruption in the primary Region, IAM Identity Center users continue to have access to their AWS accounts using the already provisioned entitlements in the additional Regions. \n \nAWS application administrators can use the standard application deployment workflow to deploy their application in an additional Region while you continue to administer IAM Identity Center in the primary Region.\n \nIAM Identity Center multi-Region support is currently available in the 17 enabled-by-default commercial AWS Regions for organization instances of IAM Identity Center. The IAM Identity Center organization instance must be configured with a multi-Region customer managed KMS key (CMK). To find out which AWS applications support deployment in additional Regions, visit AWS applications that you can use with IAM Identity Center. Standard AWS KMS charges apply for storing and using CMKs. IAM Identity Center is provided at no additional cost. To learn more about IAM Identity Center, visit the product detail page. To get started, see the IAM Identity Center User Guide."
-    },
-    {
-      "title": "AWS KMS or AWS CloudHSM: Choose the right key management solution",
-      "link": "https://aws.amazon.com/blogs/security/aws-kms-or-aws-cloudhsm-choose-the-right-key-management-solution/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-07-28T18:55:43.000Z",
-      "summary": "Choosing the right cryptographic key management service on Amazon Web Services (AWS) starts with understanding the difference between AWS Key Management Service (AWS KMS) and AWS CloudHSM. Both provide key storage backed by a hardware security module (HSM) but serve very different needs. AWS KMS is a fully managed service that integrates with all AWS […]"
-    },
-    {
-      "title": "Amazon EKS Provisioned Control Plane now delivers faster pod autoscaling",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-provisioned-control/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-28T17:18:00.000Z",
-      "summary": "Amazon EKS now delivers faster pod autoscaling across all Provisioned Control Plane clusters by increasing Horizontal Pod Autoscaler (HPA) sync concurrency to up to 40 times the default Kubernetes value. This reduces the time it takes for HPA-driven workloads to scale in response to increased load, enabling faster responsiveness to demand.\n  The Kubernetes Horizontal Pod Autoscaler (HPA) continuously monitors workload metrics and adjusts pod counts to match demand. In clusters running hundreds or thousands of HPA objects, the speed at which the Kubernetes control plane processes these objects determines how quickly workloads scale in response to changing demand. The HPA sync concurrency setting controls how many HPA objects the control plane evaluates in parallel. By increasing this value, Provisioned Control Plane clusters now process more HPA objects simultaneously, reducing the time between detecting increased load and scaling out pods.\n  This enhancement is available to all customers using EKS Provisioned Control Plane and requires no configuration changes. To learn more about this enhancement, see EKS Provisioned Control Plane in the EKS User Guide."
-    },
-    {
-      "title": "2026 Phase 1a IRAP report is now available on AWS Artifact for Australian customers",
-      "link": "https://aws.amazon.com/blogs/security/2026-phase-1a-irap-report-is-now-available-on-aws-artifact-for-australian-customers/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-07-28T17:16:34.000Z",
-      "summary": "Amazon Web Services (AWS) is excited to announce that the latest version of Information Security Registered Assessors Program (IRAP) report (Phase 1a – full assessment) is now available through AWS Artifact. An independent Australian Signals Directorate (ASD) certified IRAP assessor completed the IRAP assessment of AWS in June 2026. The new IRAP report includes four […]"
-    },
-    {
-      "title": "Second-generation AWS Outposts racks now supported in the AWS Asia Pacific (Mumbai) Region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-outposts-asia-pacific-mumbai/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-28T16:00:00.000Z",
-      "summary": "Second-generation AWS Outposts racks are now supported in the Asia Pacific (Mumbai) Region. Outposts racks extend AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience.\n  Organizations from startups to enterprises and the public sector in and outside of India can now order their Outposts racks connected to this new supported region, optimizing for their latency and data residency needs. Outposts allows customers to run workloads that need low latency access to on-premises systems locally while connecting back to their home Region for application management. Customers can also use Outposts and AWS services to manage and process data that needs to remain on-premises to meet data residency requirements. This regional expansion provides additional flexibility in the AWS Regions that customers’ Outposts can connect to.\n  To learn more about second-generation Outposts racks, read this blog post and user guide. For the most updated list of countries and territories and the AWS Regions where second-generation Outposts racks are supported, check out the Outposts rack FAQs page."
-    },
-    {
-      "title": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-console-home-cost-and-usage-eu-sovereign-cloud",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-28T16:00:00.000Z",
-      "summary": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region, allowing customers to surface insights from Cost Explorer and Cost Optimization Hub on their Console Home dashboard.\n \nWith the Cost and Usage widget, customers can track month-to-date and forecasted costs, identify savings opportunities, and see how their spend breaks down by service over time.\n \nTo get started, sign in to the AWS Management Console, select Add widgets, and drag the Cost and Usage widget onto your Console Home dashboard. To learn more, see Working with widgets in AWS Console Home documentation."
-    },
-    {
-      "title": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-datasync-amazon-efs-fsx-lustre/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-28T10:00:00.000Z",
-      "summary": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre as source or destination locations.\n \nAWS DataSync is a secure, high-speed data transfer service that simplifies moving data over a network. Enhanced mode processes data in parallel, removes file count limitations, and provides detailed transfer metrics. Previously, customers who wanted to move data to or from EFS or FSx for Lustre were limited to Basic mode. Now customers can use Enhanced mode for these locations, simplifying workflows for large-scale migrations, agentic AI and machine learning training, high-performance computing, genomics processing, and media rendering.\n \nThis capability is available in all AWS Regions where AWS DataSync is offered. To get started, visit the AWS DataSync console. For more information, see the AWS DataSync documentation."
     }
   ]
 }
