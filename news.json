@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T02:01:08.234Z",
+  "lastUpdated": "2026-08-02T01:57:51.877Z",
   "items": [
     {
       "title": "HIPAA Security Rule on AWS – Technical Safeguards Implementation and Readiness Guidance",
@@ -21,6 +21,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-07-31T15:00:00.000Z",
       "summary": "Amazon RDS for Oracle now offers 1-year and 3-year Reserved Instances for R8i and M8i instances with up to 53% cost savings compared to On-Demand prices. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. R8i and M8i instances offer up to 15% better price-performance and 2.5x more memory bandwidth compared to previous generation Intel-based instances.\n  Reserved Instance benefits apply to both Multi-AZ and Single-AZ configurations. This means that customers can move freely between configurations within the same database instance class type, making them ideal for varying production workloads. Amazon RDS for Oracle Reserved Instances also provide size flexibility for the Oracle database engine under the Bring Your Own License (BYOL) licensing model. With size flexibility, the discounted rate for Reserved Instances will automatically apply to usage of any size in the same instance family.\n  Customers can now purchase Reserved Instances for Amazon RDS for Oracle in all AWS regions where R8i and M8i instances are available except the South America (São Paulo) Region. For information on specific Oracle database editions and licensing options that support these database instance types, refer to the Amazon RDS user guide.\n  To get started, purchase Reserved Instances through the AWS Management Console, AWS CLI, or AWS SDK. For detailed pricing information and purchase options visit Amazon RDS for Oracle Pricing."
+    },
+    {
+      "title": "Amazon Location Service adds Search Nearby support for GrabMaps in Southeast Asia",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-location-service-search-nearby-grabmaps",
+      "source": "AWS What's New",
+      "pubDate": "2026-07-31T14:00:00.000Z",
+      "summary": "Amazon Location Service now supports proximity-based point of interest discovery with GrabMaps data in the Asia Pacific (Singapore) and Asia Pacific (Malaysia) AWS Regions. Builders creating local discovery, delivery, and mobility applications in Southeast Asia can surface relevant nearby places using hyperlocal data validated by millions of daily Grab journeys.\n  SearchNearby returns places within a specified radius of a user's location, ranked by distance. Developers can filter results by category (such as fuel stations, hospitals, or restaurants) to narrow responses to what their application needs. This enables a delivery platform to find the closest pickup points, a ride-hailing app to show nearby dining options, or a travel app to locate services within range.\n  GrabMaps delivers hyperlocal mapping data purpose-built for Southeast Asia. Millions of daily journeys across the Grab platform continuously validate road networks, addresses, and points of interest, capturing changes in real time. GrabMaps covers detailed back alleys, narrow side streets, and motorcycle-accessible routes across more than 500 cities in Singapore, Malaysia, Thailand, Vietnam, Indonesia, Philippines, Myanmar, and Cambodia.\n  To get started, see the Search Nearby Developer Guide, API reference, and the GrabMaps Overview page."
     },
     {
       "title": "AWS Lambda now supports Java 8, 11, and 17 on Amazon Linux 2023",
@@ -203,13 +210,6 @@
       "source": "AWS Security Blog",
       "pubDate": "2026-07-29T14:53:39.000Z",
       "summary": "If you use and install packages from npm or PyPI, the first hours after a package is published are the riskiest because scanners can’t analyze packages before publication. Recent supply chain events affecting NodeJS and Python packages have been detected and removed within hours. However, while those packages were available to the general public, it’s […]"
-    },
-    {
-      "title": "Amazon Connect Customer now automatically finds example agent evaluations for tailored coaching",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect-customer-example-evaluations-for-agent-coaching/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-29T14:00:00.000Z",
-      "summary": "Amazon Connect Customer now automatically surfaces relevant examples of an agent's evaluations when managers are preparing coaching feedback, so they can deliver actionable, evidence-backed coaching to agents. When a manager prepares agent coaching feedback in Amazon Connect Customer, they automatically receive examples of recent evaluations where the agent scored high or low on the chosen coaching topic, along with human or AI evaluator notes explaining the agent behaviors that drove the result. For example, while preparing feedback for an agent on \"de-escalation,\" a manager receives example calls where the agent successfully calmed a frustrated customer, alongside calls that were escalated, with insights into the agent behaviors that led to each outcome. This enables managers to deliver tailored coaching that accelerates agent performance improvement, while saving the time spent manually searching for examples.\n \nThis feature is available in all regions where Amazon Connect Customer is offered. To learn more, please visit our documentation and our webpage."
     }
   ]
 }
