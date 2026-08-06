@@ -1,6 +1,76 @@
 {
-  "lastUpdated": "2026-08-05T01:47:52.415Z",
+  "lastUpdated": "2026-08-06T01:48:26.959Z",
   "items": [
+    {
+      "title": "AWS Lambda announces scalable network bandwidth up to 3,000 Mbps for functions outside a VPC",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-lambda-network-bandwidth/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-05T21:35:00.000Z",
+      "summary": "AWS Lambda now supports scalable network bandwidth for Lambda functions, enabling faster data transfer to and from your execution environment for latency-sensitive workloads. This feature enables functions outside a VPC configured with 2 GB of memory or more to access network bandwidth that scales proportionally, from 625 Mbps at 2 GB up to 3,000 Mbps at 10 GB.\n  Customers use Lambda to build latency-sensitive data processing workloads, which need to transfer large volumes of data - up to several terabytes - from external data sources into the function’s execution environment for processing. As data volume and performance requirements grow, the existing limit of 625 Mbps can constrain data transfer speeds to and from an execution environment. With this launch, network throughput increases proportionally from 625 Mbps at 2 GB up to 3,000 Mbps at 10 GB, helping reduce function execution times and per-invocation costs while improving end-user experience.\n  To get started, submit a request through AWS Service Quotas under the Network bandwidth per execution environment quota to enable scalable network bandwidth on your account. Once enabled, bandwidth will scale automatically based on your function's memory configuration for all functions outside a VPC in your account.\n  Scalable network bandwidth for functions outside a VPC is available at no additional charge in all commercial AWS Regions. To learn more, visit the Lambda quotas page."
+    },
+    {
+      "title": "AWS partners with Anthropic and OpenAI to bring AWS Continuum into developer workflows",
+      "link": "https://aws.amazon.com/blogs/security/aws-partners-with-anthropic-and-openai-to-bring-aws-continuum-into-developer-workflows/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-08-05T21:00:11.000Z",
+      "summary": "Customers have access to models that are continuously getting better with each new generation bringing larger context windows, stronger reasoning, and lower token costs. Getting the strongest AI-powered security will come from tools that combine the most relevant models with deep knowledge of a customer’s specific environment. AWS Continuum for code vulnerabilities (Preview) is built […]"
+    },
+    {
+      "title": "Amazon Keyspaces (for Apache Cassandra) is now available in the Canada West (Calgary) Region (ca-west-1)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-keyspaces-apache-cassandra-canada-west/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-05T20:06:00.000Z",
+      "summary": "Amazon Keyspaces (for Apache Cassandra) is now available in the Canada West (Calgary) Region (ca-west-1), allowing customers in the Canada West Region to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements. \n \nAmazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with virtually unlimited throughput and storage. \n \nThis regional expansion enables organizations in Canada to build highly scalable, low-latency applications using familiar Cassandra Query Language (CQL) without the operational burden of managing Cassandra clusters.\n \nTo learn more about on Keyspaces, visit the Amazon Keyspaces documentation."
+    },
+    {
+      "title": "AWS Glue Data Quality makes ETL anomaly detection free and improves anomaly predictions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-glue-data-quality-anomaly-detection-free",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-05T18:25:00.000Z",
+      "summary": "AWS Glue Data Quality now offers improved anomaly detection with a new observation mode that reduces detection of false anomalies and removes pricing for anomaly detection in ETL jobs. Customers using notebook-based or exploratory workflows now benefit from smarter anomaly detection that gracefully handles irregular data arrival intervals. This new capability avoids over-extrapolating trends by using a constant baseline instead of a linear trend, delivering more accurate alerts and reducing noise so teams can focus on genuine anomalies.\n  The new anomaly detection observation mode is particularly useful for exploratory data analysis, datasets with flat or random patterns, workloads without predictable trends and cases where you run data quality checks on varying schedules or in interactive environments like notebooks. Additionally, anomaly detection for AWS Glue ETL jobs is now available at no additional cost, so you can monitor data quality anomalies across all your Glue pipelines without worrying about pricing.\n  These improvements are available in all AWS commercial regions and AWS GovCloud (US) regions.\n  To get started, visit the AWS Glue Data Quality documentation. To learn more about pricing, see the AWS Glue pricing page."
+    },
+    {
+      "title": "From 2 weeks to 2 minutes: Amazon Cognito launches Provisioned limits for self-service rate limit management",
+      "link": "https://aws.amazon.com/blogs/security/from-2-weeks-to-2-minutes-amazon-cognito-launches-provisioned-limits-for-self-service-rate-limit-management/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-08-05T17:17:47.000Z",
+      "summary": "Imagine preparing for your biggest sales event of the year, and you want to ensure your customer identity management service can handle the elevated traffic for carrying out application activities. For security teams, business leaders, and technologists managing identity infrastructure at scale, this scenario has been all too familiar. Whether you’re a CISO evaluating security […]"
+    },
+    {
+      "title": "AWS Marketplace adds AI Insights so buyers can understand pricing before they buy",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-ai-insights/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-05T17:00:00.000Z",
+      "summary": "You can now understand how a product's pricing works before you buy it. Available in the pricing section of the listing in AWS Marketplace, AI Insights explains each product's pricing in plain language: what a pricing unit maps to, how your bill changes as usage scales, how multiple pricing dimensions combine into one cost, and what is and isn't included. Answering these questions used to mean having to visit multiple websites and piecing together pricing details on your own. Now the context sits on the listing, so you can evaluate pricing and move to purchase without switching tabs.\n \nAI Insights cites sources so you can see where the explanations come from. AI Insights draws from the pricing the seller publishes on the Marketplace listing, and additional pricing context on the seller's public website.\n \nAI Insights is live today on most listings where external pricing context is available. It is available in all commercial AWS Regions where AWS Marketplace is available. To see it, open any product listing on the AWS Marketplace website and scroll to the pricing section. Sellers can review what appears on their listing and request edits at any time through the Contact Us form linked in the AI Insights page on the AWS Marketplace Seller Guide."
+    },
+    {
+      "title": "Amazon DynamoDB now supports real-time vector search",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-dynamodb-vector-search",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-05T16:59:00.000Z",
+      "summary": "Today, AWS announces the general availability of vector search for Amazon DynamoDB, a new feature to index and search vectors in real time. As vector datasets grow into the billions or trillions, vector search at scale traditionally trades off search speed, scale, and accuracy: latency climbs with vector count unless you accept lower recall or throughput. DynamoDB now supports native vector search with single-digit millisecond latency at 99%+ recall and is designed for any scale, even trillions of vectors.\n  With DynamoDB vector search, you store vector embeddings alongside your other attributes and generate them using a model of your choice, including models available on Amazon Bedrock. You create a vector index and run approximate nearest neighbor searches, pick the vector index partition key to scale, and filter on attributes to scope results. You get the same serverless benefits you rely on today: zero infrastructure management, zero downtime, zero maintenance windows, and pay for only what you use. You can already use DynamoDB to store memory for AI agents, and with vector search you can now add semantic retrieval over that memory for agentic grounding, along with product similarity search, personalized advertising, retrieval augmented generation, and recommendation systems, with predictable performance.\n  To learn more, visit the AWS News Blog, Amazon DynamoDB product page, and Amazon DynamoDB Developer Guide."
+    },
+    {
+      "title": "AWS IAM Identity Center makes management of AWS account access optional for new organization instances",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-identity-center-accounts-optional/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-05T15:12:00.000Z",
+      "summary": "AWS IAM Identity Center now lets you decide whether to enable management of AWS account access when you create a new organization instance. This allows you to use IAM Identity Center to manage access to AWS applications only, without the need to manage access to AWS accounts. This feature is available at the time of initial configuration of an IAM Identity Center instance and does not affect existing IAM Identity Center instances.\n \nIAM Identity Center enables you to connect your workforce identities to AWS once and offer AWS application owners across your organization streamlined access management. Application end users benefit from single sign-on, user awareness, and consistent authentication experience across AWS applications. Previously, this meant you also needed to manage access to AWS accounts. With this release, account management is now optional. When you choose not to enable management of AWS accounts, IAM Identity Center does not provision its service-linked role into your member accounts, which reduces the access surface in your environment. You can enable account management permissions later through instance settings or the UpdateInstance API. \n \nThis capability is available in all AWS Regions where IAM Identity Center is available. To get started, see Configure instance settings in the IAM Identity Center User Guide."
+    },
+    {
+      "title": "Amazon Aurora serverless now scales faster to support agentic AI and other bursty workloads",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-12-acu-scaling",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-05T15:00:00.000Z",
+      "summary": "Amazon Aurora serverless now delivers higher initial capacity during scale-up events, reaching up to 12 ACUs within a second and continuing to scale up to 256 ACUs as your workload grows. When the workload finishes, Aurora serverless automatically scales down to zero. This makes it especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic patterns. Aurora serverless handles all of it automatically, scaling capacity with your agents, so you only pay for what you use.\n  This enhancement is enabled by default on all Aurora serverless clusters running on platform version 3 or 4, with no configuration changes required. Existing clusters on platform versions 1 and 2 can upgrade directly to the latest platform version 4 to benefit from these improvements. You can verify your cluster's platform version in the AWS Management Console under the instance configuration section, or via the RDS API's ServerlessV2PlatformVersion parameter.\n  For pricing details and Region availability, visit Amazon Aurora Pricing. To learn more, read the Aurora serverless scaling documentation, and get started by creating an Aurora serverless database in just a few steps in the AWS Management Console."
+    },
+    {
+      "title": "Amazon DynamoDB now supports real-time vector search at any scale",
+      "link": "https://aws.amazon.com/blogs/aws/amazon-dynamodb-now-supports-real-time-vector-search-at-any-scale/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-08-05T14:45:10.000Z",
+      "summary": "DynamoDB now supports native vector search with single-digit millisecond latency at 99%+ recall. It is designed for any scale, even trillions of vectors and requires zero infrastructure management."
+    },
     {
       "title": "[Preview Announcement] Re-introducing Forward Proxy as AWS Network Firewall Functionality",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-network-firewall-forward-proxy-preview/",
@@ -55,7 +125,7 @@
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-s3-vectors-european-sovereign-cloud-germany/",
       "source": "AWS What's New",
       "pubDate": "2026-08-04T18:15:00.000Z",
-      "summary": "Amazon S3 Vectors is now available in the AWS European Sovereign Cloud (Germany) Region. Amazon S3 Vectors is purpose-built vector storage for AI agents, inference, Retrieval Augmented Generation (RAG), and semantic search at billion-vector scale. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3, with a dedicated set of APIs that let you store, access, and query vectors without provisioning any infrastructure.\n \nFor a full list of AWS Regions where Amazon S3 Vectors is available, see AWS Regions and endpoints. To learn more, visit the product page, documentation, and the Amazon S3 pricing page."
+      "summary": "Amazon S3 Vectors is now available in the AWS European Sovereign Cloud (Germany) Region. Amazon S3 Vectors is purpose-built vector storage for AI agents, inference, Retrieval Augmented Generation (RAG), and semantic search at billion-vector scale. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3, with a dedicated set of APIs that let you store, access, and query vectors without provisioning any infrastructure.\n \nFor a full list of AWS Regions where Amazon S3 Vectors is available, see AWS Regions and endpoints. To learn more, visit the product and documentation pages."
     },
     {
       "title": "Spring 2026 PCI DSS and PCI 3DS compliance packages for AWS now available",
@@ -121,6 +191,13 @@
       "summary": "Amazon GameLift Streams now offers stream URLs, which give end users temporary, unauthenticated access to a playable stream session in a supported web browser. Recipients need no AWS account, no credentials, and no software install.\n \nTo share a playable stream, create a stream URL for a stream group and one of its applications, set how long the stream URL stays valid and how many sessions it can start, and send the link. Each person who opens the link starts an independent stream session, and Amazon GameLift Streams routes them to a nearby streaming location from the locations you selected. No client integration or backend service is required. You can create, monitor, and revoke stream URLs in the Amazon GameLift Streams console or with the new CreateStreamUrl, GetStreamUrl, ListStreamUrls, and RevokeStreamUrl APIs.\n \nThere is no additional charge for stream URLs. You are charged for the stream capacity that sessions started from a stream URL consume, as described on the Amazon GameLift Streams pricing page. For a full list of supported Regions, see the AWS Region table.\n \nTo get started, see Share stream sessions with stream URLs in the Amazon GameLift Streams Developer Guide and the CreateStreamUrl API Reference. To learn more about the service, see the Amazon GameLift Streams product page."
     },
     {
+      "title": "AWS HealthOmics now supports task-level timeout for WDL workflows",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-healthomics-wdl-task-level-timeout/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-03T20:00:00.000Z",
+      "summary": "AWS HealthOmics now supports task-level timeout for Workflow Description Language (WDL) workflows, enabling you to set maximum execution duration for individual tasks. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows. \n \nWith task-level timeout, you can define time bounds on individual WDL tasks to control costs and enable automated error recovery. HealthOmics provides the omicsTimeout runtime attribute that you can add to any task's runtime section to specify the maximum duration a task is allowed to run. When a task exceeds the specified duration, HealthOmics stops the task and sets the task and run statuses to failed. The omicsTimeout attribute accepts duration values with standard time units (such as 90s, 2h, 1d). This prevents tasks from consuming resources and helps you set cost guardrails during workflow development. \n \nTask-level timeout for WDL workflows is available in all supported AWS HealthOmics Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Seoul, Singapore, Tokyo). To learn more, visit the WDL workflow definition specifics documentation."
+    },
+    {
       "title": "AWS Resilience Hub now provides recommended resilience tests",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-resilience-hub/",
       "source": "AWS What's New",
@@ -133,83 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-08-03T18:54:00.000Z",
       "summary": "AWS Organizations customers can now view their maximum number of accounts quota and its utilization directly through AWS Service Quotas instead of relying on AWS Support or AWS account teams to determine their current account limit.\n  Customers can now proactively plan account growth with ease by monitoring their current account quota utilization and requesting increases before reaching their limit. They can view this quota by logging into management account and accessing the Service Quotas console or calling the Service Quotas GetServiceQuota API.\n  This quota visibility is available now available in US East (N. Virginia). To learn more, see viewing service quotas in the AWS Service Quotas documentation. For more information about AWS Organizations quotas and service limits, see the AWS Organizations documentation."
-    },
-    {
-      "title": "AWS Lambda Provisioned Mode for Amazon SQS event source mappings now supports up to 10,000 event pollers",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-Lambda-provisioned-sqs-esm-max-pollers/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-03T18:00:00.000Z",
-      "summary": "AWS Lambda now supports a maximum of 10,000 event pollers for Provisioned Mode for Amazon SQS event source mappings (ESMs), a 5x increase from the previous limit of 2,000. This enables you to reach up to 100,000 concurrent invocations, so you can build highly responsive and scalable event-driven applications with stringent performance requirements.\n \n \nCustomers use Amazon SQS as an event source for Lambda to build mission-critical applications such as real-time order processing, financial transaction pipelines, IoT telemetry ingestion, and large-scale fan-out workloads, where delays in event processing can directly impact business outcomes. Provisioned Mode for SQS ESM allows you to configure a minimum and maximum number of event pollers and optimize the throughput for your application. However, the maximum number of pollers was previously limited to 2,000, which constrained the number of concurrent invocations that could be reached per ESM, and required customers to split their workload across multiple ESMs. With this launch, customers can reach up to 10,000 event pollers and 100,000 concurrent invocations per ESM, enabling them to build at-scale workloads with stringent latency and throughput requirements.\n \n \nThis feature is generally available in all AWS Commercial Regions. You can activate Provisioned Mode for SQS ESM by configuring a minimum and maximum number of event pollers using the ESM API, AWS Console, AWS CLI, AWS SDK, AWS CloudFormation, and AWS SAM. You pay for the usage of event pollers based on a billing unit called Event Poller Unit (EPU). To learn more, read the Lambda ESM documentation and AWS Lambda pricing."
-    },
-    {
-      "title": "Amazon EC2 I7i instances now available in Asia Pacific (Thailand) and Israel (Tel Aviv) Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-i7i-instances-in-additional-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-03T17:28:00.000Z",
-      "summary": "Amazon Web Services (AWS) announces the availability of high performance Storage Optimized Amazon EC2 I7i instances in the Asia Pacific (Thailand) and Israel (Tel Aviv) Regions. Powered by 5th Gen Intel Xeon Processors with an all-core turbo frequency of 3.2 GHz, these new instances deliver up to 23% better compute performance and more than 10% better price performance over previous generation I4i instances. Powered by 3rd generation AWS Nitro SSDs, I7i instances offer up to 45TB of NVMe storage with up to 50% better real-time storage performance, up to 50% lower storage I/O latency, and up to 60% lower storage I/O latency variability compared to I4i instances.\n  I7i instances offer compute and storage performance for x86-based storage optimized instances in Amazon EC2 ideal for I/O intensive and latency-sensitive workloads that demand very high random IOPS performance with real-time latency to access the small to medium size datasets. Additionally, torn write prevention feature support up to 16KB block sizes, enabling customers to eliminate database performance bottlenecks.\n  I7i instances are available in eleven sizes - nine virtual sizes up to 48xlarge and two bare metal sizes - delivering up to 100Gbps of network bandwidth and 60Gbps of Amazon Elastic Block Store (EBS) bandwidth. To learn more, visit the I7i instances page."
-    },
-    {
-      "title": "Amazon SageMaker AI serverless model customization now supports full fine-tuning",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-sagemaker-fft",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-03T17:00:00.000Z",
-      "summary": "Amazon SageMaker AI serverless model customization now supports full fine-tuning for over 25 open-source models. These include popular models from gpt-oss, Gemma, Llama, Nemotron, and Qwen model families. In addition to parameter-efficient methods such as LoRA, which update a small subset of model weights, you can now update all parameters in the model for deeper adaptation when your use case requires it.\n  Full fine-tuning allows the model to more thoroughly learn your domain-specific patterns, terminology, and task structure. This is particularly valuable when you need the model to acquire capabilities beyond surface-level style adjustments, such as learning specialized reasoning patterns, adopting complex output formats, or internalizing domain knowledge from large proprietary datasets. With serverless model customization, SageMaker manages all infrastructure provisioning and training orchestration, so you can run full fine-tuning jobs without provisioning or managing any infrastructure and you pay only for what you use.\n  Serverless full fine-tuning on SageMaker is available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland). To get started, navigate to the JumpStart and Models page in Amazon SageMaker Studio to launch a customization job, or use the SageMaker Python SDK. To learn more, and see the supported list of models, see the Amazon SageMaker AI model customization documentation."
-    },
-    {
-      "title": "AWS Weekly Roundup: Price reduction of GPT models in Bedrock, CloudWatch managed collectors for Prometheus metrics, and more (August 3, 2026)",
-      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-price-reduction-of-gpt-models-in-bedrock-cloudwatch-managed-collectors-for-prometheus-metrics-and-more-august-3-2026/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-08-03T16:12:30.000Z",
-      "summary": "Last week I had the joy of participating in Amazon’s “Bring Your Kids to Work Day” with my 7 year old son. We commuted together into the New York City office, his first real rush hour train ride, and spent the day exploring how Amazon uses AI, machine learning, and robotics to deliver packages to […]"
-    },
-    {
-      "title": "AWS Transform for full-stack Windows modernization now supports offline schema transformation to Aurora PostgreSQL",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/7/aws-transform-windows-sql-schema-aurora",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-03T15:00:00.000Z",
-      "summary": "Today, AWS Transform for full-stack Windows modernization announced general availability of offline source transformation, enabling customers to modernize Microsoft SQL Server databases to Amazon Aurora PostgreSQL without requiring a live database connection. AWS Transform now converts SQL Server storage objects, powered by AWS DMS, and code objects (stored procedures) using an agentic, interactive experience. Enterprises modernizing legacy .NET applications and their dependent SQL Server databases can now start their modernization by directly uploading the Data Design Language (DDL) source files from their databases.\n \nWith offline source transformation, customers upload SQL Server data design language (DDL) files, assess database and stored procedure complexity, and generate a customizable transformation plan. AWS Transform converts tables, schemas and converts code objects such as stored procedures and functions, validates functional equivalence, and deploys the converted schema to Aurora PostgreSQL. The same workflow transforms database dependent .NET applications to be PostgreSQL compatible .NET applications with updated connection strings, ADO.NET and Entity Framework data-access calls. To address remaining conversion issues, customers can iterate directly in the web console or hand off to their preferred IDE using the AWS Transform MCP server. A separate synthetic data workflow populates Aurora PostgreSQL with test data for end-to-end application validation.\n \nAWS Transform for full-stack Windows modernization and offline source transformation is available in US East (N. Virginia). To get started, you can go to AWS Transform product page or see AWS Transform for full-stack Windows documentation."
-    },
-    {
-      "title": "AWS WAF now supports Miggo Security managed rule groups for emerging threats and AI/ML application protection",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-waf-miggo-managed-rule-groups",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-03T15:00:00.000Z",
-      "summary": "AWS WAF now supports two new partner managed rule groups from Miggo Security, available through AWS Marketplace: Miggo Rules for AWS WAF – High Emerging Application Threats, and Miggo Rules for AWS WAF – AI/ML Application Protection. These rule groups give AWS WAF customers continuously updated protection against vulnerabilities that are being actively exploited, have public proof-of-concept code, or appear in the CISA Known Exploited Vulnerabilities (KEV) catalog, without writing or maintaining custom rules.\n  The High Emerging Application Threats rule group focuses on vulnerabilities under active exploitation, and the AI/ML Application Protection rule group focuses on generative-AI application stacks such as AI agent frameworks, LLM gateways, and model-serving infrastructure. You can subscribe to either rule group and add it to a web ACL directly in the AWS WAF console through AWS Marketplace, with no additional configuration. Both rule groups support versioning, and pricing is set by Miggo through AWS Marketplace.\n  To get started, visit the AWS WAF console or find the Miggo rule groups in AWS Marketplace. For more information, see the AWS WAF Developer Guide. For a full list of supported Regions, visit the AWS Regional Services page."
-    },
-    {
-      "title": "Amazon ECR now supports image layers up to 200 GB",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ecr-image-layers/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-03T15:00:00.000Z",
-      "summary": "Amazon Elastic Container Registry (Amazon ECR) has increased the maximum image layer size limit to 200 GB, for images pushed via Docker push.\n \nPreviously, packaging assets required splitting data across multiple layers or offloading to external storage systems. With this update, customers can store up to 200 GB in a single image layer, eliminating extra complexity for use cases like embedding large language models, bundling genomics datasets, or packaging large binary dependencies directly into your container images. Images pushed using the AWS SDK or CLI; (UploadLayerPartAPI) remain limited to 50 GB.\n \nThis feature is available in all AWS Regions and partitions where Amazon ECR is available except the Middle East (Bahrain) and Middle East (UAE) Regions. To learn more, visit the Amazon ECR product page and refer to the Amazon ECR User Guide. For pricing information, see the Amazon ECR pricing page."
-    },
-    {
-      "title": "AWS Config now supports 15 new resource types",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-config-new-resource-types",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-03T15:00:00.000Z",
-      "summary": "AWS Config now supports 15 additional AWS resource types across key services including Amazon Bedrock,  Amazon OpenSearch Serverless, and Amazon SageMaker. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources.\n  With this launch, if you have enabled recording for all resource types, then AWS Config will automatically track these new additions. The newly supported resource types are also available in Config rules and Config aggregators.\n  You can now use AWS Config to monitor the following newly supported resource types in all AWS Regions where the resources are available:\n  Resource Types:\n \n \n \n  \nAWS::AppSync::DomainName \n   AWS::OpenSearchServerless::AccessPolicy \n  \nAWS::Bedrock::AutomatedReasoningPolicy \n   AWS::OpenSearchServerless::LifecyclePolicy \n  \nAWS::Bedrock::AutomatedReasoningPolicyVersion \n   AWS::SageMaker::ImageVersion \n  \nAWS::Bedrock::Blueprint \n   AWS::SageMaker::InferenceComponent \n  \nAWS::Bedrock::DataAutomationProject \n   AWS::SageMaker::PartnerApp \n  \nAWS::BedrockAgentCore::ApiKeyCredentialProvider \n   AWS::SageMaker::Project \n  \nAWS::Connect::UserHierarchyGroup \n   AWS::SageMaker::Space \n  \nAWS::Glue::Trigger"
-    },
-    {
-      "title": "Amazon SageMaker Unified Studio now supports Teradata Vantage",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-teradata",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-31T20:19:00.000Z",
-      "summary": "Amazon SageMaker Unified Studio now supports Teradata Vantage as a data source, enabling you to query and analyze your enterprise data warehouse data directly alongside your other data assets. With this new connection, you can combine business-critical data stored in Teradata with data from sources like Amazon Redshift, Amazon S3, and relational databases — all within a single, governed environment.\n \nThis integration is particularly valuable when you need to correlate data across analytical and operational workloads. For example, you can join historical enterprise data and business metrics stored in Teradata with real-time datasets to gain deeper insights into customer behavior, financial performance, and operational trends. Data engineers and analysts can build data pipelines that bring together enterprise data warehouse assets with cloud-native datasets, streamlining cross-source workflows without switching between tools. To get started, add a Teradata Vantage connection under your project’s data section. Your Teradata data now appears in the data explorer alongside your other project data. From there, you can query it directly using the query editor, explore it in notebooks, or incorporate it into a visual ETL job, all without leaving the studio.\n \nSupport for Teradata Vantage connections is available in all AWS Regions where Amazon SageMaker Unified Studio is available.\n \nTo get started, see connecting to a new data source in the Amazon SageMaker Unified Studio User Guide."
-    },
-    {
-      "title": "HIPAA Security Rule on AWS – Technical Safeguards Implementation and Readiness Guidance",
-      "link": "https://aws.amazon.com/blogs/security/hipaa-security-rule-on-aws-technical-safeguards-implementation-and-readiness-guidance/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-07-31T19:44:25.000Z",
-      "summary": "Today, we’re releasing the HIPAA Security Rule on AWS: Technical Safeguards Implementation and Readiness Guidance. This helps covered entities and business associates configure, implement, and evidence compliance with the HIPAA Security Rule Technical Safeguard requirements (45 CFR §164.312) when building healthcare workloads on AWS. The HIPAA Security Rule’s Technical Safeguards (§164.312) define five standards and […]"
-    },
-    {
-      "title": "Amazon Aurora DSQL adds multi-Region cluster support in four more Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-aurora-dsql-adds-multi-region-clusters-four-more-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-07-31T18:00:00.000Z",
-      "summary": "Starting today, Amazon Aurora DSQL supports multi-Region clusters in four additional AWS Regions: Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore). Aurora DSQL is the fastest serverless, distributed SQL database, with active-active high availability and multi-Region strong consistency. Each multi-Region cluster provides a writable endpoint in both peered Regions, presenting a single logical database that remains available even if one Region becomes unavailable.\n \nWith this launch, Aurora DSQL multi-Region clusters are available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Tokyo), Canada (Central), Canada West (Calgary), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Spain), and Europe (Stockholm). Aurora DSQL single-Region clusters are available in all of these Regions and in Asia Pacific (Hong Kong), Asia Pacific (Melbourne), Asia Pacific (Sydney), and South America (São Paulo).\n  Get started with Aurora DSQL for free with the AWS Free Tier. To learn more, visit the Aurora DSQL webpage and documentation."
     }
   ]
 }
