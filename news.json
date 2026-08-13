@@ -1,6 +1,76 @@
 {
-  "lastUpdated": "2026-08-12T01:11:58.839Z",
+  "lastUpdated": "2026-08-13T01:13:55.808Z",
   "items": [
+    {
+      "title": "Reducing Text2SQL latency with parameterized query templates",
+      "link": "https://aws.amazon.com/blogs/architecture/reducing-text2sql-latency-with-parameterized-query-templates/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-08-13T00:40:32.000Z",
+      "summary": "Learn how parameterized query templates reduced Text2SQL latency by 80% and cut token consumption by over 50%. This post covers the architecture behind an intelligent caching layer that uses semantic similarity to match user questions to SQL templates, bypassing expensive LLM calls."
+    },
+    {
+      "title": "Adobe Firefly: Simplified observability with Amazon Managed Prometheus",
+      "link": "https://aws.amazon.com/blogs/architecture/adobe-firefly-simplified-observability-with-amazon-managed-prometheus/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-08-13T00:14:19.000Z",
+      "summary": "Learn how Adobe Firefly achieved 28x faster GPU metric queries by migrating from self-managed Prometheus to Amazon Managed Service for Prometheus, with improvements in query performance, infrastructure reliability, and operational efficiency."
+    },
+    {
+      "title": "How AWS IAM role manager rethinks the starting point for IAM roles",
+      "link": "https://aws.amazon.com/blogs/security/how-aws-iam-role-manager-rethinks-the-starting-point-for-iam-roles/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-08-12T22:16:55.000Z",
+      "summary": "When you build a new application or capability on Amazon Web Services (AWS), you want to focus on what you’re building. Getting a service running almost always begins with AWS Identity and Access Management (IAM). Many AWS services that act on your behalf need an IAM role, an identity the service assumes to access your […]"
+    },
+    {
+      "title": "AWS Global View now offers an interactive map view for AWS Regions and AWS Local Zones",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-global-view-map-view/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-12T22:00:00.000Z",
+      "summary": "Today, AWS announces the addition of an interactive map view to AWS Global View in the AWS Management Console, providing a visual way to explore AWS Global Infrastructure.\n \nPreviously, customers had to scan through a list of AWS locations in AWS Global View. With this new capability, customers can toggle between the interactive map view and the existing list view, making it easier to visualize their global AWS infrastructure footprint. \n \nWhen customers select the map view, they will see all AWS Regions and AWS Local Zones plotted on an interactive map. This capability helps customers make informed infrastructure planning decisions by visualizing already enabled AWS locations and the full range of AWS locations available to them, all in a single glance.\n \nThis capability is available across all public AWS Regions. To get started, navigate to the Regions and Zones page in AWS Global View console. For more information, see the AWS Global View documentation."
+    },
+    {
+      "title": "AWS IAM now provides role manager to set up IAM roles automatically",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-iam-role-manager",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-12T18:00:00.000Z",
+      "summary": "Today, AWS announces the general availability of role manager, a capability in AWS Identity and Access Management (IAM) that automatically sets up the IAM roles your AWS services need. When you set up a supported service in the console, role manager creates a default role on your behalf, or reuses one that already exists in your account if it already matches the required permissions. You can enable or disable role manager at any time, as well as inspect the AWS-managed templates that role manager deploys on your behalf.\n \nRole manager supports 6 AWS service consoles at launch, including AWS Lambda and Amazon EventBridge. For example, when you create an AWS Lambda function, role manager applies the AWS-managed template for that workflow. Roles created via role manager appear in the IAM console as standard IAM roles that you fully control, and you can identify the ones role manager created. When you are ready to tighten permissions, you can disable role manager and use IAM Access Analyzer to refine each role to only the permissions it needs.\n \nRole manager is available in all AWS Regions, except the AWS GovCloud (US) Regions and the China Regions.\n \nTo learn more, see How AWS IAM role manager rethinks the starting point for IAM roles on the AWS Security Blog, or Create roles automatically with role manager in the IAM User Guide."
+    },
+    {
+      "title": "Amazon EKS now supports advanced Kubernetes control plane configuration parameters",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-eks-control-plane-configuration-parameters",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-12T18:00:00.000Z",
+      "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports configuring parameters for Kubernetes control plane components including the scheduler, controller manager, and API server. You can tune pod placement strategies to improve resource utilization, adjust how quickly horizontal pod autoscaling responds to changes in demand, set resource lifecycle parameters such as event retention duration, and more.\n  Cluster administrators now have more control over Kubernetes control plane parameters beyond the defaults. For example, you can set the scheduler's node resource fit strategy parameter to MostAllocated, which packs pods onto nodes that are already well utilized and helps you run the same workloads on fewer nodes. The default LeastAllocated strategy spreads pods across nodes, and you can keep it where headroom matters more than density.\n  You can configure Kubernetes control plane parameters in any AWS Region where Amazon EKS is available. For the full list of configurable parameters and to learn more, see Control plane configuration in the Amazon EKS User Guide."
+    },
+    {
+      "title": "Amazon Quick adds deny by default for custom permissions",
+      "link": "https://aws.amazon.com/whats-new/2026/08/amazon-quick-deny-by-default-permissions/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-12T17:15:00.000Z",
+      "summary": "Amazon Quick custom permissions now include deny by default, a governance setting that automatically restricts new AI capabilities before they reach users.\n  Previously, new AI capabilities were available to all users on release, requiring administrators to react after the fact. With deny by default, administrators restrict the AI capability category in a custom permissions profile and assign it to users, roles, or the entire account. Quick then denies any new AI capability at launch for those users. Restricting a category also restricts existing capabilities in it. Administrators explicitly allow each capability when ready. The restriction applies only to the profile you configure.\n  Configure deny by default in Manage account in Amazon Quick or through the AWS CLI. To learn more, see Custom permissions deny by default. Deny by default is available in all AWS Regions where Amazon Quick is available."
+    },
+    {
+      "title": "Amazon Connect Customer supports manual assignment of queued agent-first callbacks",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-agent-callbacks/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-12T17:15:00.000Z",
+      "summary": "Amazon Connect Customer now lets agents view and self-assign queued agent-first callbacks alongside emails, tasks, and chats. This gives agents the option to prioritize work that needs immediate follow-up or for which they already have relevant context. For example, an agent familiar with a customer’s issue can assign the callback to themselves, avoiding another handoff and helping resolve the issue faster.\n \nThis feature is available in all AWS Regions where Amazon Connect Customer is available. To learn more about how to use queued callbacks, refer to our documentation Access the Worklist app and Set up queued callbacks. For more information about Amazon Connect Customer, visit our product page."
+    },
+    {
+      "title": "Amazon Quick now supports data loss prevention with Microsoft Purview",
+      "link": "https://aws.amazon.com/whats-new/2026/08/amazon-quick-dlp-purview/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-12T17:09:00.000Z",
+      "summary": "Amazon Quick now integrates with Microsoft Purview to enforce data loss prevention (DLP) policies across your Quick environment. Organizations need to ensure that sensitive files aren't shared outside approved channels. With this integration, IT administrators and security teams can apply their existing Purview sensitivity labels to automatically control how files are handled in Quick capabilities such as chat, spaces, and knowledge bases.\n \nAdministrators can configure enforcement actions (block, warn, or allow) for each sensitivity label, giving organizations granular control over sensitive file sharing across Quick. For example, a financial services company can block files labeled \"Highly Confidential\" from being uploaded to shared spaces while allowing \"Internal\" files with a warning notification. With this integration, customers can extend their existing Microsoft Purview governance policies into Quick without additional tools.\n \nThis feature is available in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the AWS Region table. To learn more, see Data loss prevention in the Amazon Quick User Guide."
+    },
+    {
+      "title": "Amazon Quick agentic AI capabilities are now available in AWS GovCloud (US-West)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-aws-govcloud-us-west/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-11T23:00:00.000Z",
+      "summary": "Today, AWS announces that Amazon Quick's agentic AI capabilities are now available in AWS GovCloud (US-West), bringing an agentic AI teammate to government and regulated-industry teams within an isolated, FedRAMP Class D (formerly High) authorized environment. Building on the analytics and business intelligence capabilities already available to customers in AWS GovCloud (US), Quick now turns questions into actions, helping teams drive mission-critical decisions faster without switching applications.\n \nWith this launch, teams can build custom chat agents tailored to mission-specific workflows — including procurement, ATO compliance, and grants management — while keeping data hosted and processed entirely within the AWS GovCloud (US-West) Region. Spaces enforce least-privilege access by scoping information to the appropriate program office or mission area, ensuring analysts only access mission-relevant data. Quick also integrates with tools teams already rely on, including Microsoft 365, SharePoint, and OneDrive via GCC High connectors, as well as browser extensions.\n \nAWS GovCloud (US) Regions are isolated AWS Regions operated by U.S. citizens on U.S. soil, purpose-built to host sensitive data and regulated workloads. Customers can address the most stringent U.S. government security and compliance requirements, including the FedRAMP Class D (formerly High) baseline, Department of Defense Cloud Computing Security Requirements Guide (DoD SRG) Impact Levels 4 and 5, International Traffic in Arms Regulations (ITAR), Criminal Justice Information Services (CJIS), and Federal Information Processing Standard (FIPS) 140-3. Inference on authorized foundation models is processed within the AWS GovCloud (US-West) Region, and enterprise governance features are available at launch.\n \nWith this launch, Amazon Quick's agentic AI capabilities are available in 8 AWS Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Asia Pacific (Sydney, Tokyo), and AWS GovCloud (US-West). \n \nTo learn more, visit the Amazon Quick product page and AWS GovCloud (US) documentation"
+    },
     {
       "title": "Amazon EC2 R8a instances are now available in Canada (Central) region",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-r8a-instances-canada-central/",
@@ -128,88 +198,18 @@
       "summary": "Amazon GameLift Streams now manages shader cache capture and distribution for your applications. You capture a shader cache from a stream session, and the service automatically makes it available for future sessions across your streaming locations. No application changes are required.\n  Capturing shader caches can help reduce loading times and visual stuttering, during the session. With service-managed shader caching, you designate a stream session for capture and run your application to generate the cache. Amazon GameLift Streams then replicates the cache to compatible stream groups and locations, and loads it automatically in future sessions.\n  You can monitor shader cache status and storage size using the ListApplicationShaderCaches API or the Amazon GameLift Streams console. The feature supports Linux (Ubuntu 22.04), Proton, and Windows Server 2022 runtimes.\n  You are charged for storage of the latest version of each shader cache. For pricing details, visit the Amazon GameLift Streams pricing page. For supported Regions, see the AWS Region table."
     },
     {
+      "title": "AWS Marketplace now supports category-based notification subscriptions and multi-channel delivery for buyers",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-managed-buyer-notifications/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-10T21:00:12.000Z",
+      "summary": "AWS Marketplace buyers can now configure category-based notifications and multi-channel delivery through AWS User Notifications. Previously, buyer email notifications were limited to the AWS account root email with no way to choose which categories you received or route them to different teams. This meant teams responsible for procurement, renewals, or cost management either missed critical notifications or had to rely on email forwarding. With this launch, buyers can choose which notification categories they receive and how they're delivered.\n \nFour notification categories are available. Products and Solutions notifications cover product version updates, instance type changes, and availability restrictions. Agreements and Subscriptions notifications cover agreement lifecycle events including starts, cancellations, renewals, and payment failures. Private Offers notifications cover new private offers and acceptance confirmations. Pricing Changes notifications cover hourly, monthly, and usage-based price increases for products you subscribe to. By default, all categories are enabled and delivered via email to the account's root address. You can add more recipients, through additional email addresses, distribution lists, the AWS Console Mobile Application, or team channels in Slack and Microsoft Teams, and tailor each to receive only the notification categories relevant to their role. In January 2027, AWS Marketplace will automatically enable these category and delivery controls for all customers. Your existing notifications will continue unchanged. Opt in now to start customizing sooner.\n \nTo learn more, see  AWS Marketplace buyer notifications  in the AWS Marketplace Buyer Guide. To enable managed notifications, visit the  AWS User Notifications console .\n \nAWS Marketplace managed buyer notifications are available in all AWS Commercial Regions where AWS Marketplace is available."
+    },
+    {
       "title": "AWS completes the 2026 Police-Assured Secure Facilities (PASF) audit in Europe (London)",
       "link": "https://aws.amazon.com/blogs/security/aws-completes-the-2026-police-assured-secure-facilities-pasf-audit-in-europe-london/",
       "source": "AWS Security Blog",
       "pubDate": "2026-08-10T20:21:40.000Z",
       "summary": "We’re excited to announce that our Europe (London) AWS Region has renewed its accreditation for United Kingdom (UK) Police-Assured Secure Facilities (PASF) for Official-Sensitive data. Since 2017, the Amazon Web Services (AWS) Europe (London) Region has been accredited under the PASF program. This demonstrates our continuous commitment to adhere to the heightened expectations of customers […]"
-    },
-    {
-      "title": "AWS Identity and Access Management streamlines assignment of IAM roles to workforce users with account access manager",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-iam-aam/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-10T20:07:00.000Z",
-      "summary": "AWS Identity and Access Management (IAM) launched account access manager, a feature that streamlines assignment of IAM roles to workforce users. Administrators use account access manager to assign the IAM roles in their AWS accounts to the workforce users and groups in AWS IAM Identity Center. The feature brings together permissions management flexibility, user awareness, and a single point of federation. It is accessible through the AWS IAM console, the AWS SDK, and CloudFormation/CDK.\n  Previously, customers granting workforce access to AWS accounts could use one of two alternative access management approaches. They could federate users separately into each AWS account and define user permissions narrowly using the IAM roles in each AWS account. Alternatively, they could federate users once through IAM Identity Center, and tailor and manage their access centrally by adjusting and provisioning AWS managed permission sets. The newly released account access manager offers a solution for customers who want the single federation point and user awareness of IAM Identity Center together with the flexibility of IAM roles. \n \nAccount access manager is provided at no additional cost and available in all AWS Commercial Regions enabled by default. To learn more and get started, visit the AWS Identity and Access Management User Guide."
-    },
-    {
-      "title": "Amazon EC2 introduces application status checks",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-application-status-checks",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-10T17:47:00.000Z",
-      "summary": "Amazon EC2 introduces application status checks, a new status check that helps customers detect and respond to application-level issues on their EC2 instances. With application status checks, EC2 monitors applications to detect issues such as a web server that has stopped accepting requests, a Docker daemon that is not running, an incorrect networking configuration, or a network interface that is no longer passing traffic.\n \nCustomers rely on EC2 status checks today to receive alerts when an instance or the underlying system is unreachable. However, to monitor application issues, customers had to build and maintain their own monitoring solution. Now, with application status checks customers can monitor the status of their applications running on EC2 instances alongside existing EC2 instance and system status checks. Customers create a check by specifying the protocol, port, and path to monitor, along with the response codes that indicate a healthy application. After customers associate the check with their instances by instance ID or tag, Amazon EC2 sends HTTP or HTTPS requests to that port and path and reports on the application’s status every 60 seconds. Auto Scaling groups act on application status, initiating recovery by replacing instances when their applications report unhealthy.\n \nApplication status checks are available in all commercial AWS Regions and AWS GovCloud (US) Regions.\n \nTo get started with application status checks and review pricing, see the Amazon EC2 User Guide."
-    },
-    {
-      "title": "2026 AWS CyberVadis report now available for due diligence on third-party suppliers",
-      "link": "https://aws.amazon.com/blogs/security/2026-aws-cybervadis-report-now-available-for-due-diligence-on-third-party-suppliers/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-10T17:09:02.000Z",
-      "summary": "We’re excited to announce that Amazon Web Services (AWS) has completed theCyberVadis assessment of its security posture with the highest score (Mature) in all assessed areas. This demonstrates our continued commitment to meet the heightened expectations for cloud service providers. Customers can now use the 2026 AWS CyberVadis report and scorecard to reduce their supplier […]"
-    },
-    {
-      "title": "Amazon OpenSearch Serverless now supports up to 10,000 collections per collection group",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-opensearch-serverless-supports-10000-collections-per-collection-group/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-10T15:51:00.000Z",
-      "summary": "The next generation of Amazon OpenSearch Serverless now supports up to 10,000 collections within a single collection group, increased from the previous limit of 1,500. Collection groups organize multiple collections and enable them to share OpenSearch Compute Units (OCUs), even when the collections are encrypted with different AWS KMS keys. With this higher limit, you can consolidate significantly more collections into a single collection group and manage them under a shared set of capacity limits.\n \nCustomers use collection groups to reduce costs by sharing compute across many collections rather than provisioning separate OCUs for each KMS key, while still maintaining collection-level security and access controls. As customer workloads have grown, particularly for multi-tenant applications that provision a collection per tenant, the previous limit of 1,500 collections per group constrained how many tenants could benefit from a shared compute pool. Raising the limit to 10,000 collections on the next generation of Amazon OpenSearch Serverless lets you scale these workloads further, improve compute utilization, and lower per-collection cost, without creating and operating additional collection groups. The higher limit applies automatically to new and existing nextgen collection groups.\n \nThe increased limit is available on the next generation of Amazon OpenSearch Serverless in all AWS Regions where it is available. To learn more, see Amazon OpenSearch Serverless technical documentation and quotas."
-    },
-    {
-      "title": "AWS Weekly Roundup: AWS Heroes Summit, Web Search on Amazon Bedrock, Dogwood, Kiro Crew, and more (August 10, 2026)",
-      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-heroes-summit-web-search-on-amazon-bedrock-dogwood-kiro-crew-and-more-august-10-2026/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-08-10T15:45:03.000Z",
-      "summary": "Last week, we brought together AWS Heroes from around the world to connect, collaborate, and celebrate the builders who go above and beyond for the AWS community. The AWS Heroes Summit, an invite-only annual gathering, brings global experts specializing in fields like AI, serverless, and containers together for direct collaboration, technical deep-dives, and feedback sessions […]"
-    },
-    {
-      "title": "AWS Elastic Disaster Recovery now preserves UEFI boot mode for Linux servers",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-drs-linux-uefi",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-10T13:00:00.000Z",
-      "summary": "AWS Elastic Disaster Recovery (AWS DRS) now preserves UEFI boot mode when recovering Linux source servers that boot with UEFI firmware. Previously, DRS launched these Linux servers in legacy BIOS mode, which could require extra configuration after recovery. Now your recovered Linux instances launch with the same UEFI boot mode as your source servers. This means your recovery instances more closely match your source environment, so applications that depend on UEFI boot behavior come back exactly as you expect — with no additional post-recovery steps. Boot mode preservation is automatic, with nothing to configure.\n \nThis capability is available in all AWS Regions where AWS DRS is offered, at no additional cost. To learn more, visit the AWS Elastic Disaster Recovery User Guide."
-    },
-    {
-      "title": "Amazon EC2 R8i and R8i-Flex instances are now available in Europe (Milan) region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-r8i-r8i-flex/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-07T21:11:00.000Z",
-      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the Europe (Milan) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. They are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to R7i.\n \nR8i-flex, our first memory-optimized Flex instances, are the easiest way to get price performance benefits for a majority of memory-intensive workloads. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.\n \nR8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. R8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications. R8i instances are SAP-certified and deliver 142,100 aSAPS, the highest among all comparable machines in on-premises and cloud environments, delivering exceptional performance for mission-critical SAP workloads.\n \nTo get started, sign in to the AWS Management Console. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information about the new R8i and R8i-flex instances visit the AWS News blog."
-    },
-    {
-      "title": "A decade of enterprise identity in the cloud with AWS Managed Microsoft AD",
-      "link": "https://aws.amazon.com/blogs/security/a-decade-of-enterprise-identity-in-the-cloud-with-aws-managed-microsoft-ad/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-07T19:37:57.000Z",
-      "summary": "Ten years ago, we launched AWS Directory Service for Microsoft Active Directory, a fully managed Microsoft Active Directory in the AWS Cloud. In that original announcement, Jeff Barr described a straightforward promise: “You will spend less time administering and more time working on your applications and your business.” A decade later, AWS Managed Microsoft AD […]"
-    },
-    {
-      "title": "Amazon Timestream for InfluxDB now supports backup and restore",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/timestream-influxdb-backup-restore/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-07T19:21:00.000Z",
-      "summary": "Amazon Timestream for InfluxDB now lets you create and manage your own backups and restore your data on demand. You can trigger one-time, on-demand backups, schedule automated recurring backups at the frequency and retention you choose, and restore a backup to a new resource or in place of an existing one. This capability is available for both the InfluxDB 2 and InfluxDB 3 engines through the AWS Management Console, the AWS CLI, and the Timestream for InfluxDB API.\n  With this capability, you control your data protection strategy. You can take an on-demand backup before a risky migration or configuration change. You can also define up to four automated backup configurations per resource using hourly, daily, weekly, monthly, or custom schedules, each with its own retention period. The first backup captures a full copy of your database, and subsequent backups are incremental, reducing the performance impact of ongoing backups. When you restore a backup, you can create a new resource that inherits the source configuration or replace an existing resource. If the source resource uses a Customer Managed key (KMS), its backups use the same key.\n \nCustomer-driven backup and restore is available in all AWS Regions where Amazon Timestream for InfluxDB is available. To get started, open the Amazon Timestream console. For more information, see the Amazon Timestream for InfluxDB documentation and pricing page."
-    },
-    {
-      "title": "Amazon Cognito now available as a skill in the Agent Toolkit for AWS",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-auth-agent-skill/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-07T18:00:48.000Z",
-      "summary": "Amazon Cognito is now available as a core skill (aws-auth) in the Agent Toolkit for AWS. AI coding agents using the toolkit can now set up, configure, secure, and troubleshoot Amazon Cognito using best-practice workflows, helping developers implement secure sign-in flows for users, AI agents, and microservices faster.\n \n \n \nThe Amazon Cognito (aws-auth) skill covers user pool and app client configuration, managed login and OAuth 2.0 flows, token management, JWT authorizers, passkey/WebAuthn enrollment, threat protection, Lambda trigger wiring, and identity pools. When paired with the AWS MCP Server, agents execute AWS CLI commands with IAM-based guardrails and CloudTrail audit logging. The skill also works standalone via the AWS CLI.\n \n \n \nThe Amazon Cognito (aws-auth) skill is available as part of the Agent Toolkit for AWS. To get started, see the Amazon Cognito aws-auth skill on GitHub or browse the Agent Toolkit Quick Start guide. For more information about Amazon Cognito, see the Amazon Cognito Developer Guide."
-    },
-    {
-      "title": "Securing your Amazon S3 buckets: Identifying and remediating over-permissioned access",
-      "link": "https://aws.amazon.com/blogs/security/securing-your-amazon-s3-buckets-identifying-and-remediating-over-permissioned-access/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-07T16:46:40.000Z",
-      "summary": "Misconfigured Amazon Simple Storage Service (Amazon S3) buckets can expose your data to unauthorized access. Without proactive review, S3 bucket policies or Access Control Lists (ACLs) configured with broad access may go unnoticed in your environment. In this post, you learn how to identify and fix over-permissioned S3 buckets across your AWS environment, along with […]"
     }
   ]
 }
