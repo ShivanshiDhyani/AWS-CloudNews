@@ -1,6 +1,34 @@
 {
-  "lastUpdated": "2026-08-14T01:11:51.430Z",
+  "lastUpdated": "2026-08-15T00:44:22.364Z",
   "items": [
+    {
+      "title": "Amazon RDS for Oracle now supports Oracle Application Express (APEX) version 26.1",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-oracle-apex-26-1/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-14T15:00:00.000Z",
+      "summary": "Amazon Relational Database Service (Amazon RDS) for Oracle now supports Oracle Application Express (APEX) version 26.1. Amazon RDS for Oracle is a managed database service that makes it simple to set up, operate, and scale Oracle Database deployments in the cloud. Oracle APEX is a low-code development platform that enables developers to build scalable, secure enterprise applications with modern user interfaces. To learn more about the latest features of Oracle APEX 26.1, see Oracle’s APEX Release 26.1 documentation.\n \nFor more details on supported Oracle APEX versions and how to add or modify Oracle APEX options for your RDS for Oracle database, visit the Amazon RDS for Oracle APEX Documentation.\n \nOracle APEX version 26.1 is available in all AWS regions where Amazon RDS for Oracle is available. See Amazon RDS for Oracle Pricing for regional availability."
+    },
+    {
+      "title": "Serverless vehicle tracking at scale: Bosch L.OS on AWS",
+      "link": "https://aws.amazon.com/blogs/architecture/serverless-vehicle-tracking-at-scale-bosch-l-os-on-aws/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-08-14T10:02:13.000Z",
+      "summary": "Learn how Bosch Mobility Platform Solutions built L.OS, a serverless vehicle tracking platform on AWS that unifies India's fragmented spot logistics market into a single real-time visibility layer using Amazon ECS, AWS Lambda, and Amazon MSK."
+    },
+    {
+      "title": "Amazon SES click tracking now supports custom URL paths for mobile app deep linking",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ses-supports-customurl-deeplinking",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-14T07:00:00.000Z",
+      "summary": "Amazon Simple Email Service (SES) now makes it easier to support mobile deep linking with the new ses:custom-path HTML attribute. When you add this attribute to an <a> tag, SES carries your path segment through to the tracking URL, so mobile operating systems can match it to your app's Universal Links (iOS) or App Links (Android) configuration. This enables you to use mobile deep linking without disabling engagement tracking.\n \nThis feature is available in all AWS Regions where Amazon SES is available. To use this feature, you need a custom redirect domain for click tracking with an Apple App Site Association (AASA) or Digital Asset Links verification file hosted on that domain. Then, add the ses:custom-path attribute to links in your HTML emails.\n \nTo learn more, see Configuring custom domains to handle open and click tracking and the Amazon SES email sending metrics FAQs in the Amazon SES Developer Guide."
+    },
+    {
+      "title": "AWS Billing and Cost Management introduces Managed Dashboards",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-billing-and-cost-management-managed-dashboards/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-14T02:00:00.000Z",
+      "summary": "AWS Billing and Cost Management (BCM) Dashboards now include Managed Dashboards. These are a collection of preconfigured and read-only dashboards located in your dashboard list. They deliver actionable cost insights with your account data pre-populated without setup. \n \nThere are five curated dashboards. Cost Overview & Trends tracks your spending patterns across services, accounts, and regions over 12 months with forward-looking forecasts. Compute and Database dashboards show your spend pattern within each service category, pairing cost breakdowns with relevant commitment coverage and utilization metrics in a single view. Reservations and Savings Plans dashboards show how well your purchased commitments are performing across all eligible services, quantifying gaps and underutilization in monetary terms. \n \nAll managed dashboards are read-only and maintained by AWS. You can duplicate any dashboard to create a fully editable custom copy, add individual widgets to your existing dashboards, and export via PDF or CSV. Whether you are starting your FinOps journey or looking for a standardized baseline across accounts, Managed Dashboards give you cost visibility without setup so you can focus on analysis and action rather than configuration. \n \nAWS Managed Dashboards are available in all commercial AWS Regions at no additional cost. To get started, navigate to Dashboards in the AWS Billing and Cost Management console or view the user guide."
+    },
     {
       "title": "AWS Certificate Manager will discontinue email validation to prove domain validation for certificates",
       "link": "https://aws.amazon.com/blogs/security/aws-certificate-manager-will-discontinue-email-validation-to-prove-domain-validation-for-certificates/",
@@ -14,6 +42,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-08-13T20:49:00.000Z",
       "summary": "AWS Client VPN introduces a rebuilt AWS VPN Client v6.0.x which offers new features like command-line interface (CLI) support, enterprise administrative controls, and faster connection establishment time, making it easier you to automate VPN connectivity and centralize device management across your organization.\n  The AWS VPN Client CLI provides full feature parity with the GUI. You can now script VPN connections into your automation workflows and infrastructure-as-code deployments. Previously, integrating VPN connectivity into automated environments required third-party tooling or manual intervention. This feature eliminates that by supporting background CLI operations. Previously, you had to distribute VPN profiles among all users in your organization, which could be managed by any user without permissions. Now, with administration controls on AWS client, you can centralize VPN policy enforcement by scoping profiles to specific users, manage global profiles available to all users on a device, and enforce approved VPN configurations across your organization.\n  The client is rebuilt with OpenVPN3, delivering faster connection establishment across all supported operating systems. You can use both the GUI and CLI together as both run concurrently and VPN connections persist independently of either interface. The rebuilt client v6.0 onwards maintains full backward compatibility with existing AWS Client VPN endpoints, so no endpoint changes are required. The updated AWS VPN Client is available today for Windows (x64/ARM), macOS (x64/ARM), and Linux (x64). There are no additional charges beyond standard pricing of AWS Client VPN. Download the latest client version 6.0.x for macOS, Windows and Linux to start using it. \n  To learn more about Client VPN, visit the AWS Client VPN product page or read the documentation."
+    },
+    {
+      "title": "Amazon Redshift adds rg.large and rg.12xlarge instance sizes in AWS GovCloud (US) Regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-redshift-adds-rg-large-12xlarge-aws-govcloud-regions/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-13T19:34:00.000Z",
+      "summary": "Amazon Redshift now offers rg.large and rg.12xlarge instance sizes for RG instances in the AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions. RG instances deliver better performance, running data warehouse and data lake workloads up to 2.4x as fast as previous generation RA3 instances, at 30% lower price per vCPU. RG instances include Redshift's custom-built vectorized data lake query engine that processes Apache Iceberg and Parquet data on your cluster nodes, enabling you to run SQL analytics across your data warehouse and data lake using a single engine.\n \nrg.large and rg.12xlarge instance sizes are available on patch version P202 and later. Customers can resize existing RG or RA3 clusters to these new instance sizes using Elastic Resize or Classic Resize. Customers with existing RA3 clusters can also upgrade to RG using Snapshot & Restore.\n \nRG instances are available in four instance sizes: rg.large, rg.xlarge, rg.4xlarge, and rg.12xlarge. RG instances are available with flexible pricing options, including On-Demand, and 1-year and 3-year Reserved Instances with All Upfront, Partial Upfront, and No Upfront payment options. For pricing details, visit the  Amazon Redshift pricing page .\n \n \n \nTo get started, refer to the following resources:\n \n \n \n Amazon Redshift RG Instance Documentation\n \n \n \n \n RA3 to RG Upgrade Guide\n \n \n \n \n Amazon Redshift Pricing"
     },
     {
       "title": "Claude Opus 5 is now available in AWS GovCloud (US)",
@@ -156,6 +191,13 @@
       "summary": "Amazon Quick now integrates with Microsoft Purview to enforce data loss prevention (DLP) policies across your Quick environment. Organizations need to ensure that sensitive files aren't shared outside approved channels. With this integration, IT administrators and security teams can apply their existing Purview sensitivity labels to automatically control how files are handled in Quick capabilities such as chat, spaces, and knowledge bases.\n \nAdministrators can configure enforcement actions (block, warn, or allow) for each sensitivity label, giving organizations granular control over sensitive file sharing across Quick. For example, a financial services company can block files labeled \"Highly Confidential\" from being uploaded to shared spaces while allowing \"Internal\" files with a warning notification. With this integration, customers can extend their existing Microsoft Purview governance policies into Quick without additional tools.\n \nThis feature is available in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the AWS Region table. To learn more, see Data loss prevention in the Amazon Quick User Guide."
     },
     {
+      "title": "Amazon Nova Multimodal Embeddings is now available in AWS GovCloud (US-West)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-nova-mme-govcloud/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-12T14:34:00.000Z",
+      "summary": "We are excited to announce the general availability of Amazon Nova Multimodal Embeddings, a state-of-the-art embedding model for agentic RAG and semantic search, in AWS GovCloud (US-West). It is the first unified embedding model that supports text, documents, images, video, and audio through a single model, to enable cross-modal retrieval with leading accuracy. \n \nManaging and searching across different content types traditionally required multiple specialized embedding models, leading to complexity, higher costs, and data silos. Amazon Nova Multimodal Embeddings maps diverse content types into a unified space with leading accuracy, helping break down these silos. Developers can build cross-modal applications that search video archives using complex queries, find relevant product images based on customer questions, or search financial documentation that contain both infographics and text explanations, all using a single embedding model. \n \nThe model supports inputs of up to 8K tokens in length and video/audio segments up to 30 seconds, with the capability to segment larger files. Multiple output embedding dimensions allow organizations to balance accuracy and performance with storage and computation costs. Organizations can choose between synchronous API for near real-time applications and asynchronous API for efficient processing of larger files, enabling them to optimize for both latency-sensitive and high-volume workloads. \n \nTo learn more, see the user guide. To get started with Nova Multimodal Embeddings in Amazon Bedrock, visit the Amazon Bedrock console in AWS GovCloud (US-West)."
+    },
+    {
       "title": "Amazon Quick agentic AI capabilities are now available in AWS GovCloud (US-West)",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-aws-govcloud-us-west/",
       "source": "AWS What's New",
@@ -168,48 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-08-11T22:03:00.000Z",
       "summary": "Starting today, Amazon EC2 R8a instances are now available in Canada (Central) Region. These instances, feature 5th Gen AMD EPYC processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver up to 30% higher performance, and up to 19% better price-performance compared to R7a instances.\n \nR8a instances deliver 45% more memory bandwidth compared to R7a instances, making these instances ideal for latency sensitive workloads. Compared to Amazon EC2 R7a instances, R8a instances provide up to 60% faster performance for GroovyJVM, allowing higher request throughput and better response times for business-critical applications.\n \nBuilt on the AWS Nitro System using sixth generation Nitro Cards, R8a instances are ideal for high performance, memory-intensive workloads, such as SQL and NoSQL databases, distributed web scale in-memory caches, in-memory databases, real-time big data analytics, and Electronic Design Automation (EDA) applications. R8a instances offer 12 sizes including 2 bare metal sizes. Amazon EC2 R8a instances are SAP-certified, and providing 38% more SAPS compared to R7a instances.\n \nTo get started, sign in to the AWS Management Console. For more information about the new instances, visit the Amazon EC2 R8a instance page."
-    },
-    {
-      "title": "Landing Zone Accelerator Independent Assessment Report for C5:2020 now available on AWS Artifact",
-      "link": "https://aws.amazon.com/blogs/security/landing-zone-accelerator-independent-assessment-report-for-c52020-now-available-on-aws-artifact/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-11T21:50:28.000Z",
-      "summary": "Organizations operating in Germany and across Europe increasingly need to demonstrate cloud security compliance under the Cloud Computing Compliance Criteria Catalogue (C5:2020), published by Germany’s Federal Office for Information Security (BSI). Last year, we introduced Landing Zone Accelerator on AWS support for digital sovereignty and today we’re announcing the availability of a new independent assessment […]"
-    },
-    {
-      "title": "Scaling patterns for self-organizing multi-agent clusters with Kiro",
-      "link": "https://aws.amazon.com/blogs/architecture/scaling-patterns-for-self-organizing-multi-agent-clusters-with-kiro/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-08-11T21:17:02.000Z",
-      "summary": "Learn how to coordinate AI agents through shared state in Amazon S3 instead of a central orchestrator. Deploy and observe self-organizing agent clusters on Amazon EC2 with the open-source kiro-flock reference implementation."
-    },
-    {
-      "title": "Amazon Bedrock expands IAM principal cost allocation to the bedrock-mantle endpoint",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-expands-iam-principal-cost-allocation-bedrock-mantle/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-11T20:25:00.000Z",
-      "summary": "Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to high-performing foundation models from leading AI companies, enabling you to build and scale generative AI applications. Amazon Bedrock now supports cost allocation by AWS Identity and Access Management (IAM) principal, including IAM users and roles, for model inference requests made through the bedrock-mantle endpoint. This extends the capability previously available for the bedrock-runtime endpoint, helping customers attribute inference costs across users, teams, projects, and applications.\n \nCustomers can tag IAM users and roles with attributes such as team, project, or cost center, activate them as cost allocation tags, and analyze bedrock-mantle inference costs by those tags in AWS Cost Explorer or at the line-item level in AWS Cost and Usage Report 2.0 (CUR 2.0). To get started, activate your IAM principal tags in the AWS Billing and Cost Management console. Then filter or group costs by those tags in Cost Explorer, or create a CUR 2.0 data export and select Include caller identity (IAM principal) allocation data.\n \nThis feature is available in all AWS Regions where the bedrock-mantle endpoint is available. To learn more, see Using IAM principal for cost allocation and IAM principal attribution in Amazon Bedrock."
-    },
-    {
-      "title": "Summer 2026 SOC 1 report is now available with 185 services in scope",
-      "link": "https://aws.amazon.com/blogs/security/summer-2026-soc-1-report-is-now-available-with-185-services-in-scope/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-11T18:53:08.000Z",
-      "summary": "Amazon Web Services (AWS) is pleased to announce that the Summer 2026 System and Organization Controls (SOC) 1 report is now available. The reports cover 185 services over the 12-month period from July 1, 2025–June 30, 2026, giving customers a full year of assurance. These reports demonstrate our continuous commitment to adhering to the heightened […]"
-    },
-    {
-      "title": "AWS successfully completed its 2025-26 NHS DSPT assessment",
-      "link": "https://aws.amazon.com/blogs/security/aws-successfully-completed-its-2025-26-nhs-dspt-assessment/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-11T16:12:04.000Z",
-      "summary": "Amazon Web Services (AWS) is pleased to announce its successful completion of the 2025-26 NHS Data Security and Protection Toolkit (NHS DSPT) assessment audit and achieving a status of Standards Exceeded. The NHS DSPT is an assessment that allows organizations to measure their performance against the National Data Guardian’s 10 data security standards. All organizations […]"
-    },
-    {
-      "title": "LocateAnything-3B, Qwen-AgentWorld-35B-A3B, and Qwen3.5-122B-A10B models now available on Amazon SageMaker JumpStart",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/01/locateAnything-3B-qwen-agentworld-35B-A3B-qwen3.5-122B-A10B-on-sagemaker-jumpstart/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-11T15:22:00.000Z",
-      "summary": "NVIDIA's LocateAnything-3B, Qwen's Qwen-AgentWorld-35B-A3B, and Qwen's Qwen3.5-122B-A10B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models bring specialized capabilities spanning visual grounding, agent environment simulation, and large-scale multimodal reasoning, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.\n \nThese models address different enterprise AI challenges with specialized capabilities:\n \nLocateAnything-3B is optimized for fast, high-quality visual grounding and object localization from natural language instructions. It uses a Parallel Box Decoding (PBD) framework that decodes bounding boxes and points as atomic units in a single step, preserving geometric coherence and unlocking substantial parallelism. It enables precise object localization, dense detection, and point-based localization across diverse domains in both Enterprise Intelligence and Physical AI applications.\n \nQwen-AgentWorld-35B-A3B excels in simulating agent environments across seven interaction domains: tool calling, search, terminal, software engineering, Android, web, and OS interaction. It is the first language world model to cover all seven domains within a single model, predicting next environment states given an agent's action and interaction history via long chain-of-thought reasoning—trained on over 10 million real-world interaction trajectories.\n \nQwen3.5-122B-A10B provides high-performance multimodal reasoning with production-friendly efficiency. It features 122B total parameters with only 10B activated per token through a hybrid architecture integrating Gated Delta Networks with sparse Mixture-of-Experts (256 experts), delivering strong reasoning, coding, agents, and visual understanding performance with a native 262K context window and minimal latency overhead.\n \nWith SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.\n \nTo get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the Amazon SageMaker JumpStart documentation."
     }
   ]
 }
