@@ -1,6 +1,111 @@
 {
-  "lastUpdated": "2026-08-18T00:44:06.813Z",
+  "lastUpdated": "2026-08-19T00:44:01.301Z",
   "items": [
+    {
+      "title": "Amazon Bedrock now supports OpenAI models in India",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-openai-india-v1/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T23:30:00.000Z",
+      "summary": "Amazon Bedrock now supports the OpenAI GPT-5.6 models (Terra and Luna) in India, with India Geo cross-Region inference. Customers with regulatory requirements of in-country inferencing can now use OpenAI models at scale ensuring that inferencing is processed within India.\n \nCross-Region inference automatically routes inference requests across multiple AWS Regions to give you higher throughput, without you needing to manage capacity across multiple Regions. The new India Geo inference profiles—in.openai.gpt-5.6-terra for Terra and in.openai.gpt-5.6-luna for Luna—route requests only within the India geography, across AWS Regions such as Asia Pacific (Mumbai) and Asia Pacific (Hyderabad), so you can scale to meet demand while keeping data processed within India to meet data residency requirements. The models run on the bedrock-runtime endpoint with support for the Responses, Chat Completions, and Converse APIs, and work with the same account-level controls you already use for other models on Bedrock, including model invocation logging (deliverable to Amazon S3 or Amazon CloudWatch Logs), Amazon CloudWatch metrics, and cost itemization in AWS Cost Explorer and the AWS Cost and Usage Report.\n \nOpenAI models with India cross-Region inference are available in the Asia Pacific (Mumbai) and Asia Pacific (Hyderabad) Regions. To get started, review the model cards for GPT-5.6 (Terra and Luna) and the Cross-Region inference section in the Amazon Bedrock User Guide."
+    },
+    {
+      "title": "AWS IAM identity federation to external services is now available in AWS European Sovereign Cloud Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-iam-european-sovereign-cloud/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T22:30:00.000Z",
+      "summary": "AWS Identity and Access Management (IAM) now enables AWS workloads in the AWS European Sovereign Cloud (Germany) Region to securely authenticate with external services using short-lived JSON Web Tokens (JWTs). The AWS European Sovereign Cloud is an independent cloud for Europe entirely located within the European Union (EU), designed to help customers meet their evolving sovereignty requirements.\n \n\n With outbound identity federation, AWS workloads can securely authenticate with third-party cloud providers, SaaS providers, and self-hosted applications without using long-term credentials or implementing complex workarounds. Customers can exchange their AWS IAM credentials for cryptographically signed, short-lived JWTs, providing a simple and secure mechanism to access external services. These tokens contain rich context about the AWS workloads, enabling external services to implement fine-grained access control. Administrators can control access to token generation and enforce token properties (such as lifetime, audience, and signing algorithms) using IAM policies and audit token usage using CloudTrail logs, allowing them to meet their organization's security and compliance requirements.\n \n\n To learn more, visit the outbound identity federation product page, see the IAM user guide, or read the AWS News Blog Post."
+    },
+    {
+      "title": "Amazon Corretto August 2026 Critical Security Patch Updates",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-corretto-august-2026-security-updates",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T21:48:00.000Z",
+      "summary": "On Aug 18, 2026, Amazon announced critical security patch update (CSPU) for Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 26.0.2.11.1, 25.0.4.8.1, 21.0.12.9.1, 17.0.20.10.1, 11.0.32.10.1, and 8u504 are now available for download. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.\n \nVisit Corretto home page to download Corretto 26, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yum, or Apk repo.\n \nFeedback is welcomed!"
+    },
+    {
+      "title": "Implement custom authentication for tools integration using request Lambda interceptor in AgentCore Gateway",
+      "link": "https://aws.amazon.com/blogs/security/implement-custom-authentication-for-tools-integration-using-request-lambda-interceptor-in-agentcore-gateway/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-08-18T20:46:26.000Z",
+      "summary": "When deploying AI agents with Amazon Bedrock AgentCore, organizations benefit from built-in modern support for OAuth 2.0, AWS Identity and Access Management (IAM), and API key authentication through Amazon Bedrock AgentCore Gateway. However, some enterprise environments still use legacy authentication mechanisms such as HTTP Basic Authentication (Basic Auth) (RFC 7617). The extensible architecture of AgentCore […]"
+    },
+    {
+      "title": "AgentCore payments is now generally available in Amazon Bedrock AgentCore",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-payments-ga/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T19:15:00.000Z",
+      "summary": "Today, AWS announces the general availability of AgentCore payments, a capability within Amazon Bedrock AgentCore that enables AI agents to autonomously discover, access, and pay for paid APIs, MCPs, and content with just a few lines of code. AgentCore payments provides the security, guardrails, and observability enterprises need to deploy transacting agents in production at scale.\n \nAgentCore payments integrates with Coinbase and Stripe Privy wallets for microtransactions, provides payment orchestration across protocols, enforces configurable payment limits at the infrastructure layer, and delivers end-to-end observability through AgentCore Observability. At general availability, AgentCore payments includes Quick Create for Coinbase credential provisioning directly within the AgentCore console, a curated Coinbase Bazar MCP server of pay-per-use x402 endpoints via AgentCore gateway, support for the Machine Payment Protocol (MPP), and the \"upto\" scheme in the x402 protocol for pay-per-inference and dynamic pricing use cases.\n \nDevelopers can get started using coding assistant skills such as Claude Code, Kiro, and Codex, AgentCore CLI, or AWS Management Console - follow this link.\n \nAgentCore payments is available in the regions listed here. To learn more, visit the AgentCore payments documentation or the AWS News Blog.\n \nTo learn about pricing, visit AgentCore pricing."
+    },
+    {
+      "title": "Amazon SageMaker Unified Studio now supports data profiling and anomaly detection",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/05/smus-data-profiling",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T18:49:00.000Z",
+      "summary": "Amazon SageMaker Unified Studio now supports data profiling and anomaly detection, powered by AWS Glue Data Quality. Data stewards, engineers and analysts can generate statistical profiles of their data to understand its shape and completeness, and track how these statistics change over time. Anomaly detection helps identify when data points drift from historical patterns without requiring predefined thresholds or custom rules. These capabilities are available for both data at rest in catalog tables and data in transit within Visual ETL jobs.\n \nWith this launch, a dedicated Data profile tab on catalog tables provides on-demand and scheduled profiling that computes dataset-level and column-level statistics. As profile history accumulates, anomaly detection builds a baseline of expected behavior and flags data points that fall outside the predicted range. This is particularly useful when you may not be aware of specific thresholds, or when expected values change over time and fixed rules could become stale. For data in transit, the same profiling statistics and anomaly detection are available on the results page of any Visual ETL job with an Evaluate Data Quality transform.\n \nThis feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. To learn more, visit the Amazon SageMaker Unified Studio documentation."
+    },
+    {
+      "title": "Amazon MWAA Serverless now supports PythonOperator and BashOperator",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/mwaa-serverless-pythonoperator-bashoperator/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T18:00:00.000Z",
+      "summary": "Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Serverless now supports running custom Python functions and shell scripts directly in the serverless runtime using PythonOperator and BashOperator. With this launch, data engineering teams can execute the code patterns they rely on daily, including data transformations, format conversions, and data quality checks, without provisioning additional infrastructure.\n \nPackage your Python modules or shell scripts as code packages, upload them to Amazon S3, and reference them when creating or updating a workflow. The service snapshots your code at workflow creation time and uses that snapshot for all subsequent runs, ensuring consistency across executions.\n \nThis feature is available in all AWS Regions where Amazon MWAA Serverless is available. To learn more, visit Using Python and Bash operators."
+    },
+    {
+      "title": "Amazon EC2 R8i instances are now available in Israel (Tel Aviv) region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-r8i-israel-tel-aviv/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T17:24:00.000Z",
+      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i instances are available in the Israel (Tel Aviv) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. They are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to R7i.  \n  R8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. R8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications. R8i instances are SAP-certified and deliver 142,100 aSAPS, the highest among all comparable machines in on-premises and cloud environments, delivering exceptional performance for mission-critical SAP workloads.  \n  To get started, sign in to the AWS Management Console. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information about the new R8i instances visit the AWS News blog."
+    },
+    {
+      "title": "IAM Policy Autopilot now supports Terraform plan files",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/iam-policy-autopilot-now-supports-terraform-plan-files",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T17:19:00.000Z",
+      "summary": "IAM Policy Autopilot can now generate baseline IAM policies directly from a Terraform plan file. IAM Policy Autopilot is an open source tool, launched at re:Invent 2025, that analyzes your code to deterministically create scoped-down IAM policies you can refine as your application evolves, reducing the time you spend writing IAM policies and troubleshooting access issues. Until now the tool analyzed application source code, but it was not possible to generate policies for deploying AWS infrastructure defined via Infrastructure as Code.\n \nNow you can pass a Terraform plan file as input, and IAM Policy Autopilot applies a deterministic analysis to produce a policy scoped to the CRUD functions of the resources in that plan. The generated policies reference specific resource ARNs rather than wildcards, when possible. Supporting policy generation for deploying AWS infrastructure defined via Terraform has been the most requested capability since IAM Policy Autopilot launched, and it complements the existing Terraform-aware analysis, which cross-references Terraform resource definitions with SDK calls in your application code to resolve ARNs.\n \nIAM Policy Autopilot is available at no additional cost and runs on your own machine. To get started, visit the IAM Policy Autopilot GitHub repository."
+    },
+    {
+      "title": "Security Hub Extended adds Supply Chain Security as its tenth category",
+      "link": "https://aws.amazon.com/blogs/security/security-hub-extended-adds-supply-chain-security-as-its-tenth-category/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-08-18T17:04:28.000Z",
+      "summary": "Since February, we’ve grown AWS Security Hub Extended from 14 curated partners across 9 categories to 23 partners across 10. At Black Hat this month, 14 of those partners were at the Amazon Web Services (AWS) booth demoing live. Four of those partners delivered theater talks and ten were featured on SecurityLive streaming. We hosted […]"
+    },
+    {
+      "title": "PostgreSQL 19 Beta 3 is now available in Amazon RDS Database Preview Environment",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/postgresql-19-beta-3-amazon-rds-database-preview-environment/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T16:00:00.000Z",
+      "summary": "Starting today, Amazon RDS for PostgreSQL 19 Beta 3 is available in the Amazon RDS Database Preview Environment, allowing you to evaluate the pre-release of PostgreSQL 19 on Amazon RDS for PostgreSQL.\n \nPostgreSQL 19 Beta 3 adds new capabilities for query performance and autovacuum management. The new pg_stat_autovacuum_scores view helps you monitor and tune autovacuum prioritization. Parallel autovacuum can now use multiple workers to speed up maintenance on large tables. The new pg_plan_advice module lets you lock in efficient query plans to avoid unexpected slowdowns. Eager aggregation improves analytical queries by grouping data earlier, so queries process fewer rows and complete faster. Beta 3 also includes bug fixes and stability improvements from the Beta 2 testing period. Refer to the PostgreSQL community announcement for more details.\n \nAmazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. You can use the PostgreSQL dump and load functionality to import or export your databases from the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the pricing in the US East (Ohio) Region."
+    },
+    {
+      "title": "In the works: AWS Builder Lofts in Berlin, Hyderabad, and São Paulo",
+      "link": "https://aws.amazon.com/blogs/aws/in-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-08-18T13:58:41.000Z",
+      "summary": "Each location will be a permanent community space to offer free workshops, networking events, pitch nights, content creation spaces, collaboration/co-working areas, and event hosting for developers, students, or tech professionals who want to walk through the doors."
+    },
+    {
+      "title": "Consistency is the new latency: AI at the data layer",
+      "link": "https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-08-18T11:13:20.000Z",
+      "summary": "As AI agents move from chatbots to taking action, their reliability depends on the consistency of the data layer beneath them. This post examines how replication lag poisons an agent's context and shows how to match Amazon Aurora, Amazon DynamoDB, and Amazon Keyspaces replication models to each task's consistency requirements."
+    },
+    {
+      "title": "Amazon WorkSpaces now supports Nested Virtualization",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/nested-virtualization-workspaces/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T08:00:00.000Z",
+      "summary": "Amazon WorkSpaces now supports nested virtualization for Amazon WorkSpaces Personal and Amazon WorkSpaces Core Managed Bundles. With nested virtualization enabled, developers can run Docker Desktop, Windows Subsystem for Linux (WSL2), and other hypervisor-dependent tools directly on their Windows WorkSpaces, and KVM-based workloads, Android emulators, and nested containers on their Linux WorkSpaces - without needing separate physical hardware or workaround environments.\n \nNested virtualization is supported on license-included (public and custom) bundles, Bring Your Own License (BYOL) bundles, and Bring Your Own Protocol (BYOP) bundles running Windows Server 2019, Windows Server 2022, Windows Server 2025, Windows 11, Ubuntu 22.04, Ubuntu 24.04, Red Hat Enterprise Linux 8, Red Hat Enterprise Linux 9, Rocky Linux 8, or Rocky Linux 9 with DCV protocol. Power (4 vCPU) or higher is recommended. Nested virtualization is not supported on GPU bundles, the PCoIP protocol, or Amazon WorkSpaces based on Windows Server 2016 and Windows 10. Administrators can enable or disable nested virtualization at the individual workspace level through the console, API, or CLI.\n \nYou can get started by enabling nested virtualization on your WorkSpaces through the console or CLI. For more information, visit the Amazon WorkSpaces documentation on Nested Virtualization. Nested virtualization is available in all AWS Regions where Amazon WorkSpaces is available, excluding China (Ningxia) Region and Israel (Tel Aviv) Region. For pricing information, visit Amazon WorkSpaces pricing page."
+    },
+    {
+      "title": "Amazon S3 Metadata and annotations are now available in AWS GovCloud (US) Regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-s3-metadata-annotations-govcloud-regions",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T04:00:00.000Z",
+      "summary": "Amazon S3 Metadata and annotations are now available in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions, giving you the easiest and fastest way to discover, understand, and enrich your S3 data. S3 Metadata automatically captures system-defined details like object size and source, and stores them in Amazon S3 Tables, optimized for near real-time tabular queries that simplify business analytics and real-time inference applications.\n  Annotations extend S3 Metadata so you can attach rich business context directly to your objects in JSON, XML, or YAML, with up to 1 GB per object. This gives your AI agents and analytics tools the context they need to find and use the right data without building or maintaining separate metadata systems. Annotations share the same durability and consistency properties as the object, move with the object during copy and replication operations, and are removed when the object is deleted. This makes it easy to keep context current as your data evolves.\n  \nAnnotations are available in all AWS Regions and AWS GovCloud (US) Regions. For a full list of AWS Regions where Amazon S3 Metadata is available, including the annotation table, see the S3 Metadata AWS Regions. To learn more, visit the product page, documentation, and the Amazon S3 pricing page."
+    },
     {
       "title": "Amazon Bedrock expands API support and introduces Cross Region Inferencing for OpenAI models",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-cross-region-openai-v2/",
@@ -79,6 +184,13 @@
       "summary": "Amazon OpenSearch Service now extends automatic semantic enrichment to VPC-enabled domains, allowing customers with private network configurations to leverage AI-powered semantic search without exposing their domains to the public internet.\n \n \n Automatic semantic enrichment transforms traditional keyword-only search into context-aware retrieval by understanding the meaning behind queries. For example, a search for \"lightweight laptop for travel\" returns results about \"ultrabooks\" and \"portable notebooks under 3 lbs\" even when these exact terms aren't in the query. The feature handles all semantic processing automatically, eliminating the need to self-manage machine learning models and integration overhead. Previously, automatic semantic enrichment was available only on domains that are not VPC-enabled. This capability is now supported within VPCs (Virtual Private Clouds), enabling customers with stricter network security requirements to improve search relevance while maintaining their existing security posture. No changes to existing VPC configurations are required. To learn more about automatic semantic enrichment, see our documentation.\n \n \n Automatic semantic enrichment for VPC domains is available across 11 Regions globally: US East (N. Virginia, Ohio), US West (Oregon), Asia Pacific (Mumbai, Singapore, Sydney, Tokyo), and Europe (Frankfurt, Ireland, Spain, Stockholm). To get started, on your VPC-enabled OpenSearch Service domain running OpenSearch version 2.19 or later, create an index with automatic semantic enrichment fields configured. Note that you may need to update your domain to the latest service software version, see updating service software for more information."
     },
     {
+      "title": "AWS Console-to-Code adds 26 services and cross-region recording​",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/console-to-code-adds-26-services",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-17T15:00:00.000Z",
+      "summary": "AWS Console-to-Code now supports 26 additional AWS services and introduces cross-region and cross-browser-tab action recording. This expansion grows total service coverage from 6 to 32 supported services, helping developers, DevOps engineers, and cloud architects more easily convert manual console workflows into repeatable, production-ready infrastructure as code (IaC).\n \n​Console-to-Code also introduces cross-region and cross-browser-tab action recording. Previously, switching regions or working across browser tabs would reset or fragment recorded action lists. Actions are now consolidated into a single unified list, enabling customers to capture and automate complex, multi-region infrastructure deployments without losing context.\n \n​​​Starting today, customers in all commercial AWS Regions can use Console-to-Code with all 32 supported services and the new cross-region recording capability.​\n \nTo learn more about getting started with AWS Console-to-Code, and review the list of services supported, visit the Amazon Q Developer Console-to-Code documentation."
+    },
+    {
       "title": "AWS CloudShell now includes a built-in visual file editor",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-cloudshell-visual-file-editor/",
       "source": "AWS What's New",
@@ -98,118 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-08-14T21:04:00.000Z",
       "summary": "Amazon Quick now integrates with Microsoft Purview to enforce data loss prevention (DLP) policies across your Quick environment. Organizations need to ensure that sensitive files aren't shared outside approved channels. With this integration, IT administrators and security teams can apply their existing Purview sensitivity labels to automatically control how files are handled in Quick capabilities such as chat, spaces, and knowledge bases.\n \nAdministrators can configure enforcement actions (block, warn, or allow) for each sensitivity label, giving organizations granular control over sensitive file sharing across Quick. For example, a financial services company can block files labeled \"Highly Confidential\" from being uploaded to shared spaces while allowing \"Internal\" files with a warning notification. With this integration, customers can extend their existing Microsoft Purview governance policies into Quick without additional tools.\n \nThis feature is available in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the AWS Region table. To learn more, see Data loss prevention in the Amazon Quick User Guide."
-    },
-    {
-      "title": "Amazon Quick now supports approval policies for sharing",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-approval-policies-sharing/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-14T21:00:00.000Z",
-      "summary": "Amazon Quick now offers approval policies, giving administrators governance controls over how assets are shared within their organization. With approval policies, administrators can require designated approvers to review and approve share requests before access is granted, helping organizations ensure that sharing of sensitive assets is deliberate, compliant, and auditable.\n \nAdministrators can create approval policies scoped to specific asset types, including knowledge bases, spaces, and custom chat agents. When a user submits a share request for an asset covered by a policy, it is routed to the assigned approver group for review. Approvers can evaluate the asset directly before approving or denying the request, and all workflow events are captured in AWS CloudTrail for full auditability. For custom chat agents, approvers can review and act on the entire dependency package in a single request.\n \nThis feature is available for Professional and Enterprise plans, in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the AWS Region table.\n \nLearn more about Amazon Quick by visiting the Quick website. To learn more about approval policies, see Approval policies in the Amazon Quick User Guide."
-    },
-    {
-      "title": "Amazon Quick now supports customizable no data messages for visuals",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2025/08/amazon-quick-custom-no-data-message/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-14T15:00:00.000Z",
-      "summary": "Amazon Quick announces support for no data message customization, enabling authors to replace the default \"No data to display\" message with a tailored message when a visual returns no data. Authors can configure a custom title, subtitle, and hyperlink that give readers immediate context about why no data is shown and what steps to take next.\n \nAll text fields support parameters, so the message can dynamically reflect the reader's current filter selections. The hyperlink supports http://, https://, and mailto: URL schemas, and both the title and subtitle can be toggled on or off independently.\n \nThis feature is available now in all AWS Regions where Amazon Quick is offered. To learn more, visit Analysis Settings in the Amazon Quick User Guide."
-    },
-    {
-      "title": "Amazon RDS for Oracle now supports Oracle APEX version 26.1",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-oracle-apex-26-1/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-14T15:00:00.000Z",
-      "summary": "Amazon Relational Database Service (Amazon RDS) for Oracle now supports Oracle APEX version 26.1. Amazon RDS for Oracle is a managed database service that makes it simple to set up, operate, and scale Oracle Database deployments in the cloud. Oracle APEX is a low-code development platform that enables developers to build scalable, secure enterprise applications with modern user interfaces. To learn more about the latest features of Oracle APEX 26.1, see Oracle’s APEX Release 26.1 documentation.\n \nFor more details on supported Oracle APEX versions and how to add or modify Oracle APEX options for your RDS for Oracle database, visit the Amazon RDS for Oracle APEX Documentation.\n \nOracle APEX version 26.1 is available in all AWS regions where Amazon RDS for Oracle is available. See Amazon RDS for Oracle Pricing for regional availability."
-    },
-    {
-      "title": "Serverless vehicle tracking at scale: Bosch L.OS on AWS",
-      "link": "https://aws.amazon.com/blogs/architecture/serverless-vehicle-tracking-at-scale-bosch-l-os-on-aws/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-08-14T10:02:13.000Z",
-      "summary": "Learn how Bosch Mobility Platform Solutions built L.OS, a serverless vehicle tracking platform on AWS that unifies India's fragmented spot logistics market into a single real-time visibility layer using Amazon ECS, AWS Lambda, and Amazon MSK."
-    },
-    {
-      "title": "Amazon SES click tracking now supports custom URL paths for mobile app deep linking",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ses-supports-customurl-deeplinking",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-14T07:00:00.000Z",
-      "summary": "Amazon Simple Email Service (SES) now makes it easier to support mobile deep linking with the new ses:custom-path HTML attribute. When you add this attribute to an <a> tag, SES carries your path segment through to the tracking URL, so mobile operating systems can match it to your app's Universal Links (iOS) or App Links (Android) configuration. This enables you to use mobile deep linking without disabling engagement tracking.\n \nThis feature is available in all AWS Regions where Amazon SES is available. To use this feature, you need a custom redirect domain for click tracking with an Apple App Site Association (AASA) or Digital Asset Links verification file hosted on that domain. Then, add the ses:custom-path attribute to links in your HTML emails.\n \nTo learn more, see Configuring custom domains to handle open and click tracking and the Amazon SES email sending metrics FAQs in the Amazon SES Developer Guide."
-    },
-    {
-      "title": "AWS Billing and Cost Management introduces Managed Dashboards",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-billing-and-cost-management-managed-dashboards/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-14T02:00:00.000Z",
-      "summary": "AWS Billing and Cost Management (BCM) Dashboards now include Managed Dashboards. These are a collection of preconfigured and read-only dashboards located in your dashboard list. They deliver actionable cost insights with your account data pre-populated without setup. \n \nThere are five curated dashboards. Cost Overview & Trends tracks your spending patterns across services, accounts, and regions over 12 months with forward-looking forecasts. Compute and Database dashboards show your spend pattern within each service category, pairing cost breakdowns with relevant commitment coverage and utilization metrics in a single view. Reservations and Savings Plans dashboards show how well your purchased commitments are performing across all eligible services, quantifying gaps and underutilization in monetary terms. \n \nAll managed dashboards are read-only and maintained by AWS. You can duplicate any dashboard to create a fully editable custom copy, add individual widgets to your existing dashboards, and export via PDF or CSV. Whether you are starting your FinOps journey or looking for a standardized baseline across accounts, Managed Dashboards give you cost visibility without setup so you can focus on analysis and action rather than configuration. \n \nAWS Managed Dashboards are available in all commercial AWS Regions at no additional cost. To get started, navigate to Dashboards in the AWS Billing and Cost Management console or view the user guide."
-    },
-    {
-      "title": "AWS Certificate Manager will discontinue email validation to prove domain validation for certificates",
-      "link": "https://aws.amazon.com/blogs/security/aws-certificate-manager-will-discontinue-email-validation-to-prove-domain-validation-for-certificates/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-13T21:23:00.000Z",
-      "summary": "Today, we’re announcing that AWS Certificate Manager (ACM) will discontinue support for email-validated public certificates by September 30, 2027. If you use email validation for your ACM public certificates, you need to migrate to DNS validation before that date. This change aligns with the Certification Authority/Browser (CA/B) Forum’s industry-wide deprecation of email-based domain validation and […]"
-    },
-    {
-      "title": "AWS Client VPN now supports CLI, administration controls, and faster connections",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-client-vpn-cli/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-13T20:49:00.000Z",
-      "summary": "AWS Client VPN introduces a rebuilt AWS VPN Client v6.0.x which offers new features like command-line interface (CLI) support, enterprise administrative controls, and faster connection establishment time, making it easier you to automate VPN connectivity and centralize device management across your organization.\n  The AWS VPN Client CLI provides full feature parity with the GUI. You can now script VPN connections into your automation workflows and infrastructure-as-code deployments. Previously, integrating VPN connectivity into automated environments required third-party tooling or manual intervention. This feature eliminates that by supporting background CLI operations. Previously, you had to distribute VPN profiles among all users in your organization, which could be managed by any user without permissions. Now, with administration controls on AWS client, you can centralize VPN policy enforcement by scoping profiles to specific users, manage global profiles available to all users on a device, and enforce approved VPN configurations across your organization.\n  The client is rebuilt with OpenVPN3, delivering faster connection establishment across all supported operating systems. You can use both the GUI and CLI together as both run concurrently and VPN connections persist independently of either interface. The rebuilt client v6.0 onwards maintains full backward compatibility with existing AWS Client VPN endpoints, so no endpoint changes are required. The updated AWS VPN Client is available today for Windows (x64/ARM), macOS (x64/ARM), and Linux (x64). There are no additional charges beyond standard pricing of AWS Client VPN. Download the latest client version 6.0.x for macOS, Windows and Linux to start using it. \n  To learn more about Client VPN, visit the AWS Client VPN product page or read the documentation."
-    },
-    {
-      "title": "Amazon Redshift adds rg.large and rg.12xlarge instance sizes in AWS GovCloud (US) Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-redshift-adds-rg-large-12xlarge-aws-govcloud-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-13T19:34:00.000Z",
-      "summary": "Amazon Redshift now offers rg.large and rg.12xlarge instance sizes for RG instances in the AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions. RG instances deliver better performance, running data warehouse and data lake workloads up to 2.4x as fast as previous generation RA3 instances, at 30% lower price per vCPU. RG instances include Redshift's custom-built vectorized data lake query engine that processes Apache Iceberg and Parquet data on your cluster nodes, enabling you to run SQL analytics across your data warehouse and data lake using a single engine.\n \nrg.large and rg.12xlarge instance sizes are available on patch version P202 and later. Customers can resize existing RG or RA3 clusters to these new instance sizes using Elastic Resize or Classic Resize. Customers with existing RA3 clusters can also upgrade to RG using Snapshot & Restore.\n \nRG instances are available in four instance sizes: rg.large, rg.xlarge, rg.4xlarge, and rg.12xlarge. RG instances are available with flexible pricing options, including On-Demand, and 1-year and 3-year Reserved Instances with All Upfront, Partial Upfront, and No Upfront payment options. For pricing details, visit the  Amazon Redshift pricing page .\n \n \n \nTo get started, refer to the following resources:\n \n \n \n Amazon Redshift RG Instance Documentation\n \n \n \n \n RA3 to RG Upgrade Guide\n \n \n \n \n Amazon Redshift Pricing"
-    },
-    {
-      "title": "Claude Opus 5 is now available in AWS GovCloud (US)",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/07/claude-opus-5-aws-govcloud/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-13T18:23:00.000Z",
-      "summary": "AWS GovCloud (US) now offers Claude Opus 5 — the most advanced Opus model yet, and compatible with zero data retention (ZDR) — bringing a step-change in coding, long-running agents, and complex professional work to teams building at the highest level. Claude Opus 5 is available via the bedrock-runtime endpoint in both AWS GovCloud (US) regions, and available via the bedrock-mantle endpoint in AWS GovCloud (US-West)\n \nClaude Opus 5 delivers advances in coding, understanding and navigating codebases like an experienced engineer and writing production-quality code while adapting its strategy as it works. It powers dependable agents that run for hours and even overnight, finding paths around obstacles, recovering from errors, and reaching their objectives. And it brings deeper reasoning to long documents and higher accuracy to complex analysis, with the largest gains on document-heavy enterprise work. \n \nAmazon Bedrock offers Claude Opus 5 with zero data retention (ZDR) enabled by default, giving you Opus' top-tier intelligence while meeting your data governance requirements. It keeps your data within AWS infrastructure with regional data residency and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock documentation and regional availability."
-    },
-    {
-      "title": "Spot Placement Score now includes Local Zones",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/spot-placement-score-local-zones/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-13T17:13:00.000Z",
-      "summary": "Today, AWS announces support for AWS Local Zones in Spot placement score, helping you identify locations where your Spot capacity request is most likely to succeed. Spot placement score evaluates your target capacity and compute requirements and returns scores for AWS Regions or Availability Zones.\n \nPreviously, Spot placement scores excluded local zone capacity information when reporting zonal and regional scores. Now, you can optionally request local zones to be included in the zonal and regional score responses giving you a broader view of your Spot capacity options.\n \nYou can use Spot placement score through EC2 Spot Console, AWS CLI, or SDK. To learn more about Spot placement score see Spot placement score documentation."
-    },
-    {
-      "title": "Daybreak Red and Daybreak Blue from OpenAI are now available to eligible customers on Amazon Bedrock",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/openai-daybreak-red-and-blue-on-amazon-bedrock/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-13T16:12:00.000Z",
-      "summary": "Security teams can now access Daybreak Red and Daybreak Blue from OpenAI on Amazon Bedrock. Both are part of Daybreak, the cyber defense initiative from OpenAI that gives defenders governed access to frontier AI for cybersecurity work.\n \nDaybreak Blue is the starting point for most security teams across defensive workflows including vulnerability discovery, detection engineering, and incident response. Daybreak Red is designed for advanced, authorized tasks such as vulnerability research, exploit reproduction, and mitigation development. For these tasks, a lower refusal threshold matched by stronger identity verification, monitoring, and access controls improves the speed and depth of an investigation. Both models run on Bedrock's next-generation inference engine with zero-operator access (ZOA) enforced at the chip. Your inference data is not used for model training, and neither model requires you to opt into sharing your data with OpenAI.\n \nDaybreak Red: GPT-5.6 Cyber and Daybreak Blue: GPT-5.6 Sol are now available to eligible customers on Amazon Bedrock in the following AWS Region: US East (Ohio). Access to the models requires enrollment in Daybreak access from OpenAI. To enroll, contact OpenAI or reach out to your AWS account team for guidance on eligibility. Once approved, work with your account team to request access on AWS. To learn more, read the blog."
-    },
-    {
-      "title": "Track generative AI costs with Amazon Bedrock inference profiles",
-      "link": "https://aws.amazon.com/blogs/architecture/track-generative-ai-costs-with-amazon-bedrock-inference-profiles/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-08-13T15:59:39.000Z",
-      "summary": "Learn how to track generative AI costs by department using Amazon Bedrock application inference profiles and AWS cost allocation tags. Create tagged profiles for each team and view per-department cost breakdowns in AWS Cost Explorer."
-    },
-    {
-      "title": "AWS Certificate Manager supports switching from e-mail to DNS validation",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/AWS-Certificate-Manager-Email-DNS-Switch",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-13T15:00:00.000Z",
-      "summary": "AWS Certificate Manager (ACM) now enables you to change the domain validation method on your existing ACM issued public TLS certificates from e-mail to DNS, without reissuing the certificate or changing its existing Amazon Resource Name (ARN). Due to the Certification Authority/Browser (CA/B) Forum's mandated deprecation of email-based domain validation for publicly trusted certificates, effective March 15, 2028, ACM will phase out its support for email validation throughout 2027. ACM will no longer issue email-validated certificates starting March 31 2027, and stop renewing email-validated certificates on September 30 2027. More details on ACM's deprecation of email validation can be found on the AWS Security Blog. By switching to DNS validation now, you can transition ahead of that deadline and enable fully automated renewals through DNS validated certificates.\n \nYour certificate ARN remains unchanged after switching from e-mail to DNS validation, so existing ARN references in your CI/CD pipelines, load balancer configurations, and other AWS service integrations continue to work without modification. To switch the validation method, use the ACM console or the  UpdateCertificateOptions API. ACM provides a CNAME record for each domain in the certificate (the same mechanism used when provisioning new certificates with DNS validation) and you have up to 72 hours to add the records to your DNS configuration. You can monitor the validation status of each domain via the console or the ListCertificateDomainValidations API. We recommend DNS validation for new certificates, and HTTP validation for Amazon CloudFront distributions..\n \nThis feature is available in all AWS Regions where ACM certificates are available. To get started, refer to  Migrating from email to DNS validation in the AWS Certificate Manager User Guide."
-    },
-    {
-      "title": "Recovery strategies to meet data residency requirements",
-      "link": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-08-13T14:05:39.000Z",
-      "summary": "Learn three strategies for achieving disaster recovery while meeting data residency requirements. Ranging from encryption-based controls on multi-Region replication to fully in-country architectures, these patterns help you balance recovery objectives with regulatory constraints."
-    },
-    {
-      "title": "Amazon S3 adds additional policy details to access denied error messages",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/s3-additional-policy-details-access-denied-error-messages/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-13T13:00:00.000Z",
-      "summary": "Amazon S3 now includes the specific AWS Identity and Access Management (IAM) and AWS Organizations policy Amazon Resource Name (ARN) in HTTP 403 Access Denied error messages for same-account and same-organization requests. This helps you quickly identify the exact policy responsible for a denied request and remediate the issue directly.\n \nPreviously, S3 access denied error messages included the policy type and reason for denial, but when multiple policies of the same type existed, you still had to manually inspect each one to pinpoint the root cause. Now the error message includes the specific policy ARN for explicit deny cases, covering Service Control Policies (SCPs), Resource Control Policies (RCPs), identity-based policies, session policies, and permission boundaries.\n \nThis capability is available in all AWS Regions, including the AWS GovCloud (US) Regions and the AWS China Regions. To learn more about how to troubleshoot access denied errors in Amazon S3, visit the S3 User Guide and the IAM troubleshooting documentation."
     }
   ]
 }
