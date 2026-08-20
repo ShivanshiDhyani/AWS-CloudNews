@@ -1,6 +1,125 @@
 {
-  "lastUpdated": "2026-08-19T00:44:01.301Z",
+  "lastUpdated": "2026-08-20T00:43:46.452Z",
   "items": [
+    {
+      "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 1",
+      "link": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-1/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-08-20T00:32:52.000Z",
+      "summary": "Learn how AgentFlo built always-on AI sales agents on Amazon Bedrock AgentCore and the Strands Agents SDK. Part 1 covers three pillars of production-grade agents—velocity, standardization, and scalability—including recipe-based deployment, tool routing through AgentCore Gateway, and elastic, stateful commerce conversations."
+    },
+    {
+      "title": "Launching External Web Access for Web Search on Amazon Bedrock",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-web-access-web-search/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T23:00:00.000Z",
+      "summary": "Earlier this month, we announced Web Search on Amazon Bedrock, a built-in server-side tool that allows you to ground model responses with current web knowledge, while maintaining data within your secured AWS environment with zero data egress. Today, we are expanding Web Search to enable the external_web_access parameter allowing Web Search to retrieve content directly from the public web so models can ground responses in the latest information.\n \nTo enable external_web_access, grant the bedrock-websearch:ExternalWebAccess IAM permission to the request identity and leave the external_web_access parameter at its default of true.  In doing so, Web Search can then fetch content live from the public web for use cases that need the freshest possible information, such as latest sports score, live pricing, or newly released documentation. If handling sensitive data, to keep retrieval entirely within your AWS boundary, set external_web_access: false. By setting it false, Web Search serves results only from Amazon's in-AWS web index and knowledge graph, with no request data leaving the AWS boundary.  \n \nEnabling External Web Access is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), and US West (Oregon). To learn more, read our blog post Introducing Web Search on Amazon Bedrock for foundation model grounding, review Controlling external web access in the Amazon Bedrock User Guide, and visit the Amazon Bedrock pricing page for cost details."
+    },
+    {
+      "title": "Amazon CloudWatch log Centralization now supports log group tag propagation",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-cloudwatch-centralization-tag-propogation/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T21:06:00.000Z",
+      "summary": "Amazon CloudWatch Centralization now copies log group tags from source accounts to the destination log groups created by centralization rules. CloudWatch Centralization aggregates log data from multiple accounts and Regions into one destination account. With tag propagation, the cost, ownership, and compliance tags you maintain at the source now apply to the copied log groups.\n \nWith today's launch, CloudWatch copies the tags of each source log group to its destination log group and keeps them in sync based on the tag propogation behaviour selected as part of the centralization rule setup. For example, a platform team can preserve Application and CostCenter tags on centralized log groups, then use those tags to scope access with IAM conditions and report centralized log spend by team in AWS Cost Explorer.\n \nTag propagation is available in all AWS Regions where CloudWatch Centralization is available. For a list of Regions, see the AWS Regions table.\n \nTo get started, turn on tag propagation for a centralization rule in the Amazon CloudWatch console, or by using the AWS CLI or AWS SDKs. To learn more about centralizing logs while preserving their tags, see Log Centralization User Guide. For Centralization pricing, see Amazon CloudWatch pricing."
+    },
+    {
+      "title": "Amazon SageMaker notebooks now support trusted identity propagation",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-sagemaker/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T20:25:00.000Z",
+      "summary": "Amazon SageMaker Notebooks now support Trusted Identity Propagation (TIP) with Amazon Athena, Amazon Redshift, and Amazon EMR Serverless, enabling per-user access control for data analytics.\n \nWhen connected to a TIP-enabled compute in a TIP-enabled Project, each notebook user's IAM Identity Center identity flows through to AWS Lake Formation, ensuring they see only the tables, columns, and rows their permissions allow, without sharing a single broad execution role. With TIP, enterprises get per-user data boundaries enforced based on who is running the query, full audit attribution with CloudTrail recording which user accessed data, and reduced admin friction since identity propagates automatically through the existing compute connection with no extra login, token, or role management required.\n \nTo get started, use a notebook in a TIP enabled Project with the supported engines.  This feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. To learn more, see Trusted identity propagation in the Amazon SageMaker Unified Studio Administrator Guide and Notebooks in the Amazon SageMaker Unified Studio User Guide."
+    },
+    {
+      "title": "AWS Cost Anomaly Detection supports third-party models on Amazon Bedrock",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-cost-anomaly-detection-bedrock-3P/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T17:57:00.000Z",
+      "summary": "AWS Cost Anomaly Detection now monitors spend on third-party foundation models running on Amazon Bedrock, such as Anthropic Claude and other provider-hosted models. Cost Anomaly Detection uses machine learning to detect and alert on unusual spend, and this launch extends that coverage to third-party model usage on Amazon Bedrock. Teams running production generative AI workloads now get automatic anomaly detection on their Amazon Bedrock model spend alongside the rest of their AWS costs.\n \nWith this launch, Cost Anomaly Detection automatically evaluates your third-party Amazon Bedrock model costs through your AWS managed service monitor, with no setup required. When spend on a model changes unexpectedly, you receive an alert and a root-cause breakdown ranked by dollar impact across AWS service, account, Region, and usage type, so you can understand and act on generative AI cost changes as quickly as you do for any other AWS spend.\n \nThis feature is available in all AWS commercial regions, except the AWS GovCloud and the China Regions.\n \nTo learn more, see Detecting unusual spend with AWS Cost Anomaly Detection in the AWS Billing and Cost Management User Guide."
+    },
+    {
+      "title": "Amazon OpenSearch Ingestion is now available in GovCloud Regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/opensearch-ingestion-available-govcloud-regions",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T17:54:00.000Z",
+      "summary": "Starting today, customers can use Amazon OpenSearch Ingestion in AWS GovCloud (US-East) and AWS GovCloud (US-West), for ingesting data into their Amazon OpenSearch Service managed clusters or serverless collections.\n  Amazon OpenSearch Ingestion is a fully managed data ingestion tier that allows you to ingest and process data before indexing it in Amazon OpenSearch managed clusters or serverless collections. Amazon OpenSearch Ingestion provides a no-code experience to filter, transform, redact, and route data into Amazon OpenSearch Service. Amazon OpenSearch Ingestion automatically provisions and scales the underlying resources to meet the fluctuating demands of your workloads.\n  With this launch, Amazon OpenSearch Ingestion is now generally available in 19 AWS regions: US East (Ohio), US East (N. Virginia), US West (Oregon), US West (N. California), Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Spain), Europe (Paris), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Mumbai), Asia Pacific (Seoul), Canada (Central), South America (Sao Paulo), Europe (Stockholm), GovCloud (US-East) and GovCloud (US-West).\n  To learn more, see the Amazon OpenSearch Ingestion webpage and the Amazon OpenSearch Ingestion Developer Guide."
+    },
+    {
+      "title": "Propagate user authorization context in AI agents with Amazon Bedrock AgentCore",
+      "link": "https://aws.amazon.com/blogs/security/propagate-user-authorization-context-in-ai-agents-with-amazon-bedrock-agentcore/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-08-19T17:24:15.000Z",
+      "summary": "Many teams now deploy AI agents that pull from Amazon DynamoDB tables, document repositories, software as a service (SaaS) platforms, and internal knowledge bases to answer questions and automate workflows. A key risk in these deployments is that the agent has no awareness of who’s asking, so it might return data the user shouldn’t see. […]"
+    },
+    {
+      "title": "AWS Marketplace launches support for Amazon Lightsail",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-launch-ami-amazon-lightsail",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T17:04:00.000Z",
+      "summary": "Today, AWS Marketplace announces support for launching select Amazon Machine Images (AMIs) on Amazon Lightsail. Customers who want simple, predictable pricing and a streamlined instance-creation experience can now easily deploy eligible AWS Marketplace AMIs on Amazon Lightsail in just a few clicks. Lightsail instance bundles include compute, storage, and a generous data transfer allowance at a fixed monthly price. Lightsail also offers managed databases, containers, load balancers, and more, making it easy for customers to scale their applications as they grow.\n \nWhen subscribing to a supported AWS Marketplace product - including Microsoft Windows Server, Microsoft SQL Server Express, Ubuntu, cPanel & WHM, and Plesk - customers will now have the option to select Amazon Lightsail in addition to Amazon EC2. Selecting Lightsail takes customers to the Lightsail console with the selected AMI and region pre-configured, providing a path to deploy at a predictable monthly price in just a few clicks.\n \nThe \"Launch on Lightsail\" deployment option is available for eligible products in all AWS Regions where Lightsail is available. To get started, visit AWS Marketplace and subscribe to a compatible product. For more information about Amazon Lightsail, visit the Amazon Lightsail product page."
+    },
+    {
+      "title": "AWS announces a new Availability Zone in the Europe (London) Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-new-availability-zone-europe/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T17:00:00.000Z",
+      "summary": "AWS has added a fourth Availability Zone to the Europe (London) Region (eu-west-2), expanding infrastructure capacity to meet growing demand for cloud compute in the Region. The new Availability Zone delivers next-generation AI and ML capacity, including Amazon EC2, Trn3, and P6 accelerated instances, alongside general-purpose compute. The new Availability Zone gives AWS customers in eu-west-2 greater capacity for AI and ML workloads and additional fault isolation for building highly available, resilient architectures.\n \nWith this new Availability Zone (eu-west-2d), customers can distribute applications across four Availability Zones in eu-west-2, improving fault tolerance and supporting high availability architectures. AI and ML teams can now run model training and inference workloads on the latest accelerated instance types entirely within the London Region. The new Availability Zone is accessible through the AWS Management Console, APIs, and existing workflows with no changes to tooling. Standard Europe (London) Region pricing applies.\n \nTo get started, visit AWS Global Infrastructure to learn more about Regions, Availability Zones, and how efficient data center designs and sustainability practices power AWS cloud infrastructure. Explore the AWS Builder Center for hands-on resources, the EC2 Trainium page for AI and ML workloads, and Regional Product Services for a full list of services available by Region."
+    },
+    {
+      "title": "Amazon Quick adds deny by default for custom permissions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-deny-by-default/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T15:36:00.000Z",
+      "summary": "Amazon Quick custom permissions now include deny by default, a governance setting that automatically restricts new AI capabilities before they reach users.\n  Previously, new AI capabilities were available to all users on release, requiring administrators to react after the fact. With deny by default, administrators restrict the AI capability category in a custom permissions profile and assign it to users, roles, or the entire account. Quick then denies any new AI capability at launch for those users. Restricting a category also restricts existing capabilities in it. Administrators explicitly allow each capability when ready. The restriction applies only to the profile you configure.\n  Configure deny by default in Manage account in Amazon Quick or through the AWS CLI. To learn more, see Custom permissions deny by default. Deny by default is available in all AWS Regions where Amazon Quick is available."
+    },
+    {
+      "title": "Amazon WorkSpaces Applications now offers in-console monitoring capabilities",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-workspaces-applications-console-monitoring",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T15:00:00.000Z",
+      "summary": "Amazon WorkSpaces Applications now offers a native monitoring experience embedded directly in the service console. Administrators can now access real-time session-level metrics, instance-level resource data, and network performance metrics without requiring third-party monitoring tools or Amazon CloudWatch expertise.\n \nPreviously, enterprise customers managing large WorkSpaces Applications deployments relied on external solutions or built complex custom CloudWatch dashboards. Now, comprehensive monitoring is available with zero configuration required. The WorkSpaces Applications in-console monitoring provides fleet-level capacity visibility showing active sessions and resource utilization, customizable session tables with filtering by user ID, performance metrics, and instance ID, and correlated graphical views displaying session metrics such as frame rate, input latency, bandwidth, and CPU/memory/GPU usage on shared timelines. All these metrics are also available in Amazon CloudWatch giving customers the flexibility to pick the right experience for monitoring their WorkSpaces Applications resources.\n \nThis functionality is available today in all AWS Regions where Amazon WorkSpaces Applications is offered.\n \nTo learn more, visit the Amazon WorkSpaces Applications documentation OR log on to Amazon WorkSpaces Applications Console, navigate to the fleets menu, and select a fleet to monitor the active session metrics."
+    },
+    {
+      "title": "AWS IAM now supports 20 managed policies per role by default",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-iam-quota-increase/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T15:00:00.000Z",
+      "summary": "AWS Identity and Access Management (IAM) has increased the default quota for managed policies per role from 10 to 20.\n \nThis higher default quota reduces the need to make Service Quota requests when following IAM best practices like separating permissions into purpose-specific policies or when onboarding to AWS Partner products that require attaching additional managed policies. If you need more than 20 managed policies per role, you can request a quota increase up to 25 using Service Quotas.\n \nThis change is available in all commercial AWS Regions, AWS GovCloud (US) and China Regions and applies automatically to all IAM roles in your account with no action required. To learn more, see IAM and AWS STS quotas in the IAM User Guide."
+    },
+    {
+      "title": "How Clario technology detects PHI/PII in DICOM images using Amazon Bedrock",
+      "link": "https://aws.amazon.com/blogs/architecture/how-clario-automates-phi-pii-detection-in-dicom-images-using-amazon-bedrock/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-08-19T14:29:31.000Z",
+      "summary": "Clario, part of Thermo Fisher Scientific, uses Amazon Bedrock and Amazon Textract to automatically detect protected health information (PHI) and personally identifiable information (PII) across thousands of DICOM image slices in clinical trials, covering both metadata tags and text burned into the image pixels."
+    },
+    {
+      "title": "AI-powered clinical trial eligibility and safety using Amazon Bedrock AgentCore",
+      "link": "https://aws.amazon.com/blogs/architecture/ai-agents-for-clinical-trial-screening/",
+      "source": "AWS Architecture Blog",
+      "pubDate": "2026-08-19T13:11:51.000Z",
+      "summary": "AI agents built on Amazon Bedrock AgentCore help clinical trial teams make fast, accurate enrollment decisions while keeping clinicians in control. This post shows how to architect an eligibility and safety screening agent using AWS HealthLake, AgentCore, and AgentCore Evaluations."
+    },
+    {
+      "title": "AWS Storage Gateway now supports FIPS-compliant private connectivity for Tape and Volume Gateway",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/storage-gateway-fips-privatelink/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T10:00:00.000Z",
+      "summary": "AWS Storage Gateway now supports FIPS 140-3 validated endpoints over AWS PrivateLink for Tape Gateway and Volume Gateway. Previously, FIPS endpoints were available only over the public internet. Now you can keep FIPS-compliant traffic on the private AWS network, making it easier to use Storage Gateway for regulated workloads.\n \nWith this launch, your Tape Gateway and Volume Gateway can reach the Storage Gateway service endpoints privately through an interface VPC endpoint in your VPC, while using FIPS validated encryption. To get started, you can create a FIPS interface endpoint for Storage Gateway in your VPC, then choose the FIPS VPC endpoint option when activating your gateway. Once activated, your gateway connects to the Storage Gateway service over FIPS validated endpoint on the private AWS network. To activate a gateway with a FIPS PrivateLink endpoint, your gateway must be running software version 3.2.7 or later.\n \nThis launch is available in the eight AWS Regions where Storage Gateway offers FIPS endpoints: US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Canada (Central), Canada West (Calgary), AWS GovCloud (US-East), and AWS GovCloud (US-West). To learn more, visit the AWS Storage Gateway User Guide or the product page."
+    },
+    {
+      "title": "Amazon EC2 R8a instances are now available in Asia Pacific (Taipei) region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-r8a-asia-pacific-taipei/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T07:51:00.000Z",
+      "summary": "Starting today, Amazon EC2 R8a instances are now available in Asia Pacific (Taipei) Region. These instances, feature 5th Gen AMD EPYC processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver up to 30% higher performance, and up to 19% better price-performance compared to R7a instances.\n \nR8a instances deliver 45% more memory bandwidth compared to R7a instances, making these instances ideal for latency sensitive workloads. Compared to Amazon EC2 R7a instances, R8a instances provide up to 60% faster performance for GroovyJVM, allowing higher request throughput and better response times for business-critical applications.\n \nBuilt on the AWS Nitro System using sixth generation Nitro Cards, R8a instances are ideal for high performance, memory-intensive workloads, such as SQL and NoSQL databases, distributed web scale in-memory caches, in-memory databases, real-time big data analytics, and Electronic Design Automation (EDA) applications. R8a instances offer 12 sizes including 2 bare metal sizes. Amazon EC2 R8a instances are SAP-certified, and providing 38% more SAPS compared to R7a instances.\n \nTo get started, sign in to the AWS Management Console. For more information about the new instances, visit the Amazon EC2 R8a instance page."
+    },
+    {
+      "title": "Amazon Bedrock now supports SpaceXAI Grok 4.6 with Cross Region Inferencing",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-grok-4-6/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-19T05:18:00.000Z",
+      "summary": "Amazon Bedrock now supports SpaceXAI Grok 4.6, a frontier model built for coding, agentic tasks, and knowledge work, with US Geo and Global cross-Region inference. Customers can now access Grok 4.6 at scale with cross-Region inference routing requests across multiple AWS Regions for higher throughput and lower inference costs.\n  Cross-Region inference automatically routes inference requests across multiple AWS Regions to give you higher throughput, without you needing to manage capacity across multiple Regions. The US Geo inference profile—us.xai.grok-4.6—routes requests only within the US geography, so you can scale while keeping data processed within the United States to meet data residency requirements. The Global inference profile—global.xai.grok-4.6—serves requests from any commercial AWS Region where the model is available, giving you the broadest access to Bedrock capacity and the highest throughput during demand spikes, at a lower per-token cost. The model runs on the bedrock-runtime endpoint with support for the Responses, Chat Completions, and Converse APIs, and works with the same account-level controls you already use for other models on Bedrock, including model invocation logging (deliverable to Amazon S3 or Amazon CloudWatch Logs), Amazon CloudWatch metrics, and cost itemization in AWS Cost Explorer and the AWS Cost and Usage Report.\n  Cross-Region inference for Grok 4.6 is available in all AWS Regions where Amazon Bedrock is offered. To get started, review the model card for Grok 4.6  in the Amazon Bedrock User Guide."
+    },
     {
       "title": "Amazon Bedrock now supports OpenAI models in India",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-openai-india-v1/",
@@ -79,137 +198,18 @@
       "summary": "Starting today, Amazon RDS for PostgreSQL 19 Beta 3 is available in the Amazon RDS Database Preview Environment, allowing you to evaluate the pre-release of PostgreSQL 19 on Amazon RDS for PostgreSQL.\n \nPostgreSQL 19 Beta 3 adds new capabilities for query performance and autovacuum management. The new pg_stat_autovacuum_scores view helps you monitor and tune autovacuum prioritization. Parallel autovacuum can now use multiple workers to speed up maintenance on large tables. The new pg_plan_advice module lets you lock in efficient query plans to avoid unexpected slowdowns. Eager aggregation improves analytical queries by grouping data earlier, so queries process fewer rows and complete faster. Beta 3 also includes bug fixes and stability improvements from the Beta 2 testing period. Refer to the PostgreSQL community announcement for more details.\n \nAmazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. You can use the PostgreSQL dump and load functionality to import or export your databases from the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the pricing in the US East (Ohio) Region."
     },
     {
+      "title": "Amazon EC2 High Memory U7i instances now available in AWS Europe (Zurich) region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-high-memory-u7i-aws-europe/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-18T15:00:00.000Z",
+      "summary": "Amazon EC2 High Memory U7i-6TB instances (u7i-6tb.112xlarge) are now available in AWS Europe (Zurich) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7i-6TB instances offer 6 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i instances offer up to 45% better price performance over existing U-1 instances.\n \nU7i-6TB instances deliver 448 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 100 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers running mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.\n \nTo learn more about U7i instances, visit the High Memory instances page."
+    },
+    {
       "title": "In the works: AWS Builder Lofts in Berlin, Hyderabad, and São Paulo",
       "link": "https://aws.amazon.com/blogs/aws/in-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo/",
       "source": "AWS News Blog",
       "pubDate": "2026-08-18T13:58:41.000Z",
       "summary": "Each location will be a permanent community space to offer free workshops, networking events, pitch nights, content creation spaces, collaboration/co-working areas, and event hosting for developers, students, or tech professionals who want to walk through the doors."
-    },
-    {
-      "title": "Consistency is the new latency: AI at the data layer",
-      "link": "https://aws.amazon.com/blogs/architecture/consistency-is-the-new-latency-ai-at-the-data-layer/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-08-18T11:13:20.000Z",
-      "summary": "As AI agents move from chatbots to taking action, their reliability depends on the consistency of the data layer beneath them. This post examines how replication lag poisons an agent's context and shows how to match Amazon Aurora, Amazon DynamoDB, and Amazon Keyspaces replication models to each task's consistency requirements."
-    },
-    {
-      "title": "Amazon WorkSpaces now supports Nested Virtualization",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/nested-virtualization-workspaces/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-18T08:00:00.000Z",
-      "summary": "Amazon WorkSpaces now supports nested virtualization for Amazon WorkSpaces Personal and Amazon WorkSpaces Core Managed Bundles. With nested virtualization enabled, developers can run Docker Desktop, Windows Subsystem for Linux (WSL2), and other hypervisor-dependent tools directly on their Windows WorkSpaces, and KVM-based workloads, Android emulators, and nested containers on their Linux WorkSpaces - without needing separate physical hardware or workaround environments.\n \nNested virtualization is supported on license-included (public and custom) bundles, Bring Your Own License (BYOL) bundles, and Bring Your Own Protocol (BYOP) bundles running Windows Server 2019, Windows Server 2022, Windows Server 2025, Windows 11, Ubuntu 22.04, Ubuntu 24.04, Red Hat Enterprise Linux 8, Red Hat Enterprise Linux 9, Rocky Linux 8, or Rocky Linux 9 with DCV protocol. Power (4 vCPU) or higher is recommended. Nested virtualization is not supported on GPU bundles, the PCoIP protocol, or Amazon WorkSpaces based on Windows Server 2016 and Windows 10. Administrators can enable or disable nested virtualization at the individual workspace level through the console, API, or CLI.\n \nYou can get started by enabling nested virtualization on your WorkSpaces through the console or CLI. For more information, visit the Amazon WorkSpaces documentation on Nested Virtualization. Nested virtualization is available in all AWS Regions where Amazon WorkSpaces is available, excluding China (Ningxia) Region and Israel (Tel Aviv) Region. For pricing information, visit Amazon WorkSpaces pricing page."
-    },
-    {
-      "title": "Amazon S3 Metadata and annotations are now available in AWS GovCloud (US) Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-s3-metadata-annotations-govcloud-regions",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-18T04:00:00.000Z",
-      "summary": "Amazon S3 Metadata and annotations are now available in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions, giving you the easiest and fastest way to discover, understand, and enrich your S3 data. S3 Metadata automatically captures system-defined details like object size and source, and stores them in Amazon S3 Tables, optimized for near real-time tabular queries that simplify business analytics and real-time inference applications.\n  Annotations extend S3 Metadata so you can attach rich business context directly to your objects in JSON, XML, or YAML, with up to 1 GB per object. This gives your AI agents and analytics tools the context they need to find and use the right data without building or maintaining separate metadata systems. Annotations share the same durability and consistency properties as the object, move with the object during copy and replication operations, and are removed when the object is deleted. This makes it easy to keep context current as your data evolves.\n  \nAnnotations are available in all AWS Regions and AWS GovCloud (US) Regions. For a full list of AWS Regions where Amazon S3 Metadata is available, including the annotation table, see the S3 Metadata AWS Regions. To learn more, visit the product page, documentation, and the Amazon S3 pricing page."
-    },
-    {
-      "title": "Amazon Bedrock expands API support and introduces Cross Region Inferencing for OpenAI models",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-cross-region-openai-v2/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T20:29:00.000Z",
-      "summary": "Amazon Bedrock now supports the OpenAI GPT-5.6 models (Sol, Terra, and Luna) on the bedrock-runtime endpoint, with support for the Responses, Converse, and Chat Completions APIs. It also adds support for cross-Region inference, allowing customers to use Global and Geo cross-Region inference to access higher throughput and lower inference costs.  \n \nCross-Region inference automatically routes inference requests across multiple AWS Regions to give you higher throughput, without you needing to manage capacity across multiple Regions. Geo cross region inference routes requests within a predefined geography—including new US Geo (US CRIS) support with this launch—so you can scale while keeping data processed within that geography, while Global cross region inference serve requests from any commercial AWS Region where the model is available, giving you the broadest access to Bedrock capacity and the highest throughput during demand spikes. With Global cross-Region inference you also get lower costs as Global inferencing is priced lower per token for OpenAI models than in-Region and Geo inferencing. This launch also expands API support—you can also use OpenAI GPT models with the Responses API, Chat Completions API, and the Converse API on the bedrock-runtime endpoint. Because these native OpenAI APIs now run on bedrock-runtime, the models work with the same account-level controls you already use for other models on Bedrock: usage appears in Bedrock model invocation logging (deliverable to Amazon S3 or Amazon CloudWatch Logs) and in Amazon CloudWatch metrics covering invocation counts, token counts, latency, throttles, and errors, and it is itemized in AWS Cost Explorer and the AWS Cost and Usage Report so you can attribute spend by model.\n \nCross-Region inference for OpenAI models is available in all AWS Regions where OpenAI models on Amazon Bedrock are offered. To get started, review the model cards for GPT 5.6 (Sol, Tera and Luna) in the Amazon Bedrock User Guide."
-    },
-    {
-      "title": "Amazon ECR now supports 25 replication rules per registry",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ecr-increased-replication-rules-limit",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T19:01:00.000Z",
-      "summary": "Amazon Elastic Container Registry (Amazon ECR) has increased the maximum number of replication rules per registry from 10 to 25.\n \nPreviously, customers with complex multi-region or multi-account architectures were constrained to 10 replication rules per registry, requiring them to consolidate replication configurations to work within that constraint. With this update, customers can define up to 25 replication rules per registry, enabling more precise replication strategies for use cases like distributing images across many regions for low-latency pulls, or replicating to multiple production and staging accounts.\n \nThis service limit increase is available in all AWS Regions where Amazon ECR is supported. To learn more, visit the Amazon ECR product page and refer to the Amazon ECR User Guide."
-    },
-    {
-      "title": "Amazon EC2 Auto Scaling now supports batch instance termination",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-auto-scaling-batch-termination",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T18:11:00.000Z",
-      "summary": "Amazon EC2 Auto Scaling now supports batch instance termination in a single API call. You can now pass up to 100 instance IDs to the TerminateInstanceInAutoScalingGroup API to terminate them as a batch, reducing the number of API calls needed to scale down your Auto Scaling groups.\n \nBatch termination is designed for workloads that need to rapidly scale down, such as AI/ML training jobs, container orchestrators, or event-driven architectures that spin up large fleets temporarily. All instances in a batch are validated atomically before termination begins, and existing Auto Scaling behaviors such as lifecycle hooks and load balancer connection draining are preserved for each instance in the batch.\n \nThis feature is available in all AWS Regions at no additional cost.\n \nTo learn more, visit Amazon EC2 Auto Scaling User Guide and Amazon EC2 Auto Scaling API Reference Guide."
-    },
-    {
-      "title": "Amazon MSK now supports configuring custom domain names for MSK Provisioned clusters",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/17/amazon-msk-custom-domain-names/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T18:01:00.000Z",
-      "summary": "You can now easily configure custom domain names on Amazon MSK Provisioned clusters, on either ZooKeeper or KRaft mode for metadata management. This capability helps client applications maintain the same connection endpoints, simplifying cluster migrations, disaster recovery failovers, and scaling operations without reconfiguration.\n \nPreviously, customers configured custom domain names manually on each broker. Additionally, on KRaft-based clusters, customers could not configure custom domain names. With this launch, you can now easily define a custom domain once at the cluster level, and Amazon MSK automatically applies it to every broker in the cluster, eliminating the need to configure each broker individually. The configuration persists through scaling operations and works identically on both ZooKeeper and KRaft-based clusters. This is particularly useful for customers who route traffic through Network Load Balancers, require persistent endpoints across cluster operations, or must adhere to organizational naming conventions for security and compliance.\n \nYou can configure custom domain names on all new and existing MSK Provisioned clusters, in all AWS Regions where Amazon MSK Provisioned is available, at no additional cost. To learn more, see the Amazon MSK Developer Guide."
-    },
-    {
-      "title": "Amazon EC2 R8i and R8i-Flex instances are now available in Canada West (Calgary) region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-r8i-r8i-flex-calgary/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T17:28:00.000Z",
-      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the Canada West (Calgary) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. They are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to R7i.\n \nR8i-flex, our first memory-optimized Flex instances, are the easiest way to get price performance benefits for a majority of memory-intensive workloads. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.\n \nR8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. R8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications. R8i instances are SAP-certified and deliver 142,100 aSAPS, the highest among all comparable machines in on-premises and cloud environments, delivering exceptional performance for mission-critical SAP workloads.\n \nTo get started, sign in to the AWS Management Console. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information about the new R8i and R8i-flex instances visit the AWS News blog."
-    },
-    {
-      "title": "Amazon Connect Customer dashboards now support reporting on routing steps and agent proficiencies",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-routing-steps/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T17:23:00.000Z",
-      "summary": "Amazon Connect Customer dashboards now support reporting on routing steps and agent proficiencies enabling supervisors to monitor and optimize how contacts are matched to agents based on agent proficiencies. Managers can filter agents by their assigned proficiencies, group metrics by routing steps, and track new metrics including number of contacts queued in a routing step. For example, a supervisor notices a spike in queued contacts at a routing step requiring highly skilled agents, then relaxes the routing criteria to expand the agent pool and reduce wait times.\n  Routing steps and agent proficiencies reporting on analytics dashboards is available in all AWS commercial and AWS GovCloud (US-West) regions where Amazon Connect Customer is offered. To learn more about Amazon Connect Customer analytics dashboards, see the Amazon Connect Customer Administrator Guide. To learn more about Amazon Connect Customer, the AWS cloud-based contact center, please visit the Amazon Connect Customer website."
-    },
-    {
-      "title": "Updates to your AWS Sign-In experience",
-      "link": "https://aws.amazon.com/blogs/security/updates-to-your-aws-sign-in-experience/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-08-17T17:22:33.000Z",
-      "summary": "Amazon Web Services (AWS) is gradually introducing updates to the AWS Sign-In and sign-up experience to a limited number of customers. We’re sharing these changes so you will know what to expect as we gradually make the updated experience available to more customers. These updates include new options for creating and accessing AWS accounts. To […]"
-    },
-    {
-      "title": "AWS Network Firewall Now Supports Stateful Rule Hit Counts",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-network-firewall-stateful-rule-hit-counts/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T16:30:00.000Z",
-      "summary": "AWS Network Firewall now provides rule hit counts for stateful rules, giving network administrators and security engineers visibility into how often each stateful rule in the firewall policy matches network traffic. AWS Network Firewall is a managed network firewall service that provides inspection and visibility into your VPC traffic.\n \n \n\n \nWith rule hit counts, you can turn firewall rule activity into actionable intelligence. You can accelerate incident response by detecting the rules that triggered, identify policy blind spots such as shadow, redundant, and obsolete rules, and validate policy changes by confirming newly deployed rules are matching the intended traffic. Rule hit counts are enabled by default across both custom and managed rule groups, with metrics refreshing at configurable intervals as low as 5 minutes.\n \n \n\n \nThis capability is available at no additional charge as part of AWS Network Firewall. Standard charges apply for storing and querying log data. This feature is available in all AWS Regions where AWS Network Firewall is supported, except the Middle East (UAE) and Middle East (Bahrain) Regions.\n  To learn more, see the AWS Network Firewall product page and AWS Network Firewall documentation."
-    },
-    {
-      "title": "AWS Weekly Roundup: EC2 application status checks, IAM role manager, OpenAI Daybreak on Bedrock, and more (August 17, 2026)",
-      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-ec2-application-status-checks-iam-role-manager-openai-daybreak-on-bedrock-and-more-august-17-2026/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-08-17T16:02:36.000Z",
-      "summary": "Last week, AWS contributors joined the OpenSearch and Valkey communities at Open Source Summit Korea 2026 and MCP DevSummit Seoul 2026 to meet open source developers and contributors. At the four-day event, community leaders and users of these Linux Foundation open source projects gathered to share knowledge, collaborate on solutions, and push the projects forward. […]"
-    },
-    {
-      "title": "Amazon Quick Microsoft 365 extensions are now generally available",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-microsoft-365-extensions-generally-available",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T15:41:00.000Z",
-      "summary": "Amazon Quick announces the general availability of Microsoft 365 extensions for Excel, PowerPoint, Word, and Outlook. These extensions enable Quick to perform tasks directly within users' M365 environments, using AI to handle complex local tasks such as redlining documents, building financial models, creating presentation-ready decks, and managing Outlook inboxes.\n \nThe Excel extension helps with complex spreadsheet analysis, creating pivot tables and charts, and importing and cleaning data. The PowerPoint extension helps you create and refine presentations from Quick data using organization-defined templates. The Word extension generates formatted documents with Word primitives, makes sweeping edits with track changes enabled, and participates as a reviewer in comments. The Outlook extension performs inbox and calendaring tasks such as prioritizing emails, organizing your inbox, scheduling meetings, and drafting replies using your Quick data and entire inbox context.\n \nThese extensions transform daily work across teams. Finance teams can build complex models by describing what they need. Sales teams can draft proposals that automatically pull from CRM data. Marketing teams can create branded presentations without manual formatting. Legal teams can streamline contract reviews. Operations teams can manage email workflows and schedule meetings intelligently, and IT teams can automate routine data analysis that previously required manual effort.\n \nAmazon Quick Microsoft 365 extensions are available in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Europe (Ireland), Asia Pacific (Tokyo), and Europe (Frankfurt). To learn more, see Amazon Quick for Microsoft 365: Agentic AI where you work, and download extensions on the Quick download page."
-    },
-    {
-      "title": "Amazon OpenSearch Service now supports automatic semantic enrichment for VPC domains",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-opensearch-service-vpc/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T15:39:00.000Z",
-      "summary": "Amazon OpenSearch Service now extends automatic semantic enrichment to VPC-enabled domains, allowing customers with private network configurations to leverage AI-powered semantic search without exposing their domains to the public internet.\n \n \n Automatic semantic enrichment transforms traditional keyword-only search into context-aware retrieval by understanding the meaning behind queries. For example, a search for \"lightweight laptop for travel\" returns results about \"ultrabooks\" and \"portable notebooks under 3 lbs\" even when these exact terms aren't in the query. The feature handles all semantic processing automatically, eliminating the need to self-manage machine learning models and integration overhead. Previously, automatic semantic enrichment was available only on domains that are not VPC-enabled. This capability is now supported within VPCs (Virtual Private Clouds), enabling customers with stricter network security requirements to improve search relevance while maintaining their existing security posture. No changes to existing VPC configurations are required. To learn more about automatic semantic enrichment, see our documentation.\n \n \n Automatic semantic enrichment for VPC domains is available across 11 Regions globally: US East (N. Virginia, Ohio), US West (Oregon), Asia Pacific (Mumbai, Singapore, Sydney, Tokyo), and Europe (Frankfurt, Ireland, Spain, Stockholm). To get started, on your VPC-enabled OpenSearch Service domain running OpenSearch version 2.19 or later, create an index with automatic semantic enrichment fields configured. Note that you may need to update your domain to the latest service software version, see updating service software for more information."
-    },
-    {
-      "title": "AWS Console-to-Code adds 26 services and cross-region recording​",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/console-to-code-adds-26-services",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T15:00:00.000Z",
-      "summary": "AWS Console-to-Code now supports 26 additional AWS services and introduces cross-region and cross-browser-tab action recording. This expansion grows total service coverage from 6 to 32 supported services, helping developers, DevOps engineers, and cloud architects more easily convert manual console workflows into repeatable, production-ready infrastructure as code (IaC).\n \n​Console-to-Code also introduces cross-region and cross-browser-tab action recording. Previously, switching regions or working across browser tabs would reset or fragment recorded action lists. Actions are now consolidated into a single unified list, enabling customers to capture and automate complex, multi-region infrastructure deployments without losing context.\n \n​​​Starting today, customers in all commercial AWS Regions can use Console-to-Code with all 32 supported services and the new cross-region recording capability.​\n \nTo learn more about getting started with AWS Console-to-Code, and review the list of services supported, visit the Amazon Q Developer Console-to-Code documentation."
-    },
-    {
-      "title": "AWS CloudShell now includes a built-in visual file editor",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-cloudshell-visual-file-editor/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-17T13:00:00.000Z",
-      "summary": "AWS CloudShell now includes a built-in visual file editor that you can launch directly from your shell session using a single 'edit' command, no setup required. CloudShell provides a browser-based shell environment that uses your existing AWS Management Console credentials, making it a popular choice for developers, DevOps engineers, and cloud administrators managing scripts, infrastructure-as-code, agentic workflows, and AWS Lambda workflows. This new capability extends CloudShell's utility by bringing a familiar, GUI-based editing experience directly into your console session.\n \nPreviously, editing files in CloudShell required using terminal-based editors such as Vim or Emacs, or downloading files locally and re-uploading them after making changes. This added friction to common workflows. The built-in visual editor eliminates this by supporting syntax highlighting, find-and-replace, multi-line selection, copy-paste, and undo-redo in a single browser session. Whether you are updating a deployment script, modifying an agent steering file, editing an AWS CloudFormation template, or fixing an AWS Lambda function, the editor enables a seamless edit-and-run experience.\n \nThis feature is available in all AWS Regions where AWS CloudShell is available.\n \nTo learn more about the built-in visual file editor and how to get started, visit the AWS CloudShell documentation."
-    },
-    {
-      "title": "Amazon Quick now supports per-user resource limits",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-per-user-resource-limits/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-14T21:07:00.000Z",
-      "summary": "Amazon Quick now enables administrators to set per-user limits on index storage and agent hours, giving them direct control over subscription costs. With limits management, administrators can create limit profiles that cap per-user consumption, helping prevent unexpected overage charges and ensuring subscription entitlements are used efficiently across their organization.\n \nFor example, an organization deploying Quick enterprise-wide to thousands of users can set account-level limit profiles to establish cost-predictable baselines, then assign higher limits to specific roles that require more agent hours. Administrators can create and assign limit profiles at the user, role, or account level, with a priority hierarchy that ensures the right users get the right capacity. When a user reaches their limit, new consumption is blocked while existing content is preserved.\n \nThis feature is available for Professional and Enterprise plans, in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the AWS Region table.\n \nLearn more about Amazon Quick by visiting the Quick website. To learn more about limit profiles, see Limits management in the Amazon Quick User Guide."
-    },
-    {
-      "title": "Amazon Quick now supports data loss prevention with Microsoft Purview",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-dlp-purview/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-14T21:04:00.000Z",
-      "summary": "Amazon Quick now integrates with Microsoft Purview to enforce data loss prevention (DLP) policies across your Quick environment. Organizations need to ensure that sensitive files aren't shared outside approved channels. With this integration, IT administrators and security teams can apply their existing Purview sensitivity labels to automatically control how files are handled in Quick capabilities such as chat, spaces, and knowledge bases.\n \nAdministrators can configure enforcement actions (block, warn, or allow) for each sensitivity label, giving organizations granular control over sensitive file sharing across Quick. For example, a financial services company can block files labeled \"Highly Confidential\" from being uploaded to shared spaces while allowing \"Internal\" files with a warning notification. With this integration, customers can extend their existing Microsoft Purview governance policies into Quick without additional tools.\n \nThis feature is available in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the AWS Region table. To learn more, see Data loss prevention in the Amazon Quick User Guide."
     }
   ]
 }
