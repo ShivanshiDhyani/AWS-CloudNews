@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-08-22T00:43:50.442Z",
+  "lastUpdated": "2026-08-23T00:48:36.656Z",
   "items": [
+    {
+      "title": "Amazon Bedrock announces reduced pricing for OpenAI GPT-5.6 Sol",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-openai-gpt-56-sol-reduced-pricing/",
+      "source": "AWS What's New",
+      "pubDate": "2026-08-21T20:11:00.000Z",
+      "summary": "Today, OpenAI announced that they are lowering API prices for GPT-5.6 Sol. Following the recent Terra and Luna price reductions, Sol now costs $4 per million input tokens and $20 per million output tokens—20% lower input pricing and 33.3% lower output pricing. This promotional pricing is available at least through November 21, 2026.\n \n\n Whether you're building autonomous coding agents, running complex multi-step analyses, or performing advanced research workflows, the reduced pricing gives you more room to experiment and scale what's already working. GPT-5.6 Sol delivers state-of-the-art results on agentic coding benchmarks, and the lower price point makes it more accessible for sustained, high-volume workloads.\n \n\n For latest Regional availability of GPT-5.6 Sol, check the AWS Regions page. To learn more and view the pricing visit the Amazon Bedrock documentation on GPT-5.6 Sol."
+    },
     {
       "title": "Amazon Connect Customer now lets managers chat with their data",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-customer-ai-data-analytics",
@@ -13,7 +20,7 @@
       "link": "https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/",
       "source": "AWS News Blog",
       "pubDate": "2026-08-21T18:53:26.000Z",
-      "summary": "AWS Glue 6.0 is built on a fully modernized runtime, Apache Spark 4.1, Python 3.12, and Scala 2.13, delivering 30% lower pricing than previous AWS Glue versions."
+      "summary": "AWS Glue 6.0 is built on a fully modernized runtime, Apache Spark 4.1, Python 3.13, and Scala 2.13, delivering 30% lower pricing than previous AWS Glue versions."
     },
     {
       "title": "Build a unified AI agent architecture with DynamoDB and Bedrock",
@@ -203,13 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-08-19T20:25:00.000Z",
       "summary": "Amazon SageMaker Notebooks now support Trusted Identity Propagation (TIP) with Amazon Athena, Amazon Redshift, and Amazon EMR Serverless, enabling per-user access control for data analytics.\n \nWhen connected to a TIP-enabled compute in a TIP-enabled Project, each notebook user's IAM Identity Center identity flows through to AWS Lake Formation, ensuring they see only the tables, columns, and rows their permissions allow, without sharing a single broad execution role. With TIP, enterprises get per-user data boundaries enforced based on who is running the query, full audit attribution with CloudTrail recording which user accessed data, and reduced admin friction since identity propagates automatically through the existing compute connection with no extra login, token, or role management required.\n \nTo get started, use a notebook in a TIP enabled Project with the supported engines.  This feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. To learn more, see Trusted identity propagation in the Amazon SageMaker Unified Studio Administrator Guide and Notebooks in the Amazon SageMaker Unified Studio User Guide."
-    },
-    {
-      "title": "Amazon CloudWatch pipelines adds GeoIP, RDS, and XML processors",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/08/cloudwatch-geoip-rds-xml/",
-      "source": "AWS What's New",
-      "pubDate": "2026-08-19T20:13:00.000Z",
-      "summary": "Amazon CloudWatch pipelines now includes three new processors that parse and enrich log data as it's ingested: an Amazon RDS log parser, an XML parser and a GeoIP enrichment processor. CloudWatch pipelines is a fully managed service that ingests, transforms, and routes telemetry to CloudWatch without managing infrastructure.\n \nLog sources often produce data that isn't immediately queryable without reprocessing the data. RDS Aurora logs arrive in their native engine format, application logs carry embedded XML, and IP addresses lack location context. The new processors address each case. The Amazon RDS processor parses Aurora audit and error logs into structured fields, the XML parser converts a field containing an XML string into JSON, and the GeoIP processor enriches any IP address field with geographic context such as city, country, and coordinates. For example, you can parse an Aurora audit log into structured fields for compliance reporting. In a separate pipeline, you can extract the XML payload from a Windows Event Log into JSON and resolve its source IP to a city and country for security analysis. You can use these processors independently or combine them in one pipeline.\n \nThese processors are available at no additional cost in all AWS Regions where CloudWatch pipelines is generally available. CloudWatch logs ingestion and storage rates apply. You can add these processors to your pipelines using the AWS Management Console, AWS CLI, or AWS SDKs. To get started, see the Amazon CloudWatch pipelines documentation."
     }
   ]
 }
