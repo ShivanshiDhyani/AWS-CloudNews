@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-09-13T02:18:32.484Z",
+  "lastUpdated": "2026-09-14T02:35:51.398Z",
   "items": [
+    {
+      "title": "AWS Elemental MediaLive enables frame-accurate pipeline locking for streams without timecode",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/medialive-pipeline-locking/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-12T08:00:00.000Z",
+      "summary": "AWS Elemental MediaLive now supports Video Aligned Locking, a new feature to synchronize video pipelines without requiring timecode from the source. Previously, achieving frame-accurate locking across video outputs required investing in specialized hardware or managing complex, external synchronization workflows. While timecode is generally standard for highly produced, traditional broadcast content, it is often unavailable and difficult to manage in typical digital streaming workflows. The new capability uses visual signatures to automatically identify and align specific frames across multiple video streams, enabling customers to achieve frame-accurate input switching across standard pipeline channels, as well as linked, cross-region single-pipeline channels.\n \nVideo Aligned Locking supports outputs including HLS, MediaPackage, CMAF Ingest, UDP and SRT. To learn more about how to configure this feature, visit the Requirements for Video Aligned Locking documentation. For a deeper dive into channel synchronization, visit the guide on Implementing Pipeline Locking."
+    },
     {
       "title": "Amazon EC2 X2idn instances are now available in Asia Pacific (Hong Kong)",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-x2idn-asia-pacific-hong-kong/",
@@ -203,13 +210,6 @@
       "source": "AWS Architecture Blog",
       "pubDate": "2026-09-09T21:05:02.000Z",
       "summary": "Learn how AWS, HashiCorp, and Athenahealth designed and chaos-tested a multi-Region disaster recovery strategy for Terraform Enterprise on AWS. This post walks through three-phase AWS Fault Injection Service experiments across Amazon EC2, Aurora, and Amazon S3, the 12-14 minute recovery times achieved, and the state file dependency pitfall to avoid."
-    },
-    {
-      "title": "AWS Marketplace sellers now receive qualified demo and private offer requests in minutes",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-marketplace-demo-private-offer-requests-qualification",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-09T21:04:00.000Z",
-      "summary": "AWS Marketplace sellers that activated the request demo or request private offer call-to-action buttons on their listings can now act on customer requests within minutes of submission, while customers are still actively evaluating their products. This happens automatically, with no changes required to their listings or workflows.\n  When a customer submits a request, they can now provide details about their use case, and AWS Marketplace uses an agentic workflow to evaluate those details and create an opportunity for the seller: an active prospect with a defined use case. Each opportunity arrives in AWS Partner Central with the customer's contact details and use case, so sellers can reach out directly. Previously, an AWS representative contacted the customer to qualify every request before sharing it, adding days of delay. Now sellers receive every active lead the moment it comes in, without waiting for AWS to manually qualify it first. Even when a customer provides only their contact information without additional information, the seller still receives their details as a lead to follow up on for additional qualification, and can enrich it through AWS lead prospecting workflows.\n  Sellers who have not yet added the request a demo or request private offer buttons to their listings can turn them on by following the steps in the AWS Marketplace Seller Guide. Enabling these buttons lets customers request demos and private offers directly from a seller's product listing page, accelerating product evaluations and reducing procurement cycle times."
     }
   ]
 }
