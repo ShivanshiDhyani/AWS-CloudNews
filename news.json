@@ -1,6 +1,90 @@
 {
-  "lastUpdated": "2026-09-24T02:24:59.364Z",
+  "lastUpdated": "2026-09-25T02:41:35.594Z",
   "items": [
+    {
+      "title": "Amazon EventBridge relaunches event buses for enterprise scale",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/eventbridge-relaunches-custom-event-buses/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T21:00:00.000Z",
+      "summary": "Amazon EventBridge relaunches event buses with a new enhanced Custom event bus that lets you build event-driven applications that decouple teams and can scale with your organization. Create a custom event bus, share it across accounts, and now teams can publish and consume events with strict ordering, open event formats, built-in retention, and support for advanced event transformations.\nThe EventBridge Custom event bus is a serverless event broker that enables you to create scalable event-driven applications by routing events between your applications, SaaS integrations, and AWS services. It can now be shared with one or more accounts through AWS Resource Access Manager allowing publishers to send events directly to the central event bus. With a new event publishing API, you can now publish events in popular JSON based event formats like CloudEvents and preserve their schema without modification. Custom event buses include 24 hours of built-in retention that can be extended for up to one year allowing you to recover from application errors or hydrate new components from historical data. A new Subscriber resource allows you to filter events and deliver them to over 250 AWS services. Now with native support for strictly ordered use cases, customers can ensure events are processed in the exact order they were received and new event evaluations allow automatic content based deduplication.\nTo get started, you can create and share the new Custom event bus using the AWS Management Console, AWS CLI, AWS SDKs, Serverless Agent skill, and AWS CloudFormation. To help you separate the existing Custom event bus experience from the new enhanced Custom event bus, we have renamed the existing bus to Custom event bus - classic. All existing APIs remain unchanged.\nThe enhanced Custom event bus is available at launch in fourteen AWS Regions: United States (N. Virginia, Ohio, Oregon), Europe (Ireland, Frankfurt, Stockholm, Spain), and Asia Pacific (Tokyo, Singapore, Sydney, Malaysia, Thailand, Mumbai, Hong Kong). We have introduced a new pricing model that charges for data transferred rather than events, and rewards you with lower costs as your workloads scale. To learn more, visit Amazon EventBridge. \nTo learn more, see the AWS News blog, the EventBridge user guide, and the EventBridge product page, or download the agent skills."
+    },
+    {
+      "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
+      "link": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-09-24T20:58:46.000Z",
+      "summary": "Amazon EventBridge announces an enhanced custom event bus for organizations scaling event-driven applications across teams and accounts. Deploy a single event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and improved economics at scale."
+    },
+    {
+      "title": "AWS Lambda durable functions are now available in AWS European Sovereign Cloud region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/durablefunctions-european-sovereign-cloud/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T18:29:00.000Z",
+      "summary": "AWS Lambda durable functions are now available in the AWS European Sovereign Cloud. Lambda durable functions enable developers to build reliable multi-step applications and AI workflows within the Lambda developer experience.\nLambda durable functions extend the Lambda programming model with new primitives in your event handler, such as \"step\" and \"wait\", allowing you to checkpoint progress, automatically recover from failures, and pause executions without incurring compute charges for on-demand functions. With availability in the AWS European Sovereign Cloud region, customers can orchestrate complex processes such as order workflows, user onboarding, and AI-assisted tasks while meeting compliance and security requirements.\nYou can activate durable functions for new Python (versions 3.13 and 3.14), Node.js (versions 22 and 24), or Java (17+) based Lambda functions using the AWS Lambda API, AWS Management Console, or AWS SDK. You can also use infrastructure as code tools such as AWS CloudFormation, AWS Serverless Application Model (AWS SAM), and the AWS Cloud Development Kit (AWS CDK).\nFor more information on durable functions, visit the AWS Lambda durable functions product page or the AWS Lambda Developer Guide. To learn about pricing, visit AWS Lambda pricing."
+    },
+    {
+      "title": "Amazon RDS for MySQL announces Extended Support minor versions 5.7.44-rds.20260902 and 8.0.46-rds.20260908",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-mysql-extended-support-minor-5744-8046-rds/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T16:00:00.000Z",
+      "summary": "Amazon Relational Database Service (RDS) for MySQL announces Amazon RDS Extended Support minor versions 5.7.44-rds.20260902 and 8.0.46-rds.20260908.\nAmazon RDS Extended Support provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version.\n \nAmazon RDS Blue/Green Deployments, in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the Amazon RDS for MySQL User Guide. You can also migrate to MySQL 8.4 from external MySQL sources using AWS Database Migration Service. Learn more about pricing details and regional availability at Amazon RDS for MySQL.\nAmazon RDS for MySQL makes it simple to set up, operate, and scale MySQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the Amazon RDS Management Console or by using the AWS Command Line Interface (AWS CLI)."
+    },
+    {
+      "title": "Amazon RDS for PostgreSQL now supports PostgreSQL 19 Beta 4 in the Amazon RDS Database Preview Environment",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/postgresql-19-beta-4-amazon-rds-database-preview-environment/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T16:00:00.000Z",
+      "summary": "Starting today, Amazon RDS for PostgreSQL 19 Beta 4 is available in the Amazon RDS Database Preview Environment, allowing you to evaluate the pre-release of PostgreSQL 19 on Amazon RDS for PostgreSQL.\nPostgreSQL 19 Beta 4 refines the query performance and autovacuum management capabilities introduced in earlier releases and includes bug fixes and stability improvements since Beta 3. Fixes include pg_stat_autovacuum_scores view reporting for TOAST tables and corrected freeze-score scaling so you can tune autovaccum prioritization effectively. Parallel autovacuum now shares a rebalanced cost limit across its workers to keep maintenance on large tables within your configured limits. Refer to the PostgreSQL community announcement for more details.\nAmazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. You can use the PostgreSQL dump and load functionality to import or export your databases from the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the pricing in the US East (Ohio) Region."
+    },
+    {
+      "title": "Amazon RDS for PostgreSQL now supports post-quantum TLS key exchange",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/postgresql-post-quantum-tls-key-exchange/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T16:00:00.000Z",
+      "summary": "Starting today, Amazon RDS for PostgreSQL introduces support for post-quantum TLS (PQ-TLS) key exchange, providing you with post-quantum cryptography options for encrypting your data in-transit.\nRDS for PostgreSQL versions 18 and higher support modification of the ssl_groups parameter. You can select cryptographic groups from the RDS for PostgreSQL allow list to align with your organization's security standards.\nAmazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the Amazon RDS Management Console or by using the AWS Command Line Interface (AWS CLI)."
+    },
+    {
+      "title": "AWS Network Security Manager is now generally available in US East (N. Virginia) Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/network-security-manager-us-east-va/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T15:00:00.000Z",
+      "summary": "Today, AWS announces the general availability of AWS Network Security Manager, a comprehensive network security management solution designed to simplify security policy deployment and enforcement at scale. Network Security Manager supports AWS WAF and AWS Shield Advanced, with support for AWS Network Firewall soon to follow. AWS Network Security Manager enables security teams to consistently enforce firewall and DDoS protection configurations across their entire AWS organization.\nNetwork Security Manager features always-on security deployment automation that applies AWS WAD and AWS Sheild Advanced security protection to Internet facing assets like AWS Application Load Balancer and Amazon CloudFront. This automated approach helps security teams deploy and manage WAF rules and Shield Advanced protections efficiently, ensuring consistent security posture across targeted accounts and resources. Teams can centrally manage security policies, automatically detect configuration drift, and apply remediation reducing the operational overhead of manual security management while maintaining comprehensive protection.\nAWS Network Security Manager is generally available in US East (N. Virginia). For pricing information, visit the AWS Network Security Manager Pricing page."
+    },
+    {
+      "title": "Amazon SageMaker HyperPod Inference Gateway for scalable LLM inference",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/sagemaker-hyperpod-inference-gateway/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T08:00:00.000Z",
+      "summary": "Amazon SageMaker HyperPod Inference Gateway is a Kubernetes-native, GPU-aware routing system that deploys as a single EKS managed add-on on existing SageMaker HyperPod infrastructure with zero application changes. By replacing unintelligent round-robin load balancing with real-time inference-signal-driven routing, it reduces first-token latency by up to 82% and p99 TTFT reductions of 97–98% in mixed-hardware and burst traffic scenarios.\nThe Gateway is built around 3 core components. The Envoy Endpoint terminates HTTPS traffic and exposes a single private endpoint per cluster. The Body-Based Router reads the model name directly from each incoming request and routes it to the correct GPU pool - enabling one gateway to serve many models from a single endpoint URL with no client-side changes required. The Endpoint Picker continuously scores every model server pod in real time across 6 inference-level signals - KV cache utilization, queue depth, LoRA adapter residency, prefix cache hit rate, predicted latency and running requests - selecting the optimal pod for each individual request.\nThe gateway works with any OpenAI-compatible model server, including vLLM and SGLang, requiring no application code changes.\nPer-cluster routing is available today in all AWS Regions where the SageMaker HyperPod inference add-on is supported. Coming soon - cross-cluster and cross-region routing with a centralized fleet gateway, global rate limiting, and cost-tier-aware traffic shaping.\nTo learn more, read the launch blog and explore the documentation"
+    },
+    {
+      "title": "Run interactive workloads on Amazon EMR on EKS with Spark Connect",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/emr-eks-spark-connect-interactive/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T08:00:00.000Z",
+      "summary": "Amazon EMR on EKS now supports interactive Apache Spark sessions with Spark Connect. Data engineers and data scientists can develop and debug Apache Spark applications interactively from managed notebooks in Amazon SageMaker Unified Studio and their own IDEs, such as Jupyter and Visual Studio Code, with Spark running on the Amazon EKS clusters they already operate.  \nAn interactive session provides a persistent Spark context that spans across cells and scripts, letting you blend local Python code execution with remote Spark operations. Spark Connect's client-server architecture decouples your application client from the Spark driver and allows you to maintain your preferred development environment and tooling while Spark runs on your Amazon EKS cluster. This architecture supports workflows including ad hoc data exploration and incremental PySpark job development before deploying to production. Each session runs as pods on a virtual cluster, secured with your AWS Identity and Access Management (IAM) execution role and tagged by project and user.\nSpark Connect on Amazon EMR on EKS is available with EMR release 7.14 (Apache Spark 3.5) and emr-spark-8.1.0 (Apache Spark 4.1), in all AWS Commercial Regions. The Amazon SageMaker Unified Studio experience is available in supported AWS Regions.\nTo get started, visit the Spark Connect on Amazon EMR on EKS documentation or the Amazon SageMaker Unified Studio Getting Started guide."
+    },
+    {
+      "title": "Amazon GameLift Servers now available in 5 new regions and 8 Local Zones",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-gamelift-servers-region-expansion-2026",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T08:00:00.000Z",
+      "summary": "Amazon GameLift Servers is a fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games. High latency caused by geographic distance between players and servers remains one of the most common challenges in multiplayer game development. This expansion helps game developers and studios address that challenge by bringing Amazon GameLift Servers to 5 new AWS Regions and 8 AWS Local Zones worldwide.\nWith this expansion, customers can deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia, reducing latency and improving gameplay responsiveness. \nThe 5 new AWS Regions are il-central-1 (Tel Aviv), mx-central-1 (Mexico/Queretaro), eu-south-2 (Spain/Zaragoza), ap-south-2 (Hyderabad), and ap-southeast-3 (Jakarta). The 8 new AWS Local Zones are us-east-1-atl-2 (Atlanta), us-east-1-chi-2 (Chicago), us-east-1-iah-2 (Houston), us-east-1-mia-2 (Miami), us-west-2-phx-2 (Phoenix), sa-east-1-bue-1 (Buenos Aires), us-east-1-nyc-2 (NYC) and sa-east-1-lim-1 (Lima).\n \ndocumentation."
+    },
+    {
+      "title": "Amazon RDS supports Multi-AZ for SQL Server Developer Edition",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-sql-server-multi-az-developer-edition/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T07:00:00.000Z",
+      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Multi-AZ deployments using Always On Availability Groups for SQL Server Developer Edition. Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone and provide automatic failover during infrastructure failure. You can use this capability to build and test high availability configurations in non-production environments using Developer Edition, which includes all the functionality of Enterprise Edition at no license cost.\n \nWorking with SQL Server Developer Edition on RDS for SQL Server. For pricing details, see Amazon RDS for SQL Server Pricing."
+    },
+    {
+      "title": "Amazon ElastiCache Global Datastore now supports tagging and tag-based access control",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-global-datastore-tagging/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T07:00:00.000Z",
+      "summary": "Amazon ElastiCache now supports resource tagging and tag-based access control (TBAC) for Global Datastore. Previously, ElastiCache supported tagging on all resources except Global Datastore, which prevented customers from applying a single, consistent permission and cost-allocation model across their ElastiCache fleet.\nWith this launch, you can use AddTagsToResource, RemoveTagsFromResource, and ListTagsForResource on a Global Datastore, and reference those tags as conditions in IAM policies and Service Control Policies (SCPs) to grant permissions based on tag attributes rather than enumerating individual resources. Tag changes on a Global Datastore propagate automatically to every Region it spans, so access-control and cost-allocation policies stay consistent without per-Region operations.\nThere is no additional cost for this feature, and no change to how you create or manage Global Datastores. This feature is available in all AWS Regions where ElastiCache Global Datastore is available. To learn more, see Tagging your ElastiCache resources and Using condition keys with ElastiCache."
+    },
     {
       "title": "ICYMI: August 2026 @AWS Security",
       "link": "https://aws.amazon.com/blogs/security/icymi-august-2026-aws-security/",
@@ -42,6 +126,13 @@
       "source": "AWS Security Blog",
       "pubDate": "2026-09-23T14:45:44.000Z",
       "summary": "The Australian Signals Directorate (ASD) has this month issued a clear call to action through its Multi-factor authentication: Switch it on campaign, urging businesses, organisations, and individuals to enable multi-factor authentication (MFA) across their online accounts. At AWS, we strongly support this message. As threat actors continue to target credentials through phishing, credential stuffing, and […]"
+    },
+    {
+      "title": "Amazon DynamoDB global tables with multi-Region strong consistency now supports additional AWS Regions and cross-continent configurations",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-23T08:00:00.000Z",
+      "summary": "Starting today, Amazon DynamoDB global tables with multi-Region strong consistency (MRSC) is available in five additional AWS Regions: Canada (Central), Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore), bringing the total number of supported Regions to 15. You can now create an MRSC global table in any three-Region configuration across the 15 supported AWS Regions, configured with either three replicas or two replicas and one witness Region. This includes configurations that span North America, Europe, and Asia Pacific.\nMRSC lets you build highly available multi-Region applications with a recovery point objective (RPO) of zero. By choosing replica Regions closer to your users in more geographies, you can route applications to nearby DynamoDB endpoints for strongly consistent reads while keeping your application available during Regional impairments. MRSC is ideal for global applications with strict consistency requirements, such as user profile management, inventory tracking, order state, and entitlement management.\nTo get started and view the complete list of supported Regions and configuration options, see the DynamoDB Developer Guide. To learn more about building resilient multi-Region applications, visit the DynamoDB global tables page."
     },
     {
       "title": "Amazon CloudWatch Omni: AI-first observability for agents and applications",
@@ -119,97 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-09-22T08:00:00.000Z",
       "summary": "Amazon EMR 7.14 is now available with new features across Amazon EMR on EC2, Amazon EMR on EKS, and Amazon EMR Serverless, along with version upgrades for additional applications. This release also upgrades Apache Spark to 3.5.8 and Apache Iceberg to 1.10.1.\nApache Iceberg materialized views now refresh faster on tables with updates and deletes, using change data capture to read only the data files affected by a change. On Amazon EMR on EKS, clusters now support Spark Connect endpoints for interactive Spark sessions with token-based authentication, and can run workloads on IPv6 Amazon EKS clusters. On Amazon EMR Serverless, the storage limit for Spark jobs increases from 200 GiB to 1 TiB, giving more room for shuffle data.\nAmazon EMR 7.14 is available in all AWS Regions where Amazon EMR is available.\nTo learn more, visit the Amazon EMR 7.14 Release Guide, or get started by creating a cluster from the Amazon EMR console."
-    },
-    {
-      "title": "AWS Glue Data Quality delivers context-specific rule recommendations in seconds",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/glue-data-quality-rule-recommendations/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-22T08:00:00.000Z",
-      "summary": "AWS Glue Data Quality now generates data quality rules in seconds, reducing the time to establish data quality checks for your tables in the AWS Glue Data Catalog. You get a ready-to-use set of rules with full coverage across every column, with no manual setup—so you can move from raw data to trusted data faster while authoring pipelines.\nThis is delivered through a new Advanced mode for rule recommendations, in which AWS Glue Data Quality uses generative AI to detect the intent behind your data and proposes business-relevant rules that reflect how your data is used. You can use this Advanced mode to bootstrap rules for a newly onboarded dataset or establish baseline checks across a large data lake without hand-writing each rule. You review the recommended rules, adjust as needed, and save them as a ruleset to begin monitoring immediately.\nAdvanced mode is available in the following AWS Regions: Asia Pacific (Melbourne, Osaka, Sydney, Tokyo), Canada (Central), Europe (Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm, Zurich), US East (N. Virginia, Ohio), and US West (N. California, Oregon).\nTo get started, see the AWS Glue Data Quality documentation."
-    },
-    {
-      "title": "Amazon RDS Custom now supports the latest CU for Microsoft SQL Server",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-custom-supports-latest-cu-gdr-microsoft-sql-server/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-22T07:30:00.000Z",
-      "summary": "Amazon Relational Database Service (Amazon RDS) Custom for SQL Server now supports the latest Cumulative Updates (CU) for Microsoft SQL Server. This release includes support for SQL Server 2022 CU26 KB5093420 (RDS version 16.00.4265.3.v1).\n \nAmazon RDS Custom User Guide."
-    },
-    {
-      "title": "Amazon Connect Customer launches agent-to-agent collaboration",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/Amazon-Connect-Customer-A2A",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-22T04:00:00.000Z",
-      "summary": "Amazon Connect Customer now supports agent-to-agent collaboration, giving customers the choice to bring in specialized AI agents during a live interaction to resolve a customer request. With this launch, Connect Customer AI agents can collaborate with each other, and with AI agents outside Connect Customer, over the open agent-to-agent (A2A) protocol through text or bidirectional voice. For example, a bank's frontline AI agent handling a customer call can delegate a fraud risk assessment to a specialist scoring AI agent, use the result to approve the transaction on the spot, and then transfer a complex dispute to another AI agent that resolves it directly with the customer.\nWorking with the A2A Technical Steering Committee at the Linux Foundation, AWS expanded the protocol to support voice streaming and interaction-level session continuity required for customer engagement. When using A2A, Connect Customer coordinates context passing between the AI agents so customers get a consistent experience, with unified observability, guardrails, and escalation controls across all the AI agents in an interaction. Administrators see one contact record showing what each agent said, which tools it called, and how long each step took, all captured as a single interaction for analytics, AI quality management, and to drive continual improvement.\nFor a full list of supported Regions, see region availability. To learn more about this feature, see the administrator guide. To learn more about Amazon Connect Customer, an AI solution that helps enterprises deliver exceptional customer experiences at every touchpoint, visit the Amazon Connect Customer website. For information about pricing, please visit our pricing page."
-    },
-    {
-      "title": "Amazon ECS now provides real-time deployment observability in the AWS Management Console",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-21T20:05:00.000Z",
-      "summary": "Amazon Elastic Container Service (Amazon ECS) now provides real-time service deployment observability in the Amazon ECS Console for native Linear, Canary, and Blue/Green deployment strategies. With this launch, deployment monitoring and troubleshooting come together in one place in the console, so you can track deployment progress, monitor health, and diagnose failures without switching between tools.\nReal-time service deployment observability includes a live deployment timeline that narrates each service deployment as it happens, showing every deployment phase, service events, and task launch and termination progress, always reflecting the current state. As a deployment moves forward, you can follow the traffic shift distribution across your source and target revisions and see the current lifecycle stage at a glance, whether it is scaling up green tasks, waiting on a lifecycle hook, or sitting through bake time. Deployment health signals that you would otherwise gather from separate tools now sit alongside the timeline: circuit breaker status with live task failure and threshold tracking, deployment alarm state, container and load-balancer health checks, and lifecycle hook status. When something goes wrong, failed tasks surface right in the timeline with diagnostic context and deep links to services such as AWS CloudTrail, so you can pinpoint the root cause and act on it quickly.\n \nRegions for all Amazon ECS services using the Amazon ECS native Linear, Canary, and Blue/Green deployment types. To get started, navigate to any Amazon ECS service in the Amazon ECS Console and select the Deployments tab."
-    },
-    {
-      "title": "Amazon EVS now in scope for FedRAMP Class C",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-evs-fedramp-class-c/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-21T19:08:00.000Z",
-      "summary": "The Amazon Elastic VMware Service (EVS) service is now in scope for FedRAMP Class C (formerly Moderate baseline) in all United States Regions. \n \nFederal Risk and Authorization Management Program (FedRAMP) is a US government-wide program that delivers a standard approach to the security assessment, authorization, and continuous monitoring for cloud products and services. Amazon EVS lets you run the latest VMware Cloud Foundation (VCF) software directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances. You can set up a complete VCF environment in just a few hours, enabling rapid workload migration to AWS to help you eliminate aging infrastructure, reduce operational risks, and meet critical timelines for exiting your data center.\n \nAWS services in scope page. To learn more about Amazon EVS, visit the product detail page and user guide."
-    },
-    {
-      "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
-      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-09-21T16:11:24.000Z",
-      "summary": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking […]"
-    },
-    {
-      "title": "Transforming Bedrock Guardrails events into OCSF with CloudWatch",
-      "link": "https://aws.amazon.com/blogs/security/transforming-bedrock-guardrails-events-into-ocsf-with-cloudwatch/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-09-21T15:33:25.000Z",
-      "summary": "Security teams investigating possible AI-related security events need guardrail intervention data alongside their existing security telemetry. When a guardrail identifies or blocks a prompt injection attempt or redacts sensitive data, that intervention carries additional investigative value comparable to a failed sign-in or a network intrusion alert. AWS Bedrock publishes this telemetry to AWS CloudWatch metrics […]"
-    },
-    {
-      "title": "Amazon EC2 X8i instances are now available in the South America (São Paulo) Region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-x8i-south-america-sao-paulo/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-18T22:16:00.000Z",
-      "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the South America (São Paulo) region. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances.\nX8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options.\nTo get started, visit the AWS Management Console. X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit X8i instances page."
-    },
-    {
-      "title": "ReadyOn’s Four Walls of tenant isolation on Amazon EKS",
-      "link": "https://aws.amazon.com/blogs/architecture/readyons-four-walls-of-tenant-isolation-on-amazon-eks/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-09-18T21:33:13.000Z",
-      "summary": "ReadyOn runs a multi-tenant platform on Amazon EKS that handles highly sensitive enterprise data. This post describes their Four Walls model: four independent layers of tenant isolation combining Kubernetes namespaces, Karpenter node pools, Amazon VPC security groups, and per-tenant Amazon Aurora databases for zero-trust defense in depth."
-    },
-    {
-      "title": "AWS Continuum now supports credential testing and accessible domain suggestions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-18T18:34:00.000Z",
-      "summary": "AWS Continuum for penetration testing is a frontier agent that proactively secures applications throughout the development lifecycle by offering on-demand, customized penetration testing with real exploitability testing. Developers and security teams can now test login credentials and receive suggested domains before a penetration test runs. This makes it easier to configure an accurate network scope from the start, reducing misconfiguration and wasted test cycles.\nPreviously, identifying all the URLs your application reaches required manual effort, and authentication failures were only discovered after a full test cycle completed, costing time and resources. With this launch, when you add login credentials during test configuration, AWS Continuum authenticates into your application exactly as a real user would, capturing every accessible domain reached during login and surfacing them as in-scope URL suggestions. You can review accessible domains, validate credentials, and confirm the agent covers the right endpoints, all before the real test begins. Accessible domains are returned regardless of whether the credential test succeeds, fails, or times out. You can learn more about this feature in our updated documentaiton.\nThis capability is available in all regions where AWS Continuum for penetration testing is available and is detailed on the AWS Continuum product page."
-    },
-    {
-      "title": "Amazon ECS Express Mode now supports AWS Graviton (ARM64) workloads",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-express-mode-arm-architecture/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-18T17:27:00.000Z",
-      "summary": "Amazon Elastic Container Service Express Mode now supports specifying ARM64 as the CPU architecture for your service, making it easy to deploy ARM-based container images on AWS Graviton-powered compute and benefit from up to 40% better price-performance compared to x86-based instances.\nAmazon ECS Express Mode makes it easy to rapidly launch containerized applications, including web applications and APIs, by orchestrating and managing the cloud architecture for your application. You provide your container image, and ECS Express Mode handles the rest, configuring networking, load balancing, auto scaling, and deployments, and providing your application with an auto-generated URL. With ARM64 architecture support, you can choose the compute architecture that fits your workload, whether you're optimizing for cost with Graviton, matching your existing fleet, or deploying images built natively for ARM.\nYou can configure the CPU architecture for new and existing Amazon ECS Express Mode services using the AWS Management Console, AWS CLI, AWS SDKs, and infrastructure as code (IaC) tools. This capability is available in all AWS commercial Regions and AWS GovCloud (US) Regions. To learn more, see the ECS Express Mode documentation."
-    },
-    {
-      "title": "AWS Resilience Hub adds three new capabilities",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/resilience-hub-eks-dependency-policy/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-18T16:49:00.000Z",
-      "summary": "The next generation of AWS Resilience Hub is a central location in the AWS that helps platform engineering and site reliability teams assess and strengthen the resilience of their workloads running on AWS. It provides automated dependency discovery, generative AI-powered failure mode analysis, modular resilience policies, resilience testing, and organization-wide resilience posture reporting. Today, AWS Resilience Hub adds three new capabilities: EKS labels support for service input sources, dependency insights, and resilience policy sharing through AWS Organizations.\nEKS labels support for service input sources. Resilience Hub now supports EKS labels within a namespace as a service input source, allowing customers to use their existing Kubernetes labeling conventions to scope exactly which resources Resilience Hub discovers and uses during failure mode analysis. This ensures assessments stay aligned with how teams organize their EKS workloads.\nDependency insights. Customers who enable dependency discovery can now generate dependency insights, a new generative AI-powered capability that analyzes discovered application dependencies and highlights meaningful patterns. Dependency insights surfaces new dependencies, identifies cross-Region dependencies, and flags unusual usage patterns. This helps teams accelerate dependency analysis and identify potential new risks.\nResilience policy sharing through AWS Organizations. Resilience Hub now supports sharing resilience policies through AWS Organizations, enabling central teams to build and manage policies that can be applied across multiple accounts. This provides organization-wide observability into which services are using each policy, making it easier to monitor adoption and ensure consistent resilience posture across the organization.\nTo get started, visit the  AWS console. To learn more, see the product page or visit the documentation."
-    },
-    {
-      "title": "Amazon EC2 I7ie instances now available in AWS Israel region",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ec2-i7ie-instances-israel-telaviv-region/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-18T16:00:00.000Z",
-      "summary": "AWS is announcing starting today, Amazon EC2 I7ie instances are now available in AWS Israel (Tel Aviv) region. Designed for large storage I/O intensive workloads, I7ie instances are powered by 5th Gen Intel Xeon Processors with an all-core turbo frequency of 3.2 GHz, offering up to 40% better compute performance and 20% better price performance over existing I3en instances. I7ie instances offer up to 120TB local NVMe storage density for storage optimized instances and offer up to twice as many vCPUs and memory compared to prior generation instances. Powered by 3rd generation AWS Nitro SSDs, I7ie instances deliver up to 65% better real-time storage performance, up to 50% lower storage I/O latency, and 65% lower storage I/O latency variability compared to I3en instances.\n \n page."
     }
   ]
 }
