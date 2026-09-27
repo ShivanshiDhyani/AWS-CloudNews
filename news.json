@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T02:44:18.845Z",
+  "lastUpdated": "2026-09-27T02:44:46.471Z",
   "items": [
     {
       "title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
@@ -51,18 +51,18 @@
       "summary": "AWS Elastic Disaster Recovery (AWS DRS) now supports disaster recovery for AWS Graviton-based (arm64) source servers. You can now protect and recover your Graviton workloads with the same simple, reliable DRS experience you already use for x86 workloads.\nAs more workloads move to Graviton for its price-performance benefits, they need the same disaster recovery coverage as the rest of your environment. DRS now automatically detects arm64 source servers and recovers them onto Graviton instances, preserving your workload's architecture end to end. Recovery works the same way it does for your other servers, with nothing extra to configure.\nThis capability is available in all AWS Regions where AWS DRS is offered, at no additional cost. To learn more, visit the AWS Elastic Disaster Recovery User Guide."
     },
     {
-      "title": "AWS End User Messaging now supports voice calling on WhatsApp",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-voice-calling-whatsapp",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-25T07:00:00.000Z",
-      "summary": "AWS End User Messaging now lets businesses place and receive voice calls with their customers directly inside WhatsApp, using the same verified business identity they already use for messaging. With WhatsApp voice calling, a conversation can move seamlessly from a chat thread to a voice call without switching to a separate channel or application, so context is never lost and customers stay in the message thread where the conversation started.\nVoice calling works in both directions. Customers can call a business from within a WhatsApp chat, and businesses can call customers who have granted permission to be contacted. You can enable and manage WhatsApp voice calling on a registered WhatsApp business phone number using either the AWS End User Messaging console or the API.\nWhatsApp voice calling is available in all Regions where AWS End User Messaging Social is available.\nTo learn more and get started, see the AWS End User Messaging Social User Guide."
-    },
-    {
       "title": "AWS End User Messaging and Amazon SES now offer AI agent skills for the AWS MCP Server",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-messaging-ses-ai-skills-mcp-server/",
       "source": "AWS What's New",
       "pubDate": "2026-09-25T07:00:00.000Z",
       "summary": "AWS End User Messaging and Amazon SES now publish AI agent skills for the AWS MCP Server, enabling developers to build and send messages by asking their AI coding agent in plain language. Previously, developers had to navigate multiple documentation pages and management console screens to complete messaging tasks. Now, each skill provides your agent with step-by-step, validated guidance for tasks like verifying sending identities, building branded Rich Communication Services (RCS) agents, and sending production emails.\nThese skills integrate with popular AI coding agents including Claude Code, Codex, Cursor, and Kiro. For example, you can ask Amazon SES to verify a sending identity and send your first production email. You can ask AWS End User Messaging to build a branded RCS agent and send yourself a rich message with cards and buttons. The skills eliminate the need to manually search documentation or switch between console screens, allowing you to complete messaging workflows directly through natural language commands.\nTo use these skills, first connect the AWS MCP Server to your agent. In Claude Code, Codex, and Cursor, the aws-core plugin bundles the server and a curated set of skills in one install. In Kiro and other agents, you add the server to your MCP configuration file. Then add the skill for the channel you want, and your agent is ready to guide you. For details on what each skill does and how to install it, see the AWS End User Messaging SMS and RCS agent setup guide, the AWS End User Messaging WhatsApp agent setup guide, and the Amazon SES agent setup guide."
+    },
+    {
+      "title": "AWS End User Messaging now supports voice calling on WhatsApp",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-voice-calling-whatsapp",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-25T07:00:00.000Z",
+      "summary": "AWS End User Messaging now lets businesses place and receive voice calls with their customers directly inside WhatsApp, using the same verified business identity they already use for messaging. With WhatsApp voice calling, a conversation can move seamlessly from a chat thread to a voice call without switching to a separate channel or application, so context is never lost and customers stay in the message thread where the conversation started.\nVoice calling works in both directions. Customers can call a business from within a WhatsApp chat, and businesses can call customers who have granted permission to be contacted. You can enable and manage WhatsApp voice calling on a registered WhatsApp business phone number using either the AWS End User Messaging console or the API.\nWhatsApp voice calling is available in all Regions where AWS End User Messaging Social is available.\nTo learn more and get started, see the AWS End User Messaging Social User Guide."
     },
     {
       "title": "AWS Billing and Cost Management now provides billing context for your account through a new API",
@@ -142,18 +142,18 @@
       "summary": "Amazon GameLift Servers is a fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games. High latency caused by geographic distance between players and servers remains one of the most common challenges in multiplayer game development. This expansion helps game developers and studios address that challenge by bringing Amazon GameLift Servers to 5 new AWS Regions and 8 AWS Local Zones worldwide.\nWith this expansion, customers can deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia, reducing latency and improving gameplay responsiveness. \nThe 5 new AWS Regions are il-central-1 (Tel Aviv), mx-central-1 (Mexico/Queretaro), eu-south-2 (Spain/Zaragoza), ap-south-2 (Hyderabad), and ap-southeast-3 (Jakarta). The 8 new AWS Local Zones are us-east-1-atl-2 (Atlanta), us-east-1-chi-2 (Chicago), us-east-1-iah-2 (Houston), us-east-1-mia-2 (Miami), us-west-2-phx-2 (Phoenix), sa-east-1-bue-1 (Buenos Aires), us-east-1-nyc-2 (NYC) and sa-east-1-lim-1 (Lima).\n \ndocumentation."
     },
     {
-      "title": "Amazon RDS supports Multi-AZ for SQL Server Developer Edition",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-sql-server-multi-az-developer-edition/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-24T07:00:00.000Z",
-      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Multi-AZ deployments using Always On Availability Groups for SQL Server Developer Edition. Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone and provide automatic failover during infrastructure failure. You can use this capability to build and test high availability configurations in non-production environments using Developer Edition, which includes all the functionality of Enterprise Edition at no license cost.\n \nWorking with SQL Server Developer Edition on RDS for SQL Server. For pricing details, see Amazon RDS for SQL Server Pricing."
-    },
-    {
       "title": "Amazon ElastiCache Global Datastore now supports tagging and tag-based access control",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-global-datastore-tagging/",
       "source": "AWS What's New",
       "pubDate": "2026-09-24T07:00:00.000Z",
       "summary": "Amazon ElastiCache now supports resource tagging and tag-based access control (TBAC) for Global Datastore. Previously, ElastiCache supported tagging on all resources except Global Datastore, which prevented customers from applying a single, consistent permission and cost-allocation model across their ElastiCache fleet.\nWith this launch, you can use AddTagsToResource, RemoveTagsFromResource, and ListTagsForResource on a Global Datastore, and reference those tags as conditions in IAM policies and Service Control Policies (SCPs) to grant permissions based on tag attributes rather than enumerating individual resources. Tag changes on a Global Datastore propagate automatically to every Region it spans, so access-control and cost-allocation policies stay consistent without per-Region operations.\nThere is no additional cost for this feature, and no change to how you create or manage Global Datastores. This feature is available in all AWS Regions where ElastiCache Global Datastore is available. To learn more, see Tagging your ElastiCache resources and Using condition keys with ElastiCache."
+    },
+    {
+      "title": "Amazon RDS supports Multi-AZ for SQL Server Developer Edition",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-sql-server-multi-az-developer-edition/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T07:00:00.000Z",
+      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Multi-AZ deployments using Always On Availability Groups for SQL Server Developer Edition. Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone and provide automatic failover during infrastructure failure. You can use this capability to build and test high availability configurations in non-production environments using Developer Edition, which includes all the functionality of Enterprise Edition at no license cost.\n \nWorking with SQL Server Developer Edition on RDS for SQL Server. For pricing details, see Amazon RDS for SQL Server Pricing."
     },
     {
       "title": "ICYMI: August 2026 @AWS Security",
