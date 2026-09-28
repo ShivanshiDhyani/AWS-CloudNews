@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T02:44:46.471Z",
+  "lastUpdated": "2026-09-28T02:46:37.923Z",
   "items": [
     {
       "title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
@@ -142,18 +142,18 @@
       "summary": "Amazon GameLift Servers is a fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games. High latency caused by geographic distance between players and servers remains one of the most common challenges in multiplayer game development. This expansion helps game developers and studios address that challenge by bringing Amazon GameLift Servers to 5 new AWS Regions and 8 AWS Local Zones worldwide.\nWith this expansion, customers can deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia, reducing latency and improving gameplay responsiveness. \nThe 5 new AWS Regions are il-central-1 (Tel Aviv), mx-central-1 (Mexico/Queretaro), eu-south-2 (Spain/Zaragoza), ap-south-2 (Hyderabad), and ap-southeast-3 (Jakarta). The 8 new AWS Local Zones are us-east-1-atl-2 (Atlanta), us-east-1-chi-2 (Chicago), us-east-1-iah-2 (Houston), us-east-1-mia-2 (Miami), us-west-2-phx-2 (Phoenix), sa-east-1-bue-1 (Buenos Aires), us-east-1-nyc-2 (NYC) and sa-east-1-lim-1 (Lima).\n \ndocumentation."
     },
     {
-      "title": "Amazon ElastiCache Global Datastore now supports tagging and tag-based access control",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-global-datastore-tagging/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-24T07:00:00.000Z",
-      "summary": "Amazon ElastiCache now supports resource tagging and tag-based access control (TBAC) for Global Datastore. Previously, ElastiCache supported tagging on all resources except Global Datastore, which prevented customers from applying a single, consistent permission and cost-allocation model across their ElastiCache fleet.\nWith this launch, you can use AddTagsToResource, RemoveTagsFromResource, and ListTagsForResource on a Global Datastore, and reference those tags as conditions in IAM policies and Service Control Policies (SCPs) to grant permissions based on tag attributes rather than enumerating individual resources. Tag changes on a Global Datastore propagate automatically to every Region it spans, so access-control and cost-allocation policies stay consistent without per-Region operations.\nThere is no additional cost for this feature, and no change to how you create or manage Global Datastores. This feature is available in all AWS Regions where ElastiCache Global Datastore is available. To learn more, see Tagging your ElastiCache resources and Using condition keys with ElastiCache."
-    },
-    {
       "title": "Amazon RDS supports Multi-AZ for SQL Server Developer Edition",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-sql-server-multi-az-developer-edition/",
       "source": "AWS What's New",
       "pubDate": "2026-09-24T07:00:00.000Z",
       "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Multi-AZ deployments using Always On Availability Groups for SQL Server Developer Edition. Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone and provide automatic failover during infrastructure failure. You can use this capability to build and test high availability configurations in non-production environments using Developer Edition, which includes all the functionality of Enterprise Edition at no license cost.\n \nWorking with SQL Server Developer Edition on RDS for SQL Server. For pricing details, see Amazon RDS for SQL Server Pricing."
+    },
+    {
+      "title": "Amazon ElastiCache Global Datastore now supports tagging and tag-based access control",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-global-datastore-tagging/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-24T07:00:00.000Z",
+      "summary": "Amazon ElastiCache now supports resource tagging and tag-based access control (TBAC) for Global Datastore. Previously, ElastiCache supported tagging on all resources except Global Datastore, which prevented customers from applying a single, consistent permission and cost-allocation model across their ElastiCache fleet.\nWith this launch, you can use AddTagsToResource, RemoveTagsFromResource, and ListTagsForResource on a Global Datastore, and reference those tags as conditions in IAM policies and Service Control Policies (SCPs) to grant permissions based on tag attributes rather than enumerating individual resources. Tag changes on a Global Datastore propagate automatically to every Region it spans, so access-control and cost-allocation policies stay consistent without per-Region operations.\nThere is no additional cost for this feature, and no change to how you create or manage Global Datastores. This feature is available in all AWS Regions where ElastiCache Global Datastore is available. To learn more, see Tagging your ElastiCache resources and Using condition keys with ElastiCache."
     },
     {
       "title": "ICYMI: August 2026 @AWS Security",
