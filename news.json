@@ -1,6 +1,83 @@
 {
-  "lastUpdated": "2026-09-28T02:46:37.923Z",
+  "lastUpdated": "2026-09-29T03:27:58.764Z",
   "items": [
+    {
+      "title": "Amazon EC2 Future-dated Capacity Reservations Now Supports Postponing Start Dates",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T21:17:00.000Z",
+      "summary": "Amazon EC2 Future-dated Capacity Reservations let you secure capacity up to 120 days in advance by specifying the capacity you need, the start date, and a commitment duration. If your plans change before delivery, you can now postpone your start date to match your new timeline.\nWhen you postpone your start date, EC2 presents a quote that shows the new start date and the required commitment duration. The commitment duration can increase, depending on when you postpone the start date. After you review and accept the quote, EC2 updates your reservation with the new start date.\nThis feature is available to all Future-dated Capacity Reservation customers. Refer to the AWS Capabilities by Region website for the feature's regional availability. For more details, refer to the Capacity Reservation user guide."
+    },
+    {
+      "title": "Amazon Rekognition Face Liveness now returns Feedback Codes",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/rekognition-liveness-feedback-codes/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T20:41:00.000Z",
+      "summary": "Amazon Rekognition Face Liveness now returns Feedback Codes that help customers understand why a liveness check received a low score and how users could retry successfully. The codes are returned in the GetFaceLivenessSessionResults API response, and they identify the specific conditions that contributed to the low score, such as poor lighting, face obstruction, closed eyes, or low video quality. Customers can surface these codes to their end users who can then make targeted corrections and retry with confidence. A single session can return multiple Feedback Codes at once, allowing users to resolve all contributing issues in one retry. This feature is especially useful in identity verification onboarding, re-authentication flows, and accessibility scenarios.\nAmazon Rekognition Face Liveness verifies that the person in front of the camera is a real, live human (instead of a photo, video replay, mask, or deepfake) through a short, guided selfie-video check. It returns a confidence score, a reference image for face matching, and session audit images. \n \nAmazon Rekognition Face Liveness API documentation and Face Liveness FAQ."
+    },
+    {
+      "title": "Grok 4.7 is now available on Amazon Bedrock",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T18:29:00.000Z",
+      "summary": "Amazon Bedrock now supports SpaceXAI Grok 4.7, a frontier model built for coding, agentic tasks, and knowledge work, with US Geo and Global cross-Region inference.  \nGrok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation.  \nGet started with Grok 4.7 in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions, endpoints, APIs, features, inference profiles and pricing, see the Amazon Bedrock documentation. To learn more, read the launch blog post."
+    },
+    {
+      "title": "AWS European Sovereign Cloud: Demonstrating an independent operation",
+      "link": "https://aws.amazon.com/blogs/security/aws-european-sovereign-cloud-demonstrating-an-independent-operation/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-09-28T17:05:12.000Z",
+      "summary": "On Saturday, October 24, 2026, we will conduct an exercise demonstrating that the AWS European Sovereign Cloud can operate without depending on any infrastructure outside of the European Union (EU). For several hours, the AWS European Sovereign Cloud will operate without a connection to the AWS Global Network backbone. The backbone is the private network […]"
+    },
+    {
+      "title": "AWS Weekly Roundup: GPT-6 Sol and Luna, Claude Opus 5.5 on Amazon Bedrock, Strands harness, and more (September 28, 2026)",
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-09-28T16:14:54.000Z",
+      "summary": "If there’s one theme that defined last week, it’s choice. The frontier models keep arriving, and the interesting question is no longer just “how smart is it?” but “which model fits this step, at this cost, at this latency?” That’s exactly what landed on Amazon Bedrock over the past few days: GPT-6 Sol and GPT-6 […]"
+    },
+    {
+      "title": "Claude Sonnet 5.5 now available on AWS",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T15:00:00.000Z",
+      "summary": "AWS now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work at faster speed.\nClaude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. And it produces ready-to-share knowledge work, from 1-pagers, diagrams, and summary slides to document edits and spreadsheet cleanup.\nCustomers have two ways to access Claude Sonnet 5.5: Amazon Bedrock and Claude Platform on AWS.\nAmazon Bedrock gives you Sonnet's capabilities while keeping your data within AWS infrastructure with regional data residency and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock documentation and regional availability. \nClaude Platform on AWS gives you direct access to Anthropic's native platform experience and capabilities via the AWS Console. Build, test, and deploy with the same APIs, features, and console experience you'd get working with Anthropic directly, unified with AWS billing and authentication. To get started, see the Claude Platform on AWS documentation."
+    },
+    {
+      "title": "Claude Sonnet 5.5 now available on AWS GovCloud (US)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T15:00:00.000Z",
+      "summary": "AWS GovCloud (US) now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work ag faster speed.\nClaude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. And it produces ready-to-share knowledge work, from 1-pagers, diagrams, and summary slides to document edits and spreadsheet cleanup.\nAmazon Bedrock gives you Sonnet's capabilities while keeping your data within AWS infrastructure with regional data residency and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock documentation and regional availability."
+    },
+    {
+      "title": "Amazon Corretto September 2026 Patch Updates",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T14:00:00.000Z",
+      "summary": "On September 25, 2026, Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK: Corretto 25.0.4.10.1, 21.0.12.11.1, 17.0.20.12.1, and 11.0.32.12.1 are now available for download. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. This patch includes the latest tzdata 2026d updates.\nVisit Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yum, or Apk repo.\nFeedback is welcomed!"
+    },
+    {
+      "title": "Amazon DocumentDB (with MongoDB compatibility) adds support for 5 MongoDB aggregation stages and change stream capabilities in version 8.0.2",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-8-0-2/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T08:00:00.000Z",
+      "summary": "Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes, 5 new aggregation stages, and change stream enhancements starting from minor version 8.0.2. This release expands MongoDB API compatibility and improves query performance, making it easier to migrate MongoDB workloads to Amazon DocumentDB without application code changes.\nKey new capabilities in version 8.0.2 include:\n- Retryable Writes — insert, update, and delete operations automatically retry on transient network errors, improving application resilience during failovers.\n \nThese capabilities are available starting from Amazon DocumentDB 8.0.2 in all regions where Amazon DocumentDB is available. To learn more, see Supported MongoDB APIs, operations, and data types and Amazon DocumentDB release notes."
+    },
+    {
+      "title": "Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-retryable-writes/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T08:00:00.000Z",
+      "summary": "For developers building MongoDB-compatible applications, retryable writes improve application resilience during transient errors such as network interruptions or primary failovers. Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes starting with engine version 8.0.2, eliminating the need for additional code changes when enabling this capability.\nWith retryable writes, the MongoDB driver automatically retries certain write operations one time if a transient error occurs. Most current MongoDB-compatible drivers enable retryable writes by default. With this release, applications connecting to Amazon DocumentDB 8.0.2 no longer need to set retryWrites=false in the connection string to avoid errors. Retryable writes are supported for all write commands except updateMany and deleteMany, as well as transaction commit and abort commands. On engine versions earlier than 8.0.2, retryable writes remain unsupported and must be disabled.\nRetryable writes are available on Amazon DocumentDB 8.0.2 instance-based and serverless clusters in all regions where Amazon DocumentDB 8.0 is available. To get started with retryable writes, see the Amazon DocumentDB developer guide."
+    },
+    {
+      "title": "AWS Backup adds logically air-gapped vault support for Amazon FSx for NetApp ONTAP",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-backup-air-gapped-vault-fsx-ontap/",
+      "source": "AWS What's New",
+      "pubDate": "2026-09-28T08:00:00.000Z",
+      "summary": "AWS Backup logically air-gapped vault now supports Amazon FSx for NetApp ONTAP. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event.\nYou can now protect your Amazon FSx for NetApp ONTAP volumes in logically air-gapped vaults. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using AWS owned keys or customer-managed keys. You can store your FSx for NetApp ONTAP backups in a logically air-gapped vault in the same account or across other accounts and Regions. This helps reduce the risk of downtime, ensure business continuity, and meet compliance and disaster recovery requirements.\nYou can get started using the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. Target FSx for NetApp ONTAP backups to a logically air-gapped vault by specifying it as the primary target or copy destination in your backup plan. Share the vault for recovery or restore testing with other accounts using AWS Resource Access Manager (RAM), or safeguard vault access during account compromise using Multi-party approval. Once available, you can initiate direct restore jobs from that account, eliminating the overhead of copying backups first.\nThis support is available in all AWS Regions where both logically air-gapped vault and Amazon FSx for NetApp ONTAP are available. For more information and detailed regional availability, visit the AWS Backup documentation. To learn more about logically air-gapped vaults, visit the feature documentation and pricing page."
+    },
     {
       "title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe/",
@@ -133,83 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-09-24T08:00:00.000Z",
       "summary": "Amazon EMR on EKS now supports interactive Apache Spark sessions with Spark Connect. Data engineers and data scientists can develop and debug Apache Spark applications interactively from managed notebooks in Amazon SageMaker Unified Studio and their own IDEs, such as Jupyter and Visual Studio Code, with Spark running on the Amazon EKS clusters they already operate.  \nAn interactive session provides a persistent Spark context that spans across cells and scripts, letting you blend local Python code execution with remote Spark operations. Spark Connect's client-server architecture decouples your application client from the Spark driver and allows you to maintain your preferred development environment and tooling while Spark runs on your Amazon EKS cluster. This architecture supports workflows including ad hoc data exploration and incremental PySpark job development before deploying to production. Each session runs as pods on a virtual cluster, secured with your AWS Identity and Access Management (IAM) execution role and tagged by project and user.\nSpark Connect on Amazon EMR on EKS is available with EMR release 7.14 (Apache Spark 3.5) and emr-spark-8.1.0 (Apache Spark 4.1), in all AWS Commercial Regions. The Amazon SageMaker Unified Studio experience is available in supported AWS Regions.\nTo get started, visit the Spark Connect on Amazon EMR on EKS documentation or the Amazon SageMaker Unified Studio Getting Started guide."
-    },
-    {
-      "title": "Amazon GameLift Servers now available in 5 new regions and 8 Local Zones",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-gamelift-servers-region-expansion-2026",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-24T08:00:00.000Z",
-      "summary": "Amazon GameLift Servers is a fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games. High latency caused by geographic distance between players and servers remains one of the most common challenges in multiplayer game development. This expansion helps game developers and studios address that challenge by bringing Amazon GameLift Servers to 5 new AWS Regions and 8 AWS Local Zones worldwide.\nWith this expansion, customers can deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia, reducing latency and improving gameplay responsiveness. \nThe 5 new AWS Regions are il-central-1 (Tel Aviv), mx-central-1 (Mexico/Queretaro), eu-south-2 (Spain/Zaragoza), ap-south-2 (Hyderabad), and ap-southeast-3 (Jakarta). The 8 new AWS Local Zones are us-east-1-atl-2 (Atlanta), us-east-1-chi-2 (Chicago), us-east-1-iah-2 (Houston), us-east-1-mia-2 (Miami), us-west-2-phx-2 (Phoenix), sa-east-1-bue-1 (Buenos Aires), us-east-1-nyc-2 (NYC) and sa-east-1-lim-1 (Lima).\n \ndocumentation."
-    },
-    {
-      "title": "Amazon RDS supports Multi-AZ for SQL Server Developer Edition",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-sql-server-multi-az-developer-edition/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-24T07:00:00.000Z",
-      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Multi-AZ deployments using Always On Availability Groups for SQL Server Developer Edition. Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone and provide automatic failover during infrastructure failure. You can use this capability to build and test high availability configurations in non-production environments using Developer Edition, which includes all the functionality of Enterprise Edition at no license cost.\n \nWorking with SQL Server Developer Edition on RDS for SQL Server. For pricing details, see Amazon RDS for SQL Server Pricing."
-    },
-    {
-      "title": "Amazon ElastiCache Global Datastore now supports tagging and tag-based access control",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-global-datastore-tagging/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-24T07:00:00.000Z",
-      "summary": "Amazon ElastiCache now supports resource tagging and tag-based access control (TBAC) for Global Datastore. Previously, ElastiCache supported tagging on all resources except Global Datastore, which prevented customers from applying a single, consistent permission and cost-allocation model across their ElastiCache fleet.\nWith this launch, you can use AddTagsToResource, RemoveTagsFromResource, and ListTagsForResource on a Global Datastore, and reference those tags as conditions in IAM policies and Service Control Policies (SCPs) to grant permissions based on tag attributes rather than enumerating individual resources. Tag changes on a Global Datastore propagate automatically to every Region it spans, so access-control and cost-allocation policies stay consistent without per-Region operations.\nThere is no additional cost for this feature, and no change to how you create or manage Global Datastores. This feature is available in all AWS Regions where ElastiCache Global Datastore is available. To learn more, see Tagging your ElastiCache resources and Using condition keys with ElastiCache."
-    },
-    {
-      "title": "ICYMI: August 2026 @AWS Security",
-      "link": "https://aws.amazon.com/blogs/security/icymi-august-2026-aws-security/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-09-23T23:07:36.000Z",
-      "summary": "Read all about the latest AWS security features, compliance updates, and hands-on resources in our monthly digest posts. You’ll find expert blog posts, new service capabilities, code samples, and workshops. AWS Security Blog posts August brought 20 AWS Security Blog posts organized across seven categories. Identity and access management led the month with five posts […]"
-    },
-    {
-      "title": "Amazon Kinesis Data Streams announces Service-Managed Partition Keys for simplified data ingestion",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/kinesis/service-managed-partition-keys",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-23T22:51:00.000Z",
-      "summary": "Amazon Kinesis Data Streams now supports service-managed partition keys for On-Demand Standard and On-Demand Advantage streams, automatically distributing records across shards without requiring customers to specify partition keys to publish data. This capability simplifies data ingestion for workloads where record ordering is not required, eliminating hot partition keys and reducing time to production for streaming workloads.\nAmazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale. Many streaming use cases such as log aggregation, metrics collection, and IoT telemetry do not require ordering guarantees and benefit from prewarmed capacity for instant scaling. Previously, customers generated random partition keys (such as UUIDs) to distribute data, but random partitioning can still produce uneven throughput across shards, causing throttling for some partition keys even when the stream has sufficient aggregate capacity. By opting into service-managed partition keys, customers no longer need to specify partition keys when publishing data to streams in on-demand mode. The service automatically distributes records based on available warm capacity, allowing customers to scale to gigabytes per second without maintaining any distribution logic. Customers who want to send records without specifying a partition key can simply upgrade to the latest AWS SDK or Kinesis Producer Library (KPL) version to benefit from this capability.\nService-managed partition keys for Amazon Kinesis Data Streams is available today in all AWS commercial regions at no additional cost. To get started, visit the Amazon Kinesis Data Streams documentation (https://aws.amazon.com/kinesis)."
-    },
-    {
-      "title": "Amazon Bedrock Managed Knowledge Base now supports Salesforce and Zendesk as native data source connectors",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-salesforce-zendesk-native-data-source-connectors/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-23T17:41:00.000Z",
-      "summary": "AWS announces Salesforce and Zendesk data source connectors for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service. Customers can now sync Salesforce knowledge articles and Zendesk articles and community posts directly into their managed knowledge base.\n \nSalesforce data source connector and Zendesk data source connector in the Amazon Bedrock User Guide. For more information about Amazon Bedrock Managed Knowledge Base, visit the Amazon Bedrock Knowledge Bases product page."
-    },
-    {
-      "title": "Amazon Connect Customer now provides routing step data in the analytics data lake",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-routing-step-data/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-23T16:00:00.000Z",
-      "summary": "Amazon Connect Customer now provides routing step data in the analytics data lake, making it easier for customers to generate insights from routing decisions. Using the data lake, customers can leverage Amazon Athena and Amazon Quick to analyze trends, such as contacts queued and contacts joined at each routing step, without complex data pipelines. For example, an analyst can now report on how contacts progressed through each routing step, identify where agent matching criteria were relaxed, and measure the impact of routing step configurations on wait times and agent utilization.\nRouting step data is available in all AWS regions where Amazon Connect Customer data lake is offered. To learn more about Amazon Connect Customer data lake, see the Amazon Connect Customer Administrator Guide.  To learn more about Amazon Connect Customer, visit the Amazon Connect Customer website."
-    },
-    {
-      "title": "Amazon EMR on EKS now supports IPv6 Amazon EKS clusters",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-emr-eks-ipv6-support",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-23T15:00:00.000Z",
-      "summary": "Today, AWS announces that Amazon EMR on EKS now supports running workloads on IPv6 Amazon Elastic Kubernetes Service (Amazon EKS) clusters. Amazon EMR on EKS enables data platform and analytics teams to run open-source big data frameworks such as Apache Spark and Apache Flink on Amazon EKS. With IPv6 support, teams operating at scale can now run these workloads on IPv6 Amazon EKS clusters, giving them access to the vastly larger address space of IPv6 as their analytics workloads grow.\nYou can now scale large Spark and Flink workloads using the expanded IPv6 address space, which removes the need for IPv4 conservation workarounds such as secondary CIDR ranges or prefix delegation. High-executor jobs, such as 500-executor Spark jobs, can run concurrently without planning around address limits. To submit workloads, use StartJobRun, Spark Connect Interactive Endpoints, and Amazon SageMaker Unified Studio with no additional configuration, while the Flink, Livy, and Spark Operators are also supported. This capability is available at no additional cost, starting with Amazon EMR releases emr-7.14.0 and emr-spark-8.0.0.\nIPv6 cluster support is available in all AWS Regions where Amazon EMR on EKS and IPv6 Amazon EKS clusters are available.\nAmazon EMR on EKS IPv6 cluster support includes detailed setup instructions and documentation on supported submission models. Visit the Amazon EMR on EKS product page and the IPv6 documentation to learn more."
-    },
-    {
-      "title": "Supporting ASD’s multi-factor authentication campaign: Why MFA matters more than ever",
-      "link": "https://aws.amazon.com/blogs/security/supporting-asds-multi-factor-authentication-campaign-why-mfa-matters-more-than-ever/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-09-23T14:45:44.000Z",
-      "summary": "The Australian Signals Directorate (ASD) has this month issued a clear call to action through its Multi-factor authentication: Switch it on campaign, urging businesses, organisations, and individuals to enable multi-factor authentication (MFA) across their online accounts. At AWS, we strongly support this message. As threat actors continue to target credentials through phishing, credential stuffing, and […]"
-    },
-    {
-      "title": "Amazon DynamoDB global tables with multi-Region strong consistency now supports additional AWS Regions and cross-continent configurations",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-23T08:00:00.000Z",
-      "summary": "Starting today, Amazon DynamoDB global tables with multi-Region strong consistency (MRSC) is available in five additional AWS Regions: Canada (Central), Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore), bringing the total number of supported Regions to 15. You can now create an MRSC global table in any three-Region configuration across the 15 supported AWS Regions, configured with either three replicas or two replicas and one witness Region. This includes configurations that span North America, Europe, and Asia Pacific.\nMRSC lets you build highly available multi-Region applications with a recovery point objective (RPO) of zero. By choosing replica Regions closer to your users in more geographies, you can route applications to nearby DynamoDB endpoints for strongly consistent reads while keeping your application available during Regional impairments. MRSC is ideal for global applications with strict consistency requirements, such as user profile management, inventory tracking, order state, and entitlement management.\nTo get started and view the complete list of supported Regions and configuration options, see the DynamoDB Developer Guide. To learn more about building resilient multi-Region applications, visit the DynamoDB global tables page."
-    },
-    {
-      "title": "Amazon CloudWatch Omni: AI-first observability for agents and applications",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-cloudwatch-omni-ai/",
-      "source": "AWS What's New",
-      "pubDate": "2026-09-23T00:06:00.000Z",
-      "summary": "AWS announces the general availability of Amazon CloudWatch Omni, an evolution of Amazon CloudWatch. Omni is an AI-powered observability experience organized around your teams and the applications they run, so that you can observe and troubleshoot your applications and agents in one place. It combines the interoperability of OpenTelemetry with the scale and reliability of CloudWatch. And it meets you wherever you work: a standalone web experience with single sign-on (SSO) for your team, or a local IDE extension for getting hands-on with your agents.\nWith CloudWatch Omni, you create spaces in your central accounts to see telemetry across your AWS accounts and Regions, as well as other clouds, including Azure workloads. Omni automatically discovers services, maps dependencies, and surfaces golden metrics to help streamline your operational workflows. Using Omni, you can interact with telemetry however you prefer: via chat, through a guided point-and-click path in the console, or directly from a tool of your choice leveraging Agent Toolkit for AWS. Ask a question in natural language and Omni finds the relevant telemetry, builds dynamic views of the signals you care about, and helps you get to root cause powered by AWS DevOps Agent. Prefer to drive yourself? Point and click through the signals that matter most, whether you're investigating a degrading application or diving deep into a trace or evaluation.\nOmni also features a dedicated agent observability experience with an evaluation-driven development workflow for AI workloads across frameworks including LangGraph, CrewAI, OpenAI Agents SDK, Vercel AI SDK, and Strands. For every prompt, model call, and tool invocation, Omni helps you evaluate quality and run experiments to validate fixes before you ship.\nTo get started, create your Omni space from the CloudWatch console, configure SSO, and sign in to the standalone web experience. Agent developers can install the free CloudWatch Omni extension for VS Code, Cursor, and Kiro to instrument, debug, and evaluate agents locally (no AWS account required). CloudWatch Omni is generally available in US East (N. Virginia), US West (Oregon) and Europe (Ireland). To learn more, see the Amazon CloudWatch Omni product page and documentation. For pricing, see the CloudWatch Omni pricing page."
     }
   ]
 }
