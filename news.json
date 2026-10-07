@@ -1,6 +1,41 @@
 {
-  "lastUpdated": "2026-10-06T04:02:03.217Z",
+  "lastUpdated": "2026-10-07T03:29:58.155Z",
   "items": [
+    {
+      "title": "Improving SPIRE security and resiliency with AWS managed services",
+      "link": "https://aws.amazon.com/blogs/security/improving-spire-security-and-resiliency-with-aws-managed-services/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-10-06T18:52:25.000Z",
+      "summary": "In cloud-centered environments, establishing trust between workloads is fundamental to securing machine-to-machine communication. Traditional approaches such as API keys, shared secrets, and static service account credentials weren’t designed for the scale and ephemeral nature of cloud workloads. This drives an organizational need to shift from long-term, static credentials to short-lived cryptographic workload identities. Organizations are […]"
+    },
+    {
+      "title": "AWS Batch now publishes job metrics to Amazon CloudWatch",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-job-cloudwatch-metrics/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-06T17:30:00.000Z",
+      "summary": "AWS Batch now publishes job metrics to Amazon CloudWatch, providing native observability for batch workloads. AWS Batch emits metrics throughout the job lifecycle, giving you visibility into job queue health, failure rates, and job durations.\nAWS Batch automatically publishes job state transition and duration metrics to the AWS/Batch namespace in Amazon CloudWatch, with JobQueueName dimension. State transition metrics track how many jobs entered a given state, such as submitted, running, succeeded, or failed. Duration metrics track how long jobs spent between states, such as time from submission to runnable or total execution time. You can view these metrics in the AWS Batch console, the Amazon CloudWatch console, or through the AWS CLI and AWS SDKs.\nAWS Batch CloudWatch metrics are now published in all AWS Regions where AWS Batch is available. For more information, see CloudWatch Metrics page in the AWS Batch User Guide."
+    },
+    {
+      "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
+      "link": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
+      "source": "AWS News Blog",
+      "pubDate": "2026-10-06T16:09:36.000Z",
+      "summary": "Amazon Prime Day 2026 was exclusively for Prime members and ran June 23–26, 2026 with millions of deals across more than 35 categories. As part of our annual tradition of sharing how AWS powered Prime Day (2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, and 2025), I want to share the services and chart-topping metrics […]"
+    },
+    {
+      "title": "Identity-aware AI data agents with AWS Lake Formation and Trusted Identity Propagation",
+      "link": "https://aws.amazon.com/blogs/security/identity-aware-ai-data-agents-with-aws-lake-formation-and-trusted-identity-propagation/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-10-06T16:07:06.000Z",
+      "summary": "You’re building a data agent that lets business users ask questions about lakehouse data in natural language. You’ve already built governance policies that control who can access which datasets. The challenge is making the agent respect those rules without rebuilding them in your application code. When a user asks a question, the agent maps it […]"
+    },
+    {
+      "title": "AWS Certificate Manager now supports ACME issuance through AWS PrivateLink",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/AWS-Certificate-Manager-ACME-Privatelink",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-06T14:01:00.000Z",
+      "summary": "AWS Certificate Manager (ACM) now supports AWS PrivateLink for ACME public certificate issuance, allowing you to request and renew public TLS certificates over a private network path that stays within the AWS network. You can now create a VPC interface endpoint to the ACM ACME service and route issuance traffic from any ACMEv2-compatible client through your VPC.\nIf you're already using ACME with ACM, setup requires no changes to your ACME clients. After you create your managed ACME endpoint in ACM, you create a standard VPC interface endpoint using the VPC console, AWS CLI, or AWS CloudFormation. Private DNS resolves your existing ACME directory URL to the interface endpoint inside your VPC automatically, so the same client configuration and directory URL continue to work with no reconfiguration. Issuance operations—account creation, order creation, domain validation, finalization, and certificate retrieval—then flow over PrivateLink. All activity remains visible in the ACM console with AWS CloudTrail logging and Amazon CloudWatch metrics for auditability.\nAWS PrivateLink support for ACME certificate issuance is available in all commercial AWS Regions. Standard AWS PrivateLink charges apply for interface endpoints; see the AWS PrivateLink pricing page. For ACM pricing details, see the  ACM pricing page. To get started with ACME and PrivateLink, visit the  AWS News blog post  or read the documentation."
+    },
     {
       "title": "Amazon Redshift adds support for creating and refreshing Apache Iceberg materialized views",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-iceberg-materialized-views",
@@ -30,6 +65,20 @@
       "summary": "AWS IAM Identity Center helps you configure the single sign-on experience for your workforce to AWS accounts and applications. IAM Identity Center now supports network access controls for Identity Store, which stores your users and groups. You can restrict access to the Identity Store API and the SCIM API based on the network that requests originate from. Your custom applications and user provisioning workflows use the Identity Store API to manage and look up users and groups, and your external identity provider uses the SCIM API to synchronize users and groups.\nFor the Identity Store API, you can require that requests arrive only through allowed VPC endpoints in your account or organization, or from specific source VPCs. For both APIs, you can allow requests only from specific IP ranges. Within the same configuration, you can apply different restrictions to each API. For example, you can require that Identity Store API requests arrive only through VPC endpoints, while allowing SCIM requests from your external identity provider's published IP ranges.\nNetwork access controls are optional and turned off by default. Requests that AWS services make on your behalf are exempt. You configure network access controls by using the Identity Store API through the AWS SDKs and AWS CLI. This capability is available in all AWS Regions where IAM Identity Center is offered.\nTo learn more about IAM Identity Center, visit the product detail page. To get started with network access controls, see the Identity Store API Reference."
     },
     {
+      "title": "Amazon EC2 Hpc8a instances are now available in Asia Pacific (Singapore)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ec2-hpc8a-asia-pacific/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-05T20:33:00.000Z",
+      "summary": "Starting today, Amazon EC2 Hpc8a instances are available in Asia Pacific (Singapore) region. These instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin). With a maximum frequency of 4.5GHz, Hpc8a instances deliver up to 40% higher performance and up to 25% better price performance compared to Hpc7a instances, helping customers accelerate compute-intensive workloads while optimizing costs. Compared to Hpc7a instances, Hpc8a instances also provide up to 42% higher memory bandwidth, further improving performance for memory-intensive simulations and scientific computing workloads.\n \nAWS Nitro Cards, Hpc8a instances are designed for compute-intensive, latency-sensitive HPC workloads. They are ideal for tightly coupled applications such as computational fluid dynamics (CFD), weather forecasting, explicit finite element analysis (FEA), and multiphysics simulations that require fast inter-node communication and consistent high performance.\n \nAWS Management Console. For more information visit the Amazon EC2 Hpc8a instance page or AWS news blog."
+    },
+    {
+      "title": "AWS Control Tower AFT now supports plan-only customization runs",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-control-tower-aft/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-05T19:31:00.000Z",
+      "summary": "AWS Control Tower Account Factory for Terraform (AFT) now supports plan-only customization runs, giving administrators the ability to preview Terraform changes before applying them across their managed accounts.\n \nThis feature is available in all AWS Regions where AWS Control Tower Account Factory for Terraform is supported. To get started, see the AFT documentation and the AFT 1.22.0 release notes for configuration details. For more information, see the AWS Control Tower User Guide."
+    },
+    {
       "title": "AWS Continuum for Penetration Testing now supports continuous penetration testing integrated directly into your CI/CD pipeline",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing/",
       "source": "AWS What's New",
@@ -42,6 +91,13 @@
       "source": "AWS Architecture Blog",
       "pubDate": "2026-10-05T17:54:56.000Z",
       "summary": "October 2026: This post was reviewed and updated for accuracy. Today we’re launching the AWS Digital Sovereignty Lens, a new Well-Architected lens providing customers with extended guidance for designing, building, and operating sovereign workloads on AWS. Customers tell us that digital sovereignty brings a unique set of challenges that existing architecture guidance doesn’t fully address. […]"
+    },
+    {
+      "title": "Amazon EC2 introduces shared tags for Amazon Machine Images",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-ami-shared-tags",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-05T17:28:00.000Z",
+      "summary": "Amazon EC2 now supports AMI tag sharing, a new feature that lets AMI owners make selected tags visible to all AWS accounts an AMI is shared with. Whether an AMI is shared with an account, across an organization, or made public, a shared tag is automatically shared alongside the AMI, eliminating the need to build and maintain custom tag replication workflows.\nAMI owners simply add the 'ec2:SharedTag/' prefix to any tag key, and every account the AMI is shared with can immediately see it. This removes the operational burden of replicating tags into each account after sharing an AMI. Shared tags are read-only for recipient accounts, so only the owner can create, modify, or delete them. They count only against the owner's 50 tag per resource quota, allowing recipient accounts to continue adding their own private tags without any impact to their limits.\nThis feature is available in all AWS Regions at no additional cost. To learn more, please visit the documentation and read the blog."
     },
     {
       "title": "AWS Advanced Ruby Driver Wrapper is generally available",
@@ -154,62 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-10-02T08:00:00.000Z",
       "summary": "Amazon Bedrock AgentCore Gateway now supports TLS certificates signed by private certificate authorities (CAs) on MCP, OpenAPI, and HTTP proxy targets. This feature enables you to connect securely to gateway targets that use TLS certificates issued by your own private certificate authority. With this feature, you can establish native connections to private endpoints in your VPC without requiring an intermediate Application Load Balancer.\nYou can register a private CA certificate with gateway targets that use private endpoints powered by Amazon VPC Lattice. The gateway fetches your PEM-encoded CA certificate from Amazon S3 or AWS Secrets Manager and uses it as the trust anchor for outbound TLS connections. Private CA support is available for MCP server targets, OpenAPI targets, and HTTP proxy (passthrough) targets.\nSupport for private certificates on AgentCore Gateway is available in all Regions where both AgentCore Gateway and Amazon VPC Lattice are available. To learn more, see the AgentCore Developer Guide."
-    },
-    {
-      "title": "Amazon ElastiCache for Valkey now supports OpenTelemetry metrics and detailed monitoring",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-valkey-opentelemetry-metrics-detailed-monitoring",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-02T07:00:00.000Z",
-      "summary": "Amazon ElastiCache for Valkey now publishes OpenTelemetry metrics to Amazon CloudWatch for your node-based clusters, and each metric carries attributes you can filter and aggregate on with Prometheus Query Language (PromQL) expressions. ElastiCache now offers two monitoring modes. Standard monitoring, the existing experience, continues to publish CloudWatch Metrics (Classic) every 60 seconds and now also publishes a core set of OpenTelemetry metrics at the same interval at no additional charge. Detailed monitoring, the new mode, lets you select from the full set of OpenTelemetry metrics and publish them every 15 seconds.\nWith OpenTelemetry metrics, you can detect any node in a cluster nearing its connection limit, break errors down by type during an incident, or forecast if a node will run out of memory. You can run these queries in CloudWatch and Grafana, keeping PromQL skills your team already has. With detailed monitoring, you can balance diagnostic depth and cost, with 15-second metrics enabling detection of short-lived events like latency spikes. The core set of OpenTelemetry metrics also powers ElastiCache Insights, a pre-built dashboard in Amazon CloudWatch.\nTo get started, open the Metrics tab for a cluster in the Amazon ElastiCache console, select Detailed, and choose Configure detailed metrics.\nOpenTelemetry metrics and detailed monitoring are available for node-based Valkey clusters in all AWS Regions where Amazon CloudWatch supports OpenTelemetry metrics. There is no additional charge from ElastiCache for detailed monitoring. CloudWatch pricing for OpenTelemetry metrics applies to the detailed monitoring metrics you select, alarms you create, and PromQL API queries you run.\nTo learn more, see Monitoring ElastiCache with OpenTelemetry metrics in the Amazon ElastiCache User Guide."
-    },
-    {
-      "title": "GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-security-hub-runtime-monitoring/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-02T03:35:00.000Z",
-      "summary": "Today, AWS announces that Amazon GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan. Runtime Monitoring inspects operating system, network, and file activity to surface threats such as container escapes, privilege escalation, and cryptomining on Amazon EC2 instances, Amazon EKS clusters, and Amazon ECS tasks on AWS Fargate. Security Hub now bills this coverage through streamlined pricing.\nIf you have Security Hub enabled in an account and region, you no longer receive separate Amazon GuardDuty charges for Runtime Monitoring for that account and region. That usage now appears on your bill under AWS Security Hub, where Security Hub meters it as a single usage type that spans Amazon EC2, Amazon EKS, and Amazon ECS on AWS Fargate rather than as separate charges for each resource type.\nYour detection coverage, your finding types, and your GuardDuty security agents all remain the same, and you do not need to reconfigure anything. Please note that the free trial for the Threat Analytics plan remains separate from the free trial for the Security Hub Essentials plan, and that this change does not add a new free trial for Runtime Monitoring. To see how the change affects your bill, you can use AWS Cost Explorer or the Security Hub usage page.\nFor a list of AWS Regions where Security Hub is available, see the AWS Region table. For pricing details, see the AWS Security Hub pricing page. To get started, visit the AWS Security Hub product page or console."
-    },
-    {
-      "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
-      "link": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-10-01T20:04:04.000Z",
-      "summary": "Introducing the public preview of AWS Well-Architected Agent, an AI-powered service that analyzes your AWS environment to deliver targeted, contextual recommendations for improving your applications' cost, security, performance, and resilience—with ready-to-implement fixes aligned to your business goals."
-    },
-    {
-      "title": "AWS Well-Architected Agent is now available in preview",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-well-architected-agent/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-01T20:00:00.000Z",
-      "summary": "AWS announces the preview of AWS Well-Architected Agent, an AI-powered service that is the next-gen evolution of AWS Trusted Advisor and the AWS Well-Architected Tool. The agent analyzes and optimizes AWS infrastructure across cost, security, performance, and reliability, delivering contextualized recommendations prioritized by business goals. It automatically correlates key metrics and application topology against Well-Architected best practices and analyzes Terraform, CDK templates and CloudFormation templates to deliver automation-ready fixes where applicable.\nWith AWS Well-Architected Agent, teams can define their business goals and get recommendations prioritized by impact and effort at the resource, application, and architecture levels. For example, a team prioritizing reliability can receive recommendations to add multi-AZ failover to a critical database, complete with an SSM runbook that automates the configuration change and a cross-pillar analysis showing how this change affects cost and performance before you commit. Where applicable, recommendations are delivered with SSM runbooks, prescriptive CLI scripts, and guided console walkthroughs so teams can move quickly. The agent can also conduct automated reviews of your IaC templates that include Terraform, CloudFormation, or CDK templates, identifying gaps, and returning the IaC code changes needed to align with Well-Architected best practices.\nAccess to the AWS Well-Architected Agent and its recommendations is available in US East (N. Virginia), US East (Ohio), and US West (Oregon). You can onboard workloads from any AWS commercial Region. AWS Well-Architected Agent is delivered by AWS Support and available to AWS customers with an AWS Support plan.\nLearn more about AWS Well-Architected Agent in the User Guide. Get started here."
-    },
-    {
-      "title": "Amazon Redshift now supports cross-Region queries for your data lake",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-cross-Region-queries-for-data-lake",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-01T18:41:00.000Z",
-      "summary": "Amazon Redshift now supports querying Amazon S3 data lake tables located in a different AWS Region. With enhanced VPC routing, data lake query traffic between Amazon S3 and Amazon Redshift stays within your own VPC. Both capabilities are powered by the integrated data lake query engine that runs directly on the compute of RG provisioned and Serverless clusters. These features are aimed at enterprises with globally distributed data and at security-sensitive customers who need tight control over how their data travels.\nWith cross-Region support, you can use Amazon Redshift to query S3 data in another Region directly, without first copying or replicating it. This makes it easier to run global analytics, consolidate reporting across Regions, and query data that must remain in a specific Region for residency requirements. Cross-Region queries incur standard data transfer charges. Because the query engine runs on your cluster's compute, data moving between Amazon S3 and Amazon Redshift flows entirely over your VPC when you use enhanced VPC routing, never over public networks. Regulated industries such as financial services, healthcare, and government benefit from this feature as it keeps data lake queries within the network boundaries their compliance requirements demand.  Both capabilities work with the integrated data lake query engine, which is available in all regions where RG provisioned and Serverless clusters are available. To learn more, see Querying your data lake tables with enhanced VPC routing in the Amazon Redshift documentation."
-    },
-    {
-      "title": "Amazon Q Developer now delivers enhanced visualizations in the AWS Management Console",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-q-developer-enhanced-visualizations-aws-management-console",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-01T17:43:00.000Z",
-      "summary": "Today, AWS announces enhanced visualization for Amazon Q Developer in the AWS Management Console. Amazon Q now reasons across hundreds of AWS APIs to answer complex questions and deliver complete answers about your entire account—across all regions and services. Beyond the resource tables and cost charts introduced earlier this year, Amazon Q now renders health dashboards with status indicators, time-series charts with trend and anomaly detection, troubleshooting diagnostics, and resource detail views.\nPreviously, asking “Show me the health of my production environment” returned a text summary that customers had to read line by line. Today, Amazon Q orchestrates calls across multiple services, gathers health data, and renders a dashboard with status indicators—giving customers a complete picture at a glance. Similarly, “Graph network utilization for my EC2 instances over 12 hours” now generates an interactive time-series chart with trend lines and anomaly highlighting —making it faster to spot issues and take action. These responses are also noticeably faster, so customers get complete answers in seconds rather than waiting on multi-step, text-only replies.\nTo use Amazon Q in the AWS Management Console, click on the Q icon on the top left after you sign-in to the AWS Management Console. Enhanced visualization features for Amazon Q Developer are available in all AWS Regions where Amazon Q Developer is available. To learn more, see the Amazon Q Developer documentation."
-    },
-    {
-      "title": "Amazon DynamoDB introduces filtered export to Amazon S3",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-introduces-filtered-export/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-01T17:00:00.000Z",
-      "summary": "Amazon DynamoDB now supports filtered export for tables. Export to Amazon S3 allows you to export your table data for analytics, data sharing, and other offline uses, as either a full export or an incremental export over a time window. Filtered export enables you to specify exactly which items and attributes to export, producing a dataset that contains only the data relevant to your use case.\n \n\nWith filtered export, you use a key condition expression on a key attribute and a filter expression on any attribute to select which items to export, and a projection expression to choose which attributes to include. The export then returns only the items and attributes you want. You can use that subset of data to perform granular data recovery, move a slice of data between accounts, or run analytics while meeting your compliance rules. Filtered export works with both full exports and incremental exports.\nFiltered export is available in all AWS Regions, except the AWS GovCloud (US) Regions. To get started, see the following resources:\nDynamoDB data export to Amazon S3 in the DynamoDB developer guide\nFiltering a table export in the DynamoDB developer guide\nIntroducing filtered export from Amazon DynamoDB to Amazon S3 blog post"
-    },
-    {
-      "title": "Amazon DynamoDB Accelerator (DAX) is now available in additional Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-dynamodb-accelerator/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-01T16:44:00.000Z",
-      "summary": "Today, AWS announces the availability of Amazon DynamoDB Accelerator (DAX) in 17 additional AWS Regions: Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Malaysia), Asia Pacific (Melbourne), Asia Pacific (New Zealand), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Taipei), Asia Pacific (Thailand), Canada West (Calgary), Europe (Milan), Europe (Zurich), Israel (Tel Aviv), Mexico (Central), AWS GovCloud (US-East), and AWS GovCloud (US-West). DAX is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to 10 times performance improvement—from single-digit milliseconds to microseconds—even at millions of requests per second. This expansion brings DAX to more geographies, helping customers accelerate read-heavy DynamoDB workloads without managing their own cache infrastructure.\nWith DAX, you can accelerate read-intensive and bursty workloads such as real-time bidding, gaming leaderboards, and retail product catalogs, while offloading read traffic from your DynamoDB tables. DAX is API-compatible with DynamoDB, so you can add microsecond-latency caching to your applications with minimal code changes. Customers in these Regions can now meet local data residency and low-latency requirements while benefiting from DAX's fully managed operations, including automated patching, failover, and scaling.\nTo see the full list of Regions where DAX is available, see the following resources: AWS Capabilities by Region."
     }
   ]
 }
