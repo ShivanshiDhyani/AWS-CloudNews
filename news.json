@@ -1,6 +1,55 @@
 {
-  "lastUpdated": "2026-10-07T03:29:58.155Z",
+  "lastUpdated": "2026-10-08T03:44:34.071Z",
   "items": [
+    {
+      "title": "Configuring your AI vulnerability harness, Part 2: The steering file",
+      "link": "https://aws.amazon.com/blogs/security/configuring-your-ai-vulnerability-harness-part-2-the-steering-file/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-10-07T21:49:50.000Z",
+      "summary": "This post shows you how to configure an AI model to perform structured, evidence-based vulnerability triage with the consistency of a seasoned security analyst. You’ll learn the design decisions behind five configuration sections that enforce structural verification, evidence-based scoring, and infrastructure-aware prioritization across every analysis session. Our companion post—Building your AI vulnerability harness—covered the architecture; […]"
+    },
+    {
+      "title": "Building your AI vulnerability harness, Part 1",
+      "link": "https://aws.amazon.com/blogs/security/building-your-ai-vulnerability-harness-part-1/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-10-07T21:49:43.000Z",
+      "summary": "Vulnerability scanners produce findings faster than manual triage can process them. Your developers ship more code with more dependencies, and the volume of candidate findings grows with it. Many findings a scanner produces are unlikely to be exploited. The ones that matter need to reach an engineer fast, with enough evidence that they can act […]"
+    },
+    {
+      "title": "Part 1 – Cybersecurity journeys: I didn’t plan this",
+      "link": "https://aws.amazon.com/blogs/security/part-1-cybersecurity-journeys-i-didnt-plan-this/",
+      "source": "AWS Security Blog",
+      "pubDate": "2026-10-07T16:21:19.000Z",
+      "summary": "If you’ve ever wondered whether your background qualifies you for a career in cybersecurity, you’re not alone — and you’re probably more prepared than you think. My name is Shannon Brazil, and I work in security communications at Amazon Web Services (AWS). I have been in the security space for over a decade, and my […]"
+    },
+    {
+      "title": "AWS Capabilities by Region now offers availability notifications for individual features and advanced filters",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/awscapabilities-enhancements/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-07T15:00:00.000Z",
+      "summary": "Today, AWS announces feature-level availability notifications and advanced filters for AWS Capabilities by Region in AWS Builder Center. You can now set availability notifications for AWS service, or to an individual feature of an AWS service, in the AWS Regions you are interested in, and receive an in-app notification and a weekly email digest covering all the capabilities that became available since you enabled availability notifications. Setting availability notifications for a service covers every feature within it, and an 'All regions' option covers every Region, including AWS Regions that launch in the future.\nIn addition to the feature level availability notifications , you can now filter API operations and CloudFormation resources by availability status and compare Regions to show all capabilities, only matching ones, or only differences. With over 19,000 API operations and more than 5,000 CloudFormation resource types, these filters quickly narrow a full listing down to the exact differences between Regions, working alongside search and existing display preferences. \nComparing capabilities in AWS Capabilities by Region requires no account. Setting up availability notifications requires a Builder ID, which is free. To get started, visit AWS Capabilities by Region on AWS Builder Center. To learn more, explore the AWS Builder Center FAQ"
+    },
+    {
+      "title": "AWS Config now supports 77 new resource types",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-config-new-resource-types",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-07T15:00:00.000Z",
+      "summary": "AWS Config now supports 77 additional AWS resource types across key services including Amazon EC2, Amazon S3 Files, and Amazon Q Business. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources.\nWith this launch, if you have enabled recording for all resource types, then AWS Config will automatically track these new additions. The newly supported resource types are also available in Config rules and Config aggregators.\nYou can now use AWS Config to monitor the following newly supported resource types in all AWS Regions where the resources are available:\nAWS::ApplicationAutoScaling::ScalableTarget\n   AWS::GuardDuty::ThreatEntitySet\n   AWS::PCS::Queue\n  \nAWS::ApplicationSignals::Discovery\n   AWS::GuardDuty::TrustedEntitySet\n   AWS::QBusiness::DataSource\n  \nAWS::APS::AnomalyDetector\n   AWS::HealthLake::DataTransformationProfile\n   AWS::QBusiness::Index\n  \nAWS::APS::ResourcePolicy\n   AWS::InspectorV2::CodeSecurityScanConfiguration\n   AWS::QBusiness::Permission\n  \nAWS::ARCRegionSwitch::Plan\n   AWS::IoT::Logging\n   AWS::QBusiness::Plugin\n  \nAWS::Batch::QuotaShare\n   AWS::IoTWireless::WirelessDeviceImportTask\n   AWS::QBusiness::Retriever\n  \nAWS::Batch::ServiceEnvironment\n   AWS::LicenseManager::Grant\n   AWS::QBusiness::WebExperience\n  \nAWS::BedrockAgentCore::PaymentConnector\n   AWS::LicenseManager::License\n   AWS::QuickSight::OAuthClientApplication\n  \nAWS::BedrockAgentCore::ResourcePolicy\n   AWS::Lightsail::DatabaseSnapshot\n   AWS::RTBFabric::InboundExternalLink\n  \nAWS::Braket::SpendingLimit\n   AWS::MediaConnect::RouterInput\n   AWS::RTBFabric::RequesterGateway\n  \nAWS::CleanRooms::IdMappingTable\n   AWS::MediaConnect::RouterNetworkInterface\n   AWS::S3Files::AccessPoint\n  \nAWS::CleanRoomsML::ConfiguredModelAlgorithm\n   AWS::MediaLive::Multiplex\n   AWS::S3Files::FileSystem\n  \nAWS::CloudWatch::AlarmMuteRule\n   AWS::MediaLive::Node\n   AWS::S3Files::FileSystemPolicy\n  \nAWS::Connect::UserHierarchyStructure\n   AWS::MediaLive::SdiSource\n   AWS::S3Files::MountTarget\n  \nAWS::ConnectCampaignsV2::Campaign\n   AWS::MediaPackageV2::ChannelPolicy\n   AWS::SecurityAgent::Application\n  \nAWS::CUR::ReportDefinition\n   AWS::MediaPackageV2::OriginEndpointPolicy\n   AWS::SecurityAgent::TargetDomain\n  \nAWS::DataSync::LocationAzureBlob\n   AWS::MediaTailor::ChannelPolicy\n   AWS::SES::MailManagerAddressList\n  \nAWS::DataSync::LocationFSxONTAP\n   AWS::NeptuneGraph::GraphSnapshot\n   AWS::SSM::MaintenanceWindow\n  \nAWS::DataSync::LocationFSxOpenZFS\n   AWS::Notifications::EventRule\n   AWS::SSO::Application\n  \nAWS::EC2::TransitGatewayMeteringPolicy\n   AWS::Notifications::NotificationHub\n   AWS::Timestream::InfluxDBCluster\n  \nAWS::EC2::VPCCidrBlock\n   AWS::Omics::Configuration\n   AWS::Timestream::InfluxDBInstance\n  \nAWS::ECR::RegistryScanningConfiguration\n   AWS::Omics::WorkflowVersion\n   AWS::Transcribe::VocabularyFilter\n  \nAWS::EKS::Capability\n   AWS::OpenSearchServerless::CollectionGroup\n   AWS::Wisdom::AIGuardrail\n  \nAWS::ElementalInference::Feed\n   AWS::PCAConnectorAD::ServicePrincipalName\n   AWS::Wisdom::Assistant\n  \nAWS::EntityResolution::IdNamespace\n   AWS::PCS::Cluster\n   AWS::WorkSpacesWeb::NetworkSettings\n  \nAWS::Glue::Blueprint\n   AWS::PCS::ComputeNodeGroup"
+    },
+    {
+      "title": "Claude Haiku 5.5 is now available on AWS",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-aws/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-07T14:00:00.000Z",
+      "summary": "AWS now offers Claude Haiku 5.5, the fastest and most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work. According to Anthropic, it costs around 75% less than Claude Haiku 4.5 for most tasks.\nClaude Haiku 5.5 is Anthropic's most capable Haiku yet, a significant step up from Haiku 4.5 across coding, tool use, computer use, and agents. It's also the first Haiku with effort controls, so teams can tune cost against intelligence for each task. Haiku 5.5 fits work where speed and cost matter most: real-time experiences like voice agents, live support, and in-app assistants, and high-volume tasks like classification, summarization, and pulling key fields from documents. It's also a fast, cost-efficient subagent. A more capable model like Claude Opus 5.5 can plan the work and hand off well-defined coding, tool use, and browser automation tasks to Haiku, making it practical to run many agents in parallel.\nCustomers have two ways to access Claude Haiku 5.5: Amazon Bedrock and Claude Platform on AWS.\nAmazon Bedrock gives you Haiku's capabilities while keeping your data within AWS infrastructure with regional data residency and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock documentation and regional availability.\nClaude Platform on AWS gives you direct access to Anthropic's native platform experience and capabilities via the AWS Console. Build, test, and deploy with the same APIs, features, and console experience you'd get working with Anthropic directly, unified with AWS billing and authentication. To get started, see the Claude Platform on AWS documentation."
+    },
+    {
+      "title": "Claude Haiku 5.5 is now available on AWS GovCloud (US)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-aws-govcloud/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-07T14:00:00.000Z",
+      "summary": "AWS GovCloud (US) now offers Claude Haiku 5.5, the fastest and most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work. According to Anthropic, it costs around 75% less than Claude Haiku 4.5 for most tasks.\nClaude Haiku 5.5 is Anthropic's most capable Haiku yet, a significant step up from Haiku 4.5 across coding, tool use, computer use, and agents. It's also the first Haiku with effort controls, so teams can tune cost against intelligence for each task. Haiku 5.5 fits work where speed and cost matter most: real-time experiences like voice agents, live support, and in-app assistants, and high-volume tasks like classification, summarization, and pulling key fields from documents. It's also a fast, cost-efficient subagent. A more capable model like Claude Opus 5.5 can plan the work and hand off well-defined coding, tool use, and browser automation tasks to Haiku, making it practical to run many agents in parallel.\nAmazon Bedrock gives you Haiku's capabilities while keeping your data within AWS infrastructure with regional data residency and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock documentation and regional availability."
+    },
     {
       "title": "Improving SPIRE security and resiliency with AWS managed services",
       "link": "https://aws.amazon.com/blogs/security/improving-spire-security-and-resiliency-with-aws-managed-services/",
@@ -161,55 +210,6 @@
       "source": "AWS Architecture Blog",
       "pubDate": "2026-10-02T17:57:15.000Z",
       "summary": "This post provides step-by-step procedures to deploy Oracle Database on Amazon Elastic VMware Service (Amazon EVS) with Amazon FSx for NetApp ONTAP as NFS datastore storage. You provision storage volumes, mount NFS datastores, install Oracle, and configure SnapMirror replication for cross-region disaster recovery."
-    },
-    {
-      "title": "Architect highly available Oracle Database on Amazon EVS and FSx for ONTAP",
-      "link": "https://aws.amazon.com/blogs/architecture/architect-highly-available-oracle-database-on-amazon-evs-and-fsx-for-ontap/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-10-02T17:57:01.000Z",
-      "summary": "Learn how to architect a highly available Oracle Database environment on Amazon Elastic VMware Service (Amazon EVS) with Amazon FSx for NetApp ONTAP. This post covers EC2 bare metal instance selection, vSAN and FSx storage tiering, NSX networking, and SnapMirror cross-region disaster recovery for enterprises preserving their VMware operational tooling."
-    },
-    {
-      "title": "Deploy open source Regional availability tools in your VPC",
-      "link": "https://aws.amazon.com/blogs/architecture/deploy-open-source-regional-availability-tools-in-your-vpc/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-10-02T17:50:56.000Z",
-      "summary": "Deploy AWS Regional availability data as infrastructure you own. Capability Insights for AWS runs a self-hosted dashboard in your VPC that auto-refreshes daily, and Workload Analysis narrows the catalog to the services your account actually runs, so your Regional expansion gap analysis focuses only on what you deploy."
-    },
-    {
-      "title": "Amazon EKS and Amazon EKS Distro now support Kubernetes version 1.37",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-02T17:30:00.000Z",
-      "summary": "Kubernetes version 1.37 introduced several new features and bug fixes, and AWS is excited to announce that you can now use Amazon Elastic Kubernetes Service (EKS) and Amazon EKS Distro to run Kubernetes version 1.37. Starting today, you can create new EKS clusters using version 1.37 and upgrade existing clusters to version 1.37 using the EKS console, the eksctl command line interface, or through an infrastructure-as-code tool.\nKubernetes version 1.37 introduces several key improvements, promoting the Metrics API to general availability as metrics.k8s.io/v1. This API provides Pod and node CPU and memory usage for the Horizontal Pod Autoscaler and kubectl top. Dynamic Resource Allocation (DRA) device taints and tolerations also graduate to general availability, letting DRA drivers and administrators taint devices such as GPUs so the scheduler avoids them unless tolerated. Horizontal Pod Autoscaler scale-to-zero graduates to beta and is enabled by default, allowing autoscalers with minReplicas: 0 that use object or external metrics to scale workloads to zero Pods when idle and back up when demand returns. To learn more about Kubernetes version 1.37, see our documentation and the Kubernetes project release notes.\nEKS now supports Kubernetes version 1.37 in all the AWS Regions where EKS is available, including the AWS GovCloud (US) Regions.\nYou can learn more about the Kubernetes versions available on EKS and instructions to update your cluster to version 1.37 by visiting EKS documentation. You can use EKS cluster insights to check if there are any issues that can impact your Kubernetes cluster upgrades. EKS Distro builds of Kubernetes version 1.37 are available through ECR Public Gallery and GitHub. Learn more about the EKS version lifecycle policies in the documentation."
-    },
-    {
-      "title": "Amazon Aurora DSQL now supports partial indexes",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-dsql-partial-indexes/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-02T17:30:00.000Z",
-      "summary": "Amazon Aurora DSQL now lets you build an index over a specific subset of a table, storing only qualifying rows rather than every row in the entire table, which improves query performance and lowers index storage cost.\nMany tables hold a small working set alongside a much larger history, such as open orders among years of completed ones. Add a WHERE clause to CREATE INDEX to index just that working set. The index stays small as the table grows, and queries that target those rows read less data. Aurora DSQL uses a partial index for any query whose filter falls within the index's condition.\nPartial indexes are available in all AWS Regions where Aurora DSQL is available. To learn more, see CREATE INDEX in the Aurora DSQL User Guide."
-    },
-    {
-      "title": "AWS Brazil automates distribution of non-Brazilian software product licenses to Brazilian customers",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-brazil-software-license-distribution/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-02T16:30:00.000Z",
-      "summary": "AWS Brazil now provides an automated distribution workflow through the AWS Brazil 2P Distribution Program. Eligible non-Brazilian independent software vendors (ISVs) grant AWS Brazil the right to distribute their Software-as-a-Service (SaaS) product licenses, and AWS Brazil distributes them to customers in Brazil. AWS Brazil is the seller of record, invoicing Brazilian customers in Brazilian Reais (BRL) with applicable Brazilian taxes. The distribution authorizations, seller disbursements, withholding tax calculation, invoicing, and seller reporting are automated.\nEligible ISVs agree to the applicable Brazil 2P distribution terms to grant AWS Brazil the right to distribute SaaS product licenses locally by creating distribution authorizations through AWS Partner Central or public APIs. AWS Brazil, as the seller of record, creates private offers for Brazilian buyers, determines the buyer-facing price, and automatically generates invoices, calculates and withholds taxes, and disburses payments. ISVs track transactions and payment status through the Seller Insights dashboard. \nBuyers in Brazil see private offers priced in USD and invoiced in BRL by AWS Brazil, using the exchange rate on the invoice date. Buyers can pay by credit card (Visa, Mastercard, American Express) or Pay by Invoice (PBI), add a purchase order number, and access invoices in the AWS Billing Console.\nTo learn more about the AWS Brazil 2P Distribution Program, visit the AWS Marketplace Seller Guide and the AWS Marketplace Buyer Guide."
-    },
-    {
-      "title": "The AWS MCP Server is now available in six additional AWS Regions",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-02T08:00:00.000Z",
-      "summary": "The AWS MCP Server is now available in six additional AWS Regions: Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Ireland), Europe (London), and US West (Oregon). The AWS MCP Server, part of the Agent Toolkit for AWS, is a managed Model Context Protocol server that gives AI coding agents a single interface to AWS APIs, so agents can discover and call AWS services without building and maintaining per-service integrations.\nWith this expansion, customers in these Regions can run the AWS MCP Server closer to their developers with lower latency, and keep request data within the Region to meet data residency requirements. For example, a development team in London can point its coding agents at a local endpoint to provision infrastructure, inspect running workloads, and debug failures without routing requests to another geography. The AWS MCP Server can access services in all commercial AWS Regions, while the AWS MCP Server itself runs in the Regions listed below.\nYou can use AWS MCP Server in the following AWS Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), and Europe (London).\nTo get started, see the following resources:\n- Getting started with the AWS MCP Server\n- AWS MCP Server endpoints and quotas"
-    },
-    {
-      "title": "AgentCore Gateway supports private TLS certificates for VPC endpoints",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-private-tls-vpc/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-02T08:00:00.000Z",
-      "summary": "Amazon Bedrock AgentCore Gateway now supports TLS certificates signed by private certificate authorities (CAs) on MCP, OpenAPI, and HTTP proxy targets. This feature enables you to connect securely to gateway targets that use TLS certificates issued by your own private certificate authority. With this feature, you can establish native connections to private endpoints in your VPC without requiring an intermediate Application Load Balancer.\nYou can register a private CA certificate with gateway targets that use private endpoints powered by Amazon VPC Lattice. The gateway fetches your PEM-encoded CA certificate from Amazon S3 or AWS Secrets Manager and uses it as the trust anchor for outbound TLS connections. Private CA support is available for MCP server targets, OpenAPI targets, and HTTP proxy (passthrough) targets.\nSupport for private certificates on AgentCore Gateway is available in all Regions where both AgentCore Gateway and Amazon VPC Lattice are available. To learn more, see the AgentCore Developer Guide."
     }
   ]
 }
