@@ -1,6 +1,76 @@
 {
-  "lastUpdated": "2026-10-16T02:26:19.929Z",
+  "lastUpdated": "2026-10-17T02:18:54.441Z",
   "items": [
+    {
+      "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T20:04:00.000Z",
+      "summary": "Amazon CloudWatch log centralization is now available in AWS GovCloud (US) and 13 additional commercial Regions. CloudWatch log centralization copies log data from multiple AWS accounts and Regions into a single destination account, integrating with AWS Organizations for efficient aggregation without the need for custom solutions.\nWith this launch, organizations in the AWS GovCloud (US) partition and commercial partition can each centralize logs across their accounts and Regions for centralized monitoring. You can scope centralization rules to your entire organization, specific organizational units, or selected accounts and copy logs into a single account while preserving source context through enriched system fields.\nCloudWatch log centralization is now additionally available in Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Malaysia), Asia Pacific (Melbourne), Canada West (Calgary), Europe (Milan), Europe (Spain), Europe (Zurich), Israel (Tel Aviv), Middle East (Bahrain), Middle East (UAE), AWS GovCloud (US-East), and AWS GovCloud (US-West). For a complete list of supported Regions, see the AWS Region table.\nTo get started, create a centralization rule in the Amazon CloudWatch console, or by using the AWS CLI or AWS SDKs. To learn more, see Log centralization in the Amazon CloudWatch Logs User Guide. Customers can centralize one copy of logs for free; additional copies are charged at $0.05/GB. For details, see Amazon CloudWatch pricing."
+    },
+    {
+      "title": "AWS Lambda durable functions are now available in AWS GovCloud (US) Regions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T18:26:00.000Z",
+      "summary": "AWS Lambda durable functions are now available in the AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions. Lambda durable functions enable developers to build reliable multi-step applications and AI workflows within the Lambda developer experience.\nLambda durable functions extend the Lambda programming model with new primitives in your event handler, such as \"step\" and \"wait\", allowing you to checkpoint progress, automatically recover from failures, and pause executions without incurring compute charges for on-demand functions. With availability in the AWS GovCloud (US) Regions, government customers and regulated industries can orchestrate complex processes such as order workflows, user onboarding, and AI-assisted tasks while meeting stringent compliance and security requirements.\nYou can activate durable functions for new Python (versions 3.13 and 3.14), Node.js (versions 22 and 24), Go (versions 1.24 or later), .Net (version 2.2), or Java (17+) based Lambda functions using the AWS Lambda API, AWS Management Console, or AWS SDK. You can also use infrastructure as code tools such as AWS CloudFormation, AWS Serverless Application Model (AWS SAM), and the AWS Cloud Development Kit (AWS CDK).\nFor more information on durable functions, visit the AWS Lambda durable functions product page or the AWS Lambda Developer Guide. To learn about pricing, visit AWS Lambda pricing. For region availability, visit the AWS Capabilities by Region page."
+    },
+    {
+      "title": "Nemotron 3.5 Super VL model now available on Amazon SageMaker JumpStart",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/01/nvidia-nemotron-3.5-super-vl-on-sagemaker-jumpstart/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T17:59:00.000Z",
+      "summary": "NVIDIA's Nemotron 3.5 Super VL is now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. This vision-language model from the Nemotron 3.5 family accepts images, video, and text as input and generates text, enabling customers to deploy multimodal AI solutions on AWS infrastructure.\nNemotron 3.5 Super VL is designed for document intelligence, GUI understanding, video question answering, and multimodal agentic applications. It pairs a 120B-parameter hybrid Mixture-of-Experts (MoE) language backbone with 12B active parameters and a vision encoder, supporting context lengths of up to 1 million tokens. The model includes a built-in Multi-Token Prediction (MTP) head for speculative decoding to accelerate text generation, with reasoning configurable per request. It supports ten languages including English, French, Spanish, German, Japanese, Hindi, Korean, and Chinese. Post-trained with multimodal supervised fine-tuning on image, video, document, chart, and GUI data followed by GRPO reinforcement learning, it delivers structured JSON output, tool calling, and configurable reasoning for enterprise agent workflows. SageMaker JumpStart offers two variants: NVFP4 for optimized inference on G7 instances with NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs, and BF16 reference weights on ml.p5en.48xlarge for customization including SFT, RL, distillation, and domain adaptation.\nWith SageMaker JumpStart, customers can deploy Nemotron 3.5 Super VL with just a few clicks to address their specific AI use cases.\nTo get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the Amazon SageMaker JumpStart documentation."
+    },
+    {
+      "title": "Beam model by Reflection is now available on Amazon SageMaker JumpStart and AWS Trainium",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/01/reflection-beam-on-sagemaker-jumpstart-and-aws-trainium/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T16:00:00.000Z",
+      "summary": "Beam, the first open weight model offered by US-based Reflection, is now available in Amazon SageMaker JumpStart, the model hub in Amazon SageMaker AI. According to Beam, they operate at the frontier of open weight models in its class, with strong performance across reasoning, coding, and agentic benchmarks. With it, customers can now build advanced coding agents and automated workflows on a frontier open weight model while keeping control of their data and infrastructure and adapting the model to their business. Beam runs alongside other models that customers already use in SageMaker AI and scales to meet production demand with the same controls, audit trails, and monitoring built into every SageMaker AI deployment. Additionally, Beam was ported and optimized for AWS Trainium3, giving customers a high-performance, cost-efficient option for deploying and scaling the model from day one. “Reflection is delivering frontier AI that developers can actually control, not just rent through an API. Bringing Beam to SageMaker AI puts that capability in front of millions of developers on infrastructure they already trust, running in their own AWS account, on their own data, fully in their control,\" said Misha Laskin, co-founder and CEO, Reflection.\nEngineering teams can use Beam to resolve software issues, generate and review code, and automate routine operations work. Businesses can also use it for complex workflows that span many steps and tools, and for advanced math and science reasoning. Because Beam is released under the Apache 2.0 license, customers can inspect and customize the model, while also running it in their own AWS accounts, so data stays private and under their control, protected by the same AWS security and compliance capabilities they already rely on.  “Advanced AI models like Beam, now available on Amazon SageMaker, let us run open weight frontier AI entirely inside our own secure environments, with full visibility into the weights, the data, and the pipeline. In the age of multi-model AI, the pairing of openness and managed infrastructure is an essential addition to the AI ecosystem. The freedom to deploy and adapt advanced AI, tailored to mission problems with client-specific security and controls, gives more agencies greater flexibility to deploy advanced AI across their enterprise.\" said Garrett Berntsen, Chief AI Officer, Accenture Federal Services.\nBeam is initially available in Amazon SageMaker JumpStart in US East (N. Virginia) and US East (Ohio). To start, search for \"Beam\" in SageMaker JumpStart within Amazon SageMaker Studio, or deploy it directly on SageMaker AI.  To learn more, read the AWS/Beam launch blog, SageMaker AI documentation and SageMaker JumpStart documentation."
+    },
+    {
+      "title": "AWS Transform announces Azure-to-AWS cloud-native code conversion",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T13:50:00.000Z",
+      "summary": "Today, AWS announced the general availability of application code conversion from Azure SDK to AWS SDK in AWS Transform, giving you an accelerated path to migrate Microsoft Azure cloud-native .NET applications to AWS. The AWS Transform .NET modernization agent identifies Azure service code and converts it to equivalent AWS service code. For example, an Azure Functions serverless function that uses Azure Cosmos DB can be converted to an AWS Lambda function that uses Amazon DynamoDB.\nAWS Transform discovers the Azure SDK in your submitted source code and presents the conversion options in the assessment report and modernization plan. You can accept the options provided or adjust them based on your preferences before running the modernization. AWS Transform then converts the identified Azure service code to the equivalent AWS SDK calls, and validates that the changes are incorporated into the transformed code. The feature supports conversion of Azure Functions to AWS Lambda functions, Azure Blob Storage to Amazon S3, and Azure Queue Storage to Amazon SQS, with Azure Cosmos DB to Amazon DynamoDB conversion available in preview.\nAWS Transform is available in eight AWS Regions: US East (N. Virginia), Asia Pacific (Mumbai, Tokyo, Seoul, Sydney), Canada (Central), and Europe (Frankfurt, London).\nTo learn more, see Convert cloud-native code to AWS in the AWS Transform User Guide."
+    },
+    {
+      "title": "Second-generation AWS Outposts racks now supported in the AWS Mexico (Central) Region",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-outposts-racks-mexico-central/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T08:00:00.000Z",
+      "summary": "Second-generation AWS Outposts racks are now supported in the AWS Mexico (Central) Region. Outposts racks extend AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience. \n \nTo learn more about second-generation Outposts racks, read the blog post and the user guide. For the latest list of countries and territories and the AWS Regions where second-generation Outposts racks are supported, see the Outposts rack FAQs page."
+    },
+    {
+      "title": "AWS End User Messaging adds registration improvements for faster, higher-quality submissions",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-registration-improvements-for-faster-higher-quality-submissions",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T07:00:00.000Z",
+      "summary": "AWS End User Messaging now makes it easier to complete messaging registrations correctly the first time, with clearer guidance, explicit field requirements, and help avoiding the most common rejection reasons. Registrations ask for compliance evidence such as opt-in proof and sample messages, and submissions are often delayed or denied when that evidence is incomplete or a required field is missed. These improvements give you worked examples, surface exactly which fields you must provide, and walk you through the content that most often causes denials.\n \nUser Guide."
+    },
+    {
+      "title": "AWS End User Messaging now supports Brand Profiles",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-now-supports-brand-profiles",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T07:00:00.000Z",
+      "summary": "Today, AWS End User Messaging announces Brand Profiles, which let you store your brand and company information once and reuse it across your messaging registrations. To send messages on SMS, RCS, and WhatsApp, you register your brand with carriers and messaging providers, and today you fill in the same company details, address, contact information, and use case by hand on every form, for each channel and country. That repeated entry slows every new registration, and a typo or other error can get one rejected and delay when you can start sending. With Brand Profiles, you enter this information once and apply it to each new registration, so you register faster and keep your details consistent across channels and countries. You can use Brand Profiles whether you send for your own brand or manage several brands in a single AWS account.\n \nUser Guide."
+    },
+    {
+      "title": "AWS End User Messaging now offers managed OTP verification end-to-end",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-end-to-end-managed-OTP",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T07:00:00.000Z",
+      "summary": "Today, AWS End User Messaging announces end-to-end managed one-time passcode (OTP) verification in Notify. You get a working OTP solution in under five minutes, including AWS phone numbers and code verification, without setting up a phone number, registering with carriers, or managing how messages are delivered. Before, you generated the passcode yourself and passed it to Notify to send, and you built and maintained the logic to create, store, and expire codes. Now Notify generates the code, delivers it, and verifies the code the recipient enters, so you ship a complete verification flow and skip that work entirely. You can deliver codes over text, voice, and now WhatsApp.\n \nUser Guide."
+    },
+    {
+      "title": "AWS End User Messaging adds a guided wizard for RCS registration videos",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-guided-wizard-rcs-registration-videos",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T07:00:00.000Z",
+      "summary": "Today, AWS End User Messaging adds a wizard that orchestrates the entire video capture for your RCS agent registration. RCS registrations in multiple countries, including the United States, require a screen recording that demonstrates your messaging experience. To record it, you have to send a specific sequence of messages to a test device, and until now you scripted those messages yourself, which easily introduced errors and made a mismatched or incomplete video one of the hardest parts of registering for RCS.\n \nUser Guide."
+    },
     {
       "title": "Web Search on Amazon Bedrock AgentCore expands to AWS GovCloud and 3 Regions",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore/",
@@ -21,6 +91,13 @@
       "source": "AWS What's New",
       "pubDate": "2026-10-15T20:00:00.000Z",
       "summary": "Amazon Elastic Compute Cloud (Amazon EC2) T8i instances are now available in South America (São Paulo). These instances are powered by custom sixth generation Intel Xeon 6 processors, available exclusively on AWS, and built on the latest sixth generation AWS Nitro cards. T8i instances deliver up to 30% better price performance compared to previous generation T3 instances, and offer four sizes: nano, micro, small, and medium. These instances are designed for workloads requiring low to moderate CPU utilization, including data processing, login gateways, small databases, batch processing, event driven functions, CI/CD pipelines, microservices, and low traffic websites.\n \nAWS Free Tier. T8i instances are available in US East (N. Virginia, Ohio), US West (Oregon, N. California), Europe (Frankfurt, Ireland, London, Paris), Asia Pacific (Hyderabad, Malaysia, Mumbai, Seoul, Singapore, Sydney, Tokyo), Canada (Central) and South America (São Paulo) regions. T8i instances are available to purchase via On-Demand instances, and Spot instances with Savings Plan option coming soon. To learn more, visit the Amazon EC2 T8i instances page."
+    },
+    {
+      "title": "AWS Transform for migrations is now available in Asia Pacific (Singapore)",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-singapore",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-15T19:24:00.000Z",
+      "summary": "AWS Transform for migrations is now available in the Asia Pacific (Singapore) Region, giving customers data residency within the region and lower latency to local source infrastructure as they migrate. AWS Transform is a collaborative enterprise IT transformation service powered by agentic AI that accelerates cloud migration, application modernization, and continuous tech debt reduction.\n \ndocumentation or visit the AWS Transform product page."
     },
     {
       "title": "Amazon DynamoDB Streams now supports timestamp-based stream processing",
@@ -133,83 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-10-15T08:00:00.000Z",
       "summary": "Amazon Managed Workflows for Apache Airflow (MWAA) now integrates with the Agent Toolkit for AWS to provide built-in AI agent skills that let you author, debug, and test MWAA workflows and upgrade MWAA environments using any AI coding assistant that supports agent skills.\nThe four skills are authoring-mwaa-workflow, debugging-mwaa-workflow, testing-mwaa-workflow, and upgrading-mwaa-environments. Together they let your AI assistant interact directly with MWAA using natural language, reducing the manual effort of building and maintaining data pipelines. For example, you can describe an ETL pipeline in plain language and the authoring skill generates a working DAG complete with task dependencies and error handling.\nThe Amazon MWAA AI agent skills work with both Amazon MWAA Provisioned and Amazon MWAA Serverless environments, and are available in all AWS Regions where Amazon MWAA is available.\nTo get started, install the aws-data-analytics plugin and configure your AI coding assistant to use the MWAA agent skills. To learn more, see Using agent skills with Amazon MWAA in the Amazon MWAA User Guide and the Agent Toolkit for AWS documentation."
-    },
-    {
-      "title": "Launch AWS DevOps Agent to review findings and test results from AWS Resilience Hub",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-devops-agent-test-results-aws-resilience-hub/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-15T07:00:00.000Z",
-      "summary": "The next generation of AWS Resilience Hub now integrates with AWS DevOps agent allowing you to review failure mode assessment findings and implement mitigations to resolve findings and review resilience test results. AWS Resilience Hub is a central location in the AWS Management Console that helps platform engineering and site reliability teams assess and strengthen the resilience of their workloads running on AWS. It provides automated dependency discovery, generative AI-powered failure mode analysis, modular resilience policies, resilience testing, and organization-wide resilience posture reporting.\nResilience test investigations: When you run a resilience test, Resilience Hub now launches an AWS DevOps Agent investigation that observes the test and returns a structured analysis. You can uncover symptoms, root cause, and impact along with observed recovery actions, like ARC Region switch.\nInteractive agent analysis from failure mode assessment findings: You can now start AWS DevOps Agent on demand task directly from a failure mode assessment finding in the Resilience Hub console, with the finding's context already in place. This allows for asking questions and investigating findings to create a mitigation plan.\nTo get started, visit the AWS Resilience Hub console, select a service and configure DevOps agent in the service configuration. Then launch the DevOps agent directly from a failure mode assessment finding or a resilience test. To learn more, see the product page or visit the documentation.\nAWS Resilience Hub is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Paris), Europe (Stockholm), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Seoul), and South America (São Paulo)."
-    },
-    {
-      "title": "Amazon CloudWatch announces log routing and chained log parsers",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudwatch-pipelines-log-routing/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-14T22:14:00.000Z",
-      "summary": "Amazon CloudWatch now supports conditional log routing and chained parsers via pipelines, giving you more control over how log data is transformed and which CloudWatch log group it's sent to. CloudWatch pipelines is a fully managed service that ingests, transforms, and routes telemetry to CloudWatch without managing infrastructure.\nLog pipelines often carry a mix of event types that belong in different places, and individual events can nest one log format inside another. With conditional log routing, you define routes that send each event to a different CloudWatch log group based on conditions evaluated against processed fields, so you can separate events by severity, source, or type and apply the right retention and access controls to each. With chained parsers, you can apply multiple parser processors in sequence, where later parsers consume fields produced by earlier ones. For example, you can parse a JSON envelope first, then apply a Grok parser to a field it extracts. Together, these capabilities let you structure diverse log formats and route them to the right log groups in a single pipeline.\nConditional routing and chained parsers are available in all commercial AWS Regions where CloudWatch pipelines is generally available. You can configure these capabilities using the AWS Management Console, AWS CLI, or AWS SDKs. To get started, see the Amazon CloudWatch pipelines documentation."
-    },
-    {
-      "title": "AWS HealthOmics expands container registry support for private workflows",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-healthomics-expanded-container-registry-support/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-14T21:55:00.000Z",
-      "summary": "You can now use container images from registries such as Seqera (Wave), NVIDIA NGC, and Google Artifact Registry with AWS HealthOmics expanded support for third-party container registries. You can use the containerized tools your workflows already rely on, without manually migrating images into Amazon ECR or editing your workflow definitions. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.\nWith expanded container registry support, you can now instruct HealthOmics to copy container images, on your behalf, from newly supported registries into your Amazon ECR when running your private workflows. Previously, AWS HealthOmics could pull images only from registries supported through Amazon ECR pull-through cache (PTC). Your private workflows can now access Amazon ECR pull-through cache registries and the newly supported third party container registries, so you do not need to pull, re-push, or rewrite image URIs yourself.\nExpanded container registry support is now available in all AWS Regions where HealthOmics is available: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul, Tokyo). To learn more, visit the third-party container image support documentation."
-    },
-    {
-      "title": "Penetration testing every deployment with AWS Continuum",
-      "link": "https://aws.amazon.com/blogs/security/penetration-testing-every-deployment-with-aws-continuum/",
-      "source": "AWS Security Blog",
-      "pubDate": "2026-10-14T20:21:52.000Z",
-      "summary": "Most security tooling that fits into a CI/CD pipeline—static analysis (SAST), software composition analysis (SCA), and dynamic scanners (DAST)—flags potential issues from patterns and signatures. A flagged pattern shows you where to look; penetration testing is what confirms whether something is actually exploitable. That confirmation has traditionally come from a periodic, out-of-band engagement that runs […]"
-    },
-    {
-      "title": "Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel",
-      "link": "https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-10-14T19:30:48.000Z",
-      "summary": "Amazon Simple Storage Service (Amazon S3), including Amazon S3 Tables and Amazon S3 Vectors, is natively available on the Vercel Marketplace and v0 by Vercel."
-    },
-    {
-      "title": "AWS Lambda recursive loop detection now supports Amazon EventBridge Custom event buses",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-recursive-loops-eventbridge-custom",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-14T18:00:00.000Z",
-      "summary": "AWS Lambda recursive loop detection now automatically detects and stops recursive loops between Lambda Event Functions and Amazon EventBridge Custom event buses, helping protect you against unintended usage and unexpected charges from runaway workloads. Lambda recursive loop detection, enabled by default on your AWS account, automatically identifies when a Lambda Event Function is invoked recursively by a supported AWS service and stops the loop.\nYou can use EventBridge Custom event buses to invoke Lambda Event Functions, building automation workflows and scheduling recurring tasks without managing any infrastructure. However, a misconfiguration or code defect can cause EventBridge rules to trigger your Event Functions recursively, resulting in runaway usage. Now, recursive loop detection supports EventBridge Custom buses, automatically stopping such loops and sending you an AWS Health Dashboard notification with troubleshooting instructions.\nEventBridge Custom event buses now support recursive loop detection in every commercial AWS Region where they are available. This feature is enabled by default on your account and requires no configuration. If your Event Function uses recursive loops intentionally, you can use the PutFunctionRecursionConfig API to turn off recursive loop detection for that function.\nTo learn more about recursive loop detection, visit Lambda documentation."
-    },
-    {
-      "title": "ARC Region switch adds four new capabilities",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/region-switch-target-health-ssm-lambda/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-14T17:38:00.000Z",
-      "summary": "Amazon Application Recovery Controller (ARC) Region switch helps you orchestrate the failover of multi-Region applications to achieve a bounded recovery time during a Regional impairment. Today, Region switch adds four new capabilities: AWS Systems Manager Run Command execution block, payloads for custom action Lambda execution block, service quota parity checks, and wait for target group health feature for compute scaling actions.\nAWS Systems Manager Run Command execution block. During failover, you often need to run commands on managed instances and VMs. This execution block lets you invoke Run Command actions on managed instances during failover, with plan evaluation verifying that command documents target valid instances and that IAM permissions are correctly configured.\nPayloads for custom action Lambda execution block. ARC Region switch now lets you pass payloads to your custom action Lambda execution block, allowing reusability of your Lambda functions across recovery plans.\nService quota checks. Service quota limits are a common failure mode during recovery. Region switch now verifies quota parity between your primary and standby Region, and automatically submits quota limit increases, reducing the risk of insufficient service quotas during recovery.\nWait for target group health. Amazon ECS service scaling and Amazon EC2 Auto Scaling group execution blocks help you provision compute capacity during recovery, but provisioned capacity may not be ready to serve traffic. The optional wait for target group health feature verifies that your provisioned capacity is ready to serve traffic.\nTo get started, see the documentation for AWS Systems Manager Run Command execution block , custom action Lambda execution block , Service quota checks  and the Wait for target group health for Amazon ECS service scaling execution block  and Amazon EC2 Auto Scaling group execution block ."
-    },
-    {
-      "title": "AWS License Manager now supports license type conversions for Ubuntu Pro purchased through AWS Marketplace",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-license-manager-conversions-ubuntu-pro-marketplace/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-14T17:04:00.000Z",
-      "summary": "AWS License Manager  now supports in-place upgrades for EC2 Ubuntu LTS (Long Term Support) instances to Ubuntu Pro available on AWS Marketplace. This allows customers to strengthen their security posture and meet compliance requirements without rebuilding their fleet or migrating workloads to a new instance or AMI. With an Ubuntu Pro subscription, customers receive security patches for up to 10 years — extendable to 15 years with the Legacy add-on. This coverage extends beyond the base OS to thousands of additional packages, including widely used open-source applications such as NGINX, PostgreSQL, MongoDB, and Redis. Ubuntu Pro also supports Kernel Livepatch, which applies critical kernel security fixes without rebooting to minimize downtime.\nWith this launch, customers, who have an existing Canonical Ubuntu Pro subscription through AWS Marketplace, can upgrade directly during the conversion workflow. Customers who do not yet have a subscription can subscribe to Canonical Ubuntu Pro from within the AWS License Manager console. The new feature is available in  all commercial regions  where AWS License Manager is available.\nTo get started, navigate to the  AWS License Manager console  and the  AWS License Manager User Guide ."
-    },
-    {
-      "title": "AWS HealthOmics introduces resource fallback order for Nextflow workflows",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-healthomics-resource-fallback-for-Nextflow/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-14T16:00:00.000Z",
-      "summary": "Today, AWS HealthOmics introduces the resource fallback directive for tasks in your Nextflow workflows, enabling you to define an ordered list of preferred accelerator types, including an option to fallback to CPU instances. Researchers and bioinformaticians can use this directive to reduce time spent diagnosing and resubmitting runs due to accelerator constraints and keep production workflows running. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows. \nWith resource fallback for Nextflow workflows, you can prioritize your preferred accelerator for your task. When your preferred accelerator is unavailable, HealthOmics automatically moves through your specified alternatives in the fallback without resubmission. Each accelerator profile has a configurable timeout, giving you control over how long HealthOmics searches for that accelerator before moving to the next. Shorter timeouts help you move quickly through the fallback order, while longer timeouts increase the probability of reserving your preferred accelerator. You can also include a CPU profile as a final fallback to increase the likelihood of your task reserving an instance. \nYou can now use resource fallback for Nextflow workflows in all AWS HealthOmics Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Seoul, Singapore, Tokyo). To learn more, visit the advanced resource configuration and Nextflow specifics documentation."
-    },
-    {
-      "title": "Multi-region disaster recovery for Amazon API Gateway WebSocket APIs",
-      "link": "https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-10-14T14:31:55.000Z",
-      "summary": "Learn how to build multi-region disaster recovery for Amazon API Gateway WebSocket APIs. This design pattern combines Amazon Route 53 DNS failover, Amazon DynamoDB Global Tables, a canary health probe, and client-side reconnection logic to reconnect clients and restore session state automatically during a regional failover."
-    },
-    {
-      "title": "How UTS established a modern curriculum data services foundation on AWS",
-      "link": "https://aws.amazon.com/blogs/architecture/how-uts-established-a-modern-curriculum-data-services-foundation-on-aws/",
-      "source": "AWS Architecture Blog",
-      "pubDate": "2026-10-14T14:29:10.000Z",
-      "summary": "The University of Technology Sydney built a modern curriculum data services foundation on AWS that treats curriculum data as a governed, reusable product, available through APIs, graph traversal, semantic search, and event delivery, while leaving the source Curriculum Management System authoritative. One engineer now operates the domain."
     }
   ]
 }
