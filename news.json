@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17T02:18:54.441Z",
+  "lastUpdated": "2026-10-18T02:18:59.787Z",
   "items": [
     {
       "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
@@ -37,6 +37,13 @@
       "summary": "Today, AWS announced the general availability of application code conversion from Azure SDK to AWS SDK in AWS Transform, giving you an accelerated path to migrate Microsoft Azure cloud-native .NET applications to AWS. The AWS Transform .NET modernization agent identifies Azure service code and converts it to equivalent AWS service code. For example, an Azure Functions serverless function that uses Azure Cosmos DB can be converted to an AWS Lambda function that uses Amazon DynamoDB.\nAWS Transform discovers the Azure SDK in your submitted source code and presents the conversion options in the assessment report and modernization plan. You can accept the options provided or adjust them based on your preferences before running the modernization. AWS Transform then converts the identified Azure service code to the equivalent AWS SDK calls, and validates that the changes are incorporated into the transformed code. The feature supports conversion of Azure Functions to AWS Lambda functions, Azure Blob Storage to Amazon S3, and Azure Queue Storage to Amazon SQS, with Azure Cosmos DB to Amazon DynamoDB conversion available in preview.\nAWS Transform is available in eight AWS Regions: US East (N. Virginia), Asia Pacific (Mumbai, Tokyo, Seoul, Sydney), Canada (Central), and Europe (Frankfurt, London).\nTo learn more, see Convert cloud-native code to AWS in the AWS Transform User Guide."
     },
     {
+      "title": "Amazon Braket now in scope for FedRAMP Class C",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/braket-fedramp-class-c/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T08:00:00.000Z",
+      "summary": "Amazon Braket is now in scope for FedRAMP Class C in AWS US Regions where Braket is available. The Federal Risk and Authorization Management Program (FedRAMP) is a US government-wide program that delivers a standard approach to the security assessment, authorization, and continuous monitoring of cloud products and services.\nWith FedRAMP Class C authorization, government customers and the organizations that serve them can use Amazon Braket to explore quantum computing within an authorized boundary. The AWS-operated components of Braket, including the API and SDK, job orchestration and management, compilation, and result storage in Amazon S3, are within the FedRAMP-certified boundary, while quantum workloads execute on third-party Quantum Hardware Providers (QHPs) outside that boundary. All data sent to QHPs meets AWS' privacy and security requirements including removal of all personally identifiable information, data encryption in transit and at rest, and adherence to AWS' standard data retention and deletion policies.\nTo learn more about FedRAMP, visit AWS FedRAMP services and the FedRAMP Marketplace. To learn more about Amazon Braket, visit the Braket product page and Getting Started on Braket resources.\nRegional Availability: US East (N. Virginia), US West (N. California), US West (Oregon)"
+    },
+    {
       "title": "Second-generation AWS Outposts racks now supported in the AWS Mexico (Central) Region",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-outposts-racks-mexico-central/",
       "source": "AWS What's New",
@@ -58,18 +65,18 @@
       "summary": "Today, AWS End User Messaging announces Brand Profiles, which let you store your brand and company information once and reuse it across your messaging registrations. To send messages on SMS, RCS, and WhatsApp, you register your brand with carriers and messaging providers, and today you fill in the same company details, address, contact information, and use case by hand on every form, for each channel and country. That repeated entry slows every new registration, and a typo or other error can get one rejected and delay when you can start sending. With Brand Profiles, you enter this information once and apply it to each new registration, so you register faster and keep your details consistent across channels and countries. You can use Brand Profiles whether you send for your own brand or manage several brands in a single AWS account.\n \nUser Guide."
     },
     {
-      "title": "AWS End User Messaging now offers managed OTP verification end-to-end",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-end-to-end-managed-OTP",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-16T07:00:00.000Z",
-      "summary": "Today, AWS End User Messaging announces end-to-end managed one-time passcode (OTP) verification in Notify. You get a working OTP solution in under five minutes, including AWS phone numbers and code verification, without setting up a phone number, registering with carriers, or managing how messages are delivered. Before, you generated the passcode yourself and passed it to Notify to send, and you built and maintained the logic to create, store, and expire codes. Now Notify generates the code, delivers it, and verifies the code the recipient enters, so you ship a complete verification flow and skip that work entirely. You can deliver codes over text, voice, and now WhatsApp.\n \nUser Guide."
-    },
-    {
       "title": "AWS End User Messaging adds a guided wizard for RCS registration videos",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-guided-wizard-rcs-registration-videos",
       "source": "AWS What's New",
       "pubDate": "2026-10-16T07:00:00.000Z",
       "summary": "Today, AWS End User Messaging adds a wizard that orchestrates the entire video capture for your RCS agent registration. RCS registrations in multiple countries, including the United States, require a screen recording that demonstrates your messaging experience. To record it, you have to send a specific sequence of messages to a test device, and until now you scripted those messages yourself, which easily introduced errors and made a mismatched or incomplete video one of the hardest parts of registering for RCS.\n \nUser Guide."
+    },
+    {
+      "title": "AWS End User Messaging now offers managed OTP verification end-to-end",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-end-to-end-managed-OTP",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-16T07:00:00.000Z",
+      "summary": "Today, AWS End User Messaging announces end-to-end managed one-time passcode (OTP) verification in Notify. You get a working OTP solution in under five minutes, including AWS phone numbers and code verification, without setting up a phone number, registering with carriers, or managing how messages are delivered. Before, you generated the passcode yourself and passed it to Notify to send, and you built and maintained the logic to create, store, and expire codes. Now Notify generates the code, delivers it, and verifies the code the recipient enters, so you ship a complete verification flow and skip that work entirely. You can deliver codes over text, voice, and now WhatsApp.\n \nUser Guide."
     },
     {
       "title": "Web Search on Amazon Bedrock AgentCore expands to AWS GovCloud and 3 Regions",
@@ -156,18 +163,18 @@
       "summary": "We applied AWS Security Agent (now part of AWS Continuum), our autonomous penetration-testing agent, to 37 real, recently disclosed Common Vulnerabilities and Exposures (CVEs), each packaged as a live, containerized target with a flag hidden at the vulnerability’s intended sink. Starting from an unauthenticated or low-privilege position (an endpoint URL and a one-line hint, no […]"
     },
     {
-      "title": "Amazon CloudFront announces dual-stack support for VPC origins",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-vpc-origin-dualstack/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-15T16:00:00.000Z",
-      "summary": "Amazon CloudFront now supports end-to-end IPv6 delivery to origins inside your Amazon Virtual Private Cloud (Amazon VPC), with the new dual-stack VPC origins. With VPC origins, customers keep their Application Load Balancers (ALB), Network Load Balancers (NLB), and EC2 instances in private subnets that only their CloudFront distributions can reach. With dual-stack support, customers can now send IPv6 traffic all the way to these private origins to meet their IPv6 architecture and regulatory requirements, without exposing origins to the internet.\nPreviously, CloudFront supported dual-stack for public origins but connected to VPC origins over IPv4 only. Customers faced a tradeoff: move origins to public subnets for IPv6 and give up VPC origin security or keep them private and stay on IPv4. Now, with this launch, customers can configure their VPC origins as dual-stack and get end-to-end IPv6 without sacrificing security.\nDual-stack VPC origins are available in all AWS Commercial Regions where VPC origins are supported. The full list of supported Regions is available here. There is no additional cost for using dual-stack VPC origins. To learn more, visit CloudFront VPC origins."
-    },
-    {
       "title": "PostgreSQL 19 RC1 is now available in Amazon RDS Database Preview Environment",
       "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/postgresql-19-rc1-amazon-rds-database-preview-environment/",
       "source": "AWS What's New",
       "pubDate": "2026-10-15T16:00:00.000Z",
       "summary": "Starting today, Amazon RDS for PostgreSQL 19 Release Candidate 1 (RC1) is available in the Amazon RDS Database Preview Environment, allowing you to evaluate the pre-release of PostgreSQL 19 on Amazon RDS for PostgreSQL.\nPostgreSQL 19 RC1 focuses on stability, with bug fixes and improvements from the Beta 4 testing period. This release improves error handling for complex text-search expressions, hardens parallel autovacuum, and improves reliability of GIN index maintenance. Refer to the PostgreSQL community announcement for more details.. Refer to the PostgreSQL community announcement for more details.\nAmazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. You can use the PostgreSQL dump and load functionality to import or export your databases from the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the pricing in the US East (Ohio) Region."
+    },
+    {
+      "title": "Amazon CloudFront announces dual-stack support for VPC origins",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-vpc-origin-dualstack/",
+      "source": "AWS What's New",
+      "pubDate": "2026-10-15T16:00:00.000Z",
+      "summary": "Amazon CloudFront now supports end-to-end IPv6 delivery to origins inside your Amazon Virtual Private Cloud (Amazon VPC), with the new dual-stack VPC origins. With VPC origins, customers keep their Application Load Balancers (ALB), Network Load Balancers (NLB), and EC2 instances in private subnets that only their CloudFront distributions can reach. With dual-stack support, customers can now send IPv6 traffic all the way to these private origins to meet their IPv6 architecture and regulatory requirements, without exposing origins to the internet.\nPreviously, CloudFront supported dual-stack for public origins but connected to VPC origins over IPv4 only. Customers faced a tradeoff: move origins to public subnets for IPv6 and give up VPC origin security or keep them private and stay on IPv4. Now, with this launch, customers can configure their VPC origins as dual-stack and get end-to-end IPv6 without sacrificing security.\nDual-stack VPC origins are available in all AWS Commercial Regions where VPC origins are supported. The full list of supported Regions is available here. There is no additional cost for using dual-stack VPC origins. To learn more, visit CloudFront VPC origins."
     },
     {
       "title": "How Dynata scaled AI across the development lifecycle with AI-DLC and Kiro IDE",
@@ -203,13 +210,6 @@
       "source": "AWS What's New",
       "pubDate": "2026-10-15T08:00:00.000Z",
       "summary": "Amazon Managed Service for Prometheus collector, a fully-managed agentless collector for Prometheus metrics, is now available in Asia Pacific (New Zealand). Customers in New Zealand can now run their Prometheus-compatible monitoring workloads in-region, with lower latency for local workloads and the ability to keep their data in-country.\nAmazon Managed Service for Prometheus collector discovers and collects Prometheus metrics from your container workloads without the need to run and operate collection agents yourself. Customers ingest the collected metrics into an Amazon Managed Service for Prometheus workspace, where they query and analyze the metrics. This fully-managed approach simplifies operational overhead by eliminating the need to maintain and scale collection infrastructure.\nTo learn more about Amazon Managed Service for Prometheus collector, visit the user guide or product page."
-    },
-    {
-      "title": "Amazon Managed Workflows for Apache Airflow now offers AI agent skills",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-ai-agent-skills/",
-      "source": "AWS What's New",
-      "pubDate": "2026-10-15T08:00:00.000Z",
-      "summary": "Amazon Managed Workflows for Apache Airflow (MWAA) now integrates with the Agent Toolkit for AWS to provide built-in AI agent skills that let you author, debug, and test MWAA workflows and upgrade MWAA environments using any AI coding assistant that supports agent skills.\nThe four skills are authoring-mwaa-workflow, debugging-mwaa-workflow, testing-mwaa-workflow, and upgrading-mwaa-environments. Together they let your AI assistant interact directly with MWAA using natural language, reducing the manual effort of building and maintaining data pipelines. For example, you can describe an ETL pipeline in plain language and the authoring skill generates a working DAG complete with task dependencies and error handling.\nThe Amazon MWAA AI agent skills work with both Amazon MWAA Provisioned and Amazon MWAA Serverless environments, and are available in all AWS Regions where Amazon MWAA is available.\nTo get started, install the aws-data-analytics plugin and configure your AI coding assistant to use the MWAA agent skills. To learn more, see Using agent skills with Amazon MWAA in the Amazon MWAA User Guide and the Agent Toolkit for AWS documentation."
     }
   ]
 }
