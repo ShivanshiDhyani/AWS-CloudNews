@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-11-26T06:07:42.843Z",
+  "lastUpdated": "2026-11-27T05:58:11.893Z",
   "items": [
+    {
+      "title": "Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/",
+      "source": "AWS What's New",
+      "pubDate": "2026-11-26T17:00:00.000Z",
+      "summary": "Amazon Relational Database Service (RDS) for PostgreSQL now supports the latest minor versions 18.7, 17.12, 16.16, 15.20, and 14.25. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL, and to benefit from the bug fixes and improvements added by the PostgreSQL community.\n \nYou can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to orchestrate multiple upgrades in phases, validating on lower-priority environments before upgrading your most critical ones. You can also use Amazon RDS Blue/Green deployments to minimize downtime for minor version upgrades. For more information, see Upgrading RDS for PostgreSQL DB engine.\n \nAmazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. See Amazon RDS for PostgreSQL Pricing for pricing details and regional availability. Create or update a fully managed Amazon RDS database in the Amazon RDS Management Console or by using the AWS Command Line Interface (CLI)."
+    },
     {
       "title": "Make post-quantum cryptography updates routine with AWS-LC",
       "link": "https://aws.amazon.com/blogs/security/make-post-quantum-cryptography-updates-routine-with-aws-lc/",
@@ -198,18 +205,11 @@
       "summary": "Amazon Connect Customer analytics dashboards now support grouping historical metrics by time interval on trailing widgets, giving contact center managers granular control over how performance data is visualized over time. Trailing widgets now display data grouped by 15-minute, 30-minute, one-hour, daily, and weekly intervals. For example, a workforce manager investigating a spike in average handle time can switch from a daily view to 15-minute intervals to pinpoint the exact period the spike occurred, then zoom out to a weekly view to confirm whether it reflects a broader trend.\n \nTime interval grouping on dashboards is available in all AWS regions where Amazon Connect Customer is offered. To learn more, see the Amazon Connect Customer Administrator Guide.  To learn more about Amazon Connect Customer, visit the Amazon Connect Customer website."
     },
     {
-      "title": "AWS Weekly Roundup: Local Zone in Bogotá, 30-minute Lambda timeout, and more (November 24, 2026)",
-      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/",
-      "source": "AWS News Blog",
-      "pubDate": "2026-11-24T15:39:59.000Z",
-      "summary": "Some limits shape architecture more than any feature does. AWS Lambda launched in 2014 with a 60-second timeout, moved to 5 minutes in 2015 and to 15 minutes in 2018, and then stayed there for eight years. Last week the limit doubled, and in the same week Lambda learned to run on GPUs and gave […]"
-    },
-    {
-      "title": "Amazon RDS for SQL Server now supports up to 500 databases per instance",
-      "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-sqlserver-supports-500-databases-per-instance",
+      "title": "Amazon OpenSearch Service new engine now joins logs, traces, and metadata",
+      "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-distributed-joins",
       "source": "AWS What's New",
-      "pubDate": "2026-11-24T08:00:00.000Z",
-      "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports up to 500 databases per DB instance, up from the previous limit of 100. This higher density helps software as a service (SaaS) providers, multi-tenant applications, and other customers who run many databases on a DB instance. Previously, these customers had to spread their databases across several DB instances.\n \nYou can use this feature to consolidate databases on fewer DB instances. This simplifies management, reduces the number of DB instances to monitor and patch, and lowers license and infrastructure costs. The 500-database limit applies to DB instances with 4 or more vCPUs (xlarge and larger, excluding burstable instance classes) on all SQL Server versions that Amazon RDS supports. It's available for Single-AZ deployments of Enterprise, Enterprise Developer, Standard, Standard Developer, and Web editions, and for Multi-AZ deployments of Enterprise, Enterprise Developer (using Always On Availability Groups), and Web edition.. Multi-AZ deployments using Database Mirroring, Multi-AZ deployments of Standard Edition, and smaller instances keep their current limits.\n \nThis feature is available in all AWS Regions where Amazon RDS for SQL Server is available. To learn more, see Amazon RDS for Microsoft SQL Server User Guide. For pricing details, see Amazon RDS for SQL Server Pricing."
+      "pubDate": "2026-11-24T17:00:00.000Z",
+      "summary": "Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, service metadata, deployment records, and tenant data. Engineers and their AI agents must connect these datasets to determine what failed, where it failed, and who was affected.\n \nWith Piped Processing Language (PPL) or SQL, engineers and agents can query multiple petabytes of data to connect an error log to its trace, and enrich telemetry with service ownership or deployment metadata, in one query. High-cardinality aggregations measure incident impact across millions of distinct hosts, users, or tenants. The new engine spreads aggregations and joins across data nodes, so you don't need to copy related data into a single index first. With routing key support, you can keep related documents on the same shard, so lookups and joins on that key stay fast.\n \nIn addition to PPL and SQL, the new engine now supports OpenSearch query DSL. You get the engine's cost savings and performance improvements for supported analytics workloads without rewriting queries in PPL or SQL. Applications, alerts, and integrations that send query DSL keep working.\n \nThese features are available on OpenSearch 3.9, at no additional charge, in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), and Europe (Spain). To get started, create or upgrade a domain to OpenSearch 3.9 with the new engine. To learn more, see the documentation."
     }
   ]
 }
